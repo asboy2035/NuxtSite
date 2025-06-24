@@ -1,0 +1,30 @@
+:root
+  --backgroundColor: white
+  --foregroundColor: rgba(226, 226, 226, 0.35)
+  --foregroundOpaque: rgb(226, 226, 226)
+  --textColor: black
+  --accentColor: rgb(159, 117, 232)
+
+  --swirly01: #8f5bea
+  --swirly02: rgb(218, 90, 189)
+
+@media (prefers-color-scheme: dark)
+  :root
+    --backgroundColor: black
+    --foregroundColor: rgba(45, 45, 45, 0.35)
+    --foregroundOpaque: rgb(45, 45, 45)
+    --textColor: rgb(240, 240, 240)
+    --accentColor: rgb(90, 20, 209)
+
+    --swirly01: #3b11b8
+    --swirly02: rgb(140, 21, 177)
+
+// SASS aliases
+$backgroundColor: var(--backgroundColor)
+$foregroundColor: var(--foregroundColor)
+$foregroundOpaque: var(--foregroundOpaque)
+$textColor: var(--textColor)
+$accentColor: var(--accentColor)
+
+$swirly01: var(--swirly01)
+$swirly02: var(--swirly02)

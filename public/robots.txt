@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asboy2035.com/sitemap.xml
