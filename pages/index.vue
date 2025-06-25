@@ -13,7 +13,8 @@
     meta: [
       { name: 'description', content: 'My (new) site :)' },
       { property: 'og:title', content: "ash's Site" },
-      { property: 'og:description', content: 'My (new) site :)' }
+      { property: 'og:description', content: 'My (new) site :)' },
+      { property: 'og:image', content: '/images/SitePreview.png' }
     ]
   })
 </script>
