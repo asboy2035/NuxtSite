@@ -127,7 +127,7 @@
       id="siteSwitcher"
       :class="{ hidden: !showSiteSwitcher }"
     >
-      <button @click="toggleSiteSwitcher()" style="border-radius: 2rem">
+      <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
         <Icon icon="mingcute:close-fill" width="24" height="24" />
       </button>
     </site-picker>
@@ -226,6 +226,20 @@
     backdrop-filter: blur(2rem)
     transition: width 0.2s ease
 
+  header::after
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+
+    border: 0.1rem solid colors.$textColor
+    opacity: 0.1
+    z-index: 21
+    border-radius: 1.75rem
+    pointer-events: none
+
   .profile h1
     margin: 0
 
@@ -235,8 +249,8 @@
     border-radius: 1.25rem
 
   .createBtn
+    --buttonRadius: 2rem
     height: fit-content
-    border-radius: 2rem
     z-index: 20
 
   .createBtn::before
@@ -288,8 +302,8 @@
 
   @media (max-width: 35rem)
     #mobileButton
+      --buttonRadius: 2rem
       display: flex
-      border-radius: 2rem
 
     .desktopLinks
       display: none

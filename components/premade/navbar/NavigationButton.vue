@@ -27,9 +27,9 @@
   @use "@/styles/colors"
 
   .navigationButton
+    --buttonRadius: 1.25rem
     width: 3rem
     height: 3rem
-    border-radius: 1.25rem
     transition: 0.2s ease-in-out
     padding: 0
 

@@ -1,11 +1,9 @@
 <script setup lang="ts">
   import Card from "@/components/layout/Card.vue"
-  import InteriorItem from "@/components/layout/InteriorItem.vue"
   import Grid from "@/components/layout/Grid.vue"
   import Spacer from "@/components/utils/Spacer.vue"
-  import {Icon} from "@iconify/vue"
   import CardTitle from "@/components/utils/CardTitle.vue"
-  import HStack from "~/components/layout/HStack.vue";
+  import IconItem from "~/components/layout/IconItem.vue"
 </script>
 
 <template>
@@ -19,28 +17,25 @@
     <spacer />
 
     <grid class="tight spaced">
-      <interior-item class="centered langCard">
-        <h-stack>
-          <Icon icon="proicons:vuejs" width="24" height="24"/>
-          <Icon icon="lineicons:nuxt" width="24" height="24" />
-        </h-stack>
-        <p>Vue/Nuxt</p>
-      </interior-item>
+      <icon-item
+        name="Vue/Nuxt"
+        icon="proicons:vuejs"
+      />
 
-      <interior-item class="centered langCard">
-        <Icon icon="proicons:css-2" width="24" height="24" />
-        <p>CSS</p>
-      </interior-item>
+      <icon-item
+        name="CSS"
+        icon="proicons:css-2"
+      />
 
-      <interior-item class="centered langCard">
-        <Icon icon="fluent:javascript-16-regular" width="16" height="16" />
-        <p>JS</p>
-      </interior-item>
+      <icon-item
+        name="JS"
+        icon="fluent:javascript-16-regular"
+      />
 
-      <interior-item class="centered langCard">
-        <Icon icon="iconoir:apple-swift" width="24" height="24" />
-        <p>Swift</p>
-      </interior-item>
+      <icon-item
+        name="Swift"
+        icon="iconoir:apple-swift"
+      />
     </grid>
   </card>
 </template>

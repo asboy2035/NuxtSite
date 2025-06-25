@@ -63,14 +63,6 @@ onMounted(() => {
 
   redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
 
-  // Your existing router guards and loader hiding logic...
-})
-
-const cover = ref(null)
-const transitionable = ref(null)
-const router = useRouter()
-
-onMounted(() => {
   router.beforeEach((to, from, next) => {
     transitionable.value?.show()
     cover.value?.show()
@@ -90,6 +82,10 @@ onMounted(() => {
   const loader = document.getElementById('loading-screen')
   loader?.classList.add('hidden')
 })
+
+const cover = ref(null)
+const transitionable = ref(null)
+const router = useRouter()
 </script>
 
 <style scoped lang="sass">

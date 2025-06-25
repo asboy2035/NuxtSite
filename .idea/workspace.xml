@@ -5,104 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asboy2035-nuxt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/apps/AppLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/apps/AppStoreIcon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/apps/GithubIcon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/apps/LinkIcon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/charCards/CardPreview.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/home/AboutSidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/Grid.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/HStack.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/VStack.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/links/LinkItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/links/SupportLinks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/playlists/AppleMusic.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/playlists/Deezer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/playlists/Spotify.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/playlists/YoutubeMusic.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/Description.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/Transitionable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/BannerNotification.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/CardTitle.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/Divider.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/DynamicImage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/Modal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/utils/Spacer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/apps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/create/charcard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/tests/audio.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apps/audioTest.mov" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apps/markdown/stand.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/audioTest.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cursors/bibataModern/Camera-v2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cursors/bibataModern/Copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cursors/bibataModern/Pointer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cursors/bibataModern/Pointing-Hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cursors/bibataModern/ash.bibatamodern.cape" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Apps.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Bordeaux.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Creator.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Goodies.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Links.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Playlists.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Stand-Hero.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/BigTime-Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/CharCard-Icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/Stand-Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/yass.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/animations.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/utilities.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/shims-sass.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/shims-vue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/AboutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/LinkItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SupportLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SupportLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,51 +37,68 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;asboy2035&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://asboy2035@github.com/asboy2035/asboy2035-nuxt.git&quot;,
+    &quot;accountId&quot;: &quot;3a099e4d-a960-4419-accc-5f28f60b6a13&quot;
+  }
+}</component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="kjZId4l4" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2yxnrGuSyB5nzJx9RxlRIFQ2Iof" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/asboy2035-nuxt/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.cleanup.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.reInit.executor": "Run",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
-    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA Ultimate.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/asboy2035-nuxt/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA Ultimate.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/layout" />
+      <recent name="$PROJECT_DIR$/components/utils" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -231,7 +165,60 @@
       <option name="presentableId" value="Default" />
       <updated>1743535360667</updated>
       <workItem from="1743535360668" duration="84000" />
-      <workItem from="1750785290014" duration="6108000" />
+      <workItem from="1750785290014" duration="8222000" />
+      <workItem from="1750838979921" duration="125000" />
+      <workItem from="1750839113140" duration="176000" />
+      <workItem from="1750839292770" duration="169000" />
+      <workItem from="1750839465486" duration="67000" />
+      <workItem from="1750839536142" duration="16000" />
+      <workItem from="1750839555015" duration="60000" />
+      <workItem from="1750839618789" duration="81000" />
+      <workItem from="1750839845746" duration="27000" />
+      <workItem from="1750839874961" duration="135000" />
+      <workItem from="1750840012897" duration="72000" />
+      <workItem from="1750840088426" duration="162000" />
+      <workItem from="1750840252876" duration="7000" />
+      <workItem from="1750840261745" duration="64000" />
+      <workItem from="1750840328333" duration="150000" />
+      <workItem from="1750840482288" duration="145000" />
+      <workItem from="1750840630197" duration="87000" />
+      <workItem from="1750840719954" duration="109000" />
+      <workItem from="1750840831280" duration="203000" />
+      <workItem from="1750841037117" duration="194000" />
+      <workItem from="1750841235107" duration="38000" />
+      <workItem from="1750841276583" duration="82000" />
+      <workItem from="1750841361266" duration="45000" />
+      <workItem from="1750841408810" duration="137000" />
+      <workItem from="1750841548398" duration="208000" />
+      <workItem from="1750841760641" duration="107000" />
+      <workItem from="1750841870176" duration="29000" />
+      <workItem from="1750841901387" duration="40000" />
+      <workItem from="1750841943337" duration="33000" />
+      <workItem from="1750841979234" duration="31000" />
+      <workItem from="1750842012694" duration="47000" />
+      <workItem from="1750842061814" duration="114000" />
+      <workItem from="1750842178766" duration="54000" />
+      <workItem from="1750842234772" duration="37000" />
+      <workItem from="1750842274023" duration="123000" />
+      <workItem from="1750842399288" duration="38000" />
+      <workItem from="1750842440298" duration="67000" />
+      <workItem from="1750842510514" duration="27000" />
+      <workItem from="1750842539202" duration="253000" />
+      <workItem from="1750842795583" duration="104000" />
+      <workItem from="1750842903297" duration="251000" />
+      <workItem from="1750843166992" duration="479000" />
+      <workItem from="1750843688884" duration="190000" />
+      <workItem from="1750844402694" duration="258000" />
+      <workItem from="1750844664012" duration="72000" />
+      <workItem from="1750844739364" duration="82000" />
+      <workItem from="1750844914159" duration="39000" />
+      <workItem from="1750844955596" duration="159000" />
+      <workItem from="1750845117412" duration="19000" />
+      <workItem from="1750845283142" duration="60000" />
+      <workItem from="1750845345572" duration="626000" />
+      <workItem from="1750846378535" duration="35000" />
+      <workItem from="1750846497607" duration="35000" />
+      <workItem from="1750847206471" duration="65000" />
     </task>
     <servers />
   </component>

@@ -19,7 +19,7 @@
 <template>
   <fullscreen-cover :class="{ hidden: !showSiteSwitcher }">
     <site-picker>
-      <button @click="toggleSiteSwitcher()" style="border-radius: 2rem">
+      <button @click="toggleSiteSwitcher()" style="--buttonRadius: 2rem">
         <Icon icon="mingcute:close-fill" width="24" height="24" />
       </button>
     </site-picker>

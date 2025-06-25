@@ -34,7 +34,7 @@
     left: 0
     padding: 0.5rem
 
-    opacity: 0.2
+    opacity: 0
     border-radius: var(--card-radius)
     background: radial-gradient(circle at top left, colors.$swirly01, colors.$swirly02, colors.$swirly01)
     background-size: 200% 200%
@@ -43,7 +43,7 @@
     transition: opacity 0.4s ease
 
   .card:hover::before
-    opacity: 0.4
+    opacity: 0.2
     animation: swirly 10s ease-in-out infinite
 
   .card::after
@@ -54,15 +54,15 @@
     right: 0
     left: 0
 
-    border: 0.1rem solid colors.$textColor
-    box-shadow: inset 0 0.5rem 0.5rem colors.$textColor
+    border: 0.1rem solid colors.$shadowColor
+    box-shadow: inset 0 0.5rem 0.5rem colors.$shadowColor
     border-radius: var(--card-radius)
     opacity: 0.1
     pointer-events: none
     transition: opacity 0.4s ease
 
   .card:hover::after
-    opacity: 0.15
+    opacity: 0.2
 
   @media (max-width: 35rem)
     .card

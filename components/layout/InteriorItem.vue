@@ -27,24 +27,25 @@
     right: 0
     left: 0
 
-    border: 0.1rem solid colors.$textColor
-    box-shadow: 0 0.5rem 0.5rem colors.$textColor
+    border: 0.1rem solid colors.$shadowColor
+    box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
     border-radius: var(--interior-radius)
-    opacity: 0.05
+    opacity: 0.1
     pointer-events: none
-    transition: 0.1s ease
+    transition: 0.2s ease
 
   .interior:hover
     transform: translateY(-0.5rem)
 
   .interior:hover::after
-    box-shadow: 0 1rem 0.75rem colors.$textColor
+    box-shadow: 0 1rem 0.75rem colors.$shadowColor
+    opacity: 0.2
 
   .interior:active
     transform: translateY(-0.15rem)
 
   .interior:active::after
-    box-shadow: 0 0.35rem 0.55rem colors.$textColor
+    box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
 
   ::v-deep(svg)
     width: 3rem

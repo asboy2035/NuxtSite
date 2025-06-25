@@ -3,13 +3,23 @@
   import { ref } from 'vue'
 
   const isActive = ref(false)
+  const hideCursor = ref(false)
 
   function show() {
     isActive.value = true
+    hideCursorTemporarily()
   }
 
   function hide() {
     isActive.value = false
+  }
+
+  function hideCursorTemporarily() {
+    hideCursor.value = true
+
+    setTimeout(() => {
+      hideCursor.value = false
+    }, 3000)
   }
 
   defineExpose({ show, hide })
@@ -23,13 +33,15 @@
 
   <div
     class="transitionElement"
-    :class="{ active: isActive }"
+    :class="{ active: isActive, hideCursor: hideCursor }"
   >
     <Icon
       icon="svg-spinners:90-ring-with-bg"
       width="24" height="24"
       class="spinner"
     />
+
+    <p :class="{ hidden: hideCursor }">Trying to load...</p>
   </div>
 </template>
 
@@ -50,7 +62,6 @@
     backdrop-filter: blur(3rem)
     border-radius: 0
     z-index: 2
-    cursor: none
     transform: translateY(-100%)
     transition: 0.3s ease
 
@@ -92,6 +103,9 @@
 
     100%
       transform: translateY(-100%)
+
+  .hideCursor
+    cursor: none
 
   .spinner
     width: 4rem

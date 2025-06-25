@@ -1,6 +1,8 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "asboy2035-nuxt",
+  "description": "My site, now in Nuxt!",
+  "version": "4.0",
+  "private": false,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
