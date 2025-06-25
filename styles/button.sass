@@ -17,46 +17,49 @@ button
   padding: 0.5rem 0.75rem
   cursor: pointer
   transition: 0.2s ease-in-out
-  backdrop-filter: blur(2rem)
+  backdrop-filter: blur(2rem) saturate(150%)
 
-button::after
-  content: ""
-  position: absolute
-  top: 0
-  bottom: 0
-  right: 0
-  left: 0
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
 
-  border-radius: var(--buttonRadius)
-  border: 0.1rem solid colors.$shadowColor
-  box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
-  transition: 0.2s ease-in-out
-  opacity: 0.1
+    border-radius: var(--buttonRadius)
+    border: 0.1rem solid colors.$shadowColor
+    box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
+    transition: 0.2s ease-in-out
+    opacity: 0.1
 
-button:hover::after
-  box-shadow: 0 1rem 0.75rem colors.$shadowColor
-  opacity: 0.2
+  &:hover
+    &::after
+      box-shadow: 0 0 0.75rem colors.$shadowColor
+      opacity: 0.2
 
-button:active::after
-    box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
+    &:not(:disabled), .avatar:hover
+      scale: 1.1
 
-button:hover:not(:disabled), .avatar:hover
-  transform: translateY(-0.5rem)
+  &:active
+    scale: 1.05
 
-button:active, .avatar:active
-  transform: translateY(-0.15rem)
+    &::after
+      box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
 
-button:disabled
-  opacity: 0.7
-  cursor: not-allowed
+  &:disabled
+    opacity: 0.7
+    cursor: not-allowed
 
-button:has(svg)
-  padding: 0.75rem
+  &:has(svg)
+    padding: 0.75rem
 
-button
   svg
     width: 1.5rem
     height: 1.5rem
+
+.avatar:active
+  scale: 1.05
 
 button.transparent
   padding: 0
@@ -64,6 +67,6 @@ button.transparent
     width: 1rem
     height: 1rem
 
-button.transparent::after
-  border: none
-  box-shadow: none
+  &::after
+    border: none
+    box-shadow: none

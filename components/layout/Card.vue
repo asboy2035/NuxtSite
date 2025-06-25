@@ -18,7 +18,7 @@
 
     border-radius: var(--card-radius)
     background: colors.$foregroundColor
-    backdrop-filter: blur(1rem)
+    backdrop-filter: blur(2.5rem)
     z-index: 2
 
   ::v-deep(img)
@@ -34,7 +34,7 @@
     left: 0
     padding: 0.5rem
 
-    opacity: 0
+    opacity: 0.1
     border-radius: var(--card-radius)
     background: radial-gradient(circle at top left, colors.$swirly01, colors.$swirly02, colors.$swirly01)
     background-size: 200% 200%
@@ -43,7 +43,7 @@
     transition: opacity 0.4s ease
 
   .card:hover::before
-    opacity: 0.2
+    opacity: 0.25
     animation: swirly 10s ease-in-out infinite
 
   .card::after
@@ -57,12 +57,12 @@
     border: 0.1rem solid colors.$shadowColor
     box-shadow: inset 0 0.5rem 0.5rem colors.$shadowColor
     border-radius: var(--card-radius)
-    opacity: 0.1
+    opacity: 0.2
     pointer-events: none
     transition: opacity 0.4s ease
 
   .card:hover::after
-    opacity: 0.2
+    opacity: 0.3
 
   @media (max-width: 35rem)
     .card

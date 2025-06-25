@@ -6,6 +6,13 @@
       <progressive-blur class="progBlur" blur="48" border-radius="0" />
     </div>
   </transitionable>
+
+  <img
+    class="siteBackground"
+    src="@/visuals/PageBackground.svg"
+    alt="Background" aria-hidden="true"
+  >
+
   <transition-element ref="cover" />
 
   <banner-notification>
@@ -109,4 +116,16 @@ $blurTop: calc(100dvh - $blurHeight)
   height: $blurHeight
   z-index: 10
   margin-top: $blurTop
+
+.siteBackground
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  min-width: 100%
+  min-height: 100%
+  z-index: 0
+  pointer-events: none
+  opacity: 0.2
 </style>
