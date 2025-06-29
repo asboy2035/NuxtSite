@@ -51,8 +51,13 @@
   const creators: Item[] = [
     {
       name: "Character Card",
-      link: "/create/charcard",
+      link: "/creator/char-card",
       icon: "/images/icons/CharCard-Icon.jpg",
+    },
+    {
+      name: "CSV to JSON",
+      link: "/creator/csv-to-json",
+      icon: "/images/icons/CSV-Icon.jpg",
     }
   ]
 
