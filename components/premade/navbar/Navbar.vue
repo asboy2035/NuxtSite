@@ -34,7 +34,7 @@
     {
       name: "Astro",
       link: "https://ashtronomy.pages.dev/",
-      icon: "https://ashtronomy.pages.dev/images/Astronomy-Icon.png",
+      icon: "https://ashtronomy.pages.dev/Images/Astronomy-Icon.png",
     },
     {
       name: "Clocs",
@@ -44,7 +44,7 @@
     {
       name: "Vault",
       link: "/vault/",
-      icon: "https://byteforge-site-3-3.byteforge.pages.dev/images/Vault-Icon.jpeg",
+      icon: "https://byteforge-site-3-3.byteforge.pages.dev/Images/Vault-Icon.jpeg",
     },
   ]
 
