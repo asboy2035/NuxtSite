@@ -41,7 +41,7 @@
       class="spinner"
     />
 
-    <p :class="{ hidden: hideCursor }">Trying to load...</p>
+    <p :class="{ hidden: hideCursor }">Connecting...</p>
   </div>
 </template>
 
