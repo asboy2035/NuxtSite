@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add apple touch icon">
-      <change afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/creator/CreatorsCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/appsViews.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add toolbox">
+      <change afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +237,7 @@
       <workItem from="1751193966939" duration="84000" />
       <workItem from="1751194059084" duration="730000" />
       <workItem from="1751195310255" duration="1544000" />
-      <workItem from="1751205404587" duration="4228000" />
+      <workItem from="1751205404587" duration="5423000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -312,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751193285001</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add toolbox">
+      <option name="closed" value="true" />
+      <created>1751209932413</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751209932413</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +325,7 @@
     <MESSAGE value="link to quick launchers, improve fullscreen cover" />
     <MESSAGE value="add pwa" />
     <MESSAGE value="add apple touch icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add apple touch icon" />
+    <MESSAGE value="add toolbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="add toolbox" />
   </component>
 </project>

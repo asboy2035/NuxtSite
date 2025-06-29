@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import HStack from "~/components/layout/HStack.vue"
   import {Icon} from "@iconify/vue"
   import VStack from "~/components/layout/VStack.vue"
   import Card from "~/components/layout/Card.vue"
@@ -8,6 +7,7 @@
   import type {AppCategory} from "~/types/appsViews"
   import Divider from "~/components/utils/Divider.vue";
   import CreatorsCard from "~/components/creator/CreatorsCard.vue";
+  import NavigationTitle from "~/components/layout/NavigationTitle.vue";
 
   const appsData = ref<AppCategory[]>([])
 
@@ -25,10 +25,10 @@
 <template>
   <div class="contentView toolboxView">
     <v-stack id="headerLinks">
-      <h-stack>
-        <h1>Toolbox</h1>
-        <h1 class="light">asboy2035</h1>
-      </h-stack>
+      <NavigationTitle
+        title="Toolbox"
+        subtitle="asboy2035"
+      />
 
       <card>
         <card-title
@@ -57,6 +57,9 @@
 </template>
 
 <style scoped lang="sass">
+  #supportNotification
+    display: none !important
+
   #headerLinks
     width: 100%
     justify-content: flex-start

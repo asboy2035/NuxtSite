@@ -16,7 +16,7 @@
 
   <transition-element ref="cover" />
 
-  <banner-notification>
+  <banner-notification id="supportNotification">
     <h-stack>
       <v-stack>
         <h3 class="noMargins">Consider Supporting!</h3>
