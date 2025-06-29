@@ -16,6 +16,7 @@
     left: 0
     width: 100vw
     height: 100vh
+    height: 100dvh
     align-items: center
     justify-content: center
     z-index: 5

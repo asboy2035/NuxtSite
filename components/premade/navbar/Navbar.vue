@@ -81,10 +81,12 @@
     <fullscreen-cover v-if="showSwitcher">
       <v-stack>
         <card class="quickContainer">
-          <card-title
-            title="Apps"
-            icon="solar:widget-2-line-duotone"
-          />
+          <a href="/apps/">
+            <card-title
+              title="Apps"
+              icon="solar:widget-2-line-duotone"
+            />
+          </a>
 
           <h-stack class="tight">
             <interior-item v-for="app in apps" :key="app.name">
@@ -102,10 +104,12 @@
         </card>
 
         <card class="quickContainer">
-          <card-title
-            title="Create..."
-            icon="solar:pen-new-square-line-duotone"
-          />
+          <a href="/creator/">
+            <card-title
+              title="Create..."
+              icon="solar:pen-new-square-line-duotone"
+            />
+          </a>
 
           <h-stack class="tight">
             <interior-item v-for="creator in creators" :key="creator.name">
