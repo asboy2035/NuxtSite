@@ -22,6 +22,16 @@
       console.error("Error fetching apps:", error)
     }
   })
+
+  useHead({
+    title: "Toolbox ∙ asboy2035",
+    meta: [
+      { name: "description", content: "asboy2035 Toolbox app." },
+      { property: "og:title", content: "Toolbox ∙ asboy2035" },
+      { property: "og:description", content: "asboy2035 Toolbox app." },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" },
+    ]
+  })
 </script>
 
 <template>
