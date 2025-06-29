@@ -1,4 +1,5 @@
 <template>
+
   <transitionable ref="transitionable">
     <h1 class="hidden">Your CSS is disabled!</h1>
     <NuxtPage />

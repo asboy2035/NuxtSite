@@ -1,17 +1,12 @@
 <script setup lang="ts">
   import Hero from "@/components/utils/Hero.vue"
   import Spacer from "@/components/utils/Spacer.vue"
-  import VStack from "@/components/layout/VStack.vue"
   import Navbar from "@/components/premade/navbar/Navbar.vue"
-  import Grid from "@/components/layout/Grid.vue"
-  import Card from "@/components/layout/Card.vue"
   import {Icon} from "@iconify/vue"
-
+  import AppsCategoryList from "~/components/apps/AppsCategoryList.vue"
   import BottomFooter from "@/components/premade/BottomFooter.vue"
-  import AppLink from "@/components/apps/AppLink.vue"
-  import DynamicImage from "@/components/utils/DynamicImage.vue"
   import { ref, onMounted } from "vue"
-  import InteriorItem from "@/components/layout/InteriorItem.vue"
+  import type {AppCategory} from "~/types/appsViews"
 
   useHead({
     title: "ash's Apps",
@@ -22,21 +17,6 @@
       { property: "og:image", content: "/images/Apps.jpg"}
     ]
   })
-
-
-  interface App {
-    name: string
-    description: string
-    image: string
-    link: string
-    disabled?: boolean
-    github?: string
-  }
-
-  interface AppCategory {
-    name: string
-    apps: App[]
-  }
 
   const appsData = ref<AppCategory[]>([])
 
@@ -57,7 +37,6 @@
       <h1>Apps</h1>
       <h2>My web/Apple apps.</h2>
       <spacer />
-
       <a href="https://github.com/asboy2035?tab=repositories">
         <button>
           <Icon icon="mingcute:github-fill" width="24" height="24" />
@@ -66,38 +45,13 @@
       </a>
     </hero>
 
-    <v-stack id="appsContainer">
-      <card v-for="category in appsData" :key="category.name">
-        <h2>{{ category.name }}</h2>
-        <grid class="app-grid">
-          <interior-item v-for="app in category.apps" :key="app.name" class="app-card-v2">
-            <div class="app-image">
-              <dynamic-image class="app-image" :src="app.image" :alt="app.name + ' Logo'" />
-            </div>
-
-            <div class="app-details">
-              <h3>{{ app.name }}</h3>
-              <p class="light">{{ app.description }}</p>
-            </div>
-
-            <div class="app-downloads">
-              <app-link :to="app.link" :disabled="app.disabled ?? false" />
-              <a v-if="app.github" :href="app.github">
-                <button class="transparent">
-                  <Icon icon="mingcute:github-fill" width="24" height="24" />
-                </button>
-              </a>
-            </div>
-          </interior-item>
-        </grid>
-      </card>
-    </v-stack>
+    <AppsCategoryList :apps-data="appsData" />
 
     <p class="light">
       <a
-        href="https://guides.asboy2035.com/misc/web/pwaInstall"
-        target="_blank"
-        class="prominentLink"
+          href="https://guides.asboy2035.com/misc/web/pwaInstall"
+          target="_blank"
+          class="prominentLink"
       >
         PWA Installation
       </a>
