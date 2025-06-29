@@ -5,9 +5,11 @@
   import CardTitle from "~/components/utils/CardTitle.vue"
   import {onMounted, ref} from "vue";
   import type {AppCategory} from "~/types/appsViews"
-  import Divider from "~/components/utils/Divider.vue";
-  import CreatorsCard from "~/components/creator/CreatorsCard.vue";
-  import NavigationTitle from "~/components/layout/NavigationTitle.vue";
+  import Divider from "~/components/utils/Divider.vue"
+  import CreatorsCard from "~/components/creator/CreatorsCard.vue"
+  import NavigationTitle from "~/components/layout/NavigationTitle.vue"
+  import BottomFooter from "~/components/premade/BottomFooter.vue"
+  import HStack from "~/components/layout/HStack.vue";
 
   const appsData = ref<AppCategory[]>([])
 
@@ -36,12 +38,21 @@
           icon="solar:bolt-line-duotone"
         />
 
-        <a href="https://guides.asboy2035.com/">
-          <button>
-            <Icon icon="solar:book-line-duotone" />
-            Guides
-          </button>
-        </a>
+        <h-stack>
+          <a href="https://guides.asboy2035.com/">
+            <button>
+              <Icon icon="solar:book-line-duotone" />
+              Guides
+            </button>
+          </a>
+
+          <a href="https://github.com/asboy2035/asboy2035">
+            <button>
+              <Icon icon="mingcute:github-fill" />
+              GitHub
+            </button>
+          </a>
+        </h-stack>
       </card>
       <creators-card />
 
@@ -53,13 +64,12 @@
       />
       <apps-category-list :apps-data="appsData" />
     </v-stack>
+
+    <bottom-footer hide-read-more />
   </div>
 </template>
 
 <style scoped lang="sass">
-  #supportNotification
-    display: none !important
-
   #headerLinks
     width: 100%
     justify-content: flex-start

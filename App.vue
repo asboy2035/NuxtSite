@@ -16,22 +16,6 @@
 
   <transition-element ref="cover" />
 
-  <banner-notification id="supportNotification">
-    <h-stack>
-      <v-stack>
-        <h3 class="noMargins">Consider Supporting!</h3>
-        <p class="noMargins">Support me on Ko-fi to help development :)</p>
-      </v-stack>
-
-      <a href="https://ko-fi.com/asboy2035">
-        <button>
-          <Icon icon="cib:ko-fi" width="32" height="32" />
-          Ko-fi
-        </button>
-      </a>
-    </h-stack>
-  </banner-notification>
-
   <modal v-if="showDomainTip">
     <h1>You're on the old domain!</h1>
     <p>Access this site at asboy2035.com for a cleaner link!</p>
@@ -55,9 +39,6 @@ import Transitionable from '@/components/premade/Transitionable.vue'
 import Modal from '@/components/utils/Modal.vue'
 import Spacer from '@/components/utils/Spacer.vue'
 import HStack from '@/components/layout/HStack.vue'
-import BannerNotification from '@/components/utils/BannerNotification.vue'
-import VStack from '@/components/layout/VStack.vue'
-import { Icon } from '@iconify/vue'
 import { ProgressiveBlur } from 'vue-progressive-blur'
 
 const showDomainTip = ref(false)

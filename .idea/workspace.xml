@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add toolbox">
-      <change afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="improve toolbox w/ new header">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,7 +239,7 @@
       <workItem from="1751193966939" duration="84000" />
       <workItem from="1751194059084" duration="730000" />
       <workItem from="1751195310255" duration="1544000" />
-      <workItem from="1751205404587" duration="5423000" />
+      <workItem from="1751205404587" duration="6693000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -311,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751209932413</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="improve toolbox w/ new header">
+      <option name="closed" value="true" />
+      <created>1751211123173</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751211123173</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +336,7 @@
     <MESSAGE value="add pwa" />
     <MESSAGE value="add apple touch icon" />
     <MESSAGE value="add toolbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="add toolbox" />
+    <MESSAGE value="improve toolbox w/ new header" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve toolbox w/ new header" />
   </component>
 </project>
