@@ -4,15 +4,15 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
-      name: 'asboy2035 ∙ Portfolio',
-      short_name: 'ash ∙ Port',
-      description: 'My personal portfolio.',
+      name: 'Toolbox ∙ asboy2035',
+      short_name: 'Toolbox',
+      description: 'asboy2035 Toolbox app.',
       theme_color: '#9f75e8',
       start_url: '/toolbox',
       icons: [
         {
-          src: '/images/avatar.png',
-          sizes: '1820x1820',
+          src: '/images/icons/Toolbox.png',
+          sizes: '1024x1024',
           type: 'image/png',
         },
       ],
