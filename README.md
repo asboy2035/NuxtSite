@@ -1,3 +1,3 @@
-# asboy2035-Nuxt
+# NuxtSite
 
-(ALPHA) my site, now in Nuxt!
+[My site](https://asboy2035.com), now in Nuxt!
