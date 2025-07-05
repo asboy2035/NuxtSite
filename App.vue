@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useRouter } from '#app' // Nuxt's router import
+import {useHead, useRouter} from '#app' // Nuxt's router import
 import TransitionElement from '@/components/premade/TransitionElement.vue'
 import Transitionable from '@/components/premade/Transitionable.vue'
 import Modal from '@/components/utils/Modal.vue'
@@ -75,6 +75,11 @@ onMounted(() => {
 const cover = ref(null)
 const transitionable = ref(null)
 const router = useRouter()
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/png', href: '/images/avatar.png' },
+  ]
+})
 </script>
 
 <style scoped lang="sass">

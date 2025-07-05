@@ -3,7 +3,7 @@
   import VStack from "~/components/layout/VStack.vue"
   import Card from "~/components/layout/Card.vue"
   import CardTitle from "~/components/utils/CardTitle.vue"
-  import {onMounted, ref} from "vue";
+  import {onMounted, ref} from "vue"
   import type {AppCategory} from "~/types/appsViews"
   import Divider from "~/components/utils/Divider.vue"
   import CreatorsCard from "~/components/creator/CreatorsCard.vue"
