@@ -9,7 +9,7 @@
   import CreatorsCard from "~/components/creator/CreatorsCard.vue"
   import NavigationTitle from "~/components/layout/NavigationTitle.vue"
   import BottomFooter from "~/components/premade/BottomFooter.vue"
-  import HStack from "~/components/layout/HStack.vue";
+  import HStack from "~/components/layout/HStack.vue"
 
   const appsData = ref<AppCategory[]>([])
 
@@ -30,6 +30,9 @@
       { property: "og:title", content: "Toolbox ∙ asboy2035" },
       { property: "og:description", content: "asboy2035 Toolbox app." },
       { name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" },
+    ],
+    link: [
+      { rel: "icon", type: "image/png", href: "/images/icons/Toolbox.png" },
     ]
   })
 </script>
