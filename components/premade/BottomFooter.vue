@@ -24,7 +24,7 @@
 
         <p><a
           class="prominentLink"
-          href="https://github.com/asboy2035/asboy2035"
+          href="https://github.com/asboy2035/NuxtSite"
         >
           Code on GitHub.
         </a></p>

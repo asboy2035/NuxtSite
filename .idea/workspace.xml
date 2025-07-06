@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update toolbox">
-      <change afterPath="$PROJECT_DIR$/public/images/France.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="code improvements, new location image">
+      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Divider.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +250,7 @@
       <workItem from="1751358443637" duration="774000" />
       <workItem from="1751365457314" duration="2000" />
       <workItem from="1751704059257" duration="1270000" />
-      <workItem from="1751711885670" duration="3041000" />
+      <workItem from="1751711885670" duration="3343000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -384,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751704555021</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="code improvements, new location image">
+      <option name="closed" value="true" />
+      <created>1751793805782</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1751793805782</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +410,8 @@
     <MESSAGE value="remove apple touch icon" />
     <MESSAGE value="new page backrground" />
     <MESSAGE value="update toolbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="update toolbox" />
+    <MESSAGE value="code improvements, new location image" />
+    <option name="LAST_COMMIT_MESSAGE" value="code improvements, new location image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
