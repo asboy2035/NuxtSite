@@ -50,9 +50,6 @@
     margin: 1rem 5%
     opacity: 0.2
 
-  .footerDivider
-    width: calc(100% - 4rem)
-
   #readMore
     justify-content: flex-start
     align-items: flex-start
