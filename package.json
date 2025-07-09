@@ -1,7 +1,7 @@
 {
   "name": "asboy2035-nuxt",
   "description": "My site, now in Nuxt!",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "private": false,
   "type": "module",
   "scripts": {
