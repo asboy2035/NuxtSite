@@ -80,10 +80,7 @@
 
     background: colors.$foregroundColor
     border-radius: 1rem
-
-  .app-card-v2 ::v-deep(svg)
-    width: 1.25rem
-    height: 1.25rem
+    cursor: pointer
 
   .app-image
     width: 3rem

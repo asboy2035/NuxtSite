@@ -62,18 +62,32 @@
 
 .app-card-v2
   flex-direction: row
-  gap: 0.75rem
-  padding: 0.5rem 0.75rem
+  gap: 0.25rem
+  padding: 0.5rem 0.65rem
   align-items: center
   background: colors.$foregroundColor
 
-.app-card-v2 ::v-deep(svg)
-  width: 1.25rem
-  height: 1.25rem
+  ::v-deep(svg)
+    width: 1.25rem
+    height: 1.25rem
 
 .app-image
+  position: relative
+  border-radius: 1rem
   width: 3rem
   height: 3rem
+
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    border-radius: 1rem
+    border: 0.1rem colors.$shadowColor solid
+    mask: conic-gradient(from 45deg, black, transparent, black, transparent, black)
+    opacity: 0.4
 
 .app-details
   display: flex
@@ -85,6 +99,9 @@
   text-wrap: nowrap
   border-radius: 0.5rem
 
+  p, h3
+    margin: 0.1rem 0.25rem
+
 .app-downloads
   display: flex
   flex-direction: row
@@ -92,6 +109,6 @@
   align-items: center
   justify-content: center
 
-.app-downloads svg
-  height: 1.25rem
+  svg
+    height: 1.25rem
 </style>

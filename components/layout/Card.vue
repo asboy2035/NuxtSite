@@ -47,12 +47,12 @@
       right: 0
       left: 0
 
-      border: 0.1rem solid colors.$shadowColor
-      box-shadow: inset 0 0.5rem 0.5rem colors.$shadowColor
+      border: 0.15rem solid colors.$shadowColor
       border-radius: var(--card-radius)
-      opacity: 0.2
+      opacity: 0.4
       pointer-events: none
       transition: opacity 0.4s ease
+      mask: conic-gradient(from 45deg, black, rgba(0, 0, 0, 0.2), black, rgba(0, 0, 0, 0.2), black)
 
     &:hover
       &::before
@@ -60,7 +60,7 @@
         animation: swirly 10s ease-in-out infinite
 
       &::after
-        opacity: 0.3
+        opacity: 0.6
 
 
     ::v-deep(img)
@@ -75,3 +75,5 @@
       width: calc(100% - 2rem)
       padding: 1rem
 </style>
+<script setup lang="ts">
+</script>

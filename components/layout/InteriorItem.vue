@@ -7,8 +7,9 @@
 <style scoped lang="sass">
   @use "@/styles/colors"
 
-  a > .interior
-    width: 100%
+  a
+    .interior
+      width: 100%
 
   .interior
     position: relative
@@ -20,33 +21,50 @@
     transition: 0.2s ease
     backdrop-filter: saturate(150%)
 
-  .interior::after
-    content: ""
-    position: absolute
-    top: 0
-    bottom: 0
-    right: 0
-    left: 0
+    &::after // Border
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
 
-    border: 0.1rem solid colors.$shadowColor
-    box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
-    border-radius: var(--interior-radius)
-    opacity: 0.1
-    pointer-events: none
-    transition: 0.2s ease
+      border: 0.1rem solid colors.$shadowColor
+      border-radius: var(--interior-radius)
+      opacity: 0.3
+      pointer-events: none
+      transition: 0.2s ease
+      mask: conic-gradient(from 45deg, black, rgba(0, 0, 0, 0.2), black, rgba(0, 0, 0, 0.2), black)
 
-  .interior:hover
-    transform: translateY(-0.5rem)
+    &::before // Shadow
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
 
-  .interior:hover::after
-    box-shadow: 0 1rem 0.75rem colors.$shadowColor
-    opacity: 0.2
+      box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
+      border-radius: var(--interior-radius)
+      opacity: 0.15
+      pointer-events: none
+      transition: 0.2s ease
 
-  .interior:active
-    transform: translateY(-0.15rem)
+    &:hover
+      transform: translateY(-0.5rem)
 
-  .interior:active::after
-    box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
+      &::before
+        box-shadow: 0 1rem 0.75rem colors.$shadowColor
+        opacity: 0.2
+
+      &::after
+        opacity: 0.5
+
+    &:active
+      transform: translateY(-0.15rem)
+
+      &::before
+        box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
 
   ::v-deep(svg)
     width: 3rem
