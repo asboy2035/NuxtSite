@@ -49,9 +49,9 @@
 
     <p class="light">
       <a
-          href="https://guides.asboy2035.com/misc/web/pwaInstall"
-          target="_blank"
-          class="prominentLink"
+        href="https://guides.asboy2035.com/misc/web/pwaInstall"
+        target="_blank"
+        class="prominentLink"
       >
         PWA Installation
       </a>
@@ -68,11 +68,11 @@
   #appsContainer
     width: 100%
 
-  .app-grid
+  .appGrid
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
     gap: 0.5rem
 
-  .app-card-v2
+  .appCard
     flex-direction: row
     gap: 0.75rem
     padding: 0.5rem 0.75rem
@@ -82,11 +82,11 @@
     border-radius: 1rem
     cursor: pointer
 
-  .app-image
+  .appIcon
     width: 3rem
     height: 3rem
 
-  .app-details
+  .appDetails
     display: flex
     flex-direction: column
     justify-content: center
@@ -97,13 +97,13 @@
 
     border-radius: 0.5rem
 
-  .app-downloads
+  .appDownloads
     display: flex
     flex-direction: row
     gap: 0.5rem
     align-items: center
     justify-content: center
 
-  .app-downloads svg
+  .appDownloads svg
     height: 1.25rem
 </style>

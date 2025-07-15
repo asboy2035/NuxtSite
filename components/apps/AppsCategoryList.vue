@@ -17,26 +17,26 @@
   <v-stack id="appsContainer">
     <card v-for="category in appsData" :key="category.name">
       <h2>{{ category.name }}</h2>
-      <grid class="app-grid">
+      <grid class="appGrid">
         <interior-item
             v-for="app in category.apps"
             :key="app.name"
-            class="app-card-v2"
+            class="appCard"
         >
-          <div class="app-image">
+          <div class="appIcon">
             <dynamic-image
-                class="app-image"
+                class="appIcon"
                 :src="app.image"
                 :alt="app.name + ' Logo'"
             />
           </div>
 
-          <div class="app-details">
+          <div class="appDetails">
             <h3>{{ app.name }}</h3>
             <p class="light">{{ app.description }}</p>
           </div>
 
-          <div class="app-downloads">
+          <div class="appDownloads">
             <app-link :to="app.link" :disabled="app.disabled ?? false" />
             <a v-if="app.github" :href="app.github">
               <button class="transparent">
@@ -56,11 +56,11 @@
 #appsContainer
   width: 100%
 
-.app-grid
+.appGrid
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
   gap: 0.5rem
 
-.app-card-v2
+.appCard
   flex-direction: row
   gap: 0.25rem
   padding: 0.5rem 0.65rem
@@ -71,7 +71,7 @@
     width: 1.25rem
     height: 1.25rem
 
-.app-image
+.appIcon
   position: relative
   border-radius: 1rem
   width: 3rem
@@ -89,7 +89,7 @@
     mask: conic-gradient(from 45deg, black, transparent, black, transparent, black)
     opacity: 0.4
 
-.app-details
+.appDetails
   display: flex
   flex-direction: column
   justify-content: center
@@ -102,13 +102,10 @@
   p, h3
     margin: 0.1rem 0.25rem
 
-.app-downloads
+.appDownloads
   display: flex
   flex-direction: row
   gap: 0.5rem
   align-items: center
   justify-content: center
-
-  svg
-    height: 1.25rem
 </style>

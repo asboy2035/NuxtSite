@@ -75,7 +75,7 @@
 </script>
 
 <template>
-  <v-stack class="navBar">
+  <v-stack class="navBarContainer">
     <slot />
 
     <fullscreen-cover v-if="showSwitcher">
@@ -128,9 +128,9 @@
       </v-stack>
     </fullscreen-cover>
 
-    <header id="mobileNav" :class="{ hidden: !showMobileNav }">
+    <interior-item id="mobileNav" :class="{ hidden: !showMobileNav }" class="navBar">
       <navigation-links />
-    </header>
+    </interior-item>
 
     <site-picker
       id="siteSwitcher"
@@ -160,7 +160,7 @@
         />
       </button>
 
-      <header :class="{ desktopLinks: hideProfile }">
+      <interior-item :class="{ desktopLinks: hideProfile }" class="navBar">
         <h-stack v-if="hideProfile !== true" class="profile transparent">
           <navigation-button link="/" id="homeButtonContainer" text="Home">
             <dynamic-image
@@ -193,7 +193,7 @@
         </h-stack>
 
         <navigation-links class="desktopLinks" />
-      </header>
+      </interior-item>
 
       <button id="mobileButton" @click="toggleNavigation">
         <Icon
@@ -214,7 +214,7 @@
 <style scoped lang="sass">
   @use "@/styles/colors"
 
-  .navBar
+  .navBarContainer
     position: sticky
     flex-wrap: wrap
     bottom: 1rem
@@ -222,32 +222,13 @@
     z-index: 19
     align-items: center
 
-  header
-    display: flex
-    justify-content: space-between
-    align-items: center
-    gap: 0.75rem
-    background: colors.$foregroundColor
-    box-shadow: 0.5rem 0.5rem 3rem rgba(28, 28, 28, 0.2)
-    padding: 0.5rem
-    border-radius: 1.75rem
+  .navBar
+    --interior-radius: 2rem
+    flex-direction: row
     z-index: 20
-    backdrop-filter: blur(2rem)
-    transition: width 0.2s ease
 
-  header::after
-    content: ""
-    position: absolute
-    top: 0
-    bottom: 0
-    right: 0
-    left: 0
-
-    border: 0.1rem solid colors.$textColor
-    opacity: 0.1
-    z-index: 21
-    border-radius: 1.75rem
-    pointer-events: none
+    &:hover
+      transform: none
 
   .profile h1
     margin: 0
@@ -332,11 +313,18 @@
     .name
       display: none
 
+  @media (min-width: 35rem)
+    #mobileNav
+      display: none !important
+
   #siteSwitcherButton
     cursor: pointer
 
-  #siteSwitcherButton > svg
-    transition: transform 0.2s ease
+  #siteSwitcherButton
+    svg
+      transition: transform 0.2s ease
+      width: 1.5rem
+      height: auto
 
   #siteSwitcherButton.active > svg
     transform: rotate(-90deg)

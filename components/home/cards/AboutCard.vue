@@ -7,11 +7,11 @@
 </script>
 
 <template>
-  <card>
-    <v-stack class="edgeToEdge">
+  <card class="autoSpace">
+    <v-stack>
       <description />
       <spacer />
-      <nav-buttons />
     </v-stack>
+    <nav-buttons />
   </card>
 </template>

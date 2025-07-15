@@ -1,10 +1,12 @@
 <template>
-
   <transitionable ref="transitionable">
     <h1 class="hidden">Your CSS is disabled!</h1>
-    <NuxtPage />
+
+    <div id="app">
+    </div>
+    <NuxtPage/>
     <div class="progBlurContainer">
-      <progressive-blur class="progBlur" blur="48" border-radius="0" />
+      <progressive-blur class="progBlur" blur="48" border-radius="0"/>
     </div>
   </transitionable>
 
@@ -12,9 +14,9 @@
     class="siteBackground"
     src="@/visuals/PageBackground.svg"
     alt="Background" aria-hidden="true"
-  >
+  />
 
-  <transition-element ref="cover" />
+  <transition-element ref="cover"/>
 
   <modal v-if="showDomainTip">
     <h1>You're on the old domain!</h1>
@@ -25,21 +27,21 @@
       <button @click="showDomainTip = false">Later</button>
 
       <a :href="redirectLink">
-        <button>Take me there!</button>
+        <button>Let's go!</button>
       </a>
     </h-stack>
   </modal>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import {useHead, useRouter} from '#app' // Nuxt's router import
+import {ref, onMounted} from 'vue'
+import {useHead, useRouter} from '#app'
 import TransitionElement from '@/components/premade/TransitionElement.vue'
 import Transitionable from '@/components/premade/Transitionable.vue'
 import Modal from '@/components/utils/Modal.vue'
 import Spacer from '@/components/utils/Spacer.vue'
-import HStack from '@/components/layout/HStack.vue'
-import { ProgressiveBlur } from 'vue-progressive-blur'
+import {ProgressiveBlur} from 'vue-progressive-blur'
+import HStack from "~/components/layout/HStack.vue"
 
 const showDomainTip = ref(false)
 const redirectLink = ref('') // make it reactive
@@ -77,42 +79,49 @@ const transitionable = ref(null)
 const router = useRouter()
 useHead({
   link: [
-    { rel: 'icon', type: 'image/png', href: '/images/avatar.png' },
+    {rel: 'icon', type: 'image/png', href: '/images/avatar.png'},
   ]
 })
 </script>
 
 <style scoped lang="sass">
-$blurHeight: 7rem
-$blurTop: calc(100vh - $blurHeight)
-$blurTop: calc(100dvh - $blurHeight)
+  $blurHeight: 7rem
+  $blurTop: calc(100vh - $blurHeight)
+  $blurTop: calc(100dvh - $blurHeight)
 
-.progBlurContainer
-  position: fixed
-  top: 0
-  bottom: 0 !important
-  left: 0
-  right: 0
-  z-index: 9
-  pointer-events: none
+  .progBlurContainer
+    position: fixed
+    top: 0
+    bottom: 0 !important
+    left: 0
+    right: 0
+    z-index: 9
+    pointer-events: none
 
-.progBlur
-  left: 0
-  right: 0
-  bottom: 0
-  height: $blurHeight
-  z-index: 10
-  margin-top: $blurTop
+  .progBlur
+    left: 0
+    right: 0
+    bottom: 0
+    height: $blurHeight
+    z-index: 10
+    margin-top: $blurTop
 
-.siteBackground
-  position: fixed
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
+  .siteBackground
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 
-  min-width: 100%
-  min-height: 100%
-  z-index: 0
-  pointer-events: none
-  opacity: 0.2
+    min-width: 100%
+    min-height: 100%
+    z-index: 0
+    pointer-events: none
+    opacity: 0.2
+
+  #tsparticles
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
 </style>

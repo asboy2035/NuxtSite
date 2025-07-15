@@ -16,6 +16,7 @@
   "dependencies": {
     "@iconify/vue": "^5.0.0",
     "@vite-pwa/nuxt": "^1.0.4",
+    "cobe": "^0.6.4",
     "html2canvas": "^1.4.1",
     "marked": "^15.0.12",
     "nuxt": "^3.17.5",

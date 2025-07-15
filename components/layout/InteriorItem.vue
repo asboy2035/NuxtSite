@@ -19,7 +19,7 @@
     border-radius: var(--interior-radius)
     padding: 0.75rem
     transition: 0.2s ease
-    backdrop-filter: saturate(150%)
+    backdrop-filter: saturate(150%) blur(1rem)
 
     &::after // Border
       content: ""
@@ -30,11 +30,12 @@
       left: 0
 
       border: 0.1rem solid colors.$shadowColor
+      box-shadow: inset 0 0 0.5rem colors.$shadowColor
       border-radius: var(--interior-radius)
       opacity: 0.3
       pointer-events: none
       transition: 0.2s ease
-      mask: conic-gradient(from 45deg, black, rgba(0, 0, 0, 0.2), black, rgba(0, 0, 0, 0.2), black)
+      mask: conic-gradient(from -45deg, black, rgba(0, 0, 0, 0.2), black, rgba(0, 0, 0, 0.2), black)
 
     &::before // Shadow
       content: ""
