@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update more links card">
-      <change afterPath="$PROJECT_DIR$/styles/nuxtPages.sass" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="imfp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/utils/Divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Divider.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +78,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA Ultimate.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -342,6 +329,11 @@
       <workItem from="1752667178806" duration="31000" />
       <workItem from="1752667211823" duration="206000" />
       <workItem from="1752667421288" duration="58000" />
+      <workItem from="1752667481585" duration="1320000" />
+      <workItem from="1752683072443" duration="203000" />
+      <workItem from="1752683279740" duration="33000" />
+      <workItem from="1752683315042" duration="65000" />
+      <workItem from="1752683385814" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -519,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752608706882</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset">
+      <option name="closed" value="true" />
+      <created>1752667525663</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1752667525663</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +558,8 @@
     <MESSAGE value="bump version" />
     <MESSAGE value="update interface" />
     <MESSAGE value="update more links card" />
-    <option name="LAST_COMMIT_MESSAGE" value="update more links card" />
+    <MESSAGE value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

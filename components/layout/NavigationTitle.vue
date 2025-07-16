@@ -41,8 +41,10 @@ onMounted(() => {
 
     <div class="nav-title-wrapper" :class="{ stuck: isStuck }">
       <h-stack>
-        <h1>{{ title }}</h1>
-        <h1 class="light" v-if="subtitle">{{ subtitle }}</h1>
+        <h1 v-if="!isStuck">{{ title }}</h1>
+        <h3 v-else-if="isStuck">{{ title }}</h3>
+
+        <h1 class="light" v-if="subtitle && !isStuck">{{ subtitle }}</h1>
       </h-stack>
 
       <slot />
@@ -63,7 +65,6 @@ onMounted(() => {
 .nav-title-wrapper
   display: flex
   justify-content: flex-start
-  align-items: flex-start
   position: relative
   z-index: 100
   backdrop-filter: blur(2rem)
@@ -72,12 +73,13 @@ onMounted(() => {
 
 .stuck
   position: fixed
+  justify-content: center
   top: 0
   left: 0
   right: 0
   width: 100%
   max-width: calc(100vw - 2rem)
-  padding: 1rem
+  padding: 0.75rem
   background: linear-gradient(to top, colors.$foregroundColor, colors.$backgroundColor)
 
 .stuck::after
