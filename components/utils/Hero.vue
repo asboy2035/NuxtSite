@@ -31,6 +31,7 @@
     height: fit-content
     min-height: 75vh
     max-height: 100vh
+    overflow: hidden
 
     .heroResizableImage
       position: absolute

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="imfp">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="improve divider, navigationtitle, fix mobile padding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Divider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -334,6 +337,39 @@
       <workItem from="1752683279740" duration="33000" />
       <workItem from="1752683315042" duration="65000" />
       <workItem from="1752683385814" duration="10000" />
+      <workItem from="1752683397799" duration="616000" />
+      <workItem from="1752684020503" duration="64000" />
+      <workItem from="1752684087222" duration="59000" />
+      <workItem from="1752684150440" duration="195000" />
+      <workItem from="1752684349541" duration="187000" />
+      <workItem from="1752684539913" duration="152000" />
+      <workItem from="1752684696324" duration="81000" />
+      <workItem from="1752684780626" duration="61000" />
+      <workItem from="1752684844392" duration="96000" />
+      <workItem from="1752684942129" duration="94000" />
+      <workItem from="1752685039309" duration="106000" />
+      <workItem from="1752685149439" duration="114000" />
+      <workItem from="1752685266947" duration="104000" />
+      <workItem from="1752685374252" duration="143000" />
+      <workItem from="1752685523094" duration="56000" />
+      <workItem from="1752685581664" duration="28000" />
+      <workItem from="1752685611600" duration="19000" />
+      <workItem from="1752685632056" duration="171000" />
+      <workItem from="1752685805501" duration="130000" />
+      <workItem from="1752685938709" duration="38000" />
+      <workItem from="1752685979354" duration="58000" />
+      <workItem from="1752686039424" duration="209000" />
+      <workItem from="1752686251058" duration="342000" />
+      <workItem from="1752686596738" duration="46000" />
+      <workItem from="1752686644970" duration="107000" />
+      <workItem from="1752686753869" duration="127000" />
+      <workItem from="1752686882953" duration="109000" />
+      <workItem from="1752686994299" duration="142000" />
+      <workItem from="1752695087402" duration="92000" />
+      <workItem from="1752695182247" duration="91000" />
+      <workItem from="1752695275394" duration="77000" />
+      <workItem from="1752695355370" duration="18000" />
+      <workItem from="1752695376372" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -519,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752667525663</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="improve divider, navigationtitle, fix mobile padding">
+      <option name="closed" value="true" />
+      <created>1752683423137</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1752683423137</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +603,8 @@
     <MESSAGE value="update interface" />
     <MESSAGE value="update more links card" />
     <MESSAGE value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
+    <MESSAGE value="improve divider, navigationtitle, fix mobile padding" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve divider, navigationtitle, fix mobile padding" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

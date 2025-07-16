@@ -27,7 +27,7 @@
     transition: 0.2s ease
     backdrop-filter: saturate(150%) blur(1rem)
 
-    &::after // Border
+    &::after // Specular Highlight
       content: ""
       position: absolute
       top: 0
@@ -75,6 +75,6 @@
 
   @media (max-width: 35rem)
     .interior
-      --interior-radius: 1rem
-      padding: 0.75rem
+      --interior-radius: 1.25rem
+      padding: 0.5rem
 </style>

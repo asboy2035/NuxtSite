@@ -89,17 +89,22 @@
           </router-link>
 
           <h-stack class="tight">
-            <interior-item v-for="app in apps" :key="app.name">
-              <a :href="app.link" target="_blank">
-                <dynamic-image
-                  class="launcherImage"
-                  :src="app.icon"
-                  :alt="app.name + ' icon'"
-                  radius="0.35rem"
-                />
-                <p>{{ app.name }}</p>
-              </a>
-            </interior-item>
+            <a
+              v-for="app in apps" :key="app.name"
+              :href="app.link" target="_blank"
+            >
+              <interior-item>
+                <h-stack>
+                  <dynamic-image
+                    class="launcherImage"
+                    :src="app.icon"
+                    :alt="app.name + ' icon'"
+                    radius="0.35rem"
+                  />
+                  <p>{{ app.name }}</p>
+                </h-stack>
+              </interior-item>
+            </a>
           </h-stack>
         </card>
 
@@ -112,17 +117,22 @@
           </router-link>
 
           <h-stack class="tight">
-            <interior-item v-for="creator in creators" :key="creator.name">
-              <a :href="creator.link">
-                <dynamic-image
-                  class="launcherImage"
-                  :src="creator.icon"
-                  :alt="creator.name + ' icon'"
-                  radius="0.35rem"
-                />
-                <p>{{ creator.name }}</p>
-              </a>
-            </interior-item>
+            <a
+              v-for="creator in creators" :key="creator.name"
+              :href="creator.link" target="_blank"
+            >
+              <interior-item>
+                <h-stack>
+                  <dynamic-image
+                    class="launcherImage"
+                    :src="creator.icon"
+                    :alt="creator.name + ' icon'"
+                    radius="0.35rem"
+                  />
+                  <p>{{ creator.name }}</p>
+                </h-stack>
+              </interior-item>
+            </a>
           </h-stack>
         </card>
       </v-stack>
@@ -301,6 +311,9 @@
       transform: none
 
   @media (max-width: 35rem)
+    .navBar
+      --interior-radius: 1.75rem
+
     #mobileButton
       --buttonRadius: 2rem
       display: flex
