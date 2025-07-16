@@ -28,8 +28,9 @@
   .hero
     justify-content: flex-end
     z-index: 2
-    min-height: 50vh
-    max-height: 75vh
+    height: fit-content
+    min-height: 75vh
+    max-height: 100vh
 
     .heroResizableImage
       position: absolute
@@ -46,9 +47,6 @@
     z-index: 5
     align-items: flex-start
     width: calc(100% - 1.5rem)
-
-    &:hover
-      transform: none
 
   ::v-deep(h1)
     font-family: fonts.$prominent

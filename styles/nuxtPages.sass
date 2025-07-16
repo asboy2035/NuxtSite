@@ -1,0 +1,29 @@
+@use "fonts"
+
+// Colors
+$color01: #C99806
+$color02: #C3508B
+$color03: #951DF0
+
+
+// Content container
+div.antialiased.bg-white
+  background: transparent !important
+
+// Bottom glow
+div.spotlight
+  background: linear-gradient(45deg, $color01, $color02 50%, $color03) !important
+
+// "404"
+h1.font-medium
+  margin-bottom: 0.75rem !important
+  font-family: fonts.$prominent
+
+// "Page not found: <page>"
+p.font-light, a.gradient-border
+  font-family: fonts.$global
+
+// Button border
+.gradient-border:before
+  background: linear-gradient(90deg, $color01, $color01 25%, $color02 50%, $color03 75%, #0047e1) !important
+  border-radius: 1rem !important

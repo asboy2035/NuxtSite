@@ -73,26 +73,28 @@
     top: 0
     left: 0
     right: 0
-    height: 0.25rem
+    height: 0.1rem
     z-index: 7
 
     transform: translateX(-100%)
     background: colors.$accentColor
 
-  .progressBar.active
-    animation: progressActive 1s ease
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      padding: 0.1rem
+      z-index: 6
 
-  .progressBar::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
+      background: colors.$swirly02
+      filter: blur(0.25rem)
+      opacity: 0.6
 
-    background: colors.$accentColor
-    filter: blur(0.5rem)
-    opacity: 0.6
+    &.active
+      animation: progressActive 1s ease
 
   @keyframes progressActive
     0%

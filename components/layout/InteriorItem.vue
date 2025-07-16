@@ -11,6 +11,12 @@
     .interior
       width: 100%
 
+      &:hover
+        transform: translateY(-0.5rem)
+
+      &:active
+        transform: translateY(-0.15rem)
+
   .interior
     position: relative
     --interior-radius: 1.25rem
@@ -32,7 +38,7 @@
       border: 0.1rem solid colors.$shadowColor
       box-shadow: inset 0 0 0.5rem colors.$shadowColor
       border-radius: var(--interior-radius)
-      opacity: 0.3
+      opacity: 0.4
       pointer-events: none
       transition: 0.2s ease
       mask: conic-gradient(from -45deg, black, rgba(0, 0, 0, 0.2), black, rgba(0, 0, 0, 0.2), black)
@@ -52,18 +58,14 @@
       transition: 0.2s ease
 
     &:hover
-      transform: translateY(-0.5rem)
-
       &::before
         box-shadow: 0 1rem 0.75rem colors.$shadowColor
         opacity: 0.2
 
       &::after
-        opacity: 0.5
+        opacity: 0.7
 
     &:active
-      transform: translateY(-0.15rem)
-
       &::before
         box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
 

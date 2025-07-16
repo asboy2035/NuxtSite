@@ -221,14 +221,12 @@
     max-width: calc(100vw - 2rem)
     z-index: 19
     align-items: center
+    margin-top: auto
 
   .navBar
     --interior-radius: 2rem
     flex-direction: row
     z-index: 20
-
-    &:hover
-      transform: none
 
   .profile h1
     margin: 0

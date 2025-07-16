@@ -1,14 +1,13 @@
+$contentPadding: 3rem 1rem 0
+
 .contentView
   display: flex
   flex-direction: column
   width: calc(100vw - 2rem)
   max-width: 55rem
   min-height: 100vh
-  padding: 3rem 1rem
+  padding: $contentPadding
   gap: 0.5rem
-
-.navigationView > .contentView
-  padding: 0 !important
 
 .navigationView
   display: flex
@@ -18,13 +17,17 @@
   justify-content: center
   width: calc(100vw - 2rem)
   max-width: 80rem
-  padding: 3rem 1rem
+  padding: $contentPadding
   gap: 1rem
 
+  .contentView
+    padding: 0 !important
+
 @media (max-width: 35rem)
+  $contentPadding: 0.5rem
+
   .contentView, .navigationView
     width: calc(100vw - 1rem)
-    padding: 0.5rem
 
 
 // Conditionals

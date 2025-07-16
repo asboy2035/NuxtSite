@@ -16,6 +16,7 @@
     <p>I speak English, French, and a bit of Spanish :)</p>
     <spacer />
 
+    <h3>Programming Languages:</h3>
     <grid class="tight spaced">
       <icon-item
         name="Vue/Nuxt"

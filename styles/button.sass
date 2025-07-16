@@ -19,7 +19,7 @@ button
   transition: 0.2s ease-in-out
   backdrop-filter: blur(2rem) saturate(150%)
 
-  &::after
+  &:not(.transparent)::after
     content: ""
     position: absolute
     top: 0
@@ -33,19 +33,12 @@ button
     transition: 0.2s ease-in-out
     opacity: 0.1
 
-  &:hover
-    &::after
-      box-shadow: 0 0 0.75rem colors.$shadowColor
-      opacity: 0.2
+  &:hover::after
+    box-shadow: 0 0 0.75rem colors.$shadowColor
+    opacity: 0.3
 
-    &:not(:disabled), .avatar:hover
-      scale: 1.1
-
-  &:active
-    scale: 1.05
-
-    &::after
-      box-shadow: 0 0.35rem 0.55rem colors.$shadowColor
+  &:active::after
+    box-shadow: 0 0 0.5rem colors.$shadowColor
 
   &:disabled
     opacity: 0.7
@@ -66,15 +59,17 @@ button
     height: 2rem
     border-radius: 0.75rem
 
+  &.transparent
+    padding: 0
 
+    svg
+      width: 1rem !important
+      height: 1rem !important
+
+
+// Avatar
 .avatar:active
   scale: 1.05
-
-.transparent
-  padding: 0
-  svg
-    width: 1rem
-    height: 1rem
 
   &::after
     border: none

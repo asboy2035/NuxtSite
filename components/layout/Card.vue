@@ -35,12 +35,13 @@
       box-shadow: inset 0 0 0.75rem colors.$shadowColor
       opacity: 0.5
       pointer-events: none
-      transition: opacity 0.4s ease
+      transition: opacity 0.2s ease
       mask: conic-gradient(from -45deg, black, rgba(0, 0, 0, 0.1), black, rgba(0, 0, 0, 0.1), black)
+      z-index: 3
 
     &:hover
       &::after
-        opacity: 0.7
+        opacity: 0.8
 
 
     ::v-deep(img)
@@ -55,5 +56,3 @@
       width: calc(100% - 2rem)
       padding: 1rem
 </style>
-<script setup lang="ts">
-</script>

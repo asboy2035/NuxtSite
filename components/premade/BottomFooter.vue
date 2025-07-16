@@ -48,7 +48,7 @@
     width: 90%
     height: auto
     margin: 1rem 5%
-    opacity: 0.2
+    mask: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4))
 
   #readMore
     justify-content: flex-start

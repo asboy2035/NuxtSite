@@ -30,7 +30,7 @@
       diffuse: 1.4,
       mapSamples: 20000,
       mapBrightness: 6,
-      baseColor: [0.32, 0.14, 0.93],
+      baseColor: isDarkMode.value == 1 ? [0.32, 0.14, 0.93] : [0.42, 0.33, 0.7], // Dark : Light colors
       markerColor: [0.63, 0.49, 0.02],
       glowColor: [0.49, 0.43, 0.73],
       markers: [
@@ -104,9 +104,16 @@
       icon="solar:point-on-map-line-duotone"
     />
 
-    <interior-item class="locationGlobe">
-      <canvas ref="canvasRef" id="globe" />
-    </interior-item>
+    <!--Cobe Globe-->
+    <a
+      href="https://maps.apple/p/2Nchy-VM_P~kg_"
+      target="_blank" rel="noopener noreferrer"
+      class="fullWidth"
+    >
+      <interior-item class="locationGlobe">
+        <canvas ref="canvasRef" id="globe" />
+      </interior-item>
+    </a>
   </card>
 </template>
 

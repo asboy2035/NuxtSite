@@ -11,5 +11,5 @@
     height: 0.2rem
     border-radius: 0.1rem
     background: colors.$textColor
-    opacity: 0.2
+    opacity: 0.6
 </style>
