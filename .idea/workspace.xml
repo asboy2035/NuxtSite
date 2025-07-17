@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="improve divider, navigationtitle, fix mobile padding">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="new background, updated card, updated rounding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,6 +366,37 @@
       <workItem from="1752695275394" duration="77000" />
       <workItem from="1752695355370" duration="18000" />
       <workItem from="1752695376372" duration="31000" />
+      <workItem from="1752695409208" duration="1114000" />
+      <workItem from="1752743853870" duration="157000" />
+      <workItem from="1752744015290" duration="40000" />
+      <workItem from="1752744057914" duration="85000" />
+      <workItem from="1752744146986" duration="91000" />
+      <workItem from="1752744241314" duration="126000" />
+      <workItem from="1752744371089" duration="57000" />
+      <workItem from="1752744430626" duration="120000" />
+      <workItem from="1752744554335" duration="61000" />
+      <workItem from="1752744618220" duration="40000" />
+      <workItem from="1752744662458" duration="164000" />
+      <workItem from="1752744830219" duration="27000" />
+      <workItem from="1752744859686" duration="44000" />
+      <workItem from="1752744905790" duration="147000" />
+      <workItem from="1752745056141" duration="44000" />
+      <workItem from="1752745102895" duration="93000" />
+      <workItem from="1752745198960" duration="124000" />
+      <workItem from="1752745326000" duration="283000" />
+      <workItem from="1752745614867" duration="98000" />
+      <workItem from="1752745715313" duration="55000" />
+      <workItem from="1752745772529" duration="56000" />
+      <workItem from="1752745830855" duration="31000" />
+      <workItem from="1752745864064" duration="90000" />
+      <workItem from="1752745956031" duration="216000" />
+      <workItem from="1752746174911" duration="209000" />
+      <workItem from="1752746386803" duration="56000" />
+      <workItem from="1752746444852" duration="45000" />
+      <workItem from="1752746492028" duration="84000" />
+      <workItem from="1752746577412" duration="24000" />
+      <workItem from="1752746603436" duration="100000" />
+      <workItem from="1752746705251" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -563,7 +590,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752683423137</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="new background, updated card, updated rounding">
+      <option name="closed" value="true" />
+      <created>1752695903714</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1752695903714</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +639,8 @@
     <MESSAGE value="update more links card" />
     <MESSAGE value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
     <MESSAGE value="improve divider, navigationtitle, fix mobile padding" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve divider, navigationtitle, fix mobile padding" />
+    <MESSAGE value="new background, updated card, updated rounding" />
+    <option name="LAST_COMMIT_MESSAGE" value="new background, updated card, updated rounding" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

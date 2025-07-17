@@ -10,8 +10,10 @@
   import NavigationTitle from "~/components/layout/NavigationTitle.vue"
   import BottomFooter from "~/components/premade/BottomFooter.vue"
   import HStack from "~/components/layout/HStack.vue"
+  import Modal from '~/components/utils/Modal.vue'
 
   const appsData = ref<AppCategory[]>([])
+  const showingAboutModal = ref(false)
 
   onMounted(async () => {
     try {
@@ -43,7 +45,21 @@
       <NavigationTitle
         title="Toolbox"
         subtitle="asboy2035"
-      />
+      >
+        <button @click="showingAboutModal = !showingAboutModal">
+          <icon
+            v-if="!showingAboutModal"
+            class="growIn"
+            icon="solar:info-circle-line-duotone"
+          />
+
+          <icon
+            v-else-if="showingAboutModal"
+            class="spinIn"
+            icon="mingcute:close-fill"
+          />
+        </button>
+      </NavigationTitle>
 
       <card>
         <card-title
@@ -79,6 +95,28 @@
     </v-stack>
 
     <bottom-footer hide-read-more />
+
+    <modal v-if="showingAboutModal">
+      <img
+        src="/images/icons/Toolbox.png" alt="Toolbox Icon"
+        class="toolboxIcon"
+      />
+
+      <h1>About</h1>
+      <h3>Toolbox is the one-stop shop for all resources and apps by me.</h3>
+
+      <p>Here, you can find apps, tools, and more, right from one app that you can add directly to your home screen.</p>
+
+      <a
+        href="https://guides.asboy2035.com/misc/web/pwaInstall"
+        target="_blank"
+      >
+        <button>
+          <icon icon="solar:download-minimalistic-line-duotone" />
+          How to Install
+        </button>
+      </a>
+    </modal>
   </div>
 </template>
 
@@ -89,4 +127,9 @@
 
   .toolboxView
     padding-bottom: 3rem
+
+  .toolboxIcon
+    width: 4rem
+    height: auto
+    border-radius: 1.5rem !important
 </style>

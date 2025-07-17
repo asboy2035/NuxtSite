@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from "vue"
 import HStack from "~/components/layout/HStack.vue"
+import {ProgressiveBlur} from 'vue-progressive-blur'
+import InteriorItem from '~/components/layout/InteriorItem.vue'
 
 defineProps<{
   title: string
@@ -39,15 +41,33 @@ onMounted(() => {
     <!-- Sentinel positioned at the top, this is what we observe -->
     <div ref="sentinel" class="sentinel" aria-hidden="true" />
 
-    <div class="nav-title-wrapper" :class="{ stuck: isStuck }">
-      <h-stack>
+    <div class="navTitleWrapper" :class="{ stuck: isStuck }">
+      <h-stack class="titleContent">
         <h1 v-if="!isStuck">{{ title }}</h1>
-        <h3 v-else-if="isStuck">{{ title }}</h3>
 
-        <h1 class="light" v-if="subtitle && !isStuck">{{ subtitle }}</h1>
+        <interior-item
+          v-else-if="isStuck"
+          class="stuckTitleContent"
+        >
+          <p>{{ title }}</p>
+        </interior-item>
+
+        <h1
+          class="light"
+          v-if="subtitle && !isStuck"
+        >
+          {{ subtitle }}
+        </h1>
+
+        <h-stack class="toolbar">
+          <slot />
+        </h-stack>
       </h-stack>
 
-      <slot />
+      <progressive-blur
+        :blur="48" :border-radius="0"
+        class="stuckBlur" v-if="isStuck"
+      />
     </div>
   </div>
 </template>
@@ -62,34 +82,41 @@ onMounted(() => {
   width: 100%
   pointer-events: none
 
-.nav-title-wrapper
+.navTitleWrapper
   display: flex
   justify-content: flex-start
   position: relative
   z-index: 100
-  backdrop-filter: blur(2rem)
-  transition: 0.2s ease-out
   border-radius: 0
 
-.stuck
-  position: fixed
-  justify-content: center
-  top: 0
-  left: 0
-  right: 0
-  width: 100%
-  max-width: calc(100vw - 2rem)
-  padding: 0.75rem
-  background: linear-gradient(to top, colors.$foregroundColor, colors.$backgroundColor)
+  &.stuck
+    position: fixed
+    justify-content: center
+    top: 0
+    left: 0
+    right: 0
+    width: 100%
+    padding: 0
 
-.stuck::after
-  content: ''
-  position: absolute
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  z-index: 101
-  border-bottom: 0.1rem colors.$shadowColor solid
-  opacity: 0.2
+    .titleContent
+      justify-content: center
+      background: linear-gradient(to top, transparent, colors.$backgroundColor)
+
+  .titleContent
+    display: flex
+    z-index: 101
+    padding: 0.75rem
+    width: 100%
+    border-radius: 0
+
+    .stuckTitleContent
+      padding: 0.25rem 0.75rem
+
+    .toolbar
+      ::v-deep(button)
+        padding: 0.35rem !important
+
+  .stuckBlur
+    transform: rotate(-180deg)
+    z-index: 99
 </style>
