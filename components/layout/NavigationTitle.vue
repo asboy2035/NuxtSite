@@ -47,10 +47,17 @@ onMounted(() => {
 
         <interior-item
           v-else-if="isStuck"
-          class="stuckTitleContent"
+          class="stuckTitleContent fadeIn"
         >
           <p>{{ title }}</p>
         </interior-item>
+
+        <h-stack
+          class="stuckToolbar fadeIn"
+          v-if="isStuck"
+        >
+          <slot />
+        </h-stack>
 
         <h1
           class="light"
@@ -59,7 +66,7 @@ onMounted(() => {
           {{ subtitle }}
         </h1>
 
-        <h-stack class="toolbar">
+        <h-stack class="toolbar" v-if="!isStuck">
           <slot />
         </h-stack>
       </h-stack>
@@ -112,7 +119,7 @@ onMounted(() => {
     .stuckTitleContent
       padding: 0.25rem 0.75rem
 
-    .toolbar
+    .stuckToolbar
       ::v-deep(button)
         padding: 0.35rem !important
 

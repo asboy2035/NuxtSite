@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="new background, updated card, updated rounding">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="new navigationtitle design, updated toolbox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/animations.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/animations.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,6 +397,14 @@
       <workItem from="1752746577412" duration="24000" />
       <workItem from="1752746603436" duration="100000" />
       <workItem from="1752746705251" duration="172000" />
+      <workItem from="1752746879366" duration="170000" />
+      <workItem from="1752757962032" duration="156000" />
+      <workItem from="1752758121269" duration="227000" />
+      <workItem from="1752758351118" duration="84000" />
+      <workItem from="1752758437178" duration="72000" />
+      <workItem from="1752758510701" duration="139000" />
+      <workItem from="1752758651626" duration="167000" />
+      <workItem from="1752758822101" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -598,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752695903714</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="new navigationtitle design, updated toolbox">
+      <option name="closed" value="true" />
+      <created>1752746896695</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1752746896695</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +656,8 @@
     <MESSAGE value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
     <MESSAGE value="improve divider, navigationtitle, fix mobile padding" />
     <MESSAGE value="new background, updated card, updated rounding" />
-    <option name="LAST_COMMIT_MESSAGE" value="new background, updated card, updated rounding" />
+    <MESSAGE value="new navigationtitle design, updated toolbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="new navigationtitle design, updated toolbox" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
