@@ -9,7 +9,6 @@
 
   import { getFlag, setFlag } from '&/setUserFlag'
   import { useRouter } from '#app'
-  import type { Router } from '#vue-router'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import HStack from '+/layout/HStack.vue'
   import CursorParticles from '+/premade/CursorParticles.vue'
@@ -17,7 +16,6 @@
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
   import Spacer from '+/utils/Spacer.vue'
-  import { showingInterfaceOptions } from '$/visibility'
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
@@ -33,7 +31,7 @@
   const showLangPicker: Ref<boolean> = ref(false)
   const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
-  const router: Router = useRouter()
+  const router = useRouter()
   const params: LocationQuery = router.currentRoute.value.query
   const backgrounds: string[] = [
     // Closeups
@@ -146,7 +144,10 @@
   <h1 class="hidden">Your CSS is disabled!</h1>
   <noscript><h1>Your JS is disabled!</h1></noscript>
 
-  <HStack class="interfaceOptions" v-if="showingInterfaceOptions">
+  <HStack
+    class="interfaceOptions"
+    v-if="$route.meta.showingInterfaceOptions !== false"
+  >
     <button @click="showingUi = !showingUi">
       <Icon
         :icon="

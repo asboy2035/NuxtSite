@@ -16,10 +16,11 @@
   import { LauncherApps } from '$/launchers/LauncherApps'
   import { LauncherCreators } from '$/launchers/LauncherCreators'
   import { HomeNavLink } from '$/NavLinks'
-  import { showingNavProfile } from '$/visibility'
 
   const { t } = useI18n()
+  const route = useRoute()
 
+  const showingNavProfile = computed(() => route.meta.showingNavProfile ?? true)
   const showLaunchers: Ref<boolean> = ref(false)
   const showMobileNav: Ref<boolean> = ref(false)
   const showSiteSwitcher: Ref<boolean> = ref(false)
@@ -45,7 +46,7 @@
 
   onMounted(() => {
     watch(
-      showingNavProfile,
+      () => route.meta.showingNavProfile,
       async () => {
         const component = navRef.value
         // @ts-ignore

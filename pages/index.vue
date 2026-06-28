@@ -9,7 +9,6 @@
   import Divider from '+/utils/Divider.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   import Spacer from '+/utils/Spacer.vue'
-  import { showingInterfaceOptions, showingNavProfile } from '$/visibility'
 
   const { t } = useI18n()
   const router = useRouter()
@@ -21,20 +20,14 @@
     image: '/images/SitePreview.jpg',
   })
 
-  onMounted(() => {
-    showingInterfaceOptions.value = false
-    showingNavProfile.value = false
+  definePageMeta({ showingNavProfile: false, showingInterfaceOptions: false })
 
+  onMounted(() => {
     if (getFlag('seenIntroPage')) {
       router.push(localePath('/home'))
     } else {
       setFlag('seenIntroPage', true)
     }
-  })
-
-  onUnmounted(() => {
-    showingInterfaceOptions.value = true
-    showingNavProfile.value = true
   })
 </script>
 

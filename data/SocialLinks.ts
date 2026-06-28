@@ -59,9 +59,9 @@ export const SocialMediaLinks: SocialLink[] = [
     icon: 'mingcute:snapchat-fill',
   },
   {
-    name: 'Reddit',
-    url: 'https://www.reddit.com/user/asboy2035/',
-    icon: 'fa6-brands:reddit-alien',
+    name: 'Byg',
+    url: 'https://byg.gg/u/a35hie',
+    icon: 'glyphs:y-bold',
   },
   {
     name: 'BlueSky',

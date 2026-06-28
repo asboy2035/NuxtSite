@@ -7,7 +7,7 @@
       "dependencies": {
         "@iconify/vue": "^5.0.0",
         "@nuxtjs/i18n": "^10.2.3",
-        "@opk/ts-pkg": "^0.6.1",
+        "@opk/ts-pkg": "^0.7.1",
         "cobe": "^0.6.5",
         "floating-vue": "^5.2.2",
         "html2canvas": "^1.4.1",
@@ -425,7 +425,7 @@
 
     "@opentelemetry/semantic-conventions": ["@opentelemetry/semantic-conventions@1.39.0", "", {}, "sha512-R5R9tb2AXs2IRLNKLBJDynhkfmx7mX0vi8NkhZb3gUkPWHn6HXk5J8iQ/dql0U3ApfWym4kXXmBDRGO+oeOfjg=="],
 
-    "@opk/ts-pkg": ["@opk/ts-pkg@0.6.1", "", { "bin": { "ts-pkg": "dist/cli.js" } }, "sha512-L7zr/gNG3uGMFWmqKpGF1yj220gDUKYXKiThlBOi7KSHLfbU3PcrX9yRSRy6wQbk18TH5HwkdX3bz14wJqw9uA=="],
+    "@opk/ts-pkg": ["@opk/ts-pkg@0.7.1", "", { "bin": { "ts-pkg": "dist/cli.js" } }, "sha512-J66qkYH5Nl1Ov1SRxE3p45W6CUxWJuuA7NqpzFKLfNZMtKVaLp+KVsKS01UWgcR4pimuVihFYRRmet0q+MwKtw=="],
 
     "@oxc-minify/binding-android-arm-eabi": ["@oxc-minify/binding-android-arm-eabi@0.112.0", "", { "os": "android", "cpu": "arm" }, "sha512-m7TGBR2hjsBJIN9UJ909KBoKsuogo6CuLsHKvUIBXdjI0JVHP8g4ZHeB+BJpGn5LJdeSGDfz9MWiuXrZDRzunw=="],
 

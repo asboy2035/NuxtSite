@@ -1,46 +1,21 @@
-export type AppLink = {
-  title: string
-  url: string
-  type: 'appstore' | 'github' | 'link'
-}
+import type { AppCategory } from ':/appsViews'
 
-export type AppPageMeta = {
-  slug: string
-  title: string
-  shortDescription: string
-  ogDescription: string
-  iconPath: string
-  headerImagePath: string
-  socialPreview: string
-  longDescriptionMarkdown: string
-  updatedBadge?: string
-  appLinks?: AppLink[]
-  brewCmd?: string
-}
-
-export const apps: AppPageMeta[] = [
+export const apps: AppCategory[] = [
   {
-    slug: 'stand',
-    title: 'Stand',
-    shortDescription: 'Keep track of sitting/standing time!',
-    ogDescription: 'Keep track of sitting/standing time!',
-    iconPath: '/images/icons/Stand-Icon.png',
-    headerImagePath: '/images/Stand-Hero.jpeg',
-    socialPreview: '/apps/social-previews/Stand-SocialPreview.png',
-    longDescriptionMarkdown: '/apps/markdown/stand.md',
-    updatedBadge: 'Now on the App Store!',
-    appLinks: [
+    name: 'Mac Apps',
+    apps: [
       {
-        title: 'App Store (no EU)',
-        url: 'https://apps.apple.com/us/app/stand-standing-desk-app/id6741711329?mt=12',
-        type: 'appstore',
+        name: 'Stand',
+        description: 'A Mac app for standing desks.',
+        image: '/images/icons/Stand-Icon.png',
+        link: '/apps/stand',
       },
       {
-        title: 'GitHub',
-        url: 'https://github.com/a35hie/Stand/releases/latest',
-        type: 'github',
+        name: 'SerialPlotter',
+        description: 'A beautiful serial plotter for Mac.',
+        image: '/images/icons/Serial-Icon.png',
+        link: 'https://l.a35.dev/serialp',
       },
     ],
-    brewCmd: 'brew install asboy2035/apps/stand',
   },
 ]

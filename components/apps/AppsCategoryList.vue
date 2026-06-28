@@ -79,7 +79,7 @@
 
   .appIcon
     position: relative
-    border-radius: 0.75rem
+    border-radius: 0.9rem
     width: 3.5rem
     height: 3.5rem
 

@@ -1,8 +1,7 @@
 <script setup lang="ts">
-  import { computed, onMounted, ref } from 'vue'
+  import { computed, onMounted } from 'vue'
   import { useRoute } from 'vue-router'
 
-  import type { Playlist } from ':/playlists'
   import setHeadMeta from '&/setHeadMeta'
   import LinkIcon from '+/apps/LinkIcon.vue'
   import Card from '+/layout/Card.vue'
@@ -17,35 +16,24 @@
   import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
+  import { playlists } from '$/playlists'
   const { t } = useI18n()
 
-  const playlists = ref<Playlist[]>([])
   const route = useRoute()
 
-  async function fetchPlaylists() {
-    try {
-      const res = await fetch('https://api.a35hie.me/playlists')
-      playlists.value = await res.json()
-    } catch (error) {
-      console.error('Failed to load playlists:', error)
-    }
-  }
-
   const playlist = computed(() =>
-    playlists.value.find((p) => p.slug === route.params.slug)
+    playlists.find((p) => p.slug === route.params.slug)
   )
 
   onMounted(async () => {
-    await fetchPlaylists().then(() => {
-      if (playlist.value) {
-        setHeadMeta({
-          page: playlist.value.title,
-          subtitle: playlist.value.description,
-          icon: playlist.value.image,
-          group: 'Playlist',
-        })
-      }
-    })
+    if (playlist.value) {
+      setHeadMeta({
+        page: playlist.value.title,
+        subtitle: playlist.value.description,
+        icon: playlist.value.image,
+        group: 'Playlist',
+      })
+    }
   })
 
   function getIconComponent(type: string): Component {

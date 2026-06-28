@@ -1,8 +1,6 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import { onMounted, ref } from 'vue'
 
-  import type { Cursor } from ':/cursors'
   import setHeadMeta from '&/setHeadMeta'
   import Card from '+/layout/Card.vue'
   import HStack from '+/layout/HStack.vue'
@@ -11,24 +9,12 @@
   import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
+  import { cursors } from '$/cursors'
   const { t } = useI18n()
 
   setHeadMeta({
     page: 'pages.goodies',
     subtitle: 'meta.subtitles.goodies',
-  })
-
-  const cursors = ref<Cursor[]>([])
-
-  onMounted(async () => {
-    try {
-      const response = await fetch('https://api.a35hie.me/cursors')
-      if (!response.ok)
-        throw new Error(`Failed to fetch: ${response.statusText}`)
-      cursors.value = await response.json()
-    } catch (error) {
-      console.error('Error fetching cursors:', error)
-    }
   })
 
   function reloadPage() {

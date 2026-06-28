@@ -18,8 +18,8 @@ export const Alpha: ServiceState = {
 
 export const Release: ServiceState = {
   id: 'omega',
-  name:'Ω',
-  description: 'Public release.'
+  name: 'Ω',
+  description: 'Public release.',
 }
 
 export interface Service {

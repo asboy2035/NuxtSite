@@ -7,7 +7,6 @@
   import LocationCard from '+/home/cards/LocationCard.vue'
   import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import { showingNavProfile } from '$/visibility.ts'
 
   setHeadMeta({
     page: 'pages.home',
@@ -15,13 +14,7 @@
     image: '/images/SitePreview.jpg',
   })
 
-  onMounted(() => {
-    showingNavProfile.value = false
-  })
-
-  onUnmounted(() => {
-    showingNavProfile.value = true
-  })
+  definePageMeta({ showingNavProfile: false })
 </script>
 
 <template>

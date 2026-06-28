@@ -7,9 +7,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix display being too narrow">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove all asboy2035, replace reddit with byg, remove craft pages">
+      <change afterPath="$PROJECT_DIR$/data/appsPages.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cursors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/playlists.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/apps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/apps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/visibility.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ca-uw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-emoji.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-et.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-hgy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pirate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-sv.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-ca-uw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-emoji.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-et.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-hgy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-kr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pirate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-sv.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ca-uw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-emoji.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-et.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-hgy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-kr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pirate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-sv.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +63,24 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="8f61a55e-7bd6-4bd1-9ba3-bb63df9cb346" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="8f61a55e-7bd6-4bd1-9ba3-bb63df9cb346" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="gpt-5-mini" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
@@ -32,7 +95,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="225" />
+    <option name="cachedIndexableFilesCount" value="226" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -63,7 +126,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/main35/NuxtSite.git&quot;,
-    &quot;accountId&quot;: &quot;e944b087-0720-442f-99d8-88ed0c18f885&quot;
+    &quot;accountId&quot;: &quot;5db3f81a-86d7-49ba-bb45-7204c769975f&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -72,6 +135,65 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0015408491122526" />
+      <entry key="MS500" value="1.5489140799450274" />
+      <entry key="S2" value="4.6629249815703995" />
+      <entry key="S5" value="9.81128577367479" />
+      <entry key="S10" value="14.760001530268216" />
+      <entry key="S30" value="20.74990212701729" />
+      <entry key="S60" value="23.343824403479626" />
+      <entry key="M2" value="25.870001847896855" />
+      <entry key="M5" value="30.5292339733782" />
+      <entry key="M10" value="40.28075505234636" />
+      <entry key="M15" value="51.66573254596603" />
+      <entry key="M30" value="83.19834719407865" />
+      <entry key="H1" value="123.46763712570393" />
+      <entry key="H2" value="159.09991674779508" />
+      <entry key="H4" value="183.50168170744328" />
+      <entry key="D1" value="208.42387512249078" />
+      <entry key="W1" value="213.19029821402665" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.4617300411068274E-111" />
+      <entry key="S5" value="6.983483934877209E-45" />
+      <entry key="S10" value="1.1806782019566163E-22" />
+      <entry key="S30" value="7.836200751754196E-8" />
+      <entry key="S60" value="4.368933165820348E-4" />
+      <entry key="M2" value="0.044243001587097694" />
+      <entry key="M5" value="1.15207016487107" />
+      <entry key="M10" value="4.515628926061039" />
+      <entry key="M15" value="7.961057521351888" />
+      <entry key="M30" value="16.262810265438084" />
+      <entry key="H1" value="25.5683053029628" />
+      <entry key="H2" value="33.126146311501074" />
+      <entry key="H4" value="38.054755878079405" />
+      <entry key="D1" value="42.92862274701387" />
+      <entry key="W1" value="43.844829667236" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.011686365427492065" />
+      <entry key="MS500" value="0.9466794549117592" />
+      <entry key="S2" value="4.454158037127316" />
+      <entry key="S5" value="9.718849333989544" />
+      <entry key="S10" value="14.710677561885133" />
+      <entry key="S30" value="20.732157329525982" />
+      <entry key="S60" value="23.334706881145866" />
+      <entry key="M2" value="25.907809770180346" />
+      <entry key="M5" value="31.668905860488316" />
+      <entry key="M10" value="44.775850172276485" />
+      <entry key="M15" value="59.60382910203165" />
+      <entry key="M30" value="99.43930075699521" />
+      <entry key="H1" value="149.01956250642073" />
+      <entry key="H2" value="192.21573475149324" />
+      <entry key="H4" value="221.5505881721634" />
+      <entry key="D1" value="251.35141121048835" />
+      <entry key="W1" value="257.03496965929327" />
+    </decayedShown>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -84,57 +206,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/cursors/site&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/opt/homebrew/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;bun&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.fastFormat.executor&quot;: &quot;Run&quot;,
-    &quot;npm.format.executor&quot;: &quot;Run&quot;,
-    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
-    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
-    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
-    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
-    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/cursors/site",
+    "list.type.of.created.stylesheet": "Sass",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/opt/homebrew/bin/node",
+    "nodejs_package_manager_path": "bun",
+    "npm.build.executor": "Run",
+    "npm.cleanup.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.fastFormat.executor": "Run",
+    "npm.format.executor": "Run",
+    "npm.lint.executor": "Run",
+    "npm.prettier.executor": "Run",
+    "npm.preview.executor": "Run",
+    "npm.reInit.executor": "Run",
+    "npm.verifyTranslations.executor": "Run",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/opt/homebrew/lib/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/cursors/site" />
@@ -151,7 +275,7 @@
       <recent name="$PROJECT_DIR$/i18n/locales/global" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -270,8 +394,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.20" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.20" />
+        <option value="bundled-jdk-30f59d01ecdd-58e2ab36d051-intellij.indexing.shared.core-IU-262.8377.35" />
+        <option value="bundled-js-predefined-d6986cc7102b-24ccedb99027-JavaScript-IU-262.8377.35" />
       </set>
     </attachedChunks>
   </component>
@@ -834,14 +958,13 @@
       <workItem from="1776609191369" duration="71000" />
       <workItem from="1777356414610" duration="19000" />
       <workItem from="1777357363046" duration="31000" />
-    </task>
-    <task id="LOCAL-00081" summary="improve lang picker handling with URL overrides">
-      <option name="closed" value="true" />
-      <created>1769105960940</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1769105960940</updated>
+      <workItem from="1777891362558" duration="74000" />
+      <workItem from="1777891898844" duration="193000" />
+      <workItem from="1778325003818" duration="196000" />
+      <workItem from="1778835102678" duration="3771000" />
+      <workItem from="1779007290102" duration="6000" />
+      <workItem from="1779007463549" duration="10000" />
+      <workItem from="1782635685269" duration="3059000" />
     </task>
     <task id="LOCAL-00082" summary="clean up imports with new aliases">
       <option name="closed" value="true" />
@@ -1227,7 +1350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776393095887</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="update to proxy">
+      <option name="closed" value="true" />
+      <created>1777891418660</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1777891418660</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1248,8 +1379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update coloring, improve package.ts" />
-    <MESSAGE value="add 404 game" />
     <MESSAGE value="update packages" />
     <MESSAGE value="update language picker, add catspeak, add swedish, add polish, add dutch" />
     <MESSAGE value="add emojispeak, piratespeak, bump version, remove dead code" />
@@ -1273,7 +1402,9 @@
     <MESSAGE value="add release state" />
     <MESSAGE value="update to a35hie.me for more places" />
     <MESSAGE value="fix display being too narrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix display being too narrow" />
+    <MESSAGE value="update to proxy" />
+    <MESSAGE value="remove all asboy2035, replace reddit with byg, remove craft pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove all asboy2035, replace reddit with byg, remove craft pages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

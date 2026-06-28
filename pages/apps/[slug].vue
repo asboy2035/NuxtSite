@@ -14,15 +14,15 @@
   import BottomFooter from '+/premade/BottomFooter.vue'
   import Hero from '+/utils/Hero.vue'
   import SafeLink from '+/utils/SafeLink.vue'
-  import type { AppPageMeta } from '$/apps'
-  import { apps } from '$/apps'
+  import type { AppPageMeta } from '$/appsPages'
+  import { appsPages } from '$/appsPages'
   const { t } = useI18n()
 
   const route = useRoute()
   const slug: string = route.params.slug as string
-  const app: AppPageMeta | undefined = apps.find((app) => app.slug === slug) as
-    | AppPageMeta
-    | undefined
+  const app: AppPageMeta | undefined = appsPages.find(
+    (app) => app.slug === slug
+  ) as AppPageMeta | undefined
   const longDescriptionRaw: Ref<string> = ref('')
 
   // Add computed property to render Markdown

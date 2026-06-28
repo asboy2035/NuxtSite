@@ -1,22 +1,21 @@
 {
-  "alert": "THIS IS A GENERATED FILE. DO NOT EDIT DIRECTLY. Instead, edit package.ts and run 'ts-pkg' to regenerate.",
   "name": "@a35hie/nuxt-site",
+  "version": "6.7.0",
+  "private": false,
   "description": "My personal website.",
+  "license": "Apache-2.0",
   "author": {
     "name": "ash",
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "6.6.3",
-  "license": "Apache-2.0",
-  "private": false,
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/main35/NuxtSite"
   },
+  "type": "module",
   "scripts": {
-    "dev": "nuxi dev --host 0.0.0.0 --port 5173",
+    "dev": "nuxt dev --host 0.0.0.0 --port 5173",
     "preview": "bun run build && nuxt preview --port 4173",
     "build": "nuxt build",
     "ci": "bun install && bun run build",
@@ -32,7 +31,7 @@
   "dependencies": {
     "@iconify/vue": "^5.0.0",
     "@nuxtjs/i18n": "^10.2.3",
-    "@opk/ts-pkg": "^0.6.1",
+    "@opk/ts-pkg": "^0.7.1",
     "cobe": "^0.6.5",
     "floating-vue": "^5.2.2",
     "html2canvas": "^1.4.1",
@@ -56,5 +55,6 @@
     "replace-in-files-cli": "^4.0.0",
     "sass": "^1.97.3",
     "vue-eslint-parser": "^10.4.0"
-  }
+  },
+  "alert": "THIS IS A GENERATED FILE. DO NOT EDIT DIRECTLY. Instead, edit package.ts and run 'ts-pkg' to regenerate."
 }

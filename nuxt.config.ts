@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'Here come the animations!',
+      siteRelease: 'Cleanup',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://s.a35.dev',
       posthogDefaults: '2025-05-24',
@@ -106,16 +106,6 @@ export default defineNuxtConfig({
         ],
       },
       {
-        code: 'kr',
-        name: '한국어',
-        language: 'ko-KR',
-        files: [
-          'global/global-kr.json',
-          'meta/meta-kr.json',
-          'pages/pages-kr.json',
-        ],
-      },
-      {
         code: 'de',
         name: 'Deutsch',
         language: 'de-DE',
@@ -163,76 +153,6 @@ export default defineNuxtConfig({
           'global/global-nl.json',
           'meta/meta-nl.json',
           'pages/pages-nl.json',
-        ],
-      },
-      {
-        code: 'sv',
-        name: 'Svenska',
-        language: 'sv-SE',
-        files: [
-          'global/global-sv.json',
-          'meta/meta-sv.json',
-          'pages/pages-sv.json',
-        ],
-      },
-      {
-        code: 'pl',
-        name: 'Polski',
-        language: 'pl-PL',
-        files: [
-          'global/global-pl.json',
-          'meta/meta-pl.json',
-          'pages/pages-pl.json',
-        ],
-      },
-      {
-        code: 'et',
-        name: 'Eesti',
-        language: 'et-EE',
-        files: [
-          'global/global-et.json',
-          'meta/meta-et.json',
-          'pages/pages-et.json',
-        ],
-      },
-      {
-        code: 'uwu',
-        name: 'Catspeak :3',
-        language: 'en-Uwu',
-        files: [
-          'global/global-ca-uw.json',
-          'meta/meta-ca-uw.json',
-          'pages/pages-ca-uw.json',
-        ],
-      },
-      {
-        code: 'pir',
-        name: 'Piratespeak',
-        language: 'en-Pirate',
-        files: [
-          'global/global-pirate.json',
-          'meta/meta-pirate.json',
-          'pages/pages-pirate.json',
-        ],
-      },
-      {
-        code: 'emj',
-        name: '😚😋',
-        language: 'en-Emoji',
-        files: [
-          'global/global-emoji.json',
-          'meta/meta-emoji.json',
-          'pages/pages-emoji.json',
-        ],
-      },
-      {
-        code: 'hgy',
-        name: '𓀀 Hieroglyph',
-        language: 'egy-Hluw',
-        files: [
-          'global/global-hgy.json',
-          'meta/meta-hgy.json',
-          'pages/pages-hgy.json',
         ],
       },
     ],

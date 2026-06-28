@@ -1,0 +1,15 @@
+import type { Cursor } from ':/cursors'
+
+export const cursors: Cursor[] = [
+  {
+    name: 'Bibata Modern',
+    version: '0',
+    downloadURL: '/bibataModern/ash.bibatamodern.cape',
+    assets: [
+      { type: 'Pointer', path: '/cursors/bibataModern/Pointer.png' },
+      { type: 'Pointing', path: '/cursors/bibataModern/Pointing-Hand.png' },
+      { type: 'Copy', path: '/cursors/bibataModern/Copy.png' },
+      { type: 'Camera', path: '/cursors/bibataModern/Camera-v2.png' },
+    ],
+  },
+]

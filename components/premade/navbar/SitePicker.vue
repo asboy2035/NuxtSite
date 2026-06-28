@@ -65,11 +65,6 @@
           title="sites.fonts"
           icon="solar:text-line-duotone"
         />
-        <SitePick
-          to="https://pages.asboy2035.com/"
-          title="sites.pages"
-          icon="solar:documents-line-duotone"
-        />
       </VStack>
     </Card>
 

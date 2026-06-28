@@ -13,7 +13,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '6.6.3',
+  version: '6.7.0',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
@@ -25,7 +25,7 @@ export default definePackage({
 
   scripts: {
     // code runs
-    dev: 'nuxi dev --host 0.0.0.0 --port 5173',
+    dev: 'nuxt dev --host 0.0.0.0 --port 5173',
     preview: 'bun run build && nuxt preview --port 4173',
     build: 'nuxt build',
     ci: 'bun install && bun run build',
@@ -51,7 +51,7 @@ export default definePackage({
   dependencies: {
     '@iconify/vue': '^5.0.0',
     '@nuxtjs/i18n': '^10.2.3',
-    '@opk/ts-pkg': '^0.6.1',
+    '@opk/ts-pkg': '^0.7.1',
     cobe: '^0.6.5',
     'floating-vue': '^5.2.2',
     html2canvas: '^1.4.1',
