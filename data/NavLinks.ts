@@ -7,9 +7,9 @@ export const HomeNavLink: NavLink = {
 
 export const NavLinks: NavLink[] = [
   {
-    link: '/about',
+    link: '/links',
     text: 'pages.links',
-    icon: 'solar:info-circle-line-duotone',
+    icon: 'solar:link-minimalistic-2-line-duotone',
   },
   {
     link: '/work',

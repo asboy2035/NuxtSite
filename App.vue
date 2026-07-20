@@ -192,9 +192,6 @@
     .dimmed
       --backgroundOpacity: 0.25
 
-    html[lang="ca-ES"]
-      --backgroundOpacity: 0.5
-
   $backgroundOpacity: var(--backgroundOpacity)
 
   .progBlurContainer
