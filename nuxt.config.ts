@@ -30,19 +30,31 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'Cleanup',
+      siteRelease: 'v7 Beta!',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://s.a35.dev',
       posthogDefaults: '2025-05-24',
     },
   },
-  modules: [ '@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n' ],
+  modules: [ '@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n', '@nuxt/fonts', 'motion-v/nuxt' ],
   alias: {
     '@': fileURLToPath(new URL('./', import.meta.url)),
     $: fileURLToPath(new URL('./data', import.meta.url)),
     ':': fileURLToPath(new URL('./types', import.meta.url)),
     '+': fileURLToPath(new URL('./components', import.meta.url)),
     '&': fileURLToPath(new URL('./utils', import.meta.url)),
+  },
+  fonts: {
+    families: [
+      {
+        name: 'JetBrains Mono',
+        global: true
+      },
+      {
+        name: 'Nata Sans',
+        global: true
+      }
+    ]
   },
   i18n: {
     strategy: 'prefix_except_default',

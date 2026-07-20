@@ -4,6 +4,7 @@ export const HomeNavLink: NavLink = {
   link: '/home',
   text: 'pages.home',
 }
+
 export const NavLinks: NavLink[] = [
   {
     link: '/links',
@@ -36,3 +37,11 @@ export const NavLinks: NavLink[] = [
     icon: 'solar:global-line-duotone',
   },
 ]
+
+export function useCurrentNavLink() {
+  const route = useRoute()
+
+  return computed(() =>
+    NavLinks.find(link => link.link === route.path)
+  )
+}

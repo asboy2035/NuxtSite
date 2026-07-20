@@ -8,53 +8,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove all asboy2035, replace reddit with byg, remove craft pages">
-      <change afterPath="$PROJECT_DIR$/data/appsPages.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cursors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/playlists.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar2.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/CursorParticles.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/apps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/apps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/visibility.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ca-uw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-hgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pirate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-ca-uw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-hgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-kr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pirate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ca-uw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-hgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-kr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pirate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-sv.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/CardTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/CardTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/NavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/NavLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-cn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-jp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-nl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-pt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +74,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="226" />
+    <option name="cachedIndexableFilesCount" value="203" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -104,15 +83,15 @@
         <option value="JSON File" />
         <option value="JavaScript File" />
         <option value="Sass File" />
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,7 +104,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/main35/NuxtSite.git&quot;,
+    &quot;url&quot;: &quot;https://a35hie@github.com/main35/NuxtSite.git&quot;,
     &quot;accountId&quot;: &quot;5db3f81a-86d7-49ba-bb45-7204c769975f&quot;
   }
 }</component>
@@ -138,61 +117,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0015408491122526" />
-      <entry key="MS500" value="1.5489140799450274" />
-      <entry key="S2" value="4.6629249815703995" />
-      <entry key="S5" value="9.81128577367479" />
-      <entry key="S10" value="14.760001530268216" />
-      <entry key="S30" value="20.74990212701729" />
-      <entry key="S60" value="23.343824403479626" />
-      <entry key="M2" value="25.870001847896855" />
-      <entry key="M5" value="30.5292339733782" />
-      <entry key="M10" value="40.28075505234636" />
-      <entry key="M15" value="51.66573254596603" />
-      <entry key="M30" value="83.19834719407865" />
-      <entry key="H1" value="123.46763712570393" />
-      <entry key="H2" value="159.09991674779508" />
-      <entry key="H4" value="183.50168170744328" />
-      <entry key="D1" value="208.42387512249078" />
-      <entry key="W1" value="213.19029821402665" />
+      <entry key="MS100" value="9.856956970259579E-151" />
+      <entry key="MS500" value="9.97122628447656E-31" />
+      <entry key="S2" value="3.1610322722737274E-8" />
+      <entry key="S5" value="0.001040024758971308" />
+      <entry key="S10" value="0.037967462485772374" />
+      <entry key="S30" value="0.5013839972605731" />
+      <entry key="S60" value="0.9926433084987922" />
+      <entry key="M2" value="1.405900354522321" />
+      <entry key="M5" value="1.8365539770081578" />
+      <entry key="M10" value="4.004930607819612" />
+      <entry key="M15" value="9.15776667026765" />
+      <entry key="M30" value="37.11594161830353" />
+      <entry key="H1" value="106.70027815287759" />
+      <entry key="H2" value="207.59496172953254" />
+      <entry key="H4" value="302.01809532494013" />
+      <entry key="D1" value="422.4835183522394" />
+      <entry key="W1" value="448.4850090306924" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.4617300411068274E-111" />
-      <entry key="S5" value="6.983483934877209E-45" />
-      <entry key="S10" value="1.1806782019566163E-22" />
-      <entry key="S30" value="7.836200751754196E-8" />
-      <entry key="S60" value="4.368933165820348E-4" />
-      <entry key="M2" value="0.044243001587097694" />
-      <entry key="M5" value="1.15207016487107" />
-      <entry key="M10" value="4.515628926061039" />
-      <entry key="M15" value="7.961057521351888" />
-      <entry key="M30" value="16.262810265438084" />
-      <entry key="H1" value="25.5683053029628" />
-      <entry key="H2" value="33.126146311501074" />
-      <entry key="H4" value="38.054755878079405" />
-      <entry key="D1" value="42.92862274701387" />
-      <entry key="W1" value="43.844829667236" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000000093088" />
+      <entry key="M2" value="1.000003866859847" />
+      <entry key="M5" value="1.0261865033266073" />
+      <entry key="M10" value="1.9286837408604607" />
+      <entry key="M15" value="4.597453769247061" />
+      <entry key="M30" value="18.33349340397719" />
+      <entry key="H1" value="46.35271732573248" />
+      <entry key="H2" value="80.70577673153086" />
+      <entry key="H4" value="109.79597142032712" />
+      <entry key="D1" value="144.510649770389" />
+      <entry key="W1" value="151.7505209273762" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.011686365427492065" />
-      <entry key="MS500" value="0.9466794549117592" />
-      <entry key="S2" value="4.454158037127316" />
-      <entry key="S5" value="9.718849333989544" />
-      <entry key="S10" value="14.710677561885133" />
-      <entry key="S30" value="20.732157329525982" />
-      <entry key="S60" value="23.334706881145866" />
-      <entry key="M2" value="25.907809770180346" />
-      <entry key="M5" value="31.668905860488316" />
-      <entry key="M10" value="44.775850172276485" />
-      <entry key="M15" value="59.60382910203165" />
-      <entry key="M30" value="99.43930075699521" />
-      <entry key="H1" value="149.01956250642073" />
-      <entry key="H2" value="192.21573475149324" />
-      <entry key="H4" value="221.5505881721634" />
-      <entry key="D1" value="251.35141121048835" />
-      <entry key="W1" value="257.03496965929327" />
+      <entry key="MS100" value="0.004334255750265019" />
+      <entry key="MS500" value="0.33680839421642256" />
+      <entry key="S2" value="0.7618083740885063" />
+      <entry key="S5" value="0.8978711501631017" />
+      <entry key="S10" value="0.9840634400223518" />
+      <entry key="S30" value="1.4799803185770068" />
+      <entry key="S60" value="1.9804565629675108" />
+      <entry key="M2" value="2.3992297285184443" />
+      <entry key="M5" value="2.859792262828244" />
+      <entry key="M10" value="5.9302765141128" />
+      <entry key="M15" value="13.749132642102012" />
+      <entry key="M30" value="55.43525960805391" />
+      <entry key="H1" value="153.03318894082" />
+      <entry key="H2" value="288.28249125208436" />
+      <entry key="H4" value="411.80129393165" />
+      <entry key="D1" value="566.9913002986835" />
+      <entry key="W1" value="600.2350980679593" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -219,10 +198,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "7",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/cursors/site",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
@@ -232,7 +211,7 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/opt/homebrew/bin/node",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "bun",
     "npm.build.executor": "Run",
     "npm.cleanup.executor": "Run",
@@ -249,8 +228,8 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/opt/homebrew/lib/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "io.github.pandier.intellijdiscordrp.settings.DiscordSettingsConfigurable",
+    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -275,7 +254,7 @@
       <recent name="$PROJECT_DIR$/i18n/locales/global" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -394,8 +373,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-58e2ab36d051-intellij.indexing.shared.core-IU-262.8377.35" />
-        <option value="bundled-js-predefined-d6986cc7102b-24ccedb99027-JavaScript-IU-262.8377.35" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
       </set>
     </attachedChunks>
   </component>
@@ -964,7 +942,20 @@
       <workItem from="1778835102678" duration="3771000" />
       <workItem from="1779007290102" duration="6000" />
       <workItem from="1779007463549" duration="10000" />
-      <workItem from="1782635685269" duration="3059000" />
+      <workItem from="1782635685269" duration="3329000" />
+      <workItem from="1782639136534" duration="3000" />
+      <workItem from="1782743456335" duration="271000" />
+      <workItem from="1782749153230" duration="321000" />
+      <workItem from="1783162681049" duration="27000" />
+      <workItem from="1783162741429" duration="19000" />
+      <workItem from="1783163414957" duration="2000" />
+      <workItem from="1783513018813" duration="285000" />
+      <workItem from="1783936631978" duration="267000" />
+      <workItem from="1784030271531" duration="14000" />
+      <workItem from="1784302209919" duration="335000" />
+      <workItem from="1784364651235" duration="9000" />
+      <workItem from="1784365625330" duration="11000" />
+      <workItem from="1784538888893" duration="7283000" />
     </task>
     <task id="LOCAL-00082" summary="clean up imports with new aliases">
       <option name="closed" value="true" />

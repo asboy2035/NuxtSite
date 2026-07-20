@@ -41,7 +41,8 @@
         transform: none
         opacity: 1
 
-    &::after // Specular Highlighting
+    // Border
+    &::after
       content: ""
       position: absolute
       top: 0
@@ -49,9 +50,8 @@
       right: 0
       left: 0
 
-      border: 0.1rem solid colors.$shadowColor
       border-radius: var(--card-radius)
-      box-shadow: inset 0 0 0.75rem colors.$shadowColor
+      box-shadow: inset 0 0 0.5rem colors.$shadowColor
       opacity: 0.6
       pointer-events: none
       transition: opacity 0.2s ease

@@ -11,9 +11,14 @@
 </script>
 
 <template>
-  <HStack class="cardTitle">
-    <Icon :icon="icon" />
-    <h2>{{ t(title) }}</h2>
+  <HStack class="autoSpace fullWidth cardTitleContainer">
+    <HStack class="cardTitle">
+      <Icon :icon="icon" />
+      <h2>{{ t(title) }}</h2>
+    </HStack>
+
+    <!-- Close button can go here -->
+    <slot />
   </HStack>
 </template>
 

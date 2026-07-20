@@ -22,13 +22,6 @@
     "comingSoon": "À venir!",
     "myTime": "Mon temps",
     "connecting": "Connexion...",
-    "oldDomain": {
-      "title": "Vous êtes sur l’ancien domaine !",
-      "desc": "Accédez à ce site via a35hie.me pour un lien plus propre !",
-      "never": "Jamais",
-      "later": "Plus tard",
-      "go": "Allons-y !"
-    },
     "more": "Plus"
   },
   "sharing": {

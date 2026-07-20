@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="interior">
     <slot />
@@ -27,7 +29,8 @@
     transition: 0.2s ease
     backdrop-filter: saturate(175%) blur(0.5rem)
 
-    &::after // Specular Highlight
+    // Border
+    &::after
       content: ""
       position: absolute
       top: 0
@@ -35,10 +38,9 @@
       right: 0
       left: 0
 
-      border: 0.1rem solid colors.$shadowColor
       box-shadow: inset 0 0 0.5rem colors.$shadowColor
       border-radius: var(--interiorRadius)
-      opacity: 0.4
+      opacity: 0.3
       pointer-events: none
       transition: 0.2s ease
       mask: conic-gradient(from -45deg, black, rgba(0, 0, 0, 0.2), black, rgba(0, 0, 0, 0.2), black)
@@ -63,7 +65,7 @@
         opacity: 0.2
 
       &::after
-        opacity: 0.7
+        opacity: 0.5
 
     &:active
       &::before

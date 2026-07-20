@@ -162,7 +162,7 @@
       </button>
 
       <!-- Main Nav -->
-      <InteriorItem
+      <HStack
         ref="navRef"
         class="navBar"
         :class="{ desktopLinks: !showingNavProfile, expanded: expandedNavbar }"
@@ -219,7 +219,7 @@
           />
           <span class="toggleButtonText">{{ t('navbar.hide') }}</span>
         </button>
-      </InteriorItem>
+      </HStack>
 
       <SafeLink to="/home" v-if="!showingNavProfile">
         <InteriorItem class="minimalProfile"> ash </InteriorItem>
@@ -263,11 +263,12 @@
 
   .navBar
     --interiorRadius: 2rem !important
-    padding: 0.75rem
-    flex-direction: row
     z-index: 20
-    backdrop-filter: blur(0.5rem)
     gap: 0.75rem
+
+    .navBarSection
+      padding: 0.75rem
+      flex-direction: row
 
     *
       flex-wrap: nowrap !important

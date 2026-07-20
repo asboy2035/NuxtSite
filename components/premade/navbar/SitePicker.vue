@@ -32,14 +32,13 @@
   <VStack class="sitePicker">
     <Card :index="index" v-if="!showingShareModal">
       <VStack class="fullWidth">
-        <HStack class="autoSpace fullWidth">
-          <CardTitle
-            title="sites.title"
-            icon="solar:three-squares-line-duotone"
-          />
+        <CardTitle
+          title="sites.title"
+          icon="solar:three-squares-line-duotone"
+        >
           <!-- Insert close button here -->
           <slot />
-        </HStack>
+        </CardTitle>
 
         <SitePick
           to="/"
@@ -103,7 +102,7 @@
 
 <style lang="sass">
   .sitePicker
-    min-width: 15rem
+    min-width: 20rem
     max-width: 100%
 
   .qrCode

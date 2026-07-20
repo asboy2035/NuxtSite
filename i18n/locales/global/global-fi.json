@@ -22,13 +22,6 @@
     "comingSoon": "Tulossa pian!",
     "myTime": "Minun aika",
     "connecting": "Yhdistetään...",
-    "oldDomain": {
-      "title": "Olet vanhalla alueella!",
-      "desc": "Käytä tätä sivustoa osoitteessa a35hie.me puhtaammalle linkkille!",
-      "never": "Ei koskaan",
-      "later": "Myöhemmin",
-      "go": "Mennään!"
-    },
     "more": "Lisää"
   },
   "sharing": {

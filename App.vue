@@ -11,11 +11,10 @@
   import { useRouter } from '#app'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import HStack from '+/layout/HStack.vue'
-  import CursorParticles from '+/premade/CursorParticles.vue'
   import Navbar from '+/premade/navbar/Navbar.vue'
+  import Navbar2 from "+/premade/navbar/Navbar2.vue";
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
-  import Spacer from '+/utils/Spacer.vue'
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
@@ -27,9 +26,7 @@
   }))
 
   const showingUi: Ref<boolean> = ref(true)
-  const showDomainTip: Ref<boolean> = ref(false)
   const showLangPicker: Ref<boolean> = ref(false)
-  const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
   const router = useRouter()
   const params: LocationQuery = router.currentRoute.value.query
@@ -50,27 +47,12 @@
   ]
   const currentBackground: Ref<string> = ref(backgrounds[0] as string)
 
-  function neverShowDomainTip(): void {
-    setFlag('hideDomainTip', true)
-    showDomainTip.value = false
-  }
-
   function hideLangPicker(): void {
     setFlag('showLangPicker', false)
     showLangPicker.value = false
   }
 
   onMounted(() => {
-    if (getFlag('hideDomainTip')) {
-      showDomainTip.value = false
-    } else if (
-      location.hostname.includes('pages.dev') ||
-      location.port.includes('5173')
-    ) {
-      showDomainTip.value = true
-    }
-    redirectLink.value = `https://a35hie.me${location.pathname}${location.search}${location.hash}`
-
     if (params.noLangPicker == 'true') {
       showLangPicker.value = false
       setFlag('showLangPicker', false)
@@ -187,34 +169,11 @@
     }"
   />
 
-  <Navbar v-if="showingUi" />
+<!--  <Navbar v-if="showingUi" />-->
+  
+  <Navbar2 v-if="showingUi" />
 
   <TransitionElement ref="cover" />
-
-  <CursorParticles />
-
-  <Modal v-if="showDomainTip">
-    <h1>{{ t('app.oldDomain.title') }}</h1>
-    <p>{{ t('app.oldDomain.desc') }}</p>
-    <Spacer />
-
-    <HStack class="autoSpace fullWidth">
-      <HStack>
-        <button @click="neverShowDomainTip">
-          {{ t('app.oldDomain.never') }}
-        </button>
-        <button @click="showDomainTip = false">
-          {{ t('app.oldDomain.later') }}
-        </button>
-      </HStack>
-
-      <a :href="redirectLink">
-        <button id="goToNewUrlButton" class="prominent">
-          {{ t('app.oldDomain.go') }}
-        </button>
-      </a>
-    </HStack>
-  </Modal>
 
   <Modal plain v-if="showLangPicker">
     <LangPickerCard @set="hideLangPicker" />
@@ -269,6 +228,9 @@
     width: calc(100vw - 2rem)
     max-width: 30rem
     z-index: 11
+
+    button
+      backdrop-filter: blur(0.5rem)
 
     button, a
       flex-grow: 1
