@@ -11,8 +11,7 @@
   import { useRouter } from '#app'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import HStack from '+/layout/HStack.vue'
-  import Navbar from '+/premade/navbar/Navbar.vue'
-  import Navbar2 from "+/premade/navbar/Navbar2.vue";
+  import Navbar2 from '+/premade/navbar/Navbar2.vue'
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
 
@@ -169,8 +168,8 @@
     }"
   />
 
-<!--  <Navbar v-if="showingUi" />-->
-  
+  <!--  <Navbar v-if="showingUi" />-->
+
   <Navbar2 v-if="showingUi" />
 
   <TransitionElement ref="cover" />

@@ -3,6 +3,7 @@
 
   import HStack from '+/layout/HStack.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import { NavLinks } from '$/NavLinks'
 
   const { t } = useI18n()
 </script>
@@ -10,24 +11,10 @@
 <template>
   <HStack class="edgeToEdge" id="navButtons">
     <Icon icon="solar:arrow-right-line-duotone" />
-    <SafeLink to="/links">
+    <SafeLink v-for="link in NavLinks" :to="link.link">
       <button>
-        <Icon icon="solar:link-minimalistic-2-line-duotone" />
-        {{ t('pages.links') }}
-      </button>
-    </SafeLink>
-
-    <SafeLink to="/apps">
-      <button>
-        <Icon icon="solar:widget-2-line-duotone" />
-        {{ t('pages.apps') }}
-      </button>
-    </SafeLink>
-
-    <SafeLink to="/goodies">
-      <button>
-        <Icon icon="solar:inbox-line-line-duotone" />
-        {{ t('pages.goodies') }}
+        <Icon v-if="link.icon" :icon="link.icon" />
+        {{ t(link.text) }}
       </button>
     </SafeLink>
 

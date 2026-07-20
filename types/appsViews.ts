@@ -9,5 +9,6 @@ export interface App {
 
 export interface AppCategory {
   name: string
+  icon: string
   apps: App[]
 }

@@ -36,7 +36,13 @@ export default defineNuxtConfig({
       posthogDefaults: '2025-05-24',
     },
   },
-  modules: [ '@vite-pwa/nuxt', 'floating-vue/nuxt', '@nuxtjs/i18n', '@nuxt/fonts', 'motion-v/nuxt' ],
+  modules: [
+    '@vite-pwa/nuxt',
+    'floating-vue/nuxt',
+    '@nuxtjs/i18n',
+    '@nuxt/fonts',
+    'motion-v/nuxt',
+  ],
   alias: {
     '@': fileURLToPath(new URL('./', import.meta.url)),
     $: fileURLToPath(new URL('./data', import.meta.url)),
@@ -48,13 +54,13 @@ export default defineNuxtConfig({
     families: [
       {
         name: 'JetBrains Mono',
-        global: true
+        global: true,
       },
       {
         name: 'Nata Sans',
-        global: true
-      }
-    ]
+        global: true,
+      },
+    ],
   },
   i18n: {
     strategy: 'prefix_except_default',

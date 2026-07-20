@@ -3,6 +3,7 @@ import type { AppCategory } from ':/appsViews'
 export const apps: AppCategory[] = [
   {
     name: 'Mac Apps',
+    icon: 'solar:laptop-line-duotone',
     apps: [
       {
         name: 'Stand',

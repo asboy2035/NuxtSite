@@ -40,7 +40,7 @@
         </transition>
       </div>
 
-      <SafeLink to="/links">
+      <SafeLink to="/pages/about">
         <button class="transparent">
           <Icon icon="solar:link-minimalistic-2-line-duotone" />
           {{ t('app.more') }}

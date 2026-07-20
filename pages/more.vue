@@ -38,7 +38,7 @@
       </HStack>
     </Hero>
 
-    <Card class="spaced">
+    <Card class="spaced" :index="1">
       <CardTitle
         title="goodies.wallpapers.title"
         icon="solar:wallpaper-line-duotone"
@@ -59,7 +59,7 @@
     </Card>
 
     <!-- Cursors Card -->
-    <Card>
+    <Card :index="2">
       <CardTitle
         title="goodies.cursors.title"
         icon="solar:cursor-line-duotone"
@@ -91,7 +91,7 @@
       </VStack>
     </Card>
 
-    <BottomFooter />
+    <BottomFooter :index="3" />
   </div>
 </template>
 

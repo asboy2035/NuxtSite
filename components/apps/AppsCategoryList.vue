@@ -7,6 +7,7 @@
   import Grid from '+/layout/Grid.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   import VStack from '+/layout/VStack.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
 
   defineProps<{
@@ -22,8 +23,9 @@
       :key="category.name"
       :index="index ? index + i : undefined"
     >
-      <h2>{{ category.name }}</h2>
-      <grid class="appGrid">
+      <CardTitle :title="category.name" :icon="category.icon" />
+
+      <Grid class="appGrid">
         <InteriorItem
           v-for="app in category.apps"
           :key="app.name"
@@ -51,7 +53,7 @@
             </a>
           </div>
         </InteriorItem>
-      </grid>
+      </Grid>
     </Card>
   </VStack>
 </template>

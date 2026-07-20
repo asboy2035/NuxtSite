@@ -32,10 +32,7 @@
   <VStack class="sitePicker">
     <Card :index="index" v-if="!showingShareModal">
       <VStack class="fullWidth">
-        <CardTitle
-          title="sites.title"
-          icon="solar:three-squares-line-duotone"
-        >
+        <CardTitle title="sites.title" icon="solar:three-squares-line-duotone">
           <!-- Insert close button here -->
           <slot />
         </CardTitle>
