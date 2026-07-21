@@ -31,7 +31,7 @@
         <p class="lead">{{ message }}</p>
 
         <HStack class="actions">
-          <SafeLink to="/home"
+          <SafeLink to="/"
             ><button class="prominent">
               <Icon icon="solar:home-angle-line-duotone" />
               {{ t('error.goHome') }}

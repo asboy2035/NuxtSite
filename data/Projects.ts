@@ -5,7 +5,7 @@ export const BygPlatformProj: Project = {
   name: 'Byg Platform',
   description:
     'The beautiful, unhinged social media. Write posts, chat with friends, and more.',
-  link: 'https://byg.a35.dev/',
+  link: 'https://byg.gg/',
   preview: 'https://i.ibb.co/qMns7WFz/Byg-Screenshot.png',
   technologies: [ Elysia, Vue, TypeScript ],
 }

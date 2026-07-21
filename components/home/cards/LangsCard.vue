@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <Card :index="5" class="langsCard spaced">
+  <Card :index="2" class="langsCard spaced">
     <CardTitle title="home.languages.title" icon="solar:earth-line-duotone" />
 
     <p>{{ t('home.languages.desc') }}</p>

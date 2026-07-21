@@ -16,10 +16,6 @@
   </FullscreenCover>
 </template>
 
-<style scoped lang="sass">
-  .modalCover
-    z-index: 5
-</style>
 <style lang="sass">
   .modalCover div.card
     width: fit-content !important

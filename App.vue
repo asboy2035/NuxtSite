@@ -11,9 +11,12 @@
   import { useRouter } from '#app'
   import LangPickerCard from '+/langs/LangPickerCard.vue'
   import HStack from '+/layout/HStack.vue'
+  import VStack from '+/layout/VStack.vue'
   import Navbar2 from '+/premade/navbar/Navbar2.vue'
   import TransitionElement from '+/premade/TransitionElement.vue'
   import Modal from '+/utils/Modal.vue'
+
+  import SideNav from './components/premade/navbar/SideNav.vue'
 
   const { t } = useI18n()
   const i18nHead = useLocaleHead()
@@ -64,15 +67,13 @@
 
     router.beforeEach((_to, _from, next) => {
       cover.value?.show()
-      setTimeout(() => {
-        next()
-      }, 400)
+      next()
     })
 
     router.afterEach(() => {
       setTimeout(() => {
         cover.value?.hide()
-      }, 200)
+      }, 300)
     })
 
     cycleBackgrounds()
@@ -125,35 +126,43 @@
   <h1 class="hidden">Your CSS is disabled!</h1>
   <noscript><h1>Your JS is disabled!</h1></noscript>
 
-  <HStack
-    class="interfaceOptions"
-    v-if="$route.meta.showingInterfaceOptions !== false"
-  >
-    <button @click="showingUi = !showingUi">
-      <Icon
-        :icon="
-          showingUi
-            ? 'solar:window-frame-line-duotone'
-            : 'solar:window-frame-bold-duotone'
-        "
-      />
-      {{ t(showingUi ? 'app.hideInterface' : 'app.showInterface') }}
-    </button>
+  <div class="navigationView">
+    <SideNav v-if="showingUi" />
 
-    <a href="https://ko-fi.com/s/b635cf0ef1" target="_blank">
-      <button>
-        <Icon icon="solar:bag-heart-line-duotone" />
-        {{ t('app.getWalls') }}
-      </button>
-    </a>
-  </HStack>
+    <VStack class="contentStack">
+      <HStack
+        class="interfaceOptions"
+        v-if="$route.meta.showingInterfaceOptions !== false"
+      >
+        <button @click="showingUi = !showingUi">
+          <Icon
+            :icon="
+              showingUi
+                ? 'solar:window-frame-line-duotone'
+                : 'solar:window-frame-bold-duotone'
+            "
+          />
+          {{ t(showingUi ? 'app.hideInterface' : 'app.showInterface') }}
+        </button>
 
-  <NuxtPage v-if="showingUi" />
+        <a href="https://ko-fi.com/s/b635cf0ef1" target="_blank">
+          <button>
+            <Icon icon="solar:bag-heart-line-duotone" />
+            {{ t('app.getWalls') }}
+          </button>
+        </a>
+      </HStack>
 
-  <div class="progBlurContainer">
-    <ProgressiveBlur class="progBlur" :blur="18" :border-radius="0" />
-    <div class="progMask" />
+      <NuxtPage v-if="showingUi" />
+
+      <div class="progBlurContainer">
+        <ProgressiveBlur class="progBlur" :blur="18" :border-radius="0" />
+        <div class="progMask" />
+      </div>
+    </VStack>
   </div>
+
+  <Navbar2 v-if="showingUi" />
 
   <img
     class="siteBackground"
@@ -167,10 +176,6 @@
       dimmed: showingUi,
     }"
   />
-
-  <!--  <Navbar v-if="showingUi" />-->
-
-  <Navbar2 v-if="showingUi" />
 
   <TransitionElement ref="cover" />
 
@@ -193,6 +198,10 @@
       --backgroundOpacity: 0.25
 
   $backgroundOpacity: var(--backgroundOpacity)
+
+  .contentStack
+    align-items: center
+    width: 100%
 
   .progBlurContainer
     position: fixed

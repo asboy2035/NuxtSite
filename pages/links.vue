@@ -1,10 +1,11 @@
 <script setup lang="ts">
   import setHeadMeta from '&/setHeadMeta'
-  import Card from '+/layout/Card.vue'
+  import AboutCard from '+/home/cards/AboutCard.vue'
+  import LocationCard from '+/home/cards/LocationCard.vue'
+  import Grid from '+/layout/Grid.vue'
   import MoreLinks from '+/links/MoreLinks.vue'
   import SocialLinks from '+/links/SocialLinks.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import Description from '+/premade/Description.vue'
   import Hero from '+/utils/Hero.vue'
 
   const { t } = useI18n()
@@ -23,9 +24,10 @@
     </Hero>
 
     <!-- About -->
-    <Card>
-      <description />
-    </Card>
+    <Grid class="spaced">
+      <AboutCard />
+      <LocationCard />
+    </Grid>
 
     <SocialLinks />
     <MoreLinks />

@@ -36,7 +36,7 @@
     <Card :index="2">
       <VStack class="fullWidth">
         <DynamicImage
-          src="/images/avatar-26.webp"
+          src="/images/avatar-27.webp"
           alt="ash's Avatar"
           radius="2rem"
           class="bigAvatar"

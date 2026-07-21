@@ -19,12 +19,19 @@
 
   const { t } = useI18n()
 
+  defineProps<{
+    startButtonOnly?: boolean
+  }>()
+
   const open: Ref<boolean> = ref(false)
   const animating: Ref<boolean> = ref(false)
 </script>
 
 <template>
-  <div class="navbar2Container" :class="{ open }">
+  <div
+    class="navbar2Container"
+    :class="{ open, stackModeOnly: !startButtonOnly, startButtonOnly }"
+  >
     <Motion
       as="div"
       class="navbar2Wrapper"
@@ -107,10 +114,14 @@
 
           <!-- Small View-->
           <HStack v-if="!open">
-            <NavigationButton :link="HomeNavLink" id="homeButtonContainer">
+            <NavigationButton
+              :link="HomeNavLink"
+              id="homeButtonContainer"
+              v-if="!startButtonOnly"
+            >
               <DynamicImage
                 class="avatar"
-                src="/images/avatar-26.webp"
+                src="/images/avatar-27.webp"
                 alt="ash's Avatar (Go Home)"
                 id="avatarButton"
               />
@@ -122,12 +133,21 @@
               />
             </NavigationButton>
 
-            <HStack class="opener" @click="open = !open">
+            <HStack
+              v-if="!startButtonOnly"
+              class="opener"
+              @click="open = !open"
+            >
               <h1 class="name">ash</h1>
               <Icon icon="solar:alt-arrow-up-linear" />
             </HStack>
 
-            <NavigationLinks />
+            <HStack v-else class="opener startButton" @click="open = !open">
+              <Icon icon="solar:widget-5-line-duotone" />
+              <h3>{{ t('app.more') }}</h3>
+            </HStack>
+
+            <NavigationLinks v-if="!startButtonOnly" />
           </HStack>
         </VStack>
       </Card>
@@ -149,6 +169,19 @@
 
     &.open
       padding: 0
+
+      &.startButtonOnly
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+
+    &.startButtonOnly
+      padding: 0
+
+      .navbar2Wrapper
+        width: 100% !important
 
     .navbar2Wrapper
       width: fit-content
@@ -179,7 +212,7 @@
           height: 100%
           overflow-y: scroll
           transition: filter .15s ease
-          max-width: 65rem
+          max-width: 60rem
 
           &.animating
             filter: blur(8px)
@@ -189,6 +222,17 @@
 
             .name
               margin: 0
+
+            &.startButton
+              width: 100%
+              padding: 0.5rem
+
+              svg
+                width: 1.5rem
+                height: 1.5rem
+
+              *
+                margin: 0
 
           .opened
             align-items: center

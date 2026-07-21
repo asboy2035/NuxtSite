@@ -7,16 +7,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update new navbar expanded view, update navlinks">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove more legacy stuff, change about back to links">
+      <change afterPath="$PROJECT_DIR$/components/home/IntroHero.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/intro.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/MikuTransparent.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/avatar-27.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/LinkTicker.client.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/LinkTicker.client.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/AboutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/AboutSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutSidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar2.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Modal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/NavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/NavLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/Projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/Services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/error.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backgrounds/catgirl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/avatar.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/avatar.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,61 +120,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0456422519946" />
-      <entry key="MS500" value="2.0271185939233742" />
-      <entry key="S2" value="4.467689571729796" />
-      <entry key="S5" value="6.524676112111533" />
-      <entry key="S10" value="7.797154463878018" />
-      <entry key="S30" value="9.172952458268787" />
-      <entry key="S60" value="9.924606820859042" />
-      <entry key="M2" value="11.155374797303002" />
-      <entry key="M5" value="15.646088898713161" />
-      <entry key="M10" value="21.029149447559167" />
-      <entry key="M15" value="25.812700629769708" />
-      <entry key="M30" value="46.0927117541712" />
-      <entry key="H1" value="102.70956874534536" />
-      <entry key="H2" value="211.88887063006905" />
-      <entry key="H4" value="341.52787109205485" />
-      <entry key="D1" value="540.9454703646121" />
-      <entry key="W1" value="588.5722068498917" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000024068612" />
+      <entry key="S10" value="1.0000490710501013" />
+      <entry key="S30" value="1.0441412825106373" />
+      <entry key="S60" value="1.4378546076507717" />
+      <entry key="M2" value="2.9886575554264088" />
+      <entry key="M5" value="7.471002108707492" />
+      <entry key="M10" value="15.483361439966457" />
+      <entry key="M15" value="25.2724744937774" />
+      <entry key="M30" value="60.84361624209489" />
+      <entry key="H1" value="140.73785365279605" />
+      <entry key="H2" value="285.3124535531097" />
+      <entry key="H4" value="479.67611338061124" />
+      <entry key="D1" value="842.2869399067655" />
+      <entry key="W1" value="940.2263090523795" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.6877607900286834E-50" />
-      <entry key="MS500" value="1.2186475586781464E-10" />
-      <entry key="S2" value="0.0033225347410276137" />
-      <entry key="S5" value="0.10199709724796227" />
-      <entry key="S10" value="0.3193698439865438" />
-      <entry key="S30" value="0.6835759928255261" />
-      <entry key="S60" value="0.832672140974006" />
-      <entry key="M2" value="0.9861214548438911" />
-      <entry key="M5" value="1.3219383260858437" />
-      <entry key="M10" value="1.800941285170356" />
-      <entry key="M15" value="3.144488109703643" />
-      <entry key="M30" value="12.744406897836411" />
-      <entry key="H1" value="39.76584461442303" />
-      <entry key="H2" value="84.83182967939894" />
-      <entry key="H4" value="132.50655171503058" />
-      <entry key="D1" value="199.8860654249046" />
-      <entry key="W1" value="215.29488975218106" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.843870197606628E-85" />
+      <entry key="S2" value="8.181711579708854E-22" />
+      <entry key="S5" value="6.268669714492267E-9" />
+      <entry key="S10" value="1.3417027524351775E-4" />
+      <entry key="S30" value="0.10598824794788794" />
+      <entry key="S60" value="0.5635669960445139" />
+      <entry key="M2" value="1.3038877748400985" />
+      <entry key="M5" value="2.5020625509553196" />
+      <entry key="M10" value="5.224834011842906" />
+      <entry key="M15" value="8.911605280430846" />
+      <entry key="M30" value="23.644956706923665" />
+      <entry key="H1" value="59.456566003883715" />
+      <entry key="H2" value="123.40497597537204" />
+      <entry key="H4" value="203.66390193815334" />
+      <entry key="D1" value="341.90386290879184" />
+      <entry key="W1" value="377.5827449669584" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0305806973663547" />
-      <entry key="MS500" value="2.0175131279086274" />
-      <entry key="S2" value="4.464067661158524" />
-      <entry key="S5" value="6.613017020020805" />
-      <entry key="S10" value="8.098185300203056" />
-      <entry key="S30" value="9.84306608727957" />
-      <entry key="S60" value="10.74783289671773" />
-      <entry key="M2" value="12.133544459015466" />
-      <entry key="M5" value="16.958508382957493" />
-      <entry key="M10" value="22.821020153767062" />
-      <entry key="M15" value="28.94772813153427" />
-      <entry key="M30" value="58.82372413039609" />
-      <entry key="H1" value="142.45707620976717" />
-      <entry key="H2" value="296.70140085875573" />
-      <entry key="H4" value="474.0192059388413" />
-      <entry key="D1" value="740.8276524646595" />
-      <entry key="W1" value="803.8664972416294" />
+      <entry key="MS100" value="0.0010110009021888449" />
+      <entry key="MS500" value="0.25173888751417967" />
+      <entry key="S2" value="0.708333166140589" />
+      <entry key="S5" value="0.8711541990705111" />
+      <entry key="S10" value="0.9335207110878412" />
+      <entry key="S30" value="1.122397470769729" />
+      <entry key="S60" value="1.9763189537791663" />
+      <entry key="M2" value="4.269988873650591" />
+      <entry key="M5" value="9.956194265724942" />
+      <entry key="M10" value="20.690204774342742" />
+      <entry key="M15" value="34.163560703836644" />
+      <entry key="M30" value="84.46221742841175" />
+      <entry key="H1" value="200.162825343177" />
+      <entry key="H2" value="408.6858997757037" />
+      <entry key="H4" value="683.3145431041194" />
+      <entry key="D1" value="1184.1837708024466" />
+      <entry key="W1" value="1317.8079463449533" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -184,7 +204,7 @@
     "git-widget-placeholder": "7",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
@@ -223,18 +243,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/cursors/site" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/public/backgrounds" />
-      <recent name="$PROJECT_DIR$/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/avatar-27" />
       <recent name="$PROJECT_DIR$/.output" />
       <recent name="$PROJECT_DIR$/components/langs" />
       <recent name="$PROJECT_DIR$/i18n/locales/pages" />
-      <recent name="$PROJECT_DIR$/i18n/locales/meta" />
-      <recent name="$PROJECT_DIR$/i18n/locales/global" />
     </key>
   </component>
   <component name="RunManager" selected="npm.format">
@@ -938,15 +958,8 @@
       <workItem from="1784302209919" duration="335000" />
       <workItem from="1784364651235" duration="9000" />
       <workItem from="1784365625330" duration="11000" />
-      <workItem from="1784538888893" duration="11518000" />
-    </task>
-    <task id="LOCAL-00084" summary="add translation verification, improve localization, add link ticker, update Nuxt">
-      <option name="closed" value="true" />
-      <created>1769344854271</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1769344854284</updated>
+      <workItem from="1784538888893" duration="11547000" />
+      <workItem from="1784574903877" duration="11453000" />
     </task>
     <task id="LOCAL-00085" summary="improve prettier config, improve bottom logo, improve links data, update usernames">
       <option name="closed" value="true" />
@@ -1332,7 +1345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784549992295</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="remove more legacy stuff, change about back to links">
+      <option name="closed" value="true" />
+      <created>1784554032118</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1784554032119</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1353,7 +1374,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add emojispeak, piratespeak, bump version, remove dead code" />
     <MESSAGE value="update readme, add hieroglyphics, add polish, update meta" />
     <MESSAGE value="update language ordering" />
     <MESSAGE value="add pm field, update ts-pkg version" />
@@ -1378,7 +1398,8 @@
     <MESSAGE value="remove all asboy2035, replace reddit with byg, remove craft pages" />
     <MESSAGE value="add new navbar starter, update for v7" />
     <MESSAGE value="update new navbar expanded view, update navlinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="update new navbar expanded view, update navlinks" />
+    <MESSAGE value="remove more legacy stuff, change about back to links" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove more legacy stuff, change about back to links" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

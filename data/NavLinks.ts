@@ -1,7 +1,7 @@
 import type { NavLink } from ':/navLink'
 
 export const HomeNavLink: NavLink = {
-  link: '/home',
+  link: '/',
   text: 'pages.home',
 }
 

@@ -172,7 +172,7 @@
             <NavigationButton :link="HomeNavLink" id="homeButtonContainer">
               <DynamicImage
                 class="avatar"
-                src="/images/avatar-26.webp"
+                src="/images/avatar-27.webp"
                 alt="ash's Avatar (Go Home)"
                 id="avatarButton"
               />
@@ -221,7 +221,7 @@
         </button>
       </HStack>
 
-      <SafeLink to="/home" v-if="!showingNavProfile">
+      <SafeLink to="/" v-if="!showingNavProfile">
         <InteriorItem class="minimalProfile"> ash </InteriorItem>
       </SafeLink>
 

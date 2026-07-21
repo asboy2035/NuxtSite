@@ -5,9 +5,9 @@ export const Services: Service[] = [
     name: 'Byg',
     description: 'The beautiful, unhinged social media platform.',
     state: Beta,
-    url: 'https://byg.a35.dev',
+    url: 'https://byg.gg',
     vcsUrl: 'https://github.com/BygNet',
-    iconUrl: 'https://byg.a35.dev/favicon.ico',
+    iconUrl: 'https://byg.gg/favicon.ico',
   },
   {
     name: 'Slays',
