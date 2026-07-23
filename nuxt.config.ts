@@ -61,7 +61,7 @@ export default defineNuxtConfig({
 
   i18n: {
     strategy: 'prefix_except_default',
-    baseUrl: 'https://a35hie.me',
+    baseUrl: import.meta.env.BASE_URL,
     defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,

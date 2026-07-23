@@ -7,20 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add translations, remove old unused content, animate sidebar, add home to sidebar">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/SitePreviewBg.svg" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add og image generation">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oxfmt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/oxfmt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/setHeadMeta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/setHeadMeta.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,61 +96,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0361975739429738" />
-      <entry key="MS500" value="2.0735454312801984" />
-      <entry key="S2" value="4.126264716611761" />
-      <entry key="S5" value="5.106846967669851" />
-      <entry key="S10" value="5.524377364345786" />
-      <entry key="S30" value="5.834453798796245" />
-      <entry key="S60" value="5.920886817962549" />
-      <entry key="M2" value="6.048289599268075" />
-      <entry key="M5" value="7.830973096381653" />
-      <entry key="M10" value="13.698054959810271" />
-      <entry key="M15" value="20.728622846957457" />
-      <entry key="M30" value="45.17884528534103" />
-      <entry key="H1" value="101.83351603803902" />
-      <entry key="H2" value="214.6182560550778" />
-      <entry key="H4" value="382.069890499991" />
-      <entry key="D1" value="1129.4730396962275" />
-      <entry key="W1" value="1588.5354431318874" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000005879002" />
+      <entry key="S5" value="1.001829327099898" />
+      <entry key="S10" value="1.1378547681302118" />
+      <entry key="S30" value="4.125820289407" />
+      <entry key="S60" value="8.347663566403153" />
+      <entry key="M2" value="12.438547528498578" />
+      <entry key="M5" value="15.994864679031007" />
+      <entry key="M10" value="17.42527675146889" />
+      <entry key="M15" value="17.935882198032875" />
+      <entry key="M30" value="18.951426467375356" />
+      <entry key="H1" value="29.36769598602764" />
+      <entry key="H2" value="88.23878520554874" />
+      <entry key="H4" value="236.15829064218107" />
+      <entry key="D1" value="1047.0151532202442" />
+      <entry key="W1" value="1586.3199738257197" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.712463654093163E-166" />
-      <entry key="S5" value="5.000678262056684E-67" />
-      <entry key="S10" value="8.293339699459067E-34" />
-      <entry key="S30" value="2.2525139342067896E-11" />
-      <entry key="S60" value="1.3373061221048065E-5" />
-      <entry key="M2" value="0.011969007770536173" />
-      <entry key="M5" value="0.7707336690945283" />
-      <entry key="M10" value="3.538124690629908" />
-      <entry key="M15" value="7.191469728289825" />
-      <entry key="M30" value="20.670258408066516" />
-      <entry key="H1" value="45.037242924038345" />
-      <entry key="H2" value="76.80361843092993" />
-      <entry key="H4" value="114.74468444788775" />
-      <entry key="D1" value="351.1691953822637" />
-      <entry key="W1" value="514.145997323788" />
+      <entry key="MS100" value="5.523139285014041E-174" />
+      <entry key="MS500" value="2.2306796181329925E-35" />
+      <entry key="S2" value="2.1732480558234763E-9" />
+      <entry key="S5" value="3.426444643650089E-4" />
+      <entry key="S10" value="0.018510658128899928" />
+      <entry key="S30" value="0.26452940392495117" />
+      <entry key="S60" value="0.5143242206283418" />
+      <entry key="M2" value="0.7171640123628219" />
+      <entry key="M5" value="0.8754823506821182" />
+      <entry key="M10" value="0.9356767439464213" />
+      <entry key="M15" value="0.957498651791302" />
+      <entry key="M30" value="1.203771049001511" />
+      <entry key="H1" value="5.695019380437891" />
+      <entry key="H2" value="25.82143682147104" />
+      <entry key="H4" value="66.23566748532882" />
+      <entry key="D1" value="320.6276025741971" />
+      <entry key="W1" value="508.2798547237078" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9947001715222544" />
-      <entry key="MS500" value="2.060481992173276" />
-      <entry key="S2" value="4.120255615450812" />
-      <entry key="S5" value="5.103833287483565" />
-      <entry key="S10" value="5.522734303657826" />
-      <entry key="S30" value="5.833871664457585" />
-      <entry key="S60" value="5.920601807196577" />
-      <entry key="M2" value="6.059901503701246" />
-      <entry key="M5" value="8.596507538687623" />
-      <entry key="M10" value="17.224249877584477" />
-      <entry key="M15" value="27.904498414197395" />
-      <entry key="M30" value="65.82844563378931" />
-      <entry key="H1" value="146.84913862637887" />
-      <entry key="H2" value="291.4034283582268" />
-      <entry key="H4" value="496.80058047122617" />
-      <entry key="D1" value="1480.6350059758488" />
-      <entry key="W1" value="2102.6799299069226" />
+      <entry key="MS100" value="0.6506709277209668" />
+      <entry key="MS500" value="0.9176398823113651" />
+      <entry key="S2" value="0.9787416566893142" />
+      <entry key="S5" value="0.9934274028897823" />
+      <entry key="S10" value="1.1458257141433994" />
+      <entry key="S30" value="4.353901080412919" />
+      <entry key="S60" value="8.825691495830771" />
+      <entry key="M2" value="13.129971152005371" />
+      <entry key="M5" value="16.857633483657896" />
+      <entry key="M10" value="18.35413253248449" />
+      <entry key="M15" value="18.88872351238838" />
+      <entry key="M30" value="20.152588820776568" />
+      <entry key="H1" value="35.0592505411211" />
+      <entry key="H2" value="114.0536528785343" />
+      <entry key="H4" value="302.3856974369942" />
+      <entry key="D1" value="1367.6361251856833" />
+      <entry key="W1" value="2094.5983309120106" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -947,15 +938,7 @@
       <workItem from="1784538888893" duration="11547000" />
       <workItem from="1784574903877" duration="11702000" />
       <workItem from="1784638353679" duration="28000" />
-      <workItem from="1784755409751" duration="16943000" />
-    </task>
-    <task id="LOCAL-00089" summary="fix localization for link ticker, add intro page">
-      <option name="closed" value="true" />
-      <created>1769884566953</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1769884566954</updated>
+      <workItem from="1784755409751" duration="18254000" />
     </task>
     <task id="LOCAL-00090" summary="localize intro, animate navbar">
       <option name="closed" value="true" />
@@ -1341,7 +1324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784811013878</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="add og image generation">
+      <option name="closed" value="true" />
+      <created>1784822847700</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1784822847700</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1362,7 +1353,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add localizations, add expanded navbar mode, improve navbar UI, redesign hero" />
     <MESSAGE value="code cleanup, add state labels to services" />
     <MESSAGE value="update packages, fix mobile navbar" />
     <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
@@ -1387,7 +1377,8 @@
     <MESSAGE value="optimize CSS vars, update nuxt config" />
     <MESSAGE value="fix cobe version back to 0.6.5" />
     <MESSAGE value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
+    <MESSAGE value="add og image generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add og image generation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
