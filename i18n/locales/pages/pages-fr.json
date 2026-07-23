@@ -60,20 +60,20 @@
     "foundError": "Vous avez trouvé une erreur ?",
     "reportError": "Signalez-la."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Un plateforme infini et rêveur : saute entre des plateformes lumineuses, attrape des jetons d’étoiles et évite les petits monstres rouges.",
-    "controls": "Commandes : touche/clic ou Espace pour sauter.",
-    "metaDesc": "Un petit jeu de plateforme pastel caché en easter egg.",
-    "hud": "Saute sur les plateformes lumineuses, attrape des jetons et évite les petits monstres rouges.",
-    "statusReady": "Touche/clic ou Espace pour sauter",
-    "statusRetry": "Oups ! Touche/clic ou Espace pour réessayer",
-    "easyMode": "Mode facile (sans ennemis)",
+  "ring": {
+    "title": "Ring",
+    "description": "Un casse-briques dynamique autour d’anneaux en rotation.",
+    "controls": "Déplace-toi avec la souris, A/S ou les flèches. Garde la balle en jeu.",
+    "start": "Commencer",
+    "restart": "Rejouer",
+    "level": "Niveau",
+    "blocks": "Blocs",
+    "lives": "Vies",
     "gameOver": "Partie terminée",
-    "score": "Score",
-    "tokens": "Jetons",
-    "best": "Record",
-    "aria": "Mini-jeu Starhop"
+    "complete": "Niveau terminé",
+    "aria": "Jeu Ring",
+    "left": "Aller à gauche",
+    "right": "Aller à droite"
   },
   "services": {
     "title": "Services",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "Erreur",
-    "title404": "Perdu·e dans les étoiles",
-    "titleDefault": "Un problème est survenu",
-    "message404": "Cette page est introuvable, mais on a trouvé un petit jeu caché.",
+    "message404": "Cette page est introuvable.",
     "messageDefault": "Réessaie ou retourne à l’accueil.",
     "goHome": "Accueil",
-    "openFullGame": "Ouvrir le jeu complet"
+    "playRing": "Jouer à Ring"
   }
 }

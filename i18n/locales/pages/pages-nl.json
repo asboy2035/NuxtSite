@@ -60,20 +60,20 @@
     "foundError": "Een fout gevonden?",
     "reportError": "Meld het."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Een dromerige oneindige platformer: spring tussen gloeiende platforms, grijp sterrelicht-tokens en ontwijkt de kleine rode beestjes.",
-    "controls": "Besturing: Tik/klik of druk op spatie om te springen.",
-    "metaDesc": "Een klein pastelkleurig platformspel verborgen als paaseii.",
-    "hud": "Spring tussen gloeiende platforms, grijp tokens en ontwijkt rode beestjes.",
-    "statusReady": "Tik of druk op spatie om te springen",
-    "statusRetry": "Oeps! Tik of druk op spatie om opnieuw te proberen",
-    "easyMode": "Gemakkelijke modus (geen vijanden)",
+  "ring": {
+    "title": "Ring",
+    "description": "Een dynamische brick breaker rond draaiende ringen.",
+    "controls": "Beweeg met muis, A/S of pijltjestoetsen. Houd de bal in het spel.",
+    "start": "Start",
+    "restart": "Opnieuw spelen",
+    "level": "Level",
+    "blocks": "Blokken",
+    "lives": "Levens",
     "gameOver": "Game Over",
-    "score": "Score",
-    "tokens": "Tokens",
-    "best": "Beste",
-    "aria": "Starhop minigame"
+    "complete": "Level voltooid",
+    "aria": "Ring-game",
+    "left": "Naar links",
+    "right": "Naar rechts"
   },
   "services": {
     "title": "Diensten",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "Fout",
-    "title404": "Verdwaald in de sterren",
-    "titleDefault": "Er is iets misgegaan",
-    "message404": "We konden die pagina niet vinden, maar we hebben wel een klein verborgen spel gevonden.",
+    "message404": "We konden die pagina niet vinden.",
     "messageDefault": "Probeer het opnieuw of ga terug naar huis.",
     "goHome": "Naar huis gaan",
-    "openFullGame": "Open volledige spel"
+    "playRing": "Speel Ring"
   }
 }

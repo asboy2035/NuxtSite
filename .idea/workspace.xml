@@ -7,13 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="fix up og image">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="switch to webp rendering for og image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/SitePreview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/SitePreviewBg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/games/StarhopGame.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/error.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-cn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-jp.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-jp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-nl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-pt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/starhop.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,61 +107,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000653" />
-      <entry key="MS500" value="1.0023066262918545" />
-      <entry key="S2" value="1.219153576951605" />
-      <entry key="S5" value="1.5502798935802566" />
-      <entry key="S10" value="1.8116680011882749" />
-      <entry key="S30" value="2.322659963242615" />
-      <entry key="S60" value="2.6009044800316965" />
-      <entry key="M2" value="3.0161289114653385" />
-      <entry key="M5" value="7.422712728430851" />
-      <entry key="M10" value="17.00594245686064" />
-      <entry key="M15" value="23.999582908351787" />
-      <entry key="M30" value="35.165524674995076" />
-      <entry key="H1" value="50.648841332652296" />
-      <entry key="H2" value="107.8270668473698" />
-      <entry key="H4" value="252.8860555284616" />
-      <entry key="D1" value="1068.4454484378946" />
-      <entry key="W1" value="1616.8208725221484" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.280474E-318" />
+      <entry key="S10" value="5.213472265549508E-159" />
+      <entry key="S30" value="9.72538093635448E-53" />
+      <entry key="S60" value="3.664433189894322E-26" />
+      <entry key="M2" value="7.264660301102171E-13" />
+      <entry key="M5" value="8.904049579234799E-5" />
+      <entry key="M10" value="0.061447658490124714" />
+      <entry key="M15" value="0.5906712166542321" />
+      <entry key="M30" value="5.9958750092207005" />
+      <entry key="H1" value="22.215211468726135" />
+      <entry key="H2" value="71.32605122784925" />
+      <entry key="H4" value="204.44381172600296" />
+      <entry key="D1" value="1034.489385779809" />
+      <entry key="W1" value="1617.9584384526154" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.143219709397239E-125" />
-      <entry key="S2" value="9.586281228931414E-32" />
-      <entry key="S5" value="5.923179922758827E-13" />
-      <entry key="S10" value="1.0881069381598597E-6" />
-      <entry key="S30" value="0.016326148144573782" />
-      <entry key="S60" value="0.18078943802683284" />
-      <entry key="M2" value="0.6176829905809734" />
-      <entry key="M5" value="1.6448664570030354" />
-      <entry key="M10" value="2.8207795677059853" />
-      <entry key="M15" value="3.533064921820055" />
-      <entry key="M30" value="4.675609397523744" />
-      <entry key="H1" value="8.825776215686062" />
-      <entry key="H2" value="27.36697367069455" />
-      <entry key="H4" value="66.89693762363254" />
-      <entry key="D1" value="322.1288064067771" />
-      <entry key="W1" value="512.4859040552869" />
+      <entry key="MS100" value="1.0001902257274562" />
+      <entry key="MS500" value="1.180241108932528" />
+      <entry key="S2" value="1.651573574681647" />
+      <entry key="S5" value="1.8425300219450063" />
+      <entry key="S10" value="1.9178943413841303" />
+      <entry key="S30" value="1.9718462521444695" />
+      <entry key="S60" value="1.9858226271213648" />
+      <entry key="M2" value="1.992886009127647" />
+      <entry key="M5" value="1.9971561660019388" />
+      <entry key="M10" value="2.0047387368233944" />
+      <entry key="M15" value="2.0585538514307253" />
+      <entry key="M30" value="2.6063168051342265" />
+      <entry key="H1" value="5.179226375982244" />
+      <entry key="H2" value="18.42571000755729" />
+      <entry key="H4" value="53.82699160296762" />
+      <entry key="D1" value="310.71276887795096" />
+      <entry key="W1" value="511.3808853336425" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9526379980439759" />
-      <entry key="MS500" value="0.9924188400470061" />
-      <entry key="S2" value="1.211032993149392" />
-      <entry key="S5" value="1.5430468744372139" />
-      <entry key="S10" value="1.8034464045388496" />
-      <entry key="S30" value="2.32947616335979" />
-      <entry key="S60" value="2.77331187210542" />
-      <entry key="M2" value="3.6264627955490827" />
-      <entry key="M5" value="9.059017191417546" />
-      <entry key="M10" value="19.817461636860354" />
-      <entry key="M15" value="27.52419409899797" />
-      <entry key="M30" value="39.8350591635812" />
-      <entry key="H1" value="59.4693235249576" />
-      <entry key="H2" value="135.18685998902157" />
-      <entry key="H4" value="319.7745193845331" />
-      <entry key="D1" value="1390.5675694658185" />
-      <entry key="W1" value="2129.305263082344" />
+      <entry key="MS100" value="2.0845030236198367E-4" />
+      <entry key="MS500" value="0.2326914823388607" />
+      <entry key="S2" value="1.1254182406573234" />
+      <entry key="S5" value="1.583948653696415" />
+      <entry key="S10" value="1.778895564693862" />
+      <entry key="S30" value="1.9231707810891494" />
+      <entry key="S60" value="1.9611796827445085" />
+      <entry key="M2" value="1.9804872730241139" />
+      <entry key="M5" value="1.9922670029892764" />
+      <entry key="M10" value="2.0636738774253653" />
+      <entry key="M15" value="2.6474201455249333" />
+      <entry key="M30" value="8.600570540640705" />
+      <entry key="H1" value="27.39211286999004" />
+      <entry key="H2" value="89.74724183762366" />
+      <entry key="H4" value="258.26413340023834" />
+      <entry key="D1" value="1345.1957301602063" />
+      <entry key="W1" value="2129.337816952477" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -940,15 +949,7 @@
       <workItem from="1784538888893" duration="11547000" />
       <workItem from="1784574903877" duration="11702000" />
       <workItem from="1784638353679" duration="28000" />
-      <workItem from="1784755409751" duration="19585000" />
-    </task>
-    <task id="LOCAL-00092" summary="bump version">
-      <option name="closed" value="true" />
-      <created>1769890701528</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1769890701529</updated>
+      <workItem from="1784755409751" duration="22882000" />
     </task>
     <task id="LOCAL-00093" summary="[EXPERIMENTAL] add ads">
       <option name="closed" value="true" />
@@ -1334,7 +1335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784835210282</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="switch to webp rendering for og image">
+      <option name="closed" value="true" />
+      <created>1784835898088</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1784835898088</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1355,7 +1364,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
     <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
     <MESSAGE value="add more loading in animations, improve navbar, add cursor particles" />
     <MESSAGE value="add wallpapers to goodies (finally)" />
@@ -1380,7 +1388,8 @@
     <MESSAGE value="add og image generation" />
     <MESSAGE value="make baseurl dynamic" />
     <MESSAGE value="fix up og image" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix up og image" />
+    <MESSAGE value="switch to webp rendering for og image" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch to webp rendering for og image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

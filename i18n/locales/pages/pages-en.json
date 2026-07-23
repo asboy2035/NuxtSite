@@ -60,20 +60,20 @@
     "foundError": "Found an error?",
     "reportError": "Report it."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "A dreamy infinite platformer: hop between glowing platforms, snag starlight tokens, and dodge the tiny red critters.",
-    "controls": "Controls: Tap/click or press Space to jump.",
-    "metaDesc": "A tiny pastel platformer hidden as an easter egg.",
-    "hud": "Hop across glowing platforms, grab tokens, and dodge the red critters.",
-    "statusReady": "Tap or press Space to hop",
-    "statusRetry": "Oops! Tap or press Space to retry",
-    "easyMode": "Easy mode (no enemies)",
+  "ring": {
+    "title": "Ring",
+    "description": "A kinetic brick breaker played around spinning rings.",
+    "controls": "Move with mouse, A/S, or arrow keys. Keep the ball in play.",
+    "start": "Start",
+    "restart": "Play again",
+    "level": "Level",
+    "blocks": "Blocks",
+    "lives": "Lives",
     "gameOver": "Game Over",
-    "score": "Score",
-    "tokens": "Tokens",
-    "best": "Best",
-    "aria": "Starhop mini game"
+    "complete": "Level complete",
+    "aria": "Ring game",
+    "left": "Move left",
+    "right": "Move right"
   },
   "services": {
     "title": "Services",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "Error",
-    "title404": "Lost in the stars",
-    "titleDefault": "Something went wrong",
-    "message404": "We couldn't find that page, but we did find a tiny hidden game.",
+    "message404": "We couldn't find that page.",
     "messageDefault": "Try again or head back home.",
     "goHome": "Go Home",
-    "openFullGame": "Open Full Game"
+    "playRing": "Play Ring"
   }
 }

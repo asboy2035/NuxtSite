@@ -60,20 +60,20 @@
     "foundError": "发现了错误？",
     "reportError": "报告错误。"
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "梦幻的无限平台跳跃：在发光的平台间跳跃，收集星光代币，躲避小红敌人。",
-    "controls": "操作：点击/轻触或按空格键跳跃。",
-    "metaDesc": "一个藏在彩蛋里的小小粉彩平台游戏。",
-    "hud": "在发光平台间跳跃，收集代币并躲避小红敌人。",
-    "statusReady": "点击或按空格键跳跃",
-    "statusRetry": "哎呀！点击或按空格键重试",
-    "easyMode": "简单模式（无敌人）",
+  "ring": {
+    "title": "Ring",
+    "description": "围绕旋转圆环展开的动感打砖块游戏。",
+    "controls": "使用鼠标、A/S 或方向键移动；别让球掉出去。",
+    "start": "开始",
+    "restart": "再玩一次",
+    "level": "关卡",
+    "blocks": "方块",
+    "lives": "生命",
     "gameOver": "游戏结束",
-    "score": "得分",
-    "tokens": "代币",
-    "best": "最佳",
-    "aria": "Starhop 迷你游戏"
+    "complete": "关卡完成",
+    "aria": "Ring 游戏",
+    "left": "向左移动",
+    "right": "向右移动"
   },
   "services": {
     "title": "服务",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "错误",
-    "title404": "迷失在星海",
-    "titleDefault": "出了点问题",
-    "message404": "页面没有找到，但我们找到了一个隐藏小游戏。",
+    "message404": "未找到该页面。",
     "messageDefault": "请重试或返回首页。",
     "goHome": "返回首页",
-    "openFullGame": "打开完整游戏"
+    "playRing": "玩 Ring"
   }
 }

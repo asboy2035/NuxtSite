@@ -1,9 +1,9 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
 
-  import HStack from '+/layout/HStack.vue'
   import SafeLink from '+/utils/SafeLink.vue'
-  import StarhopGame from '~/components/games/StarhopGame.vue'
+
+  definePageMeta({ layout: 'plain' })
 
   const props = defineProps<{
     error?: { statusCode?: number; statusMessage?: string }
@@ -11,69 +11,52 @@
   const { t } = useI18n()
 
   const statusCode = computed(() => props.error?.statusCode ?? 404)
-  const isNotFound = computed(() => statusCode.value === 404)
-  const title = computed(() =>
-    isNotFound.value ? t('error.title404') : t('error.titleDefault')
-  )
   const message = computed(() =>
-    isNotFound.value
+    statusCode.value === 404
       ? t('error.message404')
       : props.error?.statusMessage || t('error.messageDefault')
   )
 </script>
 
 <template>
-  <div class="contentView errorShell">
+  <main class="errorShell">
     <div class="errorContent">
-      <div class="errorText">
-        <p class="eyebrow">{{ t('error.label') }} {{ statusCode }}</p>
-        <h1>{{ title }}</h1>
-        <p class="lead">{{ message }}</p>
-
-        <HStack class="actions">
-          <SafeLink to="/"
-            ><button class="prominent">
-              <Icon icon="solar:home-angle-line-duotone" />
-              {{ t('error.goHome') }}
-            </button></SafeLink
-          >
-
-          <SafeLink to="/starhop"
-            ><button class="transparent">
-              <Icon icon="solar:gamepad-line-duotone" />
-              {{ t('error.openFullGame') }}
-            </button></SafeLink
-          >
-        </HStack>
-      </div>
-
-      <div class="errorGame">
-        <StarhopGame />
+      <p>{{ t('error.label') }}</p>
+      <h1>{{ statusCode }}</h1>
+      <p class="lead">{{ message }}</p>
+      <div class="actions">
+        <SafeLink to="/"
+          ><button class="prominent">
+            <Icon icon="solar:home-angle-line-duotone" />{{ t('error.goHome') }}
+          </button></SafeLink
+        >
+        <SafeLink to="/ring"
+          ><button class="transparent">
+            <Icon icon="solar:gamepad-line-duotone" />{{ t('error.playRing') }}
+          </button></SafeLink
+        >
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <style scoped lang="sass">
-  .errorContent
+  .errorShell
+    position: relative
+    z-index: 1
     display: grid
-    gap: 2rem
-    grid-template-columns: 1fr
-    margin: 0 auto
-
-  .errorText
-    align-items: flex-start
-    text-align: left
+    min-height: 100dvh
+    place-items: center
+    padding: 2rem
+  .errorContent
+    max-width: 38rem
+    text-align: center
+    h1
+      margin: 0
+      font-size: clamp(8rem, 30vw, 20rem)
+      line-height: .8
 
   .actions
     gap: 0.75rem
     margin-top: 1rem
-
-  .errorGame
-    width: 100%
-
-  @media (min-width: 900px)
-    .errorContent
-      grid-template-columns: 0.85fr 1.15fr
-      align-items: center
 </style>

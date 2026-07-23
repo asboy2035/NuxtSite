@@ -60,20 +60,20 @@
     "foundError": "¿Encontraste un error?",
     "reportError": "Repórtalo."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Un plataformas infinito y soñador: salta entre plataformas brillantes, recoge fichas de luz estelar y esquiva a los pequeños enemigos rojos.",
-    "controls": "Controles: toca/haz clic o pulsa Espacio para saltar.",
-    "metaDesc": "Un pequeño plataformas pastel escondido como huevo de pascua.",
-    "hud": "Salta entre plataformas brillantes, recoge fichas y esquiva a los pequeños enemigos rojos.",
-    "statusReady": "Toca o pulsa Espacio para saltar",
-    "statusRetry": "¡Ups! Toca o pulsa Espacio para reintentar",
-    "easyMode": "Modo fácil (sin enemigos)",
+  "ring": {
+    "title": "Ring",
+    "description": "Un brick breaker dinámico jugado alrededor de anillos giratorios.",
+    "controls": "Muévete con el ratón, A/S o las flechas. Mantén la pelota en juego.",
+    "start": "Empezar",
+    "restart": "Jugar de nuevo",
+    "level": "Nivel",
+    "blocks": "Bloques",
+    "lives": "Vidas",
     "gameOver": "Fin de la partida",
-    "score": "Puntuación",
-    "tokens": "Fichas",
-    "best": "Mejor",
-    "aria": "Minijuego Starhop"
+    "complete": "Nivel completado",
+    "aria": "Juego Ring",
+    "left": "Mover a la izquierda",
+    "right": "Mover a la derecha"
   },
   "services": {
     "title": "Servicios",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "Error",
-    "title404": "Perdido en las estrellas",
-    "titleDefault": "Algo salió mal",
-    "message404": "No encontramos esa página, pero sí un pequeño juego escondido.",
+    "message404": "No pudimos encontrar esa página.",
     "messageDefault": "Inténtalo de nuevo o vuelve al inicio.",
     "goHome": "Inicio",
-    "openFullGame": "Abrir juego completo"
+    "playRing": "Jugar Ring"
   }
 }

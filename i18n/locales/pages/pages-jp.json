@@ -60,20 +60,20 @@
     "foundError": "間違いを見つけましたか？",
     "reportError": "報告する。"
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "夢のような無限プラットフォーマー。光る足場を渡り、スターのトークンを集めて、小さな赤い敵を避けよう。",
-    "controls": "操作：タップ／クリック、またはスペースでジャンプ。",
-    "metaDesc": "パステル調の小さなプラットフォーマー（隠し要素）。",
-    "hud": "光る足場を渡り、トークンを集めて赤い敵を避けよう。",
-    "statusReady": "タップ／スペースでジャンプ",
-    "statusRetry": "おっと！タップ／スペースでもう一度",
-    "easyMode": "イージーモード（敵なし）",
+  "ring": {
+    "title": "Ring",
+    "description": "回転するリングの周りで遊ぶ、躍動感あるブロック崩し。",
+    "controls": "マウス、A/S、または矢印キーで移動。ボールを落とさないようにしよう。",
+    "start": "開始",
+    "restart": "もう一度遊ぶ",
+    "level": "レベル",
+    "blocks": "ブロック",
+    "lives": "ライフ",
     "gameOver": "ゲームオーバー",
-    "score": "スコア",
-    "tokens": "トークン",
-    "best": "ベスト",
-    "aria": "Starhop ミニゲーム"
+    "complete": "レベルクリア",
+    "aria": "Ring ゲーム",
+    "left": "左へ移動",
+    "right": "右へ移動"
   },
   "services": {
     "title": "サービス",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "エラー",
-    "title404": "星の中で迷子",
-    "titleDefault": "問題が発生しました",
-    "message404": "ページが見つかりませんでしたが、小さな隠しゲームは見つかりました。",
+    "message404": "このページは見つかりませんでした。",
     "messageDefault": "もう一度試すか、ホームへ戻ってください。",
     "goHome": "ホームへ",
-    "openFullGame": "フルゲームを開く"
+    "playRing": "Ring を遊ぶ"
   }
 }

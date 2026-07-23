@@ -60,20 +60,20 @@
     "foundError": "Löysitkö virheen?",
     "reportError": "Ilmoita se."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Unelmallinen loputon alusta: hyppää loistavien alustojen välillä, napaa tähtivalohjaustokenit ja väistele pieniä punaisia olentoja.",
-    "controls": "Ohjaimet: Napauta/napsauta tai paina välilyöntiä hypätäksesi.",
-    "metaDesc": "Pieni pastelli-alusta piilotettu pääsiäismuna.",
-    "hud": "Hyppää loistavien alustojen välillä, napaa tokenit ja väistele punaisia olentoja.",
-    "statusReady": "Napauta tai paina välilyöntiä hypätäksesi",
-    "statusRetry": "Oops! Napauta tai paina välilyöntiä yrittääksesi uudelleen",
-    "easyMode": "Helppo tila (ei vihollisia)",
-    "gameOver": "Peli Ohi",
-    "score": "Pisteet",
-    "tokens": "Rahakkeet",
-    "best": "Paras",
-    "aria": "Starhop minipeli"
+  "ring": {
+    "title": "Ring",
+    "description": "Dynaaminen tiilenmurskauspeli pyörivien renkaiden ympärillä.",
+    "controls": "Liiku hiirellä, A/S:llä tai nuolinäppäimillä. Pidä pallo pelissä.",
+    "start": "Aloita",
+    "restart": "Pelaa uudelleen",
+    "level": "Taso",
+    "blocks": "Palikat",
+    "lives": "Elämät",
+    "gameOver": "Peli ohi",
+    "complete": "Taso suoritettu",
+    "aria": "Ring-peli",
+    "left": "Vasemmalle",
+    "right": "Oikealle"
   },
   "services": {
     "title": "Palvelut",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "Virhe",
-    "title404": "Eksynyt tähtiin",
-    "titleDefault": "Jotain meni pieleen",
-    "message404": "Emme löytäneet sitä sivua, mutta löysimme pienen piilotetun pelin.",
+    "message404": "Sivua ei löytynyt.",
     "messageDefault": "Yritä uudelleen tai mene takaisin kotiin.",
     "goHome": "Mene kotiin",
-    "openFullGame": "Avaa täysi peli"
+    "playRing": "Pelaa Ringiä"
   }
 }

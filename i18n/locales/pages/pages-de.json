@@ -60,20 +60,20 @@
     "foundError": "Fehler gefunden?",
     "reportError": "Melde es."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Ein verträumter Endlos-Plattformer: Springe über leuchtende Plattformen, sammle Sternen-Token und weiche den kleinen roten Gegnern aus.",
-    "controls": "Steuerung: Tippen/Klicken oder Leertaste zum Springen.",
-    "metaDesc": "Ein kleines pastellfarbenes Plattformspiel als Easter Egg.",
-    "hud": "Springe über leuchtende Plattformen, sammle Token und weiche den kleinen roten Gegnern aus.",
-    "statusReady": "Tippen oder Leertaste zum Springen",
-    "statusRetry": "Ups! Tippen oder Leertaste zum Wiederholen",
-    "easyMode": "Leichtmodus (keine Gegner)",
+  "ring": {
+    "title": "Ring",
+    "description": "Ein dynamischer Brick-Breaker rund um drehende Ringe.",
+    "controls": "Mit Maus, A/S oder Pfeiltasten bewegen. Halte den Ball im Spiel.",
+    "start": "Starten",
+    "restart": "Noch einmal",
+    "level": "Level",
+    "blocks": "Blöcke",
+    "lives": "Leben",
     "gameOver": "Game Over",
-    "score": "Punktzahl",
-    "tokens": "Token",
-    "best": "Bestwert",
-    "aria": "Starhop-Minispiel"
+    "complete": "Level geschafft",
+    "aria": "Ring-Spiel",
+    "left": "Nach links",
+    "right": "Nach rechts"
   },
   "services": {
     "title": "Dienste",
@@ -83,11 +83,9 @@
   },
   "error": {
     "label": "Fehler",
-    "title404": "Verloren zwischen den Sternen",
-    "titleDefault": "Etwas ist schiefgelaufen",
-    "message404": "Diese Seite wurde nicht gefunden, aber wir haben ein kleines verstecktes Spiel entdeckt.",
+    "message404": "Diese Seite wurde nicht gefunden.",
     "messageDefault": "Versuch es erneut oder geh zurück zur Startseite.",
     "goHome": "Zur Startseite",
-    "openFullGame": "Vollversion öffnen"
+    "playRing": "Ring spielen"
   }
 }
