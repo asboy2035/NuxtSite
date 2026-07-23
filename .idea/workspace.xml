@@ -7,45 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets">
-      <change afterPath="$PROJECT_DIR$/pages/motion-test.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="optimize CSS vars, update nuxt config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/UpdatedBadge.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/games/StarhopGame.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/games/StarhopGame.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/IntroHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/IntroHero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/langs/LangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/LangPicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/langs/ModernLangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/langs/ModernLangPicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/LargeIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/LargeIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/NotificationDot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/NotificationDot.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/TransitionElement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/TransitionElement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/services/ServiceItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/services/ServiceItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Divider.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oxfmt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/oxfmt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/more.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/more.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/popovers.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/popovers.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/utilities.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/utilities.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,60 +97,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000013825112126" />
-      <entry key="S60" value="1.001959957793728" />
-      <entry key="M2" value="1.1215127808259424" />
-      <entry key="M5" value="4.040766104824139" />
-      <entry key="M10" value="20.05542501728822" />
-      <entry key="M15" value="40.91345796751733" />
-      <entry key="M30" value="88.47156740082052" />
-      <entry key="H1" value="132.1902516856562" />
-      <entry key="H2" value="165.79112207056102" />
-      <entry key="H4" value="235.3946940758746" />
-      <entry key="D1" value="804.9419960055105" />
-      <entry key="W1" value="1129.8459910965541" />
+      <entry key="MS500" value="1.0000000000000138" />
+      <entry key="S2" value="1.0011204292882192" />
+      <entry key="S5" value="1.2237118917148222" />
+      <entry key="S10" value="2.6002987312843313" />
+      <entry key="S30" value="8.683404841231157" />
+      <entry key="S60" value="13.55930269526929" />
+      <entry key="M2" value="17.465383064802815" />
+      <entry key="M5" value="20.66552044319148" />
+      <entry key="M10" value="24.438113562936344" />
+      <entry key="M15" value="32.233546875129534" />
+      <entry key="M30" value="66.38391962481661" />
+      <entry key="H1" value="118.3372861737817" />
+      <entry key="H2" value="168.23428783219765" />
+      <entry key="H4" value="247.16646397307227" />
+      <entry key="D1" value="827.5243298506064" />
+      <entry key="W1" value="1163.9474407627333" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.9924108833268323E-118" />
-      <entry key="S5" value="8.312880972785677E-48" />
-      <entry key="S10" value="2.883206716970824E-24" />
-      <entry key="S30" value="1.4232851791803522E-8" />
-      <entry key="S60" value="1.1930178763666977E-4" />
-      <entry key="M2" value="0.010950904031478326" />
-      <entry key="M5" value="0.19348585280017036" />
-      <entry key="M10" value="0.7016201414858576" />
-      <entry key="M15" value="1.1887267127746188" />
-      <entry key="M30" value="2.126835545164738" />
-      <entry key="H1" value="2.909133300710934" />
-      <entry key="H2" value="4.931621882573562" />
-      <entry key="H4" value="26.56274622481701" />
-      <entry key="D1" value="246.42685591379555" />
-      <entry key="W1" value="371.4922751662186" />
+      <entry key="MS100" value="5.722062324141503E-76" />
+      <entry key="MS500" value="8.94356189157646E-16" />
+      <entry key="S2" value="1.7293290188979217E-4" />
+      <entry key="S5" value="0.03127166835820565" />
+      <entry key="S10" value="0.1768379720484422" />
+      <entry key="S30" value="0.5612958638502413" />
+      <entry key="S60" value="0.7491968124933813" />
+      <entry key="M2" value="0.8655615897093246" />
+      <entry key="M5" value="0.9450480903954007" />
+      <entry key="M10" value="1.0259306381749285" />
+      <entry key="M15" value="1.1970612434844492" />
+      <entry key="M30" value="1.8972968100718859" />
+      <entry key="H1" value="2.8948357515394054" />
+      <entry key="H2" value="4.982733478569425" />
+      <entry key="H4" value="24.87689437710829" />
+      <entry key="D1" value="243.08922802343548" />
+      <entry key="W1" value="371.5510169302162" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.42631744588397835" />
-      <entry key="MS500" value="0.8432311102501124" />
-      <entry key="S2" value="0.9582672708075362" />
-      <entry key="S5" value="0.9830931320554231" />
-      <entry key="S10" value="0.9915105304813576" />
-      <entry key="S30" value="0.9971635258377229" />
-      <entry key="S60" value="1.00065657115184" />
-      <entry key="M2" value="1.1316247998572333" />
-      <entry key="M5" value="4.2325611515312245" />
-      <entry key="M10" value="20.75337204574868" />
-      <entry key="M15" value="42.09759268597897" />
-      <entry key="M30" value="90.59383257432482" />
-      <entry key="H1" value="135.09609464552346" />
-      <entry key="H2" value="170.7203821255543" />
-      <entry key="H4" value="261.9535232048056" />
-      <entry key="D1" value="1051.3636990787393" />
-      <entry key="W1" value="1501.3371656862305" />
+      <entry key="MS100" value="0.6029039138453802" />
+      <entry key="MS500" value="0.9037527267510997" />
+      <entry key="S2" value="0.9762642662450213" />
+      <entry key="S5" value="1.2403236813277578" />
+      <entry key="S10" value="2.755196112022612" />
+      <entry key="S30" value="9.217348428232986" />
+      <entry key="S60" value="14.287467108131539" />
+      <entry key="M2" value="18.317599666632816" />
+      <entry key="M5" value="21.604327621221792" />
+      <entry key="M10" value="25.460362307666326" />
+      <entry key="M15" value="33.427358238777906" />
+      <entry key="M30" value="68.27791027665336" />
+      <entry key="H1" value="121.22922963704161" />
+      <entry key="H2" value="173.2147191449593" />
+      <entry key="H4" value="272.03963402201475" />
+      <entry key="D1" value="1070.6084609139443" />
+      <entry key="W1" value="1535.4973549064089" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -972,15 +938,7 @@
       <workItem from="1784538888893" duration="11547000" />
       <workItem from="1784574903877" duration="11702000" />
       <workItem from="1784638353679" duration="28000" />
-      <workItem from="1784755409751" duration="3605000" />
-    </task>
-    <task id="LOCAL-00086" summary="improve formatting, move interfaces to types/">
-      <option name="closed" value="true" />
-      <created>1769350702480</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1769350702480</updated>
+      <workItem from="1784755409751" duration="4878000" />
     </task>
     <task id="LOCAL-00087" summary="improve card styling, improve navbar, increase corner rounding, improve light mode coloring, add notification badge to site picker Byg, shorten toolbar strings, misc fixes">
       <option name="closed" value="true" />
@@ -1366,7 +1324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784632841604</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="optimize CSS vars, update nuxt config">
+      <option name="closed" value="true" />
+      <created>1784801760886</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1784801760887</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1387,7 +1353,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update language ordering" />
     <MESSAGE value="add pm field, update ts-pkg version" />
     <MESSAGE value="add initial services implementation" />
     <MESSAGE value="add localizations, add expanded navbar mode, improve navbar UI, redesign hero" />
@@ -1412,7 +1377,8 @@
     <MESSAGE value="update new navbar expanded view, update navlinks" />
     <MESSAGE value="remove more legacy stuff, change about back to links" />
     <MESSAGE value="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets" />
+    <MESSAGE value="optimize CSS vars, update nuxt config" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimize CSS vars, update nuxt config" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
