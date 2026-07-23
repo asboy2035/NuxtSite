@@ -7,7 +7,6 @@
   setHeadMeta({
     page: 'pages.home',
     subtitle: 'meta.subtitles.global',
-    image: '/images/SitePreview.jpg',
   })
 
   definePageMeta({ showingNavProfile: false })

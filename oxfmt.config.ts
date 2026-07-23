@@ -13,6 +13,7 @@ export default defineConfig({
     'NuxtSite.iml',
     '.vscode',
     '.idea',
+    '.env.example',
   ],
 
   trailingComma: 'es5',

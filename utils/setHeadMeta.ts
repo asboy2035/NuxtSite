@@ -17,14 +17,20 @@ export default function setHeadMeta(config: {
   const subtitle: ComputedRef<string> = computed((): string =>
     t(config.subtitle)
   )
-  const group: ComputedRef<string | undefined> = computed(
-    (): string | undefined => (config.group ? t(config.group) : undefined)
+  const group: ComputedRef<string> = computed((): string =>
+    config.group ? t(config.group) : t('meta.groups.ash')
   )
 
-  const title: ComputedRef = computed((): string =>
-    group.value
-      ? `${page.value} - ${group.value}`
-      : `${page.value} - ${t('meta.groups.ash')}`
+  if (!config.image) {
+    defineOgImage('PagePreview.takumi', {
+      title: page,
+      description: subtitle,
+      group,
+    })
+  }
+
+  const title: ComputedRef = computed(
+    (): string => `${page.value} ∙ ${group.value} (@a35hie)`
   )
 
   // Meta-tags (includes image if specified)

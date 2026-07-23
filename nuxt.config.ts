@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/fonts',
     'motion-v/nuxt',
+    'nuxt-og-image',
   ],
 
   alias: {
