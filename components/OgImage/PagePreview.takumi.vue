@@ -11,9 +11,9 @@
     <div class="content">
       <div class="group">
         <img class="avatar" src="/images/avatar.webp" alt="ash's Avatar" />
-        <p class="groupName">{{ group }}</p>
-        <p class="separator">/</p>
-        <p>@a35hie</p>
+        <p class="groupText groupName">{{ group }}</p>
+        <p class="groupText separator">/</p>
+        <p class="groupText">@a35hie</p>
       </div>
 
       <h1 class="title">{{ title }}</h1>
@@ -63,13 +63,13 @@
   }
 
   .group .avatar {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.75rem;
-    margin-inline-end: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
   }
 
-  .group p {
+  .group .groupText {
     font-size: 2rem;
   }
 
@@ -78,12 +78,12 @@
   }
 
   .title {
-    font-size: 6rem;
+    font-size: 6.5rem;
     font-weight: 700;
   }
 
   .description {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 500;
   }
 

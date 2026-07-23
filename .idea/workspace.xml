@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add og image generation">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="make baseurl dynamic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,61 +96,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000000005879002" />
-      <entry key="S5" value="1.001829327099898" />
-      <entry key="S10" value="1.1378547681302118" />
-      <entry key="S30" value="4.125820289407" />
-      <entry key="S60" value="8.347663566403153" />
-      <entry key="M2" value="12.438547528498578" />
-      <entry key="M5" value="15.994864679031007" />
-      <entry key="M10" value="17.42527675146889" />
-      <entry key="M15" value="17.935882198032875" />
-      <entry key="M30" value="18.951426467375356" />
-      <entry key="H1" value="29.36769598602764" />
-      <entry key="H2" value="88.23878520554874" />
-      <entry key="H4" value="236.15829064218107" />
-      <entry key="D1" value="1047.0151532202442" />
-      <entry key="W1" value="1586.3199738257197" />
+      <entry key="MS100" value="1.0000157968890968" />
+      <entry key="MS500" value="1.109575715415086" />
+      <entry key="S2" value="1.5793241254135548" />
+      <entry key="S5" value="1.913199014693176" />
+      <entry key="S10" value="2.286258412185011" />
+      <entry key="S30" value="3.7946134695352502" />
+      <entry key="S60" value="6.133525426294175" />
+      <entry key="M2" value="9.97455153691644" />
+      <entry key="M5" value="18.969400592816545" />
+      <entry key="M10" value="27.214911637543313" />
+      <entry key="M15" value="31.358326167283874" />
+      <entry key="M30" value="36.91540295940856" />
+      <entry key="H1" value="49.05559456930935" />
+      <entry key="H2" value="106.71481984275053" />
+      <entry key="H4" value="253.13858494967124" />
+      <entry key="D1" value="1065.930033151122" />
+      <entry key="W1" value="1609.2205919696873" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="5.523139285014041E-174" />
-      <entry key="MS500" value="2.2306796181329925E-35" />
-      <entry key="S2" value="2.1732480558234763E-9" />
-      <entry key="S5" value="3.426444643650089E-4" />
-      <entry key="S10" value="0.018510658128899928" />
-      <entry key="S30" value="0.26452940392495117" />
-      <entry key="S60" value="0.5143242206283418" />
-      <entry key="M2" value="0.7171640123628219" />
-      <entry key="M5" value="0.8754823506821182" />
-      <entry key="M10" value="0.9356767439464213" />
-      <entry key="M15" value="0.957498651791302" />
-      <entry key="M30" value="1.203771049001511" />
-      <entry key="H1" value="5.695019380437891" />
-      <entry key="H2" value="25.82143682147104" />
-      <entry key="H4" value="66.23566748532882" />
-      <entry key="D1" value="320.6276025741971" />
-      <entry key="W1" value="508.2798547237078" />
+      <entry key="MS100" value="1.48775E-318" />
+      <entry key="MS500" value="2.7196067824479905E-64" />
+      <entry key="S2" value="1.284181861639141E-16" />
+      <entry key="S5" value="4.4023048007085294E-7" />
+      <entry key="S10" value="6.811441761397562E-4" />
+      <entry key="S30" value="0.12602122847015723" />
+      <entry key="S60" value="0.5718041550136493" />
+      <entry key="M2" value="1.3068743088797063" />
+      <entry key="M5" value="2.3456288896102833" />
+      <entry key="M10" value="2.9916257941299347" />
+      <entry key="M15" value="3.2761284234459946" />
+      <entry key="M30" value="3.786816986255997" />
+      <entry key="H1" value="7.987188089929181" />
+      <entry key="H2" value="27.32646984385971" />
+      <entry key="H4" value="67.32489825299457" />
+      <entry key="D1" value="322.0813924647934" />
+      <entry key="W1" value="510.92926891094857" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6506709277209668" />
-      <entry key="MS500" value="0.9176398823113651" />
-      <entry key="S2" value="0.9787416566893142" />
-      <entry key="S5" value="0.9934274028897823" />
-      <entry key="S10" value="1.1458257141433994" />
-      <entry key="S30" value="4.353901080412919" />
-      <entry key="S60" value="8.825691495830771" />
-      <entry key="M2" value="13.129971152005371" />
-      <entry key="M5" value="16.857633483657896" />
-      <entry key="M10" value="18.35413253248449" />
-      <entry key="M15" value="18.88872351238838" />
-      <entry key="M30" value="20.152588820776568" />
-      <entry key="H1" value="35.0592505411211" />
-      <entry key="H2" value="114.0536528785343" />
-      <entry key="H4" value="302.3856974369942" />
-      <entry key="D1" value="1367.6361251856833" />
-      <entry key="W1" value="2094.5983309120106" />
+      <entry key="MS100" value="0.003854771397838763" />
+      <entry key="MS500" value="0.4034954358844481" />
+      <entry key="S2" value="1.2830449159158177" />
+      <entry key="S5" value="1.7685670320476332" />
+      <entry key="S10" value="2.1999464628284926" />
+      <entry key="S30" value="3.868878206871416" />
+      <entry key="S60" value="6.658664035909505" />
+      <entry key="M2" value="11.242744530606101" />
+      <entry key="M5" value="21.289613868351648" />
+      <entry key="M10" value="30.190151596161492" />
+      <entry key="M15" value="34.62237266866255" />
+      <entry key="M30" value="40.695299219636105" />
+      <entry key="H1" value="57.03719619189674" />
+      <entry key="H2" value="134.03382025542808" />
+      <entry key="H4" value="320.4548183094524" />
+      <entry key="D1" value="1388.0047195715526" />
+      <entry key="W1" value="2120.1483489235875" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -234,7 +234,7 @@
       <recent name="$PROJECT_DIR$/i18n/locales/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.fastFormat">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -938,15 +938,7 @@
       <workItem from="1784538888893" duration="11547000" />
       <workItem from="1784574903877" duration="11702000" />
       <workItem from="1784638353679" duration="28000" />
-      <workItem from="1784755409751" duration="18254000" />
-    </task>
-    <task id="LOCAL-00090" summary="localize intro, animate navbar">
-      <option name="closed" value="true" />
-      <created>1769890269257</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1769890269257</updated>
+      <workItem from="1784755409751" duration="18850000" />
     </task>
     <task id="LOCAL-00091" summary="reformat, fix mobile navbar spacing">
       <option name="closed" value="true" />
@@ -1332,7 +1324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784822847700</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="make baseurl dynamic">
+      <option name="closed" value="true" />
+      <created>1784834705559</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1784834705559</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1353,7 +1353,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="code cleanup, add state labels to services" />
     <MESSAGE value="update packages, fix mobile navbar" />
     <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
     <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
@@ -1378,7 +1377,8 @@
     <MESSAGE value="fix cobe version back to 0.6.5" />
     <MESSAGE value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
     <MESSAGE value="add og image generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add og image generation" />
+    <MESSAGE value="make baseurl dynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="make baseurl dynamic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
