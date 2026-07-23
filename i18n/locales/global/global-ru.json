@@ -1,11 +1,10 @@
 {
+  "name": "аш",
   "intro": {
-    "hi": "привет, я ash.",
     "desc": "Я дизайнер и разработчик из Франции.",
-    "knowMe": "Узнай меня!",
     "github": "Github",
     "email": "Почта",
-    "about": "Обо мне"
+    "artBy": "Арт от {artist}!"
   },
   "sites": {
     "title": "Сайты",
@@ -17,10 +16,9 @@
   },
   "app": {
     "hideInterface": "Скрыть страницу",
-    "showInterface": "Показать интерфейс",
+    "showInterface": "Показать страницу",
     "getWalls": "Обои",
     "comingSoon": "Скоро!",
-    "myTime": "Мое время",
     "connecting": "Подключение...",
     "more": "Больше"
   },
@@ -30,7 +28,7 @@
     "hideQr": "Скрыть QR-код"
   },
   "navbar": {
-    "hide": "Скрыть",
+    "go": "Перейти...",
     "launchers": {
       "apps": "Приложения",
       "creators": "Создать..."
@@ -38,10 +36,10 @@
   },
   "footer": {
     "thanks": "Спасибо за чтение!",
-    "createdBy": "Создано Ash, с использованием NuxtJS, в 2026 <3",
+    "createdBy": "Создано аш с использованием NuxtJS в 2026 <3",
     "codeOnGh": "Код на GitHub.",
-    "version": "Версия:",
-    "release": "Релиз:",
+    "version": "Версия: {version}",
+    "release": "Релиз: {release}",
     "readMore": "Читать далее:"
   }
 }

@@ -2,26 +2,23 @@
   "pages": {
     "home": "首页",
     "links": "链接",
-    "apps": "应用",
+    "work": "作品",
     "projects": "项目",
-    "goodies": "福利",
+    "extras": "其他内容",
     "languages": "语言",
     "creators": "创作者",
-    "toolbox": "工具箱"
+    "services": "服务"
   },
   "meta": {
     "groups": {
-      "ash": "Ash"
+      "ash": "阿什"
     },
     "subtitles": {
-      "global": "ash (a35hie) - 作品集",
+      "global": "阿什 (a35hie) - 作品集",
       "links": "我的社交媒体、联系方式及更多 :)",
-      "apps": "我的Web/Apple应用。",
-      "projects": "我的开源项目。",
-      "goodies": "其他可下载内容。",
-      "creators": "我的工具和创作者。",
-      "toolbox": "a35hie 的 Toolbox 应用。",
-      "services": "托管和云服务。"
+      "work": "我的 Web/Apple 应用、项目及更多内容。",
+      "extras": "其他可下载内容。",
+      "creators": "我的工具和创作者。"
     }
   }
 }

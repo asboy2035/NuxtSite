@@ -1,11 +1,10 @@
 {
+  "name": "ash",
   "intro": {
-    "hi": "terve, olen ash.",
     "desc": "Olen suunnittelija ja kehittäjä, joka perustuu Ranskaan.",
-    "knowMe": "Tunne minut!",
     "github": "Github",
     "email": "Sähköposti",
-    "about": "Tietoja Minusta"
+    "artBy": "Taide: {artist}!"
   },
   "sites": {
     "title": "Sivustot",
@@ -17,10 +16,9 @@
   },
   "app": {
     "hideInterface": "Piilota sivu",
-    "showInterface": "Näytä käyttöliittymä",
+    "showInterface": "Näytä sivu",
     "getWalls": "Taustakuvat",
     "comingSoon": "Tulossa pian!",
-    "myTime": "Minun aika",
     "connecting": "Yhdistetään...",
     "more": "Lisää"
   },
@@ -30,7 +28,7 @@
     "hideQr": "Piilota QR-koodi"
   },
   "navbar": {
-    "hide": "Piilota",
+    "go": "Siirry...",
     "launchers": {
       "apps": "Sovellukset",
       "creators": "Luo..."
@@ -40,8 +38,8 @@
     "thanks": "Kiitos että luit!",
     "createdBy": "Tekijä ash, NuxtJS:lla, vuonna 2026 <3",
     "codeOnGh": "Koodi GitHubissa.",
-    "version": "Versio:",
-    "release": "Julkaisu:",
+    "version": "Versio: {version}",
+    "release": "Julkaisu: {release}",
     "readMore": "Lue lisää:"
   }
 }

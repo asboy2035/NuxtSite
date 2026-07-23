@@ -1,11 +1,12 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
 
+  import type { NavLink } from ':/navLink'
   import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
   import Navbar2 from '+/premade/navbar/Navbar2.vue'
   import SafeLink from '+/utils/SafeLink.vue'
-  import { NavLinks } from '$/NavLinks'
+  import { HomeNavLink, NavLinks } from '$/NavLinks'
 
   const { t } = useI18n()
   const localePath = useLocalePath()
@@ -15,26 +16,39 @@
     return route.path === '/' || route.path === localePath('/')
   })
 
-  function isActive(target: string): boolean {
-    return route.path.includes(target)
+  const HomeItem: NavLink = {
+    icon: 'solar:home-angle-line-duotone',
+    ...HomeNavLink,
+  }
+
+  function isActive(link: NavLink): boolean {
+    return link === HomeItem ? isHome.value : route.path.includes(link.link)
   }
 </script>
 
 <template>
   <VStack class="sideNav sidebarModeOnly">
     <SafeLink to="/" class="fullWidth">
-      <HStack class="sideNavItem" :class="{ selected: isHome }">
+      <HStack class="sideNavItem">
         <img class="avatar" src="/images/avatar-27.webp" alt="Avatar" />
-        <h2>ash</h2>
+        <h2>{{ t('name') }}</h2>
       </HStack>
     </SafeLink>
 
-    <SafeLink v-for="link in NavLinks" :to="link.link" class="fullWidth">
-      <HStack class="sideNavItem" :class="{ selected: isActive(link.link) }">
+    <SafeLink
+      v-for="(link, i) in [HomeItem, ...NavLinks]"
+      :to="link.link"
+      class="fullWidth"
+    >
+      <HStack
+        class="sideNavItem"
+        :class="{ selected: isActive(link) }"
+        :style="{ '--index': i }"
+      >
         <Icon
           v-if="link.icon"
           :icon="
-            isActive(link.link)
+            isActive(link)
               ? link.icon.replace('line-duotone', 'bold-duotone')
               : link.icon
           "
@@ -70,9 +84,14 @@
       border-radius: 3rem
       transition: 0.2s ease
 
+      opacity: 0.4
+      transform: translateX(-1rem)
+      animation: sidebarItemIn 0.3s ease forwards
+      animation-delay: calc(var(--index) * 0.1s)
+
       &:hover, &.selected
-        background: var(--foregroundColor)
-        backdrop-filter: blur(0.5rem)
+        background: var(--foregroundDark)
+        backdrop-filter: blur(1rem)
 
       svg
         width: 2rem
@@ -83,4 +102,13 @@
 
     .sideStart
       margin-top: 2rem
+
+  @keyframes sidebarItemIn
+    from
+      opacity: 0.4
+      transform: translateX(-1rem)
+
+    to
+      opacity: 1
+      transform: none
 </style>

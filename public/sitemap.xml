@@ -11,18 +11,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://a35.dev/apps</loc>
+    <loc>https://a35.dev/work</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://a35.dev/goodies</loc>
+    <loc>https://a35.dev/extras</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://a35.dev/toolbox</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>

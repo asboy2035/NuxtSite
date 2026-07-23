@@ -36,9 +36,10 @@
     justify-content: flex-end
     z-index: 2
     height: fit-content
-    min-height: 75vh
-    max-height: 90vh
+    min-height: 55vh
+    max-height: 75vh
     overflow: hidden
+    margin-top: 1rem
 
     .heroResizableImage, .heroIcon
       position: absolute
@@ -58,7 +59,7 @@
 
   ::v-deep(h1)
     font-family: fonts.$prominent
-    font-size: 5rem
+    font-size: 4rem
     line-height: 0.9
 
   @media (max-width: 35rem)

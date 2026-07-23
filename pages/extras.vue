@@ -13,8 +13,8 @@
   const { t } = useI18n()
 
   setHeadMeta({
-    page: 'pages.goodies',
-    subtitle: 'meta.subtitles.goodies',
+    page: 'pages.extras',
+    subtitle: 'meta.subtitles.extras',
   })
 
   useHead({
@@ -34,8 +34,8 @@
 <template>
   <div class="contentView">
     <Hero icon="solar:inbox-line-bold-duotone" tint="#dfac3b">
-      <h1>{{ t('pages.goodies') }}</h1>
-      <h2>{{ t('meta.subtitles.goodies') }}</h2>
+      <h1>{{ t('pages.extras') }}</h1>
+      <h2>{{ t('meta.subtitles.extras') }}</h2>
 
       <HStack>
         <a href="https://asboy.gumroad.com">

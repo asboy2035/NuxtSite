@@ -1,11 +1,10 @@
 {
+  "name": "ash",
   "intro": {
-    "hi": "hallo, ik ben ash.",
     "desc": "Ik ben een ontwerper en ontwikkelaar gevestigd in Frankrijk.",
-    "knowMe": "Leer me kennen!",
     "github": "Github",
     "email": "E-mail",
-    "about": "Over mij"
+    "artBy": "Kunst door {artist}!"
   },
   "sites": {
     "title": "Websites",
@@ -17,10 +16,9 @@
   },
   "app": {
     "hideInterface": "Pagina verbergen",
-    "showInterface": "Interface tonen",
+    "showInterface": "Pagina tonen",
     "getWalls": "Achtergronden",
     "comingSoon": "Binnenkort!",
-    "myTime": "Mijn tijd",
     "connecting": "Verbinding maken...",
     "more": "Meer"
   },
@@ -30,7 +28,7 @@
     "hideQr": "QR-code verbergen"
   },
   "navbar": {
-    "hide": "Verbergen",
+    "go": "Ga naar...",
     "launchers": {
       "apps": "Apps",
       "creators": "Maken..."
@@ -40,8 +38,8 @@
     "thanks": "Dank je wel voor het lezen!",
     "createdBy": "Gemaakt door ash, met NuxtJS, in 2026 <3",
     "codeOnGh": "Code op GitHub.",
-    "version": "Versie:",
-    "release": "Release:",
+    "version": "Versie: {version}",
+    "release": "Release: {release}",
     "readMore": "Lees meer:"
   }
 }

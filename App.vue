@@ -121,11 +121,10 @@
 </script>
 
 <template>
-  <VitePwaManifest />
-
   <h1 class="hidden">Your CSS is disabled!</h1>
   <noscript><h1>Your JS is disabled!</h1></noscript>
 
+  <NuxtRouteAnnouncer />
   <div class="navigationView">
     <SideNav v-if="showingUi" />
 
@@ -191,11 +190,14 @@
 
   html
     --backgroundOpacity: 1
+    --backgroundFilter: none
 
     .dimmed
       --backgroundOpacity: 0.25
+      --backgroundFilter: blur(0.5rem)
 
   $backgroundOpacity: var(--backgroundOpacity)
+  $backgroundFilter: var(--backgroundFilter)
 
   .contentStack
     align-items: center !important
@@ -250,6 +252,7 @@
     pointer-events: none
     opacity: $backgroundOpacity
     transition: opacity 0.2s ease
+    filter: $backgroundFilter
 
   // Background animations
   .fadeOutBackground

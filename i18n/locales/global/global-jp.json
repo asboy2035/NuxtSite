@@ -1,11 +1,10 @@
 {
+  "name": "アッシュ",
   "intro": {
-    "hi": "こんにちは、ashです。",
     "desc": "フランスを拠点とするデザイナー兼開発者です。",
-    "knowMe": "私を知ってください！",
     "github": "Github",
     "email": "メール",
-    "about": "私について"
+    "artBy": "アート：{artist}"
   },
   "sites": {
     "title": "サイト",
@@ -17,10 +16,9 @@
   },
   "app": {
     "hideInterface": "ページを隠す",
-    "showInterface": "インターフェースを表示",
+    "showInterface": "ページを表示",
     "getWalls": "壁紙",
     "comingSoon": "近日公開！",
-    "myTime": "私の時間",
     "connecting": "接続中...",
     "more": "もっと"
   },
@@ -30,7 +28,7 @@
     "hideQr": "QRコードを隠す"
   },
   "navbar": {
-    "hide": "隠す",
+    "go": "移動...",
     "launchers": {
       "apps": "アプリ",
       "creators": "作成..."
@@ -38,10 +36,10 @@
   },
   "footer": {
     "thanks": "読んでくれてありがとう！",
-    "createdBy": "Created by Ash, using NuxtJS, in 2026 <3",
+    "createdBy": "アッシュが NuxtJS を使って 2026 年に制作 <3",
     "codeOnGh": "GitHubのコード。",
-    "version": "バージョン:",
-    "release": "リリース:",
+    "version": "バージョン: {version}",
+    "release": "リリース: {release}",
     "readMore": "もっと読む:"
   }
 }

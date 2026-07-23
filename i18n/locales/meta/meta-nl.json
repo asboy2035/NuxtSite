@@ -2,12 +2,12 @@
   "pages": {
     "home": "Startpagina",
     "links": "Links",
-    "apps": "Apps",
+    "work": "Werk",
     "projects": "Projecten",
-    "goodies": "Goodies",
+    "extras": "Extra's",
     "languages": "Talen",
     "creators": "Makers",
-    "toolbox": "Toolbox"
+    "services": "Diensten"
   },
   "meta": {
     "groups": {
@@ -16,12 +16,9 @@
     "subtitles": {
       "global": "Ash (a35hie) - Portfolio",
       "links": "Mijn sociale media, contacten en meer :)",
-      "apps": "Mijn web-/Apple-apps.",
-      "projects": "Mijn open-sourceprojecten.",
-      "goodies": "Ander downloadbaar inhoud.",
-      "creators": "Mijn tools en makers.",
-      "toolbox": "a35hie's Toolbox app.",
-      "services": "Gehoste en clouddiensten."
+      "work": "Mijn web-/Apple-apps, projecten en meer.",
+      "extras": "Andere downloadbare inhoud.",
+      "creators": "Mijn tools en makers."
     }
   }
 }

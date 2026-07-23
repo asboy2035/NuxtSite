@@ -23,7 +23,6 @@
 
     border-radius: var(--card-radius)
     background: var(--foregroundColor)
-    backdrop-filter: blur(0.5rem) saturate(125%)
     z-index: 2
 
     transform: translateY(1.5rem)

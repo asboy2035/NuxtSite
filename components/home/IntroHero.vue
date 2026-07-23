@@ -16,7 +16,7 @@
       >
         <button class="heroMediaAttribution">
           <Icon icon="solar:pallete-2-line-duotone" />
-          Art by r_ikaillust
+          {{ t('intro.artBy', { artist: 'r_ikaillust' }) }}
         </button>
       </SafeLink>
 

@@ -9,7 +9,7 @@ export const apps: AppCategory[] = [
         name: 'Stand',
         description: 'A Mac app for standing desks.',
         image: '/images/icons/Stand-Icon.png',
-        link: '/apps/stand',
+        link: '/work/stand',
       },
       {
         name: 'SerialPlotter',

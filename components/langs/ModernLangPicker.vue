@@ -161,13 +161,12 @@
       flex-grow: 1
 
   .modernLangPicker
-    min-width: 20rem
     display: grid
     gap: 1rem
 
   .langChips
     display: grid
-    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr))
     gap: 0.55rem
 
     button

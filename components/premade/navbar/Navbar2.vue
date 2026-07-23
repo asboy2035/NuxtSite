@@ -18,11 +18,13 @@
   import { HomeNavLink } from '$/NavLinks'
 
   const { t } = useI18n()
+  const route = useRoute()
 
   defineProps<{
     startButtonOnly?: boolean
   }>()
 
+  const showingNavProfile = computed(() => route.meta.showingNavProfile ?? true)
   const open: Ref<boolean> = ref(false)
   const animating: Ref<boolean> = ref(false)
 </script>
@@ -50,18 +52,18 @@
       <Card class="navbar2" :class="{ open }">
         <VStack class="contents" :class="{ animating: animating && !open }">
           <VStack class="fullWidth opened" v-if="open">
-            <CardTitle title="NavbarV2" icon="solar:widget-4-line-duotone">
+            <HStack class="fullWidth autoSpace">
+              <Card :index="0" class="navLinksContainer">
+                <HStack class="fullWidth autoSpace">
+                  <h3>{{ t('navbar.go') }}</h3>
+                  <NavigationLinks @click="open = false" />
+                </HStack>
+              </Card>
+
               <button @click="open = !open">
                 <Icon icon="mingcute:close-fill" />
               </button>
-            </CardTitle>
-
-            <Card :index="0" class="navLinksContainer">
-              <HStack class="fullWidth autoSpace">
-                <h3>Go...</h3>
-                <NavigationLinks @click="open = false" />
-              </HStack>
-            </Card>
+            </HStack>
 
             <Spacer />
 
@@ -138,7 +140,7 @@
               class="opener"
               @click="open = !open"
             >
-              <h1 class="name">ash</h1>
+              <h3 class="name" v-if="showingNavProfile">{{ t('name') }}</h3>
               <Icon icon="solar:alt-arrow-up-linear" />
             </HStack>
 
@@ -197,6 +199,7 @@
 
         &:not(.open)
           padding: 0.5rem
+          backdrop-filter: blur(0.5rem)
 
         &.open
           background: var(--backgroundColor)
@@ -218,6 +221,10 @@
           .opener
             cursor: pointer
 
+            svg
+              width: 1.5rem
+              height: 1.5rem
+
             .name
               margin: 0
 
@@ -237,6 +244,7 @@
 
             .navLinksContainer
               padding: 0.5rem
+              width: fit-content
               max-width: 45rem
 
               h3

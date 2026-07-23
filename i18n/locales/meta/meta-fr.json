@@ -2,12 +2,12 @@
   "pages": {
     "home": "Accueil",
     "links": "Liens",
-    "apps": "Applis",
+    "work": "Travail",
     "projects": "Projets",
-    "goodies": "Autres",
+    "extras": "Extras",
     "languages": "Langues",
     "creators": "Créateurs",
-    "toolbox": "Boîte à Outils"
+    "services": "Services"
   },
   "meta": {
     "groups": {
@@ -16,12 +16,9 @@
     "subtitles": {
       "global": "ash (a35hie) - Portfolio",
       "links": "Mes profiles, liens, etc. :D",
-      "apps": "Mes applications web et Apple :)",
-      "projects": "Mes projets open source.",
-      "goodies": "Autres contenus téléchargables.",
-      "creators": "Mes outils et créateurs.",
-      "toolbox": "Boîte à Outils d'a35hie.",
-      "services": "Services hébergés et cloud."
+      "work": "Mes applications web/Apple, projets et plus encore.",
+      "extras": "Autres contenus téléchargeables.",
+      "creators": "Mes outils et créateurs."
     }
   }
 }

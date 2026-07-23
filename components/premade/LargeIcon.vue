@@ -28,13 +28,13 @@
       align-items: center
       animation: largeIconSpinIn 0.4s ease forwards
 
-      width: 70%
+      width: 60%
       aspect-ratio: 1/1
 
       svg
         transform: rotate(25deg)
-        width: 60%
-        height: 60%
+        width: 50%
+        height: 50%
         filter: drop-shadow(0 0 2rem rgb(73 73 73 / 0.6))
         opacity: 0.8
         animation: largeIconContentScale 0.4s ease forwards
@@ -46,7 +46,7 @@
         background: linear-gradient(-45deg, var(--tint), hsl(from var(--tint) calc(h + 40) s l))
         z-index: -1
         border-radius: 35%
-        filter: blur(2rem)
+        filter: blur(10vh)
         opacity: 0.7
 
   @keyframes largeIconSpinIn

@@ -29,12 +29,8 @@
           </a>
         </p>
 
-        <p>
-          <b>{{ t('footer.version') }} {{ meta.public.siteVersion }}</b> ({{
-            t('footer.release')
-          }}
-          {{ meta.public.siteRelease }})
-        </p>
+        <!-- prettier-ignore -->
+        <p><b>{{ t('footer.version', { version: meta.public.siteVersion }) }}</b> ({{ t('footer.release', { release: meta.public.siteRelease }) }})</p>
       </VStack>
 
       <div v-if="!hideReadMore" id="readMore">

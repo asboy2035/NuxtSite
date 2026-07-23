@@ -1,11 +1,10 @@
 {
+  "name": "ash",
   "intro": {
-    "hi": "salut, c'est ash.",
     "desc": "Je suis designer et développeur basé en France.",
-    "knowMe": "Apprenez à me connaître !",
     "github": "Github",
     "email": "Email",
-    "about": "À propos de moi"
+    "artBy": "Art par {artist} !"
   },
   "sites": {
     "title": "Sites",
@@ -18,9 +17,8 @@
   "app": {
     "getWalls": "Fonds d'écran",
     "hideInterface": "Masquer la page",
-    "showInterface": "Afficher l'interface",
+    "showInterface": "Afficher la page",
     "comingSoon": "À venir!",
-    "myTime": "Mon temps",
     "connecting": "Connexion...",
     "more": "Plus"
   },
@@ -30,7 +28,7 @@
     "hideQr": "Masquer le code QR"
   },
   "navbar": {
-    "hide": "Masquer",
+    "go": "Aller à...",
     "launchers": {
       "apps": "Applis",
       "creators": "Créer..."
@@ -40,8 +38,8 @@
     "thanks": "Merci pour votre lecture!",
     "createdBy": "Créé par ash, avec NuxtJS, en 2026 <3",
     "codeOnGh": "Code sur GitHub",
-    "version": "Version:",
-    "release": "Release:",
+    "version": "Version : {version}",
+    "release": "Version : {release}",
     "readMore": "Lire plus:"
   }
 }

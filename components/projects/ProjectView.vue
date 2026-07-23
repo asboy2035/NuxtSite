@@ -46,4 +46,10 @@
 
       img
         border-radius: 1rem
+
+  @media (max-width: 35rem)
+    .projectView
+      .projectInfo
+        img
+          border-radius: 1.25rem
 </style>

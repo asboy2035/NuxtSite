@@ -13,12 +13,12 @@ export const NavLinks: NavLink[] = [
   },
   {
     link: '/work',
-    text: 'pages.apps',
+    text: 'pages.work',
     icon: 'solar:folder-open-line-duotone',
   },
   {
-    link: '/more',
-    text: 'pages.goodies',
+    link: '/extras',
+    text: 'pages.extras',
     icon: 'solar:menu-dots-line-duotone',
   },
 ]

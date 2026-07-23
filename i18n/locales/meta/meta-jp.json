@@ -2,26 +2,23 @@
   "pages": {
     "home": "ホーム",
     "links": "リンク",
-    "apps": "アプリ",
+    "work": "作品",
     "projects": "プロジェクト",
-    "goodies": "グッズ",
+    "extras": "その他",
     "languages": "言語",
     "creators": "クリエイター",
-    "toolbox": "Toolbox"
+    "services": "サービス"
   },
   "meta": {
     "groups": {
-      "ash": "Ash"
+      "ash": "アッシュ"
     },
     "subtitles": {
-      "global": "ash (a35hie) - ポートフォリオ",
+      "global": "アッシュ (a35hie) - ポートフォリオ",
       "links": "SNS、連絡先、その他 :)",
-      "apps": "私のWeb/Appleアプリ。",
-      "projects": "私のオープンソースプロジェクト。",
-      "goodies": "その他のダウンロードコンテンツ。",
-      "creators": "私のツールとクリエイター。",
-      "toolbox": "a35hieのToolboxアプリ。",
-      "services": "ホスト型およびクラウドサービス。"
+      "work": "私の Web/Apple アプリ、プロジェクトなど。",
+      "extras": "その他のダウンロードコンテンツ。",
+      "creators": "私のツールとクリエイター。"
     }
   }
 }

@@ -24,7 +24,7 @@
     border-radius: var(--interiorRadius)
     padding: 0.75rem
     transition: 0.2s ease
-    backdrop-filter: saturate(175%) blur(0.5rem)
+    backdrop-filter: saturate(125%)
 
     // Border
     &::after

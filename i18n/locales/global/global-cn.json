@@ -1,11 +1,10 @@
 {
+  "name": "阿什",
   "intro": {
-    "hi": "嗨，我是 ash。",
     "desc": "我是一名设计师和开发者，现居法国。",
-    "knowMe": "了解我！",
     "github": "Github",
     "email": "邮件",
-    "about": "关于我"
+    "artBy": "美术由 {artist} 创作！"
   },
   "sites": {
     "title": "站点",
@@ -17,10 +16,9 @@
   },
   "app": {
     "hideInterface": "隐藏页面",
-    "showInterface": "显示界面",
+    "showInterface": "显示页面",
     "getWalls": "壁纸",
     "comingSoon": "即将推出！",
-    "myTime": "我的时间",
     "connecting": "正在连接...",
     "more": "更多"
   },
@@ -30,7 +28,7 @@
     "hideQr": "隐藏二维码"
   },
   "navbar": {
-    "hide": "隐藏",
+    "go": "前往...",
     "launchers": {
       "apps": "应用",
       "creators": "创建..."
@@ -38,10 +36,10 @@
   },
   "footer": {
     "thanks": "感谢阅读！",
-    "createdBy": "由 Ash 创建，使用 NuxtJS，2026年 <3",
+    "createdBy": "由 阿什 创建，使用 NuxtJS，2026年 <3",
     "codeOnGh": "GitHub 上的代码。",
-    "version": "版本:",
-    "release": "发布:",
+    "version": "版本: {version}",
+    "release": "发布: {release}",
     "readMore": "阅读更多:"
   }
 }
