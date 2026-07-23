@@ -21,7 +21,7 @@
     </div>
 
     <img
-      src="/images/SitePreviewBg.svg"
+      src="/images/SitePreviewBg.webp"
       class="background"
       alt="Preview Background"
     />
@@ -37,10 +37,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 4rem;
+    padding: 3rem;
     background: #0c0023;
     color: rgba(240, 240, 240, 0.9);
     font-family: 'Nata Sans', sans-serif;
+    text-align: center;
   }
 
   .content {
@@ -88,10 +89,10 @@
   }
 
   .background {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 </style>
