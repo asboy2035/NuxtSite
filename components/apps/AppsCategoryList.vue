@@ -59,8 +59,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   #appsContainer
     width: 100%
 
@@ -73,7 +71,7 @@
     gap: 0.25rem
     padding: 0.75rem
     align-items: center
-    background: colors.$foregroundColor
+    background: var(--foregroundColor)
 
     ::v-deep(svg)
       width: 1.25rem

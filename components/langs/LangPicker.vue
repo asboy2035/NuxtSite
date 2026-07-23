@@ -37,8 +37,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .langList
     width: 100%
     gap: 0.5rem
@@ -47,6 +45,6 @@
       width: 100%
 
       &.active
-        background: colors.$shadowColor
-        color: colors.$textColor
+        background: var(--shadowColor)
+        color: var(--textColor)
 </style>

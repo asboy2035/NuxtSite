@@ -63,8 +63,6 @@
 </template>
 
 <style lang="sass" scoped>
-  @use "@/styles/colors"
-
   .hero
     margin-top: -2.5rem
     position: relative
@@ -97,7 +95,7 @@
         top: 40%
         z-index: 2
         opacity: 0
-        background: colors.$foregroundOpaque
+        background: var(--foregroundOpaque)
 
         &::after
           opacity: 0.6

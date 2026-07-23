@@ -51,8 +51,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .navigationRow
     --row-index: 0
 
@@ -88,7 +86,7 @@
   .toolTip
     display: none
     position: absolute
-    background: colors.$foregroundOpaque
+    background: var(--foregroundOpaque)
     padding: 0.5rem 0.75rem
     border-radius: 2rem
     white-space: nowrap

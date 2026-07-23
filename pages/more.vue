@@ -17,6 +17,15 @@
     subtitle: 'meta.subtitles.goodies',
   })
 
+  useHead({
+    script: [
+      {
+        src: 'https://cdn.ko-fi.tools/v2/js/shop.js',
+        defer: true,
+      },
+    ],
+  })
+
   function reloadPage() {
     window.location.reload()
   }
@@ -96,10 +105,8 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .cursorAsset
-    background: colors.$foregroundColor
+    background: var(--foregroundColor)
     border-radius: 1rem
     padding: 0.5rem
 

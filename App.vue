@@ -185,8 +185,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   $blurHeight: 9rem
   $blurTop: calc(100vh - $blurHeight)
   $blurTop: calc(100dvh - $blurHeight)
@@ -200,7 +198,7 @@
   $backgroundOpacity: var(--backgroundOpacity)
 
   .contentStack
-    align-items: center
+    align-items: center !important
     width: 100%
 
   .progBlurContainer
@@ -225,7 +223,7 @@
       z-index: 10
 
     .progMask
-      background: linear-gradient(to top, colors.$backgroundColor, transparent)
+      background: linear-gradient(to top, var(--backgroundColor), transparent)
       opacity: 0.6
 
   .interfaceOptions

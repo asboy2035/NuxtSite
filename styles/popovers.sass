@@ -1,13 +1,13 @@
 @use "colors"
 
 .v-popper__popper
-  background: colors.$foregroundColor !important
+  background: var(--foregroundColor) !important
 .v-popper__arrow-outer
-  border-color: colors.$foregroundOpaque !important
+  border-color: var(--foregroundOpaque) !important
 .v-popper__inner
   background: transparent !important
 
 .v-popper__popper
   padding: 0.5rem 0.75rem
   backdrop-filter: blur(0.5rem)
-  border: 0.1rem solid colors.$foregroundColor
+  border: 0.1rem solid var(--foregroundColor)

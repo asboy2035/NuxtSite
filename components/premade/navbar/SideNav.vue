@@ -50,8 +50,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .sideNav
     position: sticky
     top: 1rem
@@ -73,7 +71,7 @@
       transition: 0.2s ease
 
       &:hover, &.selected
-        background: colors.$foregroundColor
+        background: var(--foregroundColor)
         backdrop-filter: blur(0.5rem)
 
       svg

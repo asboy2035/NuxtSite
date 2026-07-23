@@ -15,7 +15,7 @@
 </script>
 
 <template>
-  <divider class="footerDivider" />
+  <Divider class="footerDivider" />
   <footer class="fullWidth">
     <Card :index="index" class="spaced">
       <CardTitle title="footer.thanks" icon="solar:heart-line-duotone" />

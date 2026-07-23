@@ -3,7 +3,6 @@ import { defineConfig } from 'oxfmt'
 export default defineConfig({
   ignorePatterns: [
     '.gitignore',
-    '.prettierignore',
     'LICENSE',
     'README.md',
     'bun.lock',

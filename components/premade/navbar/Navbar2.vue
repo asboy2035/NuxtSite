@@ -156,8 +156,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .navbar2Container
     position: sticky
     bottom: 0
@@ -201,7 +199,7 @@
           padding: 0.5rem
 
         &.open
-          background: colors.$backgroundColor
+          background: var(--backgroundColor)
           border-radius: 0
 
           &::before, &::after

@@ -17,8 +17,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .largeIconContainer
     justify-content: center
     align-items: center

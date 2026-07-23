@@ -11,8 +11,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .card
     --card-radius: 3rem
     --card-index: 0
@@ -24,7 +22,7 @@
     flex-grow: 1
 
     border-radius: var(--card-radius)
-    background: colors.$foregroundColor
+    background: var(--foregroundColor)
     backdrop-filter: blur(0.5rem) saturate(125%)
     z-index: 2
 
@@ -51,7 +49,7 @@
       left: 0
 
       border-radius: var(--card-radius)
-      box-shadow: inset 0 0 0.5rem colors.$shadowColor
+      box-shadow: inset 0 0 0.5rem var(--shadowColor)
       opacity: 0.6
       pointer-events: none
       transition: opacity 0.2s ease

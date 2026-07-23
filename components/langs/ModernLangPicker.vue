@@ -156,8 +156,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .searchBox
     input
       flex-grow: 1
@@ -176,7 +174,7 @@
       justify-content: space-between
 
       &.selected
-        background: colors.$accentColor
+        background: var(--accentColor)
 
       &.current
         .langCode

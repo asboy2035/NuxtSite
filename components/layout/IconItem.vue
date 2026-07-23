@@ -41,8 +41,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .iconItem
     .tag
       position: absolute
@@ -50,7 +48,7 @@
       right: 0.75rem
       padding: 0.25rem 0.5rem
       border-radius: 1rem
-      background: colors.$accentColor
+      background: var(--accentColor)
 
     svg
       width: 3rem

@@ -752,8 +752,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .starhop
     position: relative
     display: block
@@ -762,7 +760,7 @@
     border-radius: 1.5rem
     overflow: hidden
     box-shadow: 0 30px 80px rgba(68, 26, 120, 0.25)
-    background: colors.$backgroundColor
+    background: var(--backgroundColor)
 
   .starhopCanvas
     width: 100%
@@ -781,8 +779,8 @@
     display: flex
     align-items: flex-start
     gap: 0.35rem
-    background: colors.$foregroundColor
-    border: 0.1rem solid colors.$foregroundColor
+    background: var(--foregroundColor)
+    border: 0.1rem solid var(--foregroundColor)
     border-radius: 1rem
     text-align: left
     color: #fff

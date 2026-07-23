@@ -5,13 +5,11 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .updatedBadge
     position: relative
     border-radius: 10rem
-    border: rgba(76, 0, 130, 0.4) 0.1rem solid
-    background: colors.$foregroundColor
+    border: 0.1rem solid rgba(76, 0, 130, 0.4)
+    background: var(--foregroundColor)
     color: white
     padding: 0.75rem
     animation: pulse 3s infinite ease-in-out

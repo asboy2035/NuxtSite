@@ -242,8 +242,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .navBarContainer
     position: sticky
     flex-wrap: wrap

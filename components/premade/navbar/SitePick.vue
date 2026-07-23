@@ -25,14 +25,12 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .sitePick
     .icon
       width: 2.75rem
       height: 2.75rem
       padding: 0.1rem
-      background: colors.$foregroundColor
+      background: var(--foregroundColor)
       align-items: center
       justify-content: center
       border-radius: 1.25rem

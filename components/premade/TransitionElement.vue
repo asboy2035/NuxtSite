@@ -52,8 +52,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .transitionElement
     position: fixed
     display: flex
@@ -65,7 +63,7 @@
     right: 0
     z-index: 21
     pointer-events: none
-    background: colors.$backgroundColor
+    background: var(--backgroundColor)
     border-radius: 0
 
     // Animation
@@ -85,7 +83,7 @@
     height: 0.1rem
     z-index: 7
 
-    background: linear-gradient(to right, colors.$accentColor, colors.$swirly02)
+    background: linear-gradient(to right, var(--accentColor), var(--swirly02))
 
   .loader-enter-from
     transform: translateX(-100%)

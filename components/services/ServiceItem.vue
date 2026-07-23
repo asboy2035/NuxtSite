@@ -43,8 +43,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .serviceItem
     gap: 0.75rem
 
@@ -64,8 +62,8 @@
           padding: 0.25rem 0.5rem
 
           border-radius: 10rem
-          border: 0.1rem solid colors.$shadowColor
-          background: colors.$accentColor
+          border: 0.1rem solid var(--shadowColor)
+          background: var(--accentColor)
           font-weight: bold
 
         img

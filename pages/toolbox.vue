@@ -85,7 +85,7 @@
         :index="1"
       />
 
-      <divider />
+      <Divider />
 
       <CardTitle title="pages.apps" icon="solar:widget-2-line-duotone" />
       <AppsCategoryList :index="2" :apps-data="apps" />

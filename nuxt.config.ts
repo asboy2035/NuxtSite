@@ -7,25 +7,18 @@ import meta from './package'
 export default defineNuxtConfig({
   app: {
     head: {
-      htmlAttrs: {},
       link: [
         {
           rel: 'preconnect',
           href: 'https://api.iconify.design',
           crossorigin: '',
         },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.a35hie.me',
-          crossorigin: '',
-        },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
-        { rel: 'dns-prefetch', href: 'https://fonts.a35hie.me' },
         { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
       ],
-      script: [ { src: 'https://cdn.ko-fi.tools/v2/js/shop.js', defer: true } ],
     },
   },
+
   compatibilityDate: '2026-04-17',
   runtimeConfig: {
     public: {
@@ -36,13 +29,14 @@ export default defineNuxtConfig({
       posthogDefaults: '2025-05-24',
     },
   },
+
   modules: [
-    '@vite-pwa/nuxt',
     'floating-vue/nuxt',
     '@nuxtjs/i18n',
     '@nuxt/fonts',
     'motion-v/nuxt',
   ],
+
   alias: {
     '@': fileURLToPath(new URL('./', import.meta.url)),
     $: fileURLToPath(new URL('./data', import.meta.url)),
@@ -50,6 +44,7 @@ export default defineNuxtConfig({
     '+': fileURLToPath(new URL('./components', import.meta.url)),
     '&': fileURLToPath(new URL('./utils', import.meta.url)),
   },
+
   fonts: {
     families: [
       {
@@ -62,6 +57,7 @@ export default defineNuxtConfig({
       },
     ],
   },
+
   i18n: {
     strategy: 'prefix_except_default',
     baseUrl: 'https://a35hie.me',
@@ -176,40 +172,20 @@ export default defineNuxtConfig({
     ],
     langDir: 'locales/',
   },
-  pwa: {
-    registerType: 'autoUpdate',
-    manifest: {
-      name: 'Toolbox - Ash',
-      short_name: 'Toolbox',
-      description: "a35hie's Toolbox app.",
-      theme_color: '#9f75e8',
-      start_url: '/toolbox',
-      icons: [
-        {
-          src: '/images/icons/Toolbox.png',
-          sizes: '1024x1024',
-          type: 'image/png',
-        },
-      ],
-    },
-  },
+
   devtools: { enabled: true },
   css: [ '@/styles/global.sass' ],
+
   vite: {
     build: {
       sourcemap: 'inline',
     },
   },
+
   nitro: {
-    compressPublicAssets: true,
-    publicAssets: [
-      {
-        dir: 'public',
-        baseURL: '/',
-      },
-    ],
-    externals: {
-      inline: [ 'vue' ],
+    compressPublicAssets: {
+      gzip: true,
+      brotli: true,
     },
   },
 })

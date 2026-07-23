@@ -46,8 +46,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .launcherImage
     width: 2rem
     height: 2rem
@@ -60,7 +58,7 @@
       left: 0
       right: 0
       border-radius: 0.75rem
-      border: 0.1rem colors.$shadowColor solid
+      border: 0.1rem var(--shadowColor) solid
       mask: conic-gradient(from 45deg, black, transparent, black, transparent, black)
       opacity: 0.4
 </style>
