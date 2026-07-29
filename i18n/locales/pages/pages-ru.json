@@ -11,8 +11,7 @@
       "using": "Использую",
       "learning": "Изучаю",
       "find": "Поиск языка...",
-      "selected": "Выбрано:",
-      "confirm": "Подтвердить язык"
+      "confirm": "Переключиться на {language}"
     }
   },
   "links": {
@@ -24,7 +23,8 @@
   },
   "apps": {
     "allApps": "Все Приложения",
-    "pwaInstall": "Установка PWA"
+    "pwaInstall": "Установка PWA",
+    "buttons": { "go": "Перейти", "soon": "Скоро" }
   },
   "goodies": {
     "cursors": {
@@ -58,7 +58,7 @@
     "betaNotice": "Эта функция в бета-версии.",
     "errorNotice": "Переводы могут содержать ошибки.",
     "foundError": "Нашли ошибку?",
-    "reportError": "Сообщить."
+    "reportError": "Дай мне знать."
   },
   "ring": {
     "title": "Ring",

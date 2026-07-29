@@ -11,8 +11,7 @@
       "using": "正在使用",
       "learning": "正在学习",
       "find": "搜索语言...",
-      "selected": "已选择:",
-      "confirm": "确认语言"
+      "confirm": "切换到{language}"
     }
   },
   "links": {
@@ -24,7 +23,8 @@
   },
   "apps": {
     "allApps": "所有应用",
-    "pwaInstall": "PWA 安装"
+    "pwaInstall": "PWA 安装",
+    "buttons": { "go": "前往", "soon": "即将推出" }
   },
   "goodies": {
     "cursors": {
@@ -58,7 +58,7 @@
     "betaNotice": "此功能处于 Beta 测试中。",
     "errorNotice": "翻译可能包含错误。",
     "foundError": "发现了错误？",
-    "reportError": "报告错误。"
+    "reportError": "告诉我吧。"
   },
   "ring": {
     "title": "Ring",

@@ -6,24 +6,25 @@
   import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
 
-  interface LangItem extends LocaleObject {
-    code: string
-    name: string
-  }
-
   const { locale, locales, setLocale } = useI18n()
   const { t } = useI18n()
 
-  const emit = defineEmits([ 'set' ])
+  type LangItem = Pick<LocaleObject, 'code' | 'name' | 'language'>
+  type LocaleCode = typeof locale.value
+
+  const emit = defineEmits<{
+    set: []
+  }>()
 
   const query = ref('')
   const pendingCode = ref(locale.value)
   const activeIndex = ref(0)
 
-  const normalizedLocales = computed(() =>
-    (locales.value as LangItem[]).map((item) => ({
-      code: item.code,
-      name: item.name,
+  const normalizedLocales = computed<LangItem[]>(() =>
+    locales.value.map(({ code, name, language }) => ({
+      code,
+      name,
+      language,
     }))
   )
 
@@ -41,7 +42,12 @@
     normalizedLocales.value.find((item) => item.code === pendingCode.value)
   )
 
-  const setPending = (code: string) => {
+  const flagIcon = (language?: string) => {
+    const country = language?.split('-')[1]
+    return `circle-flags:${country?.toLowerCase() ?? 'un'}`
+  }
+
+  const setPending = (code: LocaleCode) => {
     pendingCode.value = code
   }
 
@@ -99,7 +105,7 @@
 
       activeIndex.value = Math.min(activeIndex.value, items.length - 1)
     },
-    { deep: true, immediate: true }
+    { immediate: true }
   )
 
   watch(
@@ -112,7 +118,7 @@
 </script>
 
 <template>
-  <div class="modernLangPicker fullWidth">
+  <VStack class="modernLangPicker fullWidth">
     <HStack class="searchBox fullWidth">
       <Icon icon="solar:magnifer-line-duotone" />
       <input
@@ -127,32 +133,28 @@
       <button
         v-for="(item, index) in filteredLocales"
         :key="item.code"
+        class="langChip"
         :class="{
-          selected: pendingCode === item.code,
+          prominent: pendingCode === item.code,
           current: locale === item.code,
           active: activeIndex === index,
         }"
         @click="setPending(item.code)"
       >
-        <span class="langName">{{ item.name }}</span>
-        <span class="langCode">{{ item.code.toUpperCase() }}</span>
+        <Icon class="langIcon" :icon="flagIcon(item.language)" />
+        {{ item.name }}
       </button>
     </div>
 
-    <VStack class="actions">
-      <p v-if="pendingLocale">
-        {{ t('home.languages.selected') }}
-        <strong>{{ pendingLocale.name }}</strong>
-      </p>
-      <button
-        class="confirm fullWidth prominent"
-        :disabled="!pendingLocale"
-        @click="confirmLanguage"
-      >
-        {{ t('home.languages.confirm') }}
-      </button>
-    </VStack>
-  </div>
+    <button
+      class="confirm fullWidth prominent"
+      :disabled="!pendingLocale"
+      @click="confirmLanguage"
+    >
+      <Icon icon="solar:global-line-duotone" />
+      {{ t('home.languages.confirm', { language: pendingLocale?.name }) }}
+    </button>
+  </VStack>
 </template>
 
 <style scoped lang="sass">
@@ -161,25 +163,21 @@
       flex-grow: 1
 
   .modernLangPicker
-    display: grid
-    gap: 1rem
+    gap: 0.75rem
 
   .langChips
     display: grid
-    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr))
-    gap: 0.55rem
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr))
+    gap: 0.5rem
 
-    button
-      justify-content: space-between
-
-      &.selected
-        background: var(--accentColor)
+    .langChip
+      justify-content: flex-start
 
       &.current
         .langCode
           opacity: 1
 
   .langCode
-    font-size: 0.72rem
-    opacity: 0.65
+    font-size: 0.75rem
+    opacity: 0.6
 </style>

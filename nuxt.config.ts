@@ -73,7 +73,7 @@ export default defineNuxtConfig({
       {
         code: 'en',
         name: 'English',
-        language: 'en-US',
+        language: 'en-CA',
         files: [
           'global/global-en.json',
           'meta/meta-en.json',
@@ -101,23 +101,23 @@ export default defineNuxtConfig({
         ],
       },
       {
-        code: 'jp',
+        code: 'ja',
         name: '日本語',
-        language: 'jp-JP',
+        language: 'ja-JP',
         files: [
-          'global/global-jp.json',
-          'meta/meta-jp.json',
-          'pages/pages-jp.json',
+          'global/global-ja.json',
+          'meta/meta-ja.json',
+          'pages/pages-ja.json',
         ],
       },
       {
-        code: 'cn',
-        name: '中文',
+        code: 'zh',
+        name: '简体中文',
         language: 'zh-CN',
         files: [
-          'global/global-cn.json',
-          'meta/meta-cn.json',
-          'pages/pages-cn.json',
+          'global/global-zh.json',
+          'meta/meta-zh.json',
+          'pages/pages-zh.json',
         ],
       },
       {

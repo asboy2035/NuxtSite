@@ -1,8 +1,8 @@
 {
   "home": {
     "intro": "Hai, I'm ash~",
-    "desc1": "I'm a teenager from France, and officially the chillest person you'll meet.",
-    "desc2": "I'm currently learning to develop on Web and Apple platforms. I'm also practicing UI and graphic design.",
+    "desc1": "I'm a teenager from France and officially the chillest person you'll ever meet.",
+    "desc2": "I'm currently learning web and Apple app development. I'm also practising UI and graphic design.",
     "location": "Bordeaux, France",
     "languages": {
       "title": "Languages",
@@ -11,20 +11,23 @@
       "using": "Using",
       "learning": "Learning",
       "find": "Find language...",
-      "selected": "Selected:",
-      "confirm": "Confirm language"
+      "confirm": "Switch to {language}"
     }
   },
   "links": {
     "socialTitle": "My Socials",
-    "socialDesc": "My socials and contact methods :3",
+    "socialDesc": "My socials and ways to contact me :3",
     "more": "More Links",
     "playlists": "Playlists",
     "check": "Check out my"
   },
   "apps": {
     "allApps": "All Apps",
-    "pwaInstall": "PWA Installation"
+    "pwaInstall": "PWA Installation",
+    "buttons": {
+      "go": "Go",
+      "soon": "Soon"
+    }
   },
   "goodies": {
     "cursors": {
@@ -41,7 +44,7 @@
   "playlists": {
     "by": "By:",
     "streamTitle": "Stream",
-    "streamDesc": "Where I stream my playlists:"
+    "streamDesc": "Where you can stream my playlists:"
   },
   "creators": {
     "choose": "Choose a tool...",
@@ -57,8 +60,8 @@
     "choose": "Choose...",
     "betaNotice": "This feature is in beta.",
     "errorNotice": "Translations may include errors.",
-    "foundError": "Found an error?",
-    "reportError": "Report it."
+    "foundError": "Found a translation error?",
+    "reportError": "Let me know."
   },
   "ring": {
     "title": "Ring",
@@ -77,7 +80,7 @@
   },
   "services": {
     "title": "Services",
-    "subtitle": "Hosted and cloud services.",
+    "subtitle": "Hosted and cloud-based services.",
     "source": "Source",
     "use": "Use"
   },

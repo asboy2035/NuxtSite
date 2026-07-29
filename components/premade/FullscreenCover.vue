@@ -18,6 +18,7 @@
     align-items: center
     justify-content: center
     z-index: 34
+    padding: var(--contentPadding)
 
     opacity: 0
     background: var(--foregroundDark)
@@ -27,8 +28,8 @@
 
   .fullScreenCoverContent
     flex-direction: column
+    overflow-y: scroll
     width: 100%
-    overflow: scroll
 
   @keyframes opacity
     0%

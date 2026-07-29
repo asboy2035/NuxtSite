@@ -83,7 +83,7 @@
     height: 0.1rem
     z-index: 7
 
-    background: linear-gradient(to right, var(--accentColor), var(--swirly02))
+    background: linear-gradient(to right, var(--accentColor), var(--accentColor2))
 
   .loader-enter-from
     transform: translateX(-100%)

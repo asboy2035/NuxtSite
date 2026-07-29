@@ -100,10 +100,12 @@
     loading="lazy"
     :class="{ fadeInBackground: fadingIn, fadeOutBackground: fadingOut }"
   />
+
   <TransitionElement ref="cover" />
-  <Modal v-if="showLangPicker" plain
-    ><LangPickerCard @set="hideLangPicker"
-  /></Modal>
+
+  <Modal v-if="showLangPicker" plain>
+    <LangPickerCard class="modalLangPicker" @set="hideLangPicker" />
+  </Modal>
 </template>
 
 <style scoped lang="sass">
@@ -133,4 +135,8 @@
   @keyframes fadeInBackground
     from
       opacity: 0
+
+  .modalLangPicker
+    width: 100%
+    max-width: 30rem
 </style>

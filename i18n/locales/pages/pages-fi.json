@@ -11,8 +11,7 @@
       "using": "Käytä",
       "learning": "Oppii",
       "find": "Hae kielta...",
-      "selected": "Valittu:",
-      "confirm": "Vahvista kieli"
+      "confirm": "Vaihda kieleen {language}"
     }
   },
   "links": {
@@ -24,7 +23,8 @@
   },
   "apps": {
     "allApps": "Kaikki sovellukset",
-    "pwaInstall": "PWA-asennus"
+    "pwaInstall": "PWA-asennus",
+    "buttons": { "go": "Siirry", "soon": "Pian" }
   },
   "goodies": {
     "cursors": {
@@ -58,7 +58,7 @@
     "betaNotice": "Tämä ominaisuus on beta-versiossa.",
     "errorNotice": "Käännökset voivat sisältää virheitä.",
     "foundError": "Löysitkö virheen?",
-    "reportError": "Ilmoita se."
+    "reportError": "Kerro minulle."
   },
   "ring": {
     "title": "Ring",

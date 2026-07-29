@@ -6,6 +6,8 @@
   import ProjectStackItem from '+/projects/ProjectStackItem.vue'
   import SafeLink from '+/utils/SafeLink.vue'
 
+  const { t } = useI18n()
+
   defineProps<{
     project: Project
   }>()
@@ -25,11 +27,17 @@
         <h3>{{ project.name }}</h3>
         <p class="light">{{ project.description }}</p>
 
-        <HStack class="projectStack">
-          <ProjectStackItem
-            v-for="technology in project.technologies"
-            :technology="technology"
-          />
+        <HStack class="autoSpace fullWidth">
+          <HStack class="projectStack">
+            <ProjectStackItem
+              v-for="technology in project.technologies"
+              :technology="technology"
+            />
+          </HStack>
+
+          <button class="prominent goButton">
+            {{ t('apps.buttons.go') }}
+          </button>
         </HStack>
       </VStack>
     </InteriorItem>
@@ -47,9 +55,16 @@
       img
         border-radius: 1rem
 
+      .projectStack
+        background: var(--foregroundColor)
+        padding: 0.5rem
+
+      .goButton
+        min-width: 5rem
+
   @media (max-width: 35rem)
     .projectView
       .projectInfo
-        img
+        img, .projectStack
           border-radius: 1.25rem
 </style>

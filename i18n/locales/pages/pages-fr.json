@@ -11,8 +11,7 @@
       "using": "Utilisés",
       "learning": "Appris",
       "find": "Trouver une langue...",
-      "selected": "Sélectionné:",
-      "confirm": "Confirmer la langue"
+      "confirm": "Passer à {language}"
     }
   },
   "links": {
@@ -24,7 +23,8 @@
   },
   "apps": {
     "allApps": "Toutes les applications",
-    "pwaInstall": "Installer en tant que PWA"
+    "pwaInstall": "Installer en tant que PWA",
+    "buttons": { "go": "Aller", "soon": "Bientôt" }
   },
   "goodies": {
     "cursors": {
@@ -58,7 +58,7 @@
     "betaNotice": "Cette fonctionnalité est en bêta.",
     "errorNotice": "Les traductions peuvent contenir des erreurs.",
     "foundError": "Vous avez trouvé une erreur ?",
-    "reportError": "Signalez-la."
+    "reportError": "Fais-moi signe."
   },
   "ring": {
     "title": "Ring",

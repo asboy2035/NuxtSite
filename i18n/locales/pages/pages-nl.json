@@ -11,8 +11,7 @@
       "using": "Gebruik",
       "learning": "Leren",
       "find": "Taal zoeken...",
-      "selected": "Geselecteerd:",
-      "confirm": "Taal bevestigen"
+      "confirm": "Overschakelen naar {language}"
     }
   },
   "links": {
@@ -24,7 +23,8 @@
   },
   "apps": {
     "allApps": "Alle Apps",
-    "pwaInstall": "PWA-installatie"
+    "pwaInstall": "PWA-installatie",
+    "buttons": { "go": "Ga", "soon": "Binnenkort" }
   },
   "goodies": {
     "cursors": {
@@ -58,7 +58,7 @@
     "betaNotice": "Deze functie is in bèta.",
     "errorNotice": "Vertalingen kunnen fouten bevatten.",
     "foundError": "Een fout gevonden?",
-    "reportError": "Meld het."
+    "reportError": "Laat het me weten."
   },
   "ring": {
     "title": "Ring",

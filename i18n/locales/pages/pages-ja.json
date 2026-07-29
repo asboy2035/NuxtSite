@@ -11,8 +11,7 @@
       "using": "使用中",
       "learning": "学習中",
       "find": "言語を検索...",
-      "selected": "選択済み:",
-      "confirm": "言語を確認"
+      "confirm": "{language}に切り替える"
     }
   },
   "links": {
@@ -24,7 +23,8 @@
   },
   "apps": {
     "allApps": "すべてのアプリ",
-    "pwaInstall": "PWAのインストール"
+    "pwaInstall": "PWAのインストール",
+    "buttons": { "go": "開く", "soon": "近日公開" }
   },
   "goodies": {
     "cursors": {
@@ -58,7 +58,7 @@
     "betaNotice": "この機能はベータ版です。",
     "errorNotice": "翻訳に誤りが含まれる場合があります。",
     "foundError": "間違いを見つけましたか？",
-    "reportError": "報告する。"
+    "reportError": "教えてね。"
   },
   "ring": {
     "title": "Ring",
