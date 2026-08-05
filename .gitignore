@@ -22,3 +22,6 @@ analysis
 .env
 .env.*
 !.env.example
+
+# Generated fonts
+public/fonts

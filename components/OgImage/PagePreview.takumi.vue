@@ -40,7 +40,8 @@
     padding: 3rem;
     background: #0c0023;
     color: rgba(240, 240, 240, 0.9);
-    font-family: 'Nata Sans', 'Noto Sans SC', 'Noto Sans JP', sans-serif;
+    /* For now, don't include SC/JP files. */
+    font-family: 'Nata Sans', sans-serif;
     text-align: center;
   }
 

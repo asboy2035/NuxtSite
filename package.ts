@@ -13,7 +13,7 @@ export default definePackage({
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '7.0.0-beta13',
+  version: '7.0.0-beta14',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
@@ -27,7 +27,7 @@ export default definePackage({
     // code runs
     dev: 'nuxt dev --host 0.0.0.0 --port 5173',
     preview: 'bun run build && nuxt preview --port 4173',
-    build: 'nuxt build',
+    build: 'bun run fonts && nuxt build',
     ci: 'bun install && bun run build',
 
     // code style
@@ -46,6 +46,7 @@ export default definePackage({
     verifyTranslations: 'bun run utils/verifyTranslations.ts',
     generate: 'nuxt generate',
     postinstall: 'nuxt prepare',
+    fonts: 'bun scripts/subsetFonts.ts',
   },
 
   dependencies: {
@@ -69,16 +70,19 @@ export default definePackage({
   devDependencies: {
     '@nuxt/fonts': '^0.14.0',
     '@types/node': '^26.1.1',
+    '@types/subset-font': '^2.3.0',
     '@typescript-eslint/parser': '^8.56.1',
     eslint: '^10.0.2',
     'eslint-plugin-import': '^2.32.0',
     'eslint-plugin-simple-import-sort': '^12.1.1',
+    'fast-glob': '^3.3.3',
     nuxt: '^4.5.2',
     'nuxt-og-image': '^6.7.6',
     oxfmt: '^0.62.0',
     'postcss-import': '^16.1.1',
     'replace-in-files-cli': '^4.0.0',
     sass: '^1.102.0',
+    'subset-font': '^2.5.0',
     vite: '^8.2.0',
     'vue-eslint-parser': '^10.4.1',
   },
