@@ -14,6 +14,7 @@ export default defineConfig({
     '.vscode',
     '.idea',
     '.env.example',
+    'package.json',
   ],
 
   trailingComma: 'es5',

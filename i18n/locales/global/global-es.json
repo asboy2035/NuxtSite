@@ -36,7 +36,7 @@
   },
   "footer": {
     "thanks": "¡Gracias por leer!",
-    "createdBy": "Creado por Ash, usando NuxtJS, en 2026 <3",
+    "createdBy": "Creado por ash, usando NuxtJS, en 2026 <3",
     "codeOnGh": "Código en GitHub.",
     "version": "Versión: {version}",
     "release": "Lanzamiento: {release}",

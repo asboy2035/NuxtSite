@@ -1,0 +1,45 @@
+{
+  "name": "аш",
+  "intro": {
+    "desc": "Я дизайнер і розробник, який живе у Франції.",
+    "github": "GitHub",
+    "email": "Електронна пошта",
+    "artBy": "Ілюстрація від {artist}!"
+  },
+  "sites": {
+    "title": "Сайти",
+    "pages": "Сторінки",
+    "fonts": "Шрифти",
+    "big": "Byg",
+    "guides": "Посібники",
+    "portfolio": "Портфоліо"
+  },
+  "app": {
+    "hideInterface": "Приховати сторінку",
+    "showInterface": "Показати сторінку",
+    "getWalls": "Шпалери",
+    "comingSoon": "Незабаром!",
+    "connecting": "Підключення...",
+    "more": "Більше"
+  },
+  "sharing": {
+    "title": "Поділитися",
+    "showQr": "Показати QR-код",
+    "hideQr": "Приховати QR-код"
+  },
+  "navbar": {
+    "go": "Перейти...",
+    "launchers": {
+      "apps": "Додатки",
+      "creators": "Створити..."
+    }
+  },
+  "footer": {
+    "thanks": "Дякую за перегляд!",
+    "createdBy": "Створено аш за допомогою NuxtJS у 2026 році <3",
+    "codeOnGh": "Код на GitHub.",
+    "version": "Версія: {version}",
+    "release": "Випуск: {release}",
+    "readMore": "Докладніше:"
+  }
+}

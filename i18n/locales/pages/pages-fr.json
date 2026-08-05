@@ -62,18 +62,23 @@
   },
   "ring": {
     "title": "Ring",
-    "description": "Un casse-briques dynamique autour d’anneaux en rotation.",
-    "controls": "Déplace-toi avec la souris, A/S ou les flèches. Garde la balle en jeu.",
+    "description": "Une version circulaire du célèbre jeu Breakout.",
+    "controls": "Déplacez-vous avec la souris, A/S ou les flèches. Ne laissez pas la balle sortir !",
     "start": "Commencer",
     "restart": "Rejouer",
     "level": "Niveau",
     "blocks": "Blocs",
     "lives": "Vies",
     "gameOver": "Partie terminée",
-    "complete": "Niveau terminé",
+    "complete": "Niveau terminé !",
     "aria": "Jeu Ring",
-    "left": "Aller à gauche",
-    "right": "Aller à droite"
+    "left": "Déplacer à gauche",
+    "right": "Déplacer à droite",
+    "paused": "En pause",
+    "resume": "Reprendre",
+    "lifeLost": "Vous avez perdu une vie !",
+    "continue": "Continuer",
+    "nextLevel": "Passage au niveau suivant..."
   },
   "services": {
     "title": "Services",

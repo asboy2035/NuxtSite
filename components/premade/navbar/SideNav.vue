@@ -4,6 +4,7 @@
   import type { NavLink } from ':/navLink'
   import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
+  import Clock from '+/premade/Clock.vue'
   import Navbar from '+/premade/navbar/Navbar.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   import { HomeNavLink, NavLinks } from '$/NavLinks'
@@ -24,9 +25,13 @@
 <template>
   <VStack class="sideNav sidebarModeOnly">
     <SafeLink to="/" class="fullWidth">
-      <HStack class="sideNavItem">
+      <HStack class="sideNavItem profileNavItem">
         <img class="avatar" src="/images/avatar-27.webp" alt="Avatar" />
-        <h2>{{ t('name') }}</h2>
+
+        <HStack class="nameAndClock">
+          <h2>{{ t('name') }}</h2>
+          <Clock />
+        </HStack>
       </HStack>
     </SafeLink>
 
@@ -67,10 +72,15 @@
     padding: var(--contentPadding)
     z-index: 12
 
-    .avatar
-      width: 2rem
-      height: 2rem
-      border-radius: 0.75rem
+    .profileNavItem
+      .avatar
+        width: 2rem
+        height: 2rem
+        border-radius: 0.75rem
+
+      .nameAndClock
+        flex-grow: 1
+        justify-content: space-between
 
     .sideNavItem
       padding: 0.75rem

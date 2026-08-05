@@ -1,19 +1,20 @@
 {
+  "alert": "THIS IS A GENERATED FILE. DO NOT EDIT DIRECTLY. Instead, edit package.ts and run 'ts-pkg' to regenerate.",
   "name": "@a35hie/nuxt-site",
-  "version": "7.0.0-beta12",
-  "private": false,
   "description": "My personal website.",
-  "license": "Apache-2.0",
   "author": {
     "name": "ash",
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
+  "version": "7.0.0-beta13",
+  "license": "Apache-2.0",
+  "private": false,
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/main35/NuxtSite"
   },
-  "type": "module",
   "scripts": {
     "dev": "nuxt dev --host 0.0.0.0 --port 5173",
     "preview": "bun run build && nuxt preview --port 4173",
@@ -30,10 +31,10 @@
   },
   "dependencies": {
     "@iconify/vue": "^5.0.1",
-    "@nuxtjs/i18n": "^10.5.0",
+    "@nuxtjs/i18n": "^10.6.0",
     "@opk/ts-pkg": "^0.7.1",
-    "@takumi-rs/core": "^2.4.2",
-    "@takumi-rs/wasm": "^2.4.2",
+    "@takumi-rs/core": "^2.5.9",
+    "@takumi-rs/wasm": "^2.5.9",
     "cobe": "^0.6.5",
     "floating-vue": "^5.2.2",
     "html2canvas": "^1.4.1",
@@ -41,7 +42,7 @@
     "motion-v": "^2.3.0",
     "postcss-load-config": "^6.0.1",
     "posthog-js": "^1.358.0",
-    "vue": "^3.5.40",
+    "vue": "^3.5.41",
     "vue-progressive-blur": "^1.0.2",
     "vue-router": "^5.2.0"
   },
@@ -52,14 +53,13 @@
     "eslint": "^10.0.2",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "nuxt": "^4.5.0",
-    "nuxt-og-image": "^6.7.4",
-    "oxfmt": "^0.60.0",
+    "nuxt": "^4.5.2",
+    "nuxt-og-image": "^6.7.6",
+    "oxfmt": "^0.62.0",
     "postcss-import": "^16.1.1",
     "replace-in-files-cli": "^4.0.0",
-    "sass": "^1.101.6",
-    "vite": "^8.1.5",
-    "vue-eslint-parser": "^10.4.0"
-  },
-  "alert": "THIS IS A GENERATED FILE. DO NOT EDIT DIRECTLY. Instead, edit package.ts and run 'ts-pkg' to regenerate."
+    "sass": "^1.102.0",
+    "vite": "^8.2.0",
+    "vue-eslint-parser": "^10.4.1"
+  }
 }

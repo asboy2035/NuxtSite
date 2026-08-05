@@ -65,18 +65,23 @@
   },
   "ring": {
     "title": "Ring",
-    "description": "A kinetic brick breaker played around spinning rings.",
-    "controls": "Move with mouse, A/S, or arrow keys. Keep the ball in play.",
+    "description": "A rotary version of a classic Breakout game.",
+    "controls": "Move with mouse, A/S, or arrow keys. Don't let the ball go out!",
     "start": "Start",
     "restart": "Play again",
     "level": "Level",
     "blocks": "Blocks",
     "lives": "Lives",
     "gameOver": "Game Over",
-    "complete": "Level complete",
+    "complete": "Level complete!",
     "aria": "Ring game",
     "left": "Move left",
-    "right": "Move right"
+    "right": "Move right",
+    "paused": "Paused",
+    "resume": "Resume",
+    "lifeLost": "You lost a life!",
+    "continue": "Continue",
+    "nextLevel": "Continuing to next level..."
   },
   "services": {
     "title": "Services",

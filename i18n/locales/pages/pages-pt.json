@@ -10,7 +10,7 @@
       "programming": "Linguagens de Programação",
       "using": "Usando",
       "learning": "Aprendendo",
-      "find": "Buscar idioma...",
+      "find": "Pesquisar idioma...",
       "confirm": "Mudar para {language}"
     }
   },
@@ -48,8 +48,8 @@
     "tools": "Ferramentas"
   },
   "toolbox": {
-    "desc1": "Toolbox é a loja tudo-em-um para todos os recursos e aplicativos meus.",
-    "desc2": "Aqui, você pode encontrar aplicativos, ferramentas e muito mais, tudo em um aplicativo que você pode adicionar diretamente à sua tela inicial.",
+    "desc1": "Toolbox é a loja completa para todos os meus recursos e aplicativos.",
+    "desc2": "Aqui você encontra aplicativos, ferramentas e muito mais, tudo em um só aplicativo que pode ser adicionado diretamente à tela inicial.",
     "quickLinks": "Links Rápidos",
     "about": "Sobre"
   },
@@ -62,18 +62,23 @@
   },
   "ring": {
     "title": "Ring",
-    "description": "Um quebra-blocos dinâmico jogado ao redor de anéis giratórios.",
-    "controls": "Mova com o rato, A/S ou as setas. Mantenha a bola em jogo.",
+    "description": "Uma versão circular do clássico jogo Breakout.",
+    "controls": "Mova com o mouse, A/S ou as setas. Não deixe a bola sair!",
     "start": "Começar",
     "restart": "Jogar novamente",
     "level": "Nível",
     "blocks": "Blocos",
     "lives": "Vidas",
     "gameOver": "Fim de jogo",
-    "complete": "Nível concluído",
+    "complete": "Nível concluído!",
     "aria": "Jogo Ring",
-    "left": "Mover à esquerda",
-    "right": "Mover à direita"
+    "left": "Mover para a esquerda",
+    "right": "Mover para a direita",
+    "paused": "Pausado",
+    "resume": "Continuar",
+    "lifeLost": "Você perdeu uma vida!",
+    "continue": "Continuar",
+    "nextLevel": "Indo para o próximo nível..."
   },
   "services": {
     "title": "Serviços",

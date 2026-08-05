@@ -62,18 +62,23 @@
   },
   "ring": {
     "title": "Ring",
-    "description": "Un brick breaker dinámico jugado alrededor de anillos giratorios.",
-    "controls": "Muévete con el ratón, A/S o las flechas. Mantén la pelota en juego.",
-    "start": "Empezar",
+    "description": "Una versión circular del clásico juego Breakout.",
+    "controls": "Muévete con el ratón, A/S o las flechas. ¡No dejes que la pelota salga!",
+    "start": "Comenzar",
     "restart": "Jugar de nuevo",
     "level": "Nivel",
     "blocks": "Bloques",
     "lives": "Vidas",
     "gameOver": "Fin de la partida",
-    "complete": "Nivel completado",
+    "complete": "¡Nivel completado!",
     "aria": "Juego Ring",
     "left": "Mover a la izquierda",
-    "right": "Mover a la derecha"
+    "right": "Mover a la derecha",
+    "paused": "Pausado",
+    "resume": "Reanudar",
+    "lifeLost": "¡Perdiste una vida!",
+    "continue": "Continuar",
+    "nextLevel": "Continuando al siguiente nivel..."
   },
   "services": {
     "title": "Servicios",

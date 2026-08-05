@@ -62,18 +62,23 @@
   },
   "ring": {
     "title": "Ring",
-    "description": "Dynaaminen tiilenmurskauspeli pyörivien renkaiden ympärillä.",
-    "controls": "Liiku hiirellä, A/S:llä tai nuolinäppäimillä. Pidä pallo pelissä.",
+    "description": "Pyöreä versio klassisesta Breakout-pelistä.",
+    "controls": "Liiku hiirellä, A/S-näppäimillä tai nuolinäppäimillä. Älä päästä palloa ulos!",
     "start": "Aloita",
     "restart": "Pelaa uudelleen",
     "level": "Taso",
     "blocks": "Palikat",
     "lives": "Elämät",
     "gameOver": "Peli ohi",
-    "complete": "Taso suoritettu",
+    "complete": "Taso suoritettu!",
     "aria": "Ring-peli",
-    "left": "Vasemmalle",
-    "right": "Oikealle"
+    "left": "Liiku vasemmalle",
+    "right": "Liiku oikealle",
+    "paused": "Tauolla",
+    "resume": "Jatka",
+    "lifeLost": "Menetit yhden elämän!",
+    "continue": "Jatka",
+    "nextLevel": "Siirrytään seuraavalle tasolle..."
   },
   "services": {
     "title": "Palvelut",

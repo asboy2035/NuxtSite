@@ -62,18 +62,23 @@
   },
   "ring": {
     "title": "Ring",
-    "description": "围绕旋转圆环展开的动感打砖块游戏。",
-    "controls": "使用鼠标、A/S 或方向键移动；别让球掉出去。",
+    "description": "经典 Breakout 游戏的环形版本。",
+    "controls": "使用鼠标、A/S 键或方向键移动。不要让球飞出去！",
     "start": "开始",
-    "restart": "再玩一次",
+    "restart": "重新开始",
     "level": "关卡",
     "blocks": "方块",
     "lives": "生命",
     "gameOver": "游戏结束",
-    "complete": "关卡完成",
+    "complete": "关卡完成！",
     "aria": "Ring 游戏",
     "left": "向左移动",
-    "right": "向右移动"
+    "right": "向右移动",
+    "paused": "已暂停",
+    "resume": "继续",
+    "lifeLost": "你失去了一条生命！",
+    "continue": "继续",
+    "nextLevel": "正在进入下一关..."
   },
   "services": {
     "title": "服务",

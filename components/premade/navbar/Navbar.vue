@@ -102,7 +102,7 @@
             <h1>{{ t('pages.languages') }}</h1>
 
             <Grid class="spaced">
-              <LangPickerCard :index="5" />
+              <LangPickerCard @set="open = false" :index="5" />
 
               <Card :index="6">
                 <CardTitle
@@ -197,7 +197,10 @@
             </HStack>
           </HStack>
 
-          <Card v-else-if="!open && startButtonOnly" class="startButtonContainer">
+          <Card
+            v-else-if="!open && startButtonOnly"
+            class="startButtonContainer"
+          >
             <HStack class="opener startButton" @click="open = !open">
               <Icon icon="solar:widget-5-line-duotone" />
               <h3>{{ t('app.more') }}</h3>

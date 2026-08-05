@@ -149,9 +149,19 @@ export default defineNuxtConfig({
         ],
       },
       {
+        code: 'uk',
+        name: 'Українська',
+        language: 'uk-UA',
+        files: [
+          'global/global-uk.json',
+          'meta/meta-uk.json',
+          'pages/pages-uk.json',
+        ],
+      },
+      {
         code: 'pt',
         name: 'Português',
-        language: 'pt-PT',
+        language: 'pt-BR',
         files: [
           'global/global-pt.json',
           'meta/meta-pt.json',
@@ -166,16 +176,6 @@ export default defineNuxtConfig({
           'global/global-fi.json',
           'meta/meta-fi.json',
           'pages/pages-fi.json',
-        ],
-      },
-      {
-        code: 'nl',
-        name: 'Nederlands',
-        language: 'nl-NL',
-        files: [
-          'global/global-nl.json',
-          'meta/meta-nl.json',
-          'pages/pages-nl.json',
         ],
       },
     ],

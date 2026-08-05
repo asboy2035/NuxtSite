@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import { onBeforeUnmount, onMounted, ref } from 'vue'
+  import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
   type BlockKind = 'regular' | 'explosion' | 'item'
   type ItemKind = 'grow' | 'shrink' | 'fast' | 'slow'
@@ -26,9 +26,9 @@
   const level = ref(1)
   const lives = ref(3)
   const remaining = ref(0)
-  const state = ref<'ready' | 'playing' | 'paused' | 'lost' | 'complete'>(
-    'ready'
-  )
+  const state = ref<
+    'ready' | 'playing' | 'paused' | 'life-lost' | 'lost' | 'complete'
+  >('ready')
   const { t } = useI18n()
 
   let context: CanvasRenderingContext2D | null = null
@@ -171,15 +171,19 @@
     resetBall()
   }
 
-  function start(): void {
-    if (state.value === 'lost' || state.value === 'complete') {
+  function handleOverlayAction(): void {
+    // 'complete' has no button (it auto-advances), so it never reaches here.
+    if (state.value === 'lost') {
       level.value = 1
       lives.value = 3
       buildLevel(level.value)
-      state.value = 'playing'
-      return
     }
-    if (state.value === 'ready') {
+    if (
+      state.value === 'ready' ||
+      state.value === 'life-lost' ||
+      state.value === 'paused' ||
+      state.value === 'lost'
+    ) {
       state.value = 'playing'
     }
   }
@@ -194,9 +198,31 @@
     if (lives.value <= 0) state.value = 'lost'
     else {
       resetBall()
-      state.value = 'ready'
+      state.value = 'life-lost'
     }
   }
+
+  const overlayTitle = computed(() => {
+    if (state.value === 'lost') return t('ring.gameOver')
+    if (state.value === 'complete') return t('ring.complete')
+    if (state.value === 'paused') return t('ring.paused')
+    if (state.value === 'life-lost') return t('ring.lifeLost')
+    return t('ring.title')
+  })
+
+  const overlayDescription = computed(() => {
+    if (state.value === 'ready') return t('ring.description')
+    if (state.value === 'complete') return t('ring.nextLevel')
+    return t('ring.controls')
+  })
+
+  const overlayButtonLabel = computed(() => {
+    if (state.value === 'ready') return t('ring.start')
+    if (state.value === 'paused') return t('ring.resume')
+    if (state.value === 'life-lost') return t('ring.continue')
+    if (state.value === 'lost') return t('ring.restart')
+    return ''
+  })
 
   function spawnPickup(angle: number, radius: number): void {
     const kinds: ItemKind[] = [ 'grow', 'shrink', 'fast', 'slow' ]
@@ -522,11 +548,11 @@
 
   function keydown(event: KeyboardEvent): void {
     if ([ 'ArrowLeft', 'a', 'A' ].includes(event.key)) {
-      keyDirection = -1
+      keyDirection = 1
       event.preventDefault()
     }
     if ([ 'ArrowRight', 's', 'S', 'd', 'D' ].includes(event.key)) {
-      keyDirection = 1
+      keyDirection = -1
       event.preventDefault()
     }
     if (event.key === ' ') {
@@ -581,25 +607,19 @@
       @pointerdown="handleCanvasClick"
     />
 
-    <div v-if="state !== 'playing'" class="overlay">
-      <h2>
-        {{
-          state === 'lost'
-            ? t('ring.gameOver')
-            : state === 'complete'
-              ? t('ring.complete')
-              : t('ring.title')
-        }}
-      </h2>
-
-      <p>
-        {{ state === 'ready' ? t('ring.description') : t('ring.controls') }}
-      </p>
-
-      <button class="prominent" @click="start">
-        {{ state === 'ready' ? t('ring.start') : t('ring.restart') }}
-      </button>
-    </div>
+    <Transition name="overlayFade">
+      <div v-if="state !== 'playing'" class="overlay">
+        <h2>{{ overlayTitle }}</h2>
+        <p>{{ overlayDescription }}</p>
+        <button
+          v-if="state !== 'complete'"
+          class="prominent"
+          @click="handleOverlayAction"
+        >
+          {{ overlayButtonLabel }}
+        </button>
+      </div>
+    </Transition>
 
     <div class="mobileControls">
       <button
@@ -618,7 +638,10 @@
         <Icon icon="solar:alt-arrow-right-line-duotone" />
       </button>
 
-      <button @click="togglePause">
+      <button
+        :disabled="state !== 'playing' && state !== 'paused'"
+        @click="togglePause"
+      >
         <Icon
           :icon="
             state === 'paused'
@@ -676,6 +699,15 @@
     p
       max-width: 26rem
 
+    .prominent
+      justify-self: center
+
+  .overlayFade-enter-active, .overlayFade-leave-active
+    transition: opacity .2s ease
+
+  .overlayFade-enter-from, .overlayFade-leave-to
+    opacity: 0
+
   .mobileControls
     position: absolute
     right: 1rem
@@ -689,6 +721,11 @@
     button
       min-width: 3rem
       min-height: 2.5rem
+      transition: opacity .15s ease
+
+      &:disabled
+        opacity: .4
+        cursor: not-allowed
 
   @media (min-width: 50rem)
     .mobileControls
