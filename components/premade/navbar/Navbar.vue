@@ -1,375 +1,367 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import { ref } from 'vue'
-  import { ProgressiveBlur } from 'vue-progressive-blur'
 
+  import type { NavLink } from ':/navLink'
+  import LangPickerCard from '+/langs/LangPickerCard.vue'
+  import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
   import HStack from '+/layout/HStack.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   import VStack from '+/layout/VStack.vue'
-  import FullscreenCover from '+/premade/FullscreenCover.vue'
   import LauncherCard from '+/premade/navbar/LauncherCard.vue'
-  import NavigationButton from '+/premade/navbar/NavigationButton.vue'
-  import NavigationLinks from '+/premade/navbar/NavigationLinks.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import Spacer from '+/utils/Spacer.vue'
   import { LauncherApps } from '$/launchers/LauncherApps'
   import { LauncherCreators } from '$/launchers/LauncherCreators'
-  import { HomeNavLink } from '$/NavLinks'
+  import { NavLinks } from '$/NavLinks'
 
   const { t } = useI18n()
+  const localePath = useLocalePath()
   const route = useRoute()
 
+  defineProps<{
+    startButtonOnly?: boolean
+  }>()
+
   const showingNavProfile = computed(() => route.meta.showingNavProfile ?? true)
-  const showLaunchers: Ref<boolean> = ref(false)
-  const showMobileNav: Ref<boolean> = ref(false)
-  const showSiteSwitcher: Ref<boolean> = ref(false)
-  const navRef: Ref<HTMLElement | null> = ref(null)
-  const expandedNavbar: Ref<boolean> = ref(false)
+  const open: Ref<boolean> = ref(false)
+  const animating: Ref<boolean> = ref(false)
+  const hoveredLink = ref<string | null>(null)
 
-  function toggleNavigation() {
-    showMobileNav.value = !showMobileNav.value
+  const visibleLabel = (link: NavLink) => {
+    const path = localePath(link.link)
 
-    if (!showMobileNav.value) {
-      expandedNavbar.value = false
+    if (hoveredLink.value) {
+      return hoveredLink.value === path
     }
+
+    return route.path === path
   }
 
-  function toggleSiteSwitcher() {
-    showSiteSwitcher.value = !showSiteSwitcher.value
+  function isActive(link: NavLink): boolean {
+    return route.path === localePath(link.link)
   }
-
-  function hideMobileNav() {
-    showMobileNav.value = false
-    expandedNavbar.value = false
-  }
-
-  onMounted(() => {
-    watch(
-      () => route.meta.showingNavProfile,
-      async () => {
-        const component = navRef.value
-        // @ts-ignore
-        if (!component?.$el) return
-        // @ts-ignore
-        const el = component.$el
-
-        const currentWidth = el.getBoundingClientRect().width
-        el.style.width = currentWidth + 'px'
-        el.style.overflow = 'hidden'
-
-        await nextTick()
-
-        const tempWidth = el.style.width
-        el.style.width = 'auto'
-        void el.offsetWidth
-
-        const targetWidth = el.getBoundingClientRect().width
-
-        el.style.width = tempWidth
-        void el.offsetWidth
-
-        requestAnimationFrame(() => {
-          el.style.transition = 'width 0.2s ease'
-          el.style.width = targetWidth + 'px'
-        })
-
-        setTimeout(() => {
-          el.style.transition = ''
-          el.style.width = ''
-          el.style.overflow = 'visible'
-        }, 220)
-      },
-      { flush: 'sync' }
-    )
-  })
 </script>
 
 <template>
-  <VStack class="navBarContainer">
-    <!-- Insert toolbar items here -->
-    <slot />
-
-    <!-- Launchers -->
-    <FullscreenCover id="navLaunchers" v-if="showLaunchers">
-      <VStack>
-        <LauncherCard
-          title="navbar.launchers.apps"
-          icon="solar:widget-2-line-duotone"
-          base-url="/apps"
-          :launcher-items="LauncherApps"
-          :index="0"
-        />
-
-        <LauncherCard
-          title="navbar.launchers.creators"
-          icon="solar:pen-new-square-line-duotone"
-          base-url="/creator"
-          :launcher-items="LauncherCreators"
-          :index="1"
-        />
-      </VStack>
-    </FullscreenCover>
-
-    <!-- Nav on Mobile -->
-    <InteriorItem
-      id="mobileNav"
-      :class="{ hidden: !showMobileNav }"
-      class="navBar"
+  <div
+    class="navbar2Container"
+    :class="{ open, stackModeOnly: !startButtonOnly, startButtonOnly }"
+  >
+    <Motion
+      as="div"
+      class="navbar2Wrapper"
+      layout
+      :transition="{
+        layout: {
+          type: 'spring',
+          stiffness: 300,
+          damping: 30,
+        },
+      }"
+      :class="{ open }"
+      @layout-animation-start="animating = true"
+      @layout-animation-complete="animating = false"
     >
-      <NavigationLinks @click="hideMobileNav()" :expanded="expandedNavbar" />
+      <VStack class="navbar2" :class="{ open }">
+        <VStack class="contents" :class="{ animating: animating && !open }">
+          <VStack class="fullWidth opened" v-if="open">
+            <CardTitle title="navbar.go" icon="solar:documents-line-duotone">
+              <button @click="open = !open">
+                <Icon icon="mingcute:close-fill" />
+              </button>
+            </CardTitle>
 
-      <button class="transparent" @click="expandedNavbar = !expandedNavbar">
-        <Icon
-          :icon="
-            expandedNavbar
-              ? 'solar:alt-arrow-up-line-duotone'
-              : 'solar:alt-arrow-down-line-duotone'
-          "
-        />
-      </button>
-    </InteriorItem>
+            <Grid class="spaced">
+              <VStack>
+                <LauncherCard
+                  title="navbar.launchers.apps"
+                  icon="solar:widget-2-line-duotone"
+                  base-url="/apps"
+                  :launcher-items="LauncherApps"
+                  :index="1"
+                />
 
-    <!-- Site Switcher -->
-    <SitePicker id="siteSwitcher" v-if="showSiteSwitcher && !expandedNavbar">
-      <button @click="toggleSiteSwitcher()">
-        <Icon icon="mingcute:close-fill" />
-      </button>
-    </SitePicker>
+                <LauncherCard
+                  title="navbar.launchers.creators"
+                  icon="solar:pen-new-square-line-duotone"
+                  base-url="/creator"
+                  :launcher-items="LauncherCreators"
+                  :index="2"
+                />
+              </VStack>
 
-    <ProgressiveBlur
-      class="siteSwitchBlur"
-      v-if="showSiteSwitcher"
-      :blur="28"
-      :border-radius="0"
-    />
+              <SitePicker :index="3" />
+            </Grid>
 
-    <!-- Main Nav Sections -->
-    <HStack class="navBarRow">
-      <button
-        v-if="!expandedNavbar"
-        @click="showLaunchers = !showLaunchers"
-        class="createBtn"
-        id="openLauncher"
-        aria-label="Launch app or create..."
-      >
-        <Icon
-          icon="solar:bolt-line-duotone"
-          class="growIn"
-          v-if="!showLaunchers"
-        />
-        <Icon icon="mingcute:close-fill" class="spinIn" v-else />
-      </button>
+            <Spacer />
 
-      <!-- Main Nav -->
-      <HStack
-        ref="navRef"
-        class="navBar"
-        :class="{ desktopLinks: !showingNavProfile, expanded: expandedNavbar }"
-      >
-        <HStack class="navBarInner" v-if="showingNavProfile && !expandedNavbar">
-          <HStack class="profile transparent">
-            <NavigationButton :link="HomeNavLink" id="homeButtonContainer">
-              <DynamicImage
-                class="avatar"
-                src="/images/avatar-27.webp"
-                alt="ash's Avatar (Go Home)"
-                id="avatarButton"
-              />
+            <h1>{{ t('pages.languages') }}</h1>
 
-              <Icon
-                icon="solar:home-angle-bold-duotone"
-                aria-label="Go Home"
-                id="homeButton"
-              />
-            </NavigationButton>
+            <Grid class="spaced">
+              <LangPickerCard :index="5" />
 
-            <HStack class="navBarInnerName">
-              <h1 class="name">ash</h1>
+              <Card :index="6">
+                <CardTitle
+                  title="languages.betaNotice"
+                  icon="solar:danger-triangle-line-duotone"
+                />
+                <p>{{ t('languages.errorNotice') }}</p>
+                <p>
+                  {{ t('languages.foundError') }}
+                  <a
+                    class="prominentLink"
+                    href="https://github.com/main35/NuxtSite/issues"
+                    >{{ t('languages.reportError') }}</a
+                  >
+                </p>
+              </Card>
+            </Grid>
+          </VStack>
 
-              <HStack
-                id="siteSwitcherButton"
-                class="light tight"
-                :class="{ active: showSiteSwitcher }"
-                @click="toggleSiteSwitcher"
-              >
-                <h1>Port</h1>
-                <Icon icon="fa6-solid:chevron-down" />
-              </HStack>
+          <!-- Small View-->
+          <HStack v-if="!open && !startButtonOnly" class="smallNav fullWidth">
+            <SafeLink to="/">
+              <button id="homeButtonContainer">
+                <DynamicImage
+                  src="/images/avatar-27.webp"
+                  alt="ash's Avatar (Go Home)"
+                  id="avatarButton"
+                />
+
+                <Icon
+                  icon="solar:home-angle-bold-duotone"
+                  aria-label="Go Home"
+                  id="homeButton"
+                />
+              </button>
+            </SafeLink>
+
+            <HStack class="opener small" @click="open = !open">
+              <h3 class="name" v-if="showingNavProfile">{{ t('name') }}</h3>
+              <Icon icon="solar:alt-arrow-up-linear" />
+            </HStack>
+
+            <HStack class="navigationLinks">
+              <InteriorItem class="navigationLinksBox">
+                <SafeLink
+                  v-for="link in NavLinks"
+                  :key="link.link"
+                  :to="link.link"
+                  @mouseenter="hoveredLink = localePath(link.link)"
+                  @mouseleave="hoveredLink = null"
+                  class="navigationLinkLink"
+                >
+                  <button class="transparent navigationLink">
+                    <Icon
+                      :icon="
+                        isActive(link)
+                          ? link.icon.replace('line-duotone', 'bold-duotone')
+                          : link.icon
+                      "
+                    />
+
+                    <Motion
+                      as="span"
+                      class="navigationLinkText"
+                      :initial="false"
+                      :animate="
+                        visibleLabel(link)
+                          ? {
+                              opacity: 1,
+                              width: 'auto',
+                              x: 0,
+                              marginLeft: '0.5rem',
+                            }
+                          : {
+                              opacity: 0,
+                              width: 0,
+                              x: -8,
+                              marginLeft: 0,
+                            }
+                      "
+                      :transition="{
+                        type: 'spring',
+                        stiffness: 450,
+                        damping: 35,
+                      }"
+                    >
+                      {{ t(link.text) }}
+                    </Motion>
+                  </button>
+                </SafeLink>
+              </InteriorItem>
             </HStack>
           </HStack>
-        </HStack>
 
-        <NavigationLinks
-          class="desktopLinks"
-          :expanded="expandedNavbar"
-          @click="expandedNavbar = false"
-        />
-
-        <button
-          class="transparent toggleButton"
-          @click="expandedNavbar = !expandedNavbar"
-        >
-          <Icon
-            :icon="
-              expandedNavbar
-                ? 'solar:alt-arrow-up-line-duotone'
-                : 'solar:alt-arrow-down-line-duotone'
-            "
-          />
-          <span class="toggleButtonText">{{ t('navbar.hide') }}</span>
-        </button>
-      </HStack>
-
-      <SafeLink to="/" v-if="!showingNavProfile">
-        <InteriorItem class="minimalProfile"> ash </InteriorItem>
-      </SafeLink>
-
-      <button
-        id="mobileButton"
-        @click="toggleNavigation"
-        aria-label="Show navigation"
-      >
-        <Icon
-          icon="solar:compass-line-duotone"
-          class="growIn"
-          v-if="!showMobileNav"
-        />
-        <Icon icon="mingcute:close-fill" class="spinIn" v-if="showMobileNav" />
-      </button>
-    </HStack>
-  </VStack>
+          <Card v-else-if="!open && startButtonOnly" class="startButtonContainer">
+            <HStack class="opener startButton" @click="open = !open">
+              <Icon icon="solar:widget-5-line-duotone" />
+              <h3>{{ t('app.more') }}</h3>
+            </HStack>
+          </Card>
+        </VStack>
+      </VStack>
+    </Motion>
+  </div>
 </template>
 
 <style scoped lang="sass">
-  .navBarContainer
+  .navbar2Container
     position: sticky
-    flex-wrap: wrap
-    bottom: 1rem
-    width: 100%
-    max-width: calc(100vw - 2rem)
+    bottom: 0
     z-index: 18
-    align-items: center
-    margin-top: auto
+    width: 100%
+    height: fit-content
+    padding: 0 0.5rem
+    transform-origin: bottom center
 
-    .navBarRow
-      z-index: 19
-      transition: 0.3s ease
+    &.open
+      padding: 0
 
-      .minimalProfile
-        display: none
+      &.startButtonOnly
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
 
-  .navBar
-    --interiorRadius: 2rem !important
-    z-index: 20
-    gap: 0.75rem
+    &.startButtonOnly
+      padding: 0
 
-    .navBarSection
-      padding: 0.75rem
-      flex-direction: row
+      .navbar2Wrapper
+        width: 100% !important
 
-    *
-      flex-wrap: nowrap !important
-
-    .toggleButtonText
-      display: none
-
-    &.expanded
-      flex-direction: column !important
-      align-items: flex-start
-      gap: 1rem
-
-      .toggleButtonText
-        display: block
-
-    .profile h1
-      overflow-wrap: normal
-      word-break: keep-all
-      margin: 0
-
-  .avatar
-    width: 2.5rem
-    height: 2.5rem
-    border-radius: 2rem
-
-  .createBtn
-    z-index: 20
-
-  #avatarButton
-    display: block
-
-  #homeButton
-    scale: 1.25
-    display: none
-
-  #homeButtonContainer:hover #avatarButton
-    display: none
-
-  #homeButtonContainer:hover #homeButton
-    display: flex
-
-  #homeButton, #avatarButton
-    animation: blurIn 0.3s ease forwards
-
-  #mobileButton, #mobileNav
-    display: none
-
-  #mobileNav, #siteSwitcher
-    animation: slideBottom 0.3s ease forwards
-
-  @keyframes slideBottom
-    0%
-      transform: translateY(100vh)
-
-    100%
-      transform: none
-
-  #siteSwitcherButton
-    cursor: pointer
-
-    svg
-      transition: transform 0.2s ease
-      width: 1.5rem
-      height: auto
-
-    &.active > svg
-      transform: rotate(-90deg)
-
-  #siteSwitcher
-    z-index: 20
-
-  .siteSwitchBlur
-    --siteSwitchBlurHeight: 42rem
-
-    position: fixed !important
-    right: 0
-    left: 0
-    transform: translateY(calc(100vh - var(--siteSwitchBlurHeight)))
-    height: var(--siteSwitchBlurHeight)
-    z-index: 19
-
-  #mobileButton, .createBtn
-    svg
-      width: 1.25rem
-      height: 1.25rem
-
-  // Mobile Behaviors
-  @media (max-width: 40rem)
-    .navBarRow
+    .navbar2Wrapper
       width: 100%
-      justify-content: space-between
 
-      .toggleButton
-        display: none !important
+      &.open
+        height: 100dvh
 
-      .minimalProfile
-        display: block !important
-        padding: 0.5rem 1rem
+      .navbar2
+        padding: var(--contentPadding)
+        width: 100%
+        height: 100%
+        transition: 0.3s ease
+        align-items: center
 
-    // Conditions
-    #mobileButton, #mobileNav
-      display: flex
+        &:not(.open)
+          padding: 0
 
-    .desktopLinks, .name
-      display: none
+        &.open
+          background: var(--backgroundColor)
+          border-radius: 0
+
+          &::before, &::after
+            display: none
+
+        .contents
+          width: 100%
+          height: 100%
+          overflow-y: scroll
+          transition: filter .15s ease
+          max-width: 60rem
+
+          &.animating
+            filter: blur(8px)
+
+          .opener
+            cursor: pointer
+
+            svg
+              width: 1.5rem
+              height: 1.5rem
+
+            .name
+              margin: 0
+
+          .startButtonContainer
+            padding: 1rem
+            cursor: pointer
+
+            .startButton
+              width: 100%
+
+              svg
+                width: 1.5rem
+                height: 1.5rem
+
+              *
+                margin: 0
+
+          .opened
+            align-items: center
+
+          .smallNav
+            width: 100%
+            align-items: stretch
+            gap: 0.25rem
+
+            .opener.small
+              gap: 0.25rem
+
+            .navigationLinks
+              flex-grow: 1
+              justify-content: flex-end
+              gap: 1rem
+              padding: 0.5rem 0
+
+              .navigationLinksBox
+                flex-direction: row
+                gap: 1rem
+                padding: 0 1rem
+                height: 100%
+
+                &::before
+                  display: none
+
+              .navigationLinkLink
+                margin: 0.5rem 0
+
+              .navigationLinkLink, .navigationLink
+                height: 100%
+
+              .navigationLink
+                gap: 0
+
+                .navigationLinkText
+                  font-size: 1.25rem
+                  display: inline-block
+                  overflow: hidden
+                  white-space: nowrap
+
+                svg
+                  width: 1.75rem !important
+                  height: 1.75rem !important
+
+            #homeButtonContainer
+              width: 2.75rem
+              height: 2.75rem
+              transition: 0.2s ease-in-out
+              padding: 0
+              margin: 0.75rem 0
+
+              svg
+                height: 1.25rem
+                width: 1.25rem
+
+              #avatarButton
+                width: 2.5rem
+                height: 2.5rem
+                border-radius: 2rem
+
+              &:not(:hover) #homeButton
+                display: none
+              &:hover #avatarButton
+                display: none
+
+              #homeButton, #avatarButton
+                animation: blurIn 0.3s ease forwards
+
+  @media (max-width: 25rem)
+    .navigationLinkText
+      display: none !important
 </style>

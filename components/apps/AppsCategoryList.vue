@@ -46,6 +46,7 @@
 
           <div class="appDownloads">
             <AppLink :to="app.link" :disabled="app.disabled ?? false" />
+
             <a v-if="app.github" :href="app.github">
               <button class="transparent">
                 <Icon icon="mingcute:github-fill" width="24" height="24" />
@@ -103,4 +104,8 @@
     gap: 0.5rem
     align-items: center
     justify-content: center
+
+  @media (max-width: 25rem)
+    .appGrid
+      grid-template-columns: 100%
 </style>

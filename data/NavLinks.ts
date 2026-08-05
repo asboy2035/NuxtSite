@@ -3,6 +3,7 @@ import type { NavLink } from ':/navLink'
 export const HomeNavLink: NavLink = {
   link: '/',
   text: 'pages.home',
+  icon: 'solar:home-angle-line-duotone',
 }
 
 export const NavLinks: NavLink[] = [

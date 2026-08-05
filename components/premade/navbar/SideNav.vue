@@ -4,7 +4,7 @@
   import type { NavLink } from ':/navLink'
   import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
-  import Navbar2 from '+/premade/navbar/Navbar2.vue'
+  import Navbar from '+/premade/navbar/Navbar.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   import { HomeNavLink, NavLinks } from '$/NavLinks'
 
@@ -16,13 +16,8 @@
     return route.path === '/' || route.path === localePath('/')
   })
 
-  const HomeItem: NavLink = {
-    icon: 'solar:home-angle-line-duotone',
-    ...HomeNavLink,
-  }
-
   function isActive(link: NavLink): boolean {
-    return link === HomeItem ? isHome.value : route.path.includes(link.link)
+    return link === HomeNavLink ? isHome.value : route.path.includes(link.link)
   }
 </script>
 
@@ -36,7 +31,7 @@
     </SafeLink>
 
     <SafeLink
-      v-for="(link, i) in [HomeItem, ...NavLinks]"
+      v-for="(link, i) in [HomeNavLink, ...NavLinks]"
       :to="link.link"
       class="fullWidth"
     >
@@ -58,7 +53,7 @@
     </SafeLink>
 
     <VStack class="sideStart fullWidth">
-      <Navbar2 start-button-only />
+      <Navbar start-button-only />
     </VStack>
   </VStack>
 </template>

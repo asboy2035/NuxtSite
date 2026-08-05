@@ -81,10 +81,12 @@
     height: auto
     margin: 1rem 3%
     mask: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5))
+    z-index: 1
 
   .footerContainer
     padding: var(--contentPadding)
     padding-top: 0
+    z-index: 1
 
   .footerContent
     width: 100%

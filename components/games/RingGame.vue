@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { Icon } from '@iconify/vue'
   import { onBeforeUnmount, onMounted, ref } from 'vue'
 
   type BlockKind = 'regular' | 'explosion' | 'item'
@@ -562,16 +563,24 @@
 <template>
   <section class="ringGame" :aria-label="t('ring.aria')">
     <header class="hud">
-      <span>{{ t('ring.level') }} {{ level }}</span
-      ><span>{{ t('ring.blocks') }} {{ remaining }}</span
-      ><span>{{ t('ring.lives') }} {{ lives }}</span>
+      <p class="stat">
+        <span class="attr">{{ t('ring.level') }}</span> {{ level }}
+      </p>
+      <p class="stat">
+        <span class="attr">{{ t('ring.blocks') }}</span> {{ remaining }}
+      </p>
+      <p class="stat">
+        <span class="attr">{{ t('ring.lives') }}</span> {{ lives }}
+      </p>
     </header>
+
     <canvas
       ref="canvas"
       class="gameCanvas"
       @pointermove="setPaddle"
       @pointerdown="handleCanvasClick"
     />
+
     <div v-if="state !== 'playing'" class="overlay">
       <h2>
         {{
@@ -582,28 +591,41 @@
               : t('ring.title')
         }}
       </h2>
+
       <p>
         {{ state === 'ready' ? t('ring.description') : t('ring.controls') }}
       </p>
+
       <button class="prominent" @click="start">
         {{ state === 'ready' ? t('ring.start') : t('ring.restart') }}
       </button>
     </div>
+
     <div class="mobileControls">
       <button
         :aria-label="t('ring.left')"
         @pointerdown="keyDirection = -1"
         @pointerup="keyDirection = 0"
       >
-        ◀</button
-      ><button
+        <Icon icon="solar:alt-arrow-left-line-duotone" />
+      </button>
+
+      <button
         :aria-label="t('ring.right')"
         @pointerdown="keyDirection = 1"
         @pointerup="keyDirection = 0"
       >
-        ▶</button
-      ><button @click="togglePause">
-        {{ state === 'paused' ? t('ring.start') : 'Ⅱ' }}
+        <Icon icon="solar:alt-arrow-right-line-duotone" />
+      </button>
+
+      <button @click="togglePause">
+        <Icon
+          :icon="
+            state === 'paused'
+              ? 'solar:play-line-duotone'
+              : 'solar:pause-line-duotone'
+          "
+        />
       </button>
     </div>
   </section>
@@ -614,11 +636,9 @@
     position: relative
     width: min(100%, 46rem)
     overflow: hidden
-    border: 1px solid rgba(255,255,255,.16)
-    border-radius: 1.5rem
-    background: rgba(8, 12, 32, .58)
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.25)
-    backdrop-filter: blur(.7rem)
+    border-radius: 2rem
+    background: var(--foregroundColor)
+
   .hud
     position: absolute
     top: .85rem
@@ -627,16 +647,18 @@
     z-index: 2
     display: flex
     justify-content: space-between
-    font-size: .8rem
-    font-weight: 700
-    letter-spacing: .08em
-    text-transform: uppercase
+
+    .stat
+      .attr
+        opacity: 0.7
+
   .gameCanvas
     display: block
     width: 100%
     height: min(67vh, 42rem)
     cursor: crosshair
     touch-action: none
+
   .overlay
     position: absolute
     inset: 0
@@ -645,11 +667,15 @@
     gap: .85rem
     padding: 3rem
     text-align: center
-    background: rgba(7, 10, 28, .48)
+    background: var(--foregroundColor)
+    z-index: 1
+    backdrop-filter: blur(1.5rem)
+
     h2, p
       margin: 0
     p
       max-width: 26rem
+
   .mobileControls
     position: absolute
     right: 1rem
@@ -659,10 +685,12 @@
     flex-direction: row
     justify-content: center
     gap: .5rem
+
     button
       min-width: 3rem
       min-height: 2.5rem
-  @media (min-width: 800px)
+
+  @media (min-width: 50rem)
     .mobileControls
       display: none
 </style>

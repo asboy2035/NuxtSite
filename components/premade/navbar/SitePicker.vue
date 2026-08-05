@@ -99,7 +99,6 @@
 
 <style lang="sass">
   .sitePicker
-    min-width: 20rem
     max-width: 100%
 
   .qrCode
