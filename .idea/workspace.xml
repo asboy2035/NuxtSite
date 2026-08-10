@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add clock to sidebar, add ukrainian, improve ring game, fix package.json formatting, update deps">
-      <change afterPath="$PROJECT_DIR$/fonts/NotoSansJP.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/NotoSansSC.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/subsetFonts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/OgImage/PagePreview.takumi.vue" afterDir="false" />
@@ -59,7 +55,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="199" />
+    <option name="cachedIndexableFilesCount" value="202" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -88,12 +84,12 @@
     &quot;assignee&quot;: &quot;asboy2035&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://a35hie@github.com/main35/NuxtSite.git&quot;,
-    &quot;accountId&quot;: &quot;5db3f81a-86d7-49ba-bb45-7204c769975f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://a35hie@github.com/main35/NuxtSite.git",
+    "accountId": "3a099e4d-a960-4419-accc-5f28f60b6a13"
   }
-}</component>
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="kjZId4l4" />
   </component>
@@ -104,60 +100,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000125772418833" />
-      <entry key="S5" value="1.0418620235298706" />
-      <entry key="S10" value="1.706876672855591" />
-      <entry key="S30" value="5.876401579721821" />
-      <entry key="S60" value="8.952159128719677" />
-      <entry key="M2" value="11.19423752380661" />
-      <entry key="M5" value="14.159902056384162" />
-      <entry key="M10" value="21.576153047870235" />
-      <entry key="M15" value="30.478222159257463" />
-      <entry key="M30" value="60.70802283677363" />
-      <entry key="H1" value="141.87289997953232" />
-      <entry key="H2" value="311.19011291187485" />
-      <entry key="H4" value="568.0746590724447" />
-      <entry key="D1" value="1681.1449162094527" />
-      <entry key="W1" value="2496.845323902069" />
+      <entry key="MS500" value="1.0001576319683354" />
+      <entry key="S2" value="1.3998501473363323" />
+      <entry key="S5" value="3.0101077064058375" />
+      <entry key="S10" value="4.466202318966668" />
+      <entry key="S30" value="6.222664117499578" />
+      <entry key="S60" value="8.199815962277171" />
+      <entry key="M2" value="13.478693755337629" />
+      <entry key="M5" value="33.6719461297958" />
+      <entry key="M10" value="57.97906401462037" />
+      <entry key="M15" value="74.83532781689047" />
+      <entry key="M30" value="113.80666508200584" />
+      <entry key="H1" value="196.03623015534748" />
+      <entry key="H2" value="365.04416799223395" />
+      <entry key="H4" value="626.0113707576364" />
+      <entry key="D1" value="1755.6923471711377" />
+      <entry key="W1" value="2583.579316454348" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.1032673494363354E-295" />
-      <entry key="S5" value="1.5729962496939015E-118" />
-      <entry key="S10" value="1.2543851434863296E-59" />
-      <entry key="S30" value="2.452079850064153E-20" />
-      <entry key="S60" value="1.9409146799098877E-10" />
-      <entry key="M2" value="2.0809700632017115E-5" />
-      <entry key="M5" value="0.024791691646156914" />
-      <entry key="M10" value="0.29454159740931296" />
-      <entry key="M15" value="0.8577332010912397" />
-      <entry key="M30" value="4.9119410233482865" />
-      <entry key="H1" value="22.872276608250697" />
-      <entry key="H2" value="71.55494214393109" />
-      <entry key="H4" value="153.45880055651585" />
-      <entry key="D1" value="511.22546956025593" />
-      <entry key="W1" value="787.4514000720987" />
+      <entry key="MS500" value="2.779330852401424E-101" />
+      <entry key="S2" value="7.263073108300775E-26" />
+      <entry key="S5" value="9.146457272892783E-11" />
+      <entry key="S10" value="1.1246028847086319E-5" />
+      <entry key="S30" value="0.03340150454845851" />
+      <entry key="S60" value="0.25680854691681426" />
+      <entry key="M2" value="0.73925507927916" />
+      <entry key="M5" value="1.5548168796735449" />
+      <entry key="M10" value="2.186001761247419" />
+      <entry key="M15" value="2.7156102442527623" />
+      <entry key="M30" value="5.8354622772172124" />
+      <entry key="H1" value="21.23827522273709" />
+      <entry key="H2" value="67.12296518908101" />
+      <entry key="H4" value="148.32966406994956" />
+      <entry key="D1" value="509.628542498815" />
+      <entry key="W1" value="789.436572270271" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6285066872609142" />
-      <entry key="MS500" value="0.9113012806371416" />
-      <entry key="S2" value="0.9770593103618475" />
-      <entry key="S5" value="1.0321745052058184" />
-      <entry key="S10" value="1.6985990615756121" />
-      <entry key="S30" value="5.8665771954355135" />
-      <entry key="S60" value="8.944651567296447" />
-      <entry key="M2" value="11.189533790867175" />
-      <entry key="M5" value="14.181771475524522" />
-      <entry key="M10" value="21.867222145193896" />
-      <entry key="M15" value="31.331666708230586" />
-      <entry key="M30" value="65.61225500787322" />
-      <entry key="H1" value="164.73061041533705" />
-      <entry key="H2" value="382.7249661969461" />
-      <entry key="H4" value="721.51341528033" />
-      <entry key="D1" value="2192.3598190060143" />
-      <entry key="W1" value="3284.294410413118" />
+      <entry key="MS100" value="0.013230395505664488" />
+      <entry key="MS500" value="0.42117398397546796" />
+      <entry key="S2" value="1.1741806563674064" />
+      <entry key="S5" value="2.847435228147204" />
+      <entry key="S10" value="4.349535651148558" />
+      <entry key="S30" value="6.2001121893949165" />
+      <entry key="S60" value="8.412949304619913" />
+      <entry key="M2" value="14.179393415691287" />
+      <entry key="M5" value="35.196845864017504" />
+      <entry key="M10" value="60.1434990401715" />
+      <entry key="M15" value="77.53354975019683" />
+      <entry key="M30" value="119.6282179797982" />
+      <entry key="H1" value="217.2579953570526" />
+      <entry key="H2" value="432.14662803651294" />
+      <entry key="H4" value="774.3207851667988" />
+      <entry key="D1" value="2265.310204377665" />
+      <entry key="W1" value="3373.013547578994" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -174,6 +170,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "CidrDebugProfileConversion": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -185,6 +182,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
     "git-widget-placeholder": "7",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
@@ -241,7 +239,7 @@
       <recent name="$PROJECT_DIR$/i18n/locales/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.fastFormat">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -360,7 +358,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
       </set>
     </attachedChunks>
   </component>
@@ -949,15 +948,8 @@
       <workItem from="1784996245732" duration="48000" />
       <workItem from="1784996650486" duration="1099000" />
       <workItem from="1785317243290" duration="9086000" />
-      <workItem from="1785937968404" duration="18866000" />
-    </task>
-    <task id="LOCAL-00097" summary="apply text wrap everywhere">
-      <option name="closed" value="true" />
-      <created>1769950074975</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1769950074975</updated>
+      <workItem from="1785937968404" duration="19709000" />
+      <workItem from="1786028365268" duration="528000" />
     </task>
     <task id="LOCAL-00098" summary="add project icon">
       <option name="closed" value="true" />
@@ -1343,7 +1335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785954704205</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image">
+      <option name="closed" value="true" />
+      <created>1785957589561</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1785957589561</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1364,7 +1364,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add intl/localized social media platforms" />
     <MESSAGE value="re-show powered by kofi tools" />
     <MESSAGE value="add projects, switch to border-box" />
     <MESSAGE value="update version" />
@@ -1389,7 +1388,8 @@
     <MESSAGE value="fix locale codes to correct locales, add flags, convert american english to canadian english, update footer / langs card designs, clean up colors.sass, localize app button names, add new large name logo asset, update project view to give stack items more space + make going to link more clear, remove typeerrors in lang picker, more cleanup" />
     <MESSAGE value="remove more dead code, update minimal navbar, clean up game, clean up 404 page, code improvements" />
     <MESSAGE value="add clock to sidebar, add ukrainian, improve ring game, fix package.json formatting, update deps" />
-    <option name="LAST_COMMIT_MESSAGE" value="add clock to sidebar, add ukrainian, improve ring game, fix package.json formatting, update deps" />
+    <MESSAGE value="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

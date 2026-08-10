@@ -56,6 +56,16 @@ export default defineNuxtConfig({
         name: 'Nata Sans',
         global: true,
       },
+      {
+        name: 'Noto Sans JP',
+        src: '/fonts/NotoSansJP.woff2',
+        global: true,
+      },
+      {
+        name: 'Noto Sans SC',
+        src: '/fonts/NotoSansSC.woff2',
+        global: true,
+      },
     ],
   },
 
