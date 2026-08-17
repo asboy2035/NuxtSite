@@ -1,92 +1,75 @@
 @use "colors"
 @use "fonts"
 
-:root
-  // Colors
-  --kofi-shop-primary: var(--accentColor) !important
-  --kofi-shop-primary-hover: var(--accentColor2) !important
-  --kofi-shop-text-dark: var(--textColor) !important
-  --kofi-shop-text-light: var(--textColor) !important
-  --kofi-shop-text-white: var(--textColor) !important
-  --kofi-shop-bg-light: var(--foregroundColor) !important
-  --kofi-shop-bg-filter: var(--foregroundColor) !important
-  --kofi-shop-bg-filter-hover: var(--foregroundColor) !important
-  --kofi-shop-bg-error: var(--accentColor2) !important
-  --kofi-shop-bg-no-products: #f9f9f9 !important
-  --kofi-shop-bg-off: #f8f8f8 !important
-  --kofi-shop-text-no-products: #666 !important
-  --kofi-shop-shadow: rgba(0, 0, 0, 0.1) !important
-  --kofi-shop-shadow-hover: rgba(0, 0, 0, 0.2) !important
-  --kofi-shop-button-disabled-bg: #ccc !important
-
-  // Fonts
-  --kofi-shop-font-family: fonts.$global !important
-  --kofi-shop-font-size-base: 1.1rem !important
-  --kofi-shop-font-size-filter: 1rem !important
-  --kofi-shop-font-size-orders: var(--kofi-shop-spacing-medium) !important
-  --kofi-shop-font-size-no-products: 1.2rem !important
-  --kofi-shop-font-weight-bold: bold !important
-  --kofi-shop-font-weight-normal: medium !important
-  --kofi-shop-font-weight-filter: bold !important
-
-  // Spacing & Sizes
-  --kofi-shop-spacing-medium: 0.75rem !important
-  --kofi-shop-spacing-large: 1rem !important
-  --kofi-shop-spacing-small: 0.5rem !important
-  --kofi-shop-spacing-tiny: 0.25rem !important
-  --kofi-shop-card-grid-gap: 0.5rem !important
-  --kofi-shop-filter-gap: 0.5rem !important
-
-  // Borders & Radii
-  --kofi-shop-radius-card: 1.5rem !important
-  --kofi-shop-radius-button: 3rem !important
-  --kofi-shop-radius-price-tag: 0.75rem !important
-  --kofi-shop-radius-filter-btn: 3rem !important
-  --kofi-shop-radius-error: 0.5rem !important
-  --kofi-shop-radius-no-products: 0.5rem !important
-  --kofi-shop-radius-large: 1.25rem !important
-
-  // Loading Spinner Styles
-  --kofi-shop-primary-rgb: var(--accentColor2) !important
-
-
-// Customizations
 #kofi-shop-embed
   align-items: flex-start
+  gap: 0.5rem
+  margin: 0.5rem 0 0
 
-.kofi-shop-filter-container
-  order: 2 !important
-  flex-direction: row !important
-  margin: var(--kofi-shop-spacing-medium) 0 !important
-  padding: 0 !important
-  width: 100% !important
-  justify-content: flex-start !important
+  .kofi-shop-filter-container
+    order: 1
+    flex-direction: row
+    padding: 0
+    width: 100%
+    justify-content: flex-start
+    gap: 0.5rem
 
-  .kofi-shop-filter-btn
-    text-transform: capitalize !important
+    .kofi-shop-filter-btn
+      text-transform: capitalize !important
 
-.kofi-shop-container
-  order: 3 !important
-  padding: 0 !important
+    .kofi-shop-filter-active
+      background: var(--accentColor)
 
-  .kofi-shop-item
-    border: 0.1rem var(--foregroundColor) solid !important
+  .kofi-shop-container
+    order: 2
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr))
 
-  .kofi-shop-info
-    p:nth-child(1)
-      font-family: var(--headerFont), sans-serif !important
+    .kofi-shop-item
+      position: relative
+      background: var(--foregroundColor)
+      border-radius: 1.5rem
+      overflow: hidden
 
-    p:nth-child(2)
-      display: none !important
+      img
+        width: 100%
+        height: auto
+        aspect-ratio: 16/9
+        object-fit: cover
 
-    // Buy Button
+      .kofi-shop-info
+        align-items: flex-start
+        gap: 0.5rem
+        margin: 1rem
+
+        p:nth-child(1)
+          font-family: var(--headerFont)
+          font-size: 1.5rem
+          font-weight: bold
+
+        p:nth-child(2)
+          display: none !important
+
+        p:nth-child(4)
+          background: var(--accentColor)
+          position: absolute
+          top: 0.5rem
+          right: 0.5rem
+          padding: 0.5rem 0.75rem
+          border-radius: 1rem
+
+        // Buy Button
+        a
+          width: 100%
+          background: var(--accentColor)
+          padding: 0.5rem 0.75rem
+          border-radius: 1.5rem
+          margin-top: 1rem
+
+  div.powered-by-kofi-tools
+    position: relative !important
+    order: 3
+    font-size: smaller
+
     a
-      width: calc(100% - var(--kofi-shop-spacing-large))
-
-div.powered-by-kofi-tools
-  position: relative !important
-  order: 1
-  font-size: smaller
-
-  a
-    text-decoration: underline
+      text-decoration: underline

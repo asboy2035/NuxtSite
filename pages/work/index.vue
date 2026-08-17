@@ -12,11 +12,19 @@
   import Spacer from '+/utils/Spacer.vue'
   import { apps } from '$/apps'
   import { Services } from '$/Services'
+
   const { t } = useI18n()
+  const route = useRoute()
 
   setHeadMeta({
     page: 'pages.work',
     subtitle: 'meta.subtitles.work',
+  })
+
+  onMounted(() => {
+    if (route.query.scroll) {
+      navigateTo(`#${route.query.scroll}`)
+    }
   })
 </script>
 
@@ -34,11 +42,11 @@
       </a>
     </Hero>
 
-    <ProjectsCard :index="1" />
+    <ProjectsCard id="projects" :index="1" />
 
     <AppsCategoryList :apps-data="apps" />
 
-    <Card :index="3" class="spaced">
+    <Card id="services" :index="3" class="spaced">
       <CardTitle title="services.title" icon="solar:cloud-line-duotone" />
 
       <Grid class="servicesGrid">
@@ -57,7 +65,7 @@
       </a>
     </p>
 
-    <BottomFooter :index="2" />
+    <BottomFooter />
   </div>
 </template>
 

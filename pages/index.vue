@@ -20,6 +20,6 @@
     <ProjectsCard :index="1" />
     <LangsCard />
 
-    <BottomFooter :index="3" />
+    <BottomFooter />
   </div>
 </template>

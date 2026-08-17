@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <Card class="spaced">
+  <Card :index="4" class="spaced">
     <CardTitle title="links.more" icon="solar:menu-dots-line-duotone" />
 
     <HStack>

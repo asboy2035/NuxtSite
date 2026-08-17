@@ -17,7 +17,7 @@
 </script>
 
 <template>
-  <VStack id="appsContainer">
+  <VStack class="fullWidth" id="apps">
     <Card
       v-for="(category, i) in appsData"
       :key="category.name"
@@ -60,9 +60,6 @@
 </template>
 
 <style scoped lang="sass">
-  #appsContainer
-    width: 100%
-
   .appGrid
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
     gap: 0.5rem

@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <Card class="spaced">
+  <Card :index="3" class="spaced">
     <CardTitle title="links.socialTitle" icon="solar:share-line-duotone" />
 
     <p>{{ t('links.socialDesc') }}</p>

@@ -7,11 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="re-add jp/sc fonts">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add new favicon/logo assets">
+      <change afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/projects.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/services.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/Loader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Loader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/extras.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/extras.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/kofiTools.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/kofiTools.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +74,8 @@
         <option value="Sass File" />
         <option value="HTML File" />
         <option value="JSON File" />
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -96,61 +108,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000073028" />
-      <entry key="S30" value="1.0003619072835102" />
-      <entry key="S60" value="1.0638251621872692" />
-      <entry key="M2" value="2.003620789705992" />
-      <entry key="M5" value="8.964744133474545" />
-      <entry key="M10" value="27.53615617475002" />
-      <entry key="M15" value="46.665037958269856" />
-      <entry key="M30" value="94.58267001782275" />
-      <entry key="H1" value="182.45715762721494" />
-      <entry key="H2" value="354.378929856715" />
-      <entry key="H4" value="621.5266140203269" />
-      <entry key="D1" value="1771.662103072426" />
-      <entry key="W1" value="2613.7880743165415" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.7607084689080113E-69" />
+      <entry key="S2" value="7.248616751146955E-18" />
+      <entry key="S5" value="1.3941195372841116E-7" />
+      <entry key="S10" value="3.8343322016906004E-4" />
+      <entry key="S30" value="0.10904835000862376" />
+      <entry key="S60" value="0.6937655132139968" />
+      <entry key="M2" value="3.111128331863057" />
+      <entry key="M5" value="15.857068870701315" />
+      <entry key="M10" value="36.810848433593996" />
+      <entry key="M15" value="54.9473884616011" />
+      <entry key="M30" value="103.96726965179776" />
+      <entry key="H1" value="195.00207929966126" />
+      <entry key="H2" value="369.91244247710415" />
+      <entry key="H4" value="650.3126833263098" />
+      <entry key="D1" value="1853.758264484579" />
+      <entry key="W1" value="2734.4692181447613" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.5052103971500029E-223" />
-      <entry key="S2" value="1.9696964509174274E-56" />
-      <entry key="S5" value="5.221099798475346E-23" />
-      <entry key="S10" value="7.2447283685720665E-12" />
-      <entry key="S30" value="2.4051271253179197E-4" />
-      <entry key="S60" value="0.025541257508850203" />
-      <entry key="M2" value="0.3042404174587487" />
-      <entry key="M5" value="1.4927588673760492" />
-      <entry key="M10" value="2.8746242112656635" />
-      <entry key="M15" value="3.8421795600904782" />
-      <entry key="M30" value="6.936757028952753" />
-      <entry key="H1" value="20.29584252723411" />
-      <entry key="H2" value="63.22620340289731" />
-      <entry key="H4" value="143.44617307677282" />
-      <entry key="D1" value="508.44738441225553" />
-      <entry key="W1" value="792.2861633160476" />
+      <entry key="MS500" value="7.920230484818865E-101" />
+      <entry key="S2" value="1.402109045276388E-25" />
+      <entry key="S5" value="1.753885647173803E-10" />
+      <entry key="S10" value="2.051199181883229E-5" />
+      <entry key="S30" value="0.05924442569473788" />
+      <entry key="S60" value="0.5555547537731398" />
+      <entry key="M2" value="2.283264987496599" />
+      <entry key="M5" value="8.82985634402954" />
+      <entry key="M10" value="18.67006485253678" />
+      <entry key="M15" value="26.127266275094197" />
+      <entry key="M30" value="40.18334822455793" />
+      <entry key="H1" value="58.704851312364625" />
+      <entry key="H2" value="100.11202714854345" />
+      <entry key="H4" value="179.97135660856372" />
+      <entry key="D1" value="556.1749752959715" />
+      <entry key="W1" value="851.1278258886975" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.47631899902196867" />
-      <entry key="MS500" value="0.8621435450175959" />
-      <entry key="S2" value="0.9635957930100821" />
-      <entry key="S5" value="0.9852761225190011" />
-      <entry key="S10" value="0.9926107608457138" />
-      <entry key="S30" value="0.9981267413483127" />
-      <entry key="S60" value="1.0877942698360235" />
-      <entry key="M2" value="2.305209542988874" />
-      <entry key="M5" value="10.45117597470204" />
-      <entry key="M10" value="30.40088307122138" />
-      <entry key="M15" value="50.49630542189243" />
-      <entry key="M30" value="101.50791386243154" />
-      <entry key="H1" value="202.738313066151" />
-      <entry key="H2" value="417.58603125729036" />
-      <entry key="H4" value="764.9532390013669" />
-      <entry key="D1" value="2280.098824244516" />
-      <entry key="W1" value="3406.0718874909267" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000001257382105" />
+      <entry key="S10" value="1.0003824780620796" />
+      <entry key="S30" value="1.164398392850809" />
+      <entry key="S60" value="2.235009997888021" />
+      <entry key="M2" value="6.366844684049443" />
+      <entry key="M5" value="25.640057927392814" />
+      <entry key="M10" value="56.42790035871322" />
+      <entry key="M15" value="82.02372396917528" />
+      <entry key="M30" value="145.1094548322661" />
+      <entry key="H1" value="254.6751269366304" />
+      <entry key="H2" value="470.99695095455115" />
+      <entry key="H4" value="831.2600945375367" />
+      <entry key="D1" value="2410.9215688269296" />
+      <entry key="W1" value="3586.594516481513" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -243,6 +255,34 @@
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="bun" />
@@ -1362,7 +1402,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add projects, switch to border-box" />
     <MESSAGE value="update version" />
     <MESSAGE value="switch from Prettier to Oxfmt" />
     <MESSAGE value="add release state" />
@@ -1387,7 +1426,8 @@
     <MESSAGE value="add clock to sidebar, add ukrainian, improve ring game, fix package.json formatting, update deps" />
     <MESSAGE value="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image" />
     <MESSAGE value="re-add jp/sc fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-add jp/sc fonts" />
+    <MESSAGE value="add new favicon/logo assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new favicon/logo assets" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import '@/styles/kofiTools.sass'
+
   import { Icon } from '@iconify/vue'
 
   import setHeadMeta from '&/setHeadMeta'
@@ -10,6 +12,7 @@
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { cursors } from '$/cursors'
+
   const { t } = useI18n()
 
   setHeadMeta({
@@ -25,10 +28,6 @@
       },
     ],
   })
-
-  function reloadPage() {
-    window.location.reload()
-  }
 </script>
 
 <template>
@@ -38,7 +37,7 @@
       <h2>{{ t('meta.subtitles.extras') }}</h2>
 
       <HStack>
-        <a href="https://asboy.gumroad.com">
+        <a href="https://a35hie.gumroad.com" target="_blank">
           <button id="goToGumroadButton">
             <icon icon="mingcute:gumroad-fill" />
             Gumroad
@@ -58,13 +57,9 @@
         id="kofi-shop-embed"
         data-shop-id="K3K21AMRZR"
         data-shop-currency="$"
-        data-shop-theme="default"
+        data-shop-theme="none"
         data-shop-soldout="show"
       />
-
-      <button class="fullWidth" @click="reloadPage()">
-        <Icon icon="solar:refresh-line-duotone" />
-      </button>
     </Card>
 
     <!-- Cursors Card -->
@@ -100,7 +95,7 @@
       </VStack>
     </Card>
 
-    <BottomFooter :index="3" />
+    <BottomFooter />
   </div>
 </template>
 
