@@ -47,12 +47,6 @@
     "choose": "Elige una herramienta...",
     "tools": "Herramientas"
   },
-  "toolbox": {
-    "desc1": "Toolbox es la parada única para todos mis recursos y aplicaciones.",
-    "desc2": "Aquí puedes encontrar apps, herramientas y más, directamente desde una aplicación que puedes añadir a tu pantalla de inicio.",
-    "quickLinks": "Enlaces Rápidos",
-    "about": "Acerca de"
-  },
   "languages": {
     "choose": "Elige...",
     "betaNotice": "Esta función está en beta.",
@@ -79,12 +73,6 @@
     "lifeLost": "¡Perdiste una vida!",
     "continue": "Continuar",
     "nextLevel": "Continuando al siguiente nivel..."
-  },
-  "services": {
-    "title": "Servicios",
-    "subtitle": "Servicios alojados y en la nube.",
-    "source": "Código fuente",
-    "use": "Usar"
   },
   "error": {
     "label": "Error",

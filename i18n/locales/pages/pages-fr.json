@@ -47,12 +47,6 @@
     "choose": "Choisissez un outil...",
     "tools": "Outils"
   },
-  "toolbox": {
-    "desc1": "Toolbox est le guichet unique pour toutes les ressources et applications que je propose.",
-    "desc2": "Ici, vous pouvez trouver des applications, des outils et bien plus encore, directement à partir d'une application que vous pouvez ajouter directement à votre écran d'accueil.",
-    "quickLinks": "Liens rapides",
-    "about": "À Propos"
-  },
   "languages": {
     "choose": "Choisir...",
     "betaNotice": "Cette fonctionnalité est en bêta.",
@@ -79,12 +73,6 @@
     "lifeLost": "Vous avez perdu une vie !",
     "continue": "Continuer",
     "nextLevel": "Passage au niveau suivant..."
-  },
-  "services": {
-    "title": "Services",
-    "subtitle": "Services hébergés et cloud.",
-    "source": "Source",
-    "use": "Utiliser"
   },
   "error": {
     "label": "Erreur",

@@ -6,6 +6,12 @@ export const HomeNavLink: NavLink = {
   icon: 'solar:home-angle-line-duotone',
 }
 
+export const RingNavLink: NavLink = {
+  link: '/ring',
+  text: 'ring.title',
+  icon: 'solar:gamepad-line-duotone',
+}
+
 export const NavLinks: NavLink[] = [
   {
     link: '/links',

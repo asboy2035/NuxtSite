@@ -47,12 +47,6 @@
     "choose": "选择一个工具...",
     "tools": "工具"
   },
-  "toolbox": {
-    "desc1": "Toolbox 是我所有资源和应用的一站式商店。",
-    "desc2": "在这里，你可以找到应用、工具等，而且可以直接将此应用添加到主屏幕。",
-    "quickLinks": "快速链接",
-    "about": "关于"
-  },
   "languages": {
     "choose": "选择...",
     "betaNotice": "此功能处于 Beta 测试中。",
@@ -79,12 +73,6 @@
     "lifeLost": "你失去了一条生命！",
     "continue": "继续",
     "nextLevel": "正在进入下一关..."
-  },
-  "services": {
-    "title": "服务",
-    "subtitle": "托管和云服务。",
-    "source": "源码",
-    "use": "使用"
   },
   "error": {
     "label": "错误",

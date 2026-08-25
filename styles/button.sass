@@ -34,12 +34,18 @@ button
     transition: 0.2s ease-in-out
     opacity: 0.1
 
-  &:hover::after
-    box-shadow: 0 0 0.75rem var(--shadowColor)
-    opacity: 0.3
+  &:hover
+    gap: 0.75rem
 
-  &:active::after
-    box-shadow: 0 0 0.5rem var(--shadowColor)
+    &::after
+      box-shadow: 0 0 0.75rem var(--shadowColor)
+      opacity: 0.3
+
+  &:active
+    scale: 0.95
+
+    ::after
+      box-shadow: 0 0 0.5rem var(--shadowColor)
 
   &:disabled
     opacity: 0.7

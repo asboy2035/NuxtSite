@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "Сайты",
+    "search": "Поиск",
+    "repos": "Репозитории",
     "pages": "Страницы",
     "fonts": "Шрифты",
     "big": "Byg",
-    "guides": "Гайды",
-    "portfolio": "Портфолио"
+    "guides": "Гайды"
   },
   "app": {
     "hideInterface": "Скрыть страницу",

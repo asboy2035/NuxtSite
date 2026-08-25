@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "Сайти",
+    "search": "Пошук",
+    "repos": "Репозиторії",
     "pages": "Сторінки",
     "fonts": "Шрифти",
     "big": "Byg",
-    "guides": "Посібники",
-    "portfolio": "Портфоліо"
+    "guides": "Посібники"
   },
   "app": {
     "hideInterface": "Приховати сторінку",

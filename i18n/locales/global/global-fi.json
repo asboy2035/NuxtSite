@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "Sivustot",
+    "search": "Hae",
+    "repos": "Tietovarastot",
     "pages": "Sivut",
     "fonts": "Fontit",
     "big": "Byg",
-    "guides": "Oppaat",
-    "portfolio": "Portfolio"
+    "guides": "Oppaat"
   },
   "app": {
     "hideInterface": "Piilota sivu",

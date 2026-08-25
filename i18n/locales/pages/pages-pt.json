@@ -47,12 +47,6 @@
     "choose": "Escolha uma ferramenta...",
     "tools": "Ferramentas"
   },
-  "toolbox": {
-    "desc1": "Toolbox é a loja completa para todos os meus recursos e aplicativos.",
-    "desc2": "Aqui você encontra aplicativos, ferramentas e muito mais, tudo em um só aplicativo que pode ser adicionado diretamente à tela inicial.",
-    "quickLinks": "Links Rápidos",
-    "about": "Sobre"
-  },
   "languages": {
     "choose": "Escolha...",
     "betaNotice": "Este recurso está em beta.",
@@ -79,12 +73,6 @@
     "lifeLost": "Você perdeu uma vida!",
     "continue": "Continuar",
     "nextLevel": "Indo para o próximo nível..."
-  },
-  "services": {
-    "title": "Serviços",
-    "subtitle": "Serviços hospedados e em nuvem.",
-    "source": "Código-fonte",
-    "use": "Usar"
   },
   "error": {
     "label": "Erro",

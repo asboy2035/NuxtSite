@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "サイト",
+    "search": "検索",
+    "repos": "リポジトリ",
     "pages": "ページ",
     "fonts": "フォント",
     "big": "Byg",
-    "guides": "ガイド",
-    "portfolio": "ポートフォリオ"
+    "guides": "ガイド"
   },
   "app": {
     "hideInterface": "ページを隠す",

@@ -7,7 +7,7 @@
   import Clock from '+/premade/Clock.vue'
   import Navbar from '+/premade/navbar/Navbar.vue'
   import SafeLink from '+/utils/SafeLink.vue'
-  import { HomeNavLink, NavLinks } from '$/NavLinks'
+  import { HomeNavLink, NavLinks, RingNavLink } from '$/NavLinks'
 
   const { t } = useI18n()
   const localePath = useLocalePath()
@@ -36,7 +36,7 @@
     </SafeLink>
 
     <SafeLink
-      v-for="(link, i) in [HomeNavLink, ...NavLinks]"
+      v-for="(link, i) in [HomeNavLink, ...NavLinks, RingNavLink]"
       :to="link.link"
       class="fullWidth"
     >
@@ -69,6 +69,9 @@
     top: 1rem
     gap: 0.75rem
     width: 20rem
+    min-height: fit-content
+    flex-wrap: nowrap
+    height: calc(100dvh - var(--contentPadding) * 2)
     padding: var(--contentPadding)
     z-index: 12
 
@@ -98,6 +101,9 @@
         background: var(--foregroundDark)
         backdrop-filter: blur(1rem)
 
+      &:active
+        scale: 0.95
+
       svg
         width: 2rem
         height: 2rem
@@ -106,7 +112,7 @@
         margin: 0
 
     .sideStart
-      margin-top: 2rem
+      margin-top: auto
 
   @keyframes sidebarItemIn
     from

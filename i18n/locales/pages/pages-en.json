@@ -50,12 +50,6 @@
     "choose": "Choose a tool...",
     "tools": "Tools"
   },
-  "toolbox": {
-    "desc1": "Toolbox is the one-stop shop for all resources and apps by me.",
-    "desc2": "Here, you can find apps, tools, and more, right from one app that you can add directly to your home screen.",
-    "quickLinks": "Quick Links",
-    "about": "About"
-  },
   "languages": {
     "choose": "Choose...",
     "betaNotice": "This feature is in beta.",
@@ -82,12 +76,6 @@
     "lifeLost": "You lost a life!",
     "continue": "Continue",
     "nextLevel": "Continuing to next level..."
-  },
-  "services": {
-    "title": "Services",
-    "subtitle": "Hosted and cloud-based services.",
-    "source": "Source",
-    "use": "Use"
   },
   "error": {
     "label": "Error",

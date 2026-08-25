@@ -47,12 +47,6 @@
     "choose": "Valitse työkalu...",
     "tools": "Työkalut"
   },
-  "toolbox": {
-    "desc1": "Toolbox on kaiken mitä-haluat-kaiken myymälä kaikille minun resursseille ja sovelluksille.",
-    "desc2": "Täällä voit löytää sovelluksia, työkaluja ja paljon muuta, kaikki yhdessä sovelluksessa, jonka voit lisätä suoraan kotiruutuusi.",
-    "quickLinks": "Pika-linkit",
-    "about": "Tietoja"
-  },
   "languages": {
     "choose": "Valitse...",
     "betaNotice": "Tämä ominaisuus on beta-versiossa.",
@@ -79,12 +73,6 @@
     "lifeLost": "Menetit yhden elämän!",
     "continue": "Jatka",
     "nextLevel": "Siirrytään seuraavalle tasolle..."
-  },
-  "services": {
-    "title": "Palvelut",
-    "subtitle": "Isännöidyt ja pilvipalvelut.",
-    "source": "Lähde",
-    "use": "Käytä"
   },
   "error": {
     "label": "Virhe",

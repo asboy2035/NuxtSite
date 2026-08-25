@@ -101,7 +101,7 @@
 
             <h1>{{ t('pages.languages') }}</h1>
 
-            <Grid class="spaced">
+            <Grid class="spaced" style="margin-bottom: 0.75rem">
               <LangPickerCard @set="open = false" :index="5" />
 
               <Card :index="6">
@@ -109,6 +109,7 @@
                   title="languages.betaNotice"
                   icon="solar:danger-triangle-line-duotone"
                 />
+
                 <p>{{ t('languages.errorNotice') }}</p>
                 <p>
                   {{ t('languages.foundError') }}

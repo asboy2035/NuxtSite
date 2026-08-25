@@ -17,5 +17,17 @@
     <Grid class="projectsGrid spaced">
       <ProjectView v-for="project in Projects" :project="project" />
     </Grid>
+
+    <iframe
+      src="https://status.a35hie.me/badge?theme=dark"
+      width="250"
+      height="30"
+      style="
+        color-scheme: normal;
+        border: none;
+        overflow: hidden;
+        margin-top: 0.5rem;
+      "
+    ></iframe>
   </Card>
 </template>

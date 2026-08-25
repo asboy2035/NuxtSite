@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "站点",
+    "search": "搜索",
+    "repos": "代码仓库",
     "pages": "页面",
     "fonts": "字体",
     "big": "Byg",
-    "guides": "指南",
-    "portfolio": "作品集"
+    "guides": "指南"
   },
   "app": {
     "hideInterface": "隐藏页面",

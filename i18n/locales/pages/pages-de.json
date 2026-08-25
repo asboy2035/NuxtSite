@@ -47,12 +47,6 @@
     "choose": "Wähle ein Tool...",
     "tools": "Tools"
   },
-  "toolbox": {
-    "desc1": "Toolbox ist die zentrale Anlaufstelle für alle meine Ressourcen und Apps.",
-    "desc2": "Hier findest du Apps, Tools und mehr, direkt aus einer App, die du deinem Startbildschirm hinzufügen kannst.",
-    "quickLinks": "Quick Links",
-    "about": "Über"
-  },
   "languages": {
     "choose": "Wählen...",
     "betaNotice": "Dieses Feature ist in der Beta.",
@@ -79,12 +73,6 @@
     "lifeLost": "Du hast ein Leben verloren!",
     "continue": "Weiter",
     "nextLevel": "Nächstes Level wird geladen..."
-  },
-  "services": {
-    "title": "Dienste",
-    "subtitle": "Gehostete und Cloud-Dienste.",
-    "source": "Quelle",
-    "use": "Verwenden"
   },
   "error": {
     "label": "Fehler",

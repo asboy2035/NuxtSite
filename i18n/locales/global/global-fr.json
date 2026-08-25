@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "Sites",
+    "search": "Rechercher",
+    "repos": "Dépôts",
     "pages": "Pages",
     "fonts": "Polices",
     "big": "Byg",
-    "guides": "Guides",
-    "portfolio": "Portfolio"
+    "guides": "Guides"
   },
   "app": {
     "getWalls": "Fonds d'écran",

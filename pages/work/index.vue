@@ -3,15 +3,10 @@
 
   import setHeadMeta from '&/setHeadMeta'
   import AppsCategoryList from '+/apps/AppsCategoryList.vue'
-  import Card from '+/layout/Card.vue'
-  import Grid from '+/layout/Grid.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
-  import ServiceItem from '+/services/ServiceItem.vue'
-  import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { apps } from '$/apps'
-  import { Services } from '$/Services'
 
   const { t } = useI18n()
   const route = useRoute()
@@ -45,14 +40,6 @@
     <ProjectsCard id="projects" :index="1" />
 
     <AppsCategoryList :apps-data="apps" />
-
-    <Card id="services" :index="3" class="spaced">
-      <CardTitle title="services.title" icon="solar:cloud-line-duotone" />
-
-      <Grid class="servicesGrid">
-        <ServiceItem v-for="service in Services" :service="service" />
-      </Grid>
-    </Card>
 
     <p class="light">
       <a

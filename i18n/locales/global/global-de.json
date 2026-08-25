@@ -8,11 +8,12 @@
   },
   "sites": {
     "title": "Seiten",
+    "search": "Suchen",
+    "repos": "Repositorys",
     "pages": "Seiten",
     "fonts": "Schriften",
     "big": "Byg",
-    "guides": "Guides",
-    "portfolio": "Portfolio"
+    "guides": "Guides"
   },
   "app": {
     "hideInterface": "Seite ausblenden",
