@@ -51,7 +51,7 @@
     "tools": "Tools"
   },
   "languages": {
-    "choose": "Choose...",
+    "choose": "Choose Language...",
     "betaNotice": "This feature is in beta.",
     "errorNotice": "Translations may include errors.",
     "foundError": "Found a translation error?",

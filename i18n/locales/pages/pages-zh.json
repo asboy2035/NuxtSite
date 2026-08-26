@@ -48,7 +48,7 @@
     "tools": "工具"
   },
   "languages": {
-    "choose": "选择...",
+    "choose": "选择语言...",
     "betaNotice": "此功能处于 Beta 测试中。",
     "errorNotice": "翻译可能包含错误。",
     "foundError": "发现了错误？",

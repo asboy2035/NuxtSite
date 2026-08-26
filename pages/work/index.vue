@@ -18,7 +18,7 @@
 
 <template>
   <div class="contentView">
-    <Hero icon="solar:widget-3-bold-duotone" tint="#378be7">
+    <Hero icon="solar:folder-open-bold-duotone" tint="#378be7">
       <h1>{{ t('pages.work') }}</h1>
       <h2>{{ t('meta.subtitles.work') }}</h2>
 

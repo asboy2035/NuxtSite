@@ -14,6 +14,7 @@
   import BottomFooter from '+/premade/BottomFooter.vue'
   import Hero from '+/utils/Hero.vue'
   import SafeLink from '+/utils/SafeLink.vue'
+  import Spacer from '+/utils/Spacer.vue'
   import type { AppPageMeta } from '$/appsPages'
   import { appsPages } from '$/appsPages'
 
@@ -66,6 +67,8 @@
 
       <h1>{{ app.title }}</h1>
       <h2>{{ app.shortDescription }}</h2>
+
+      <Spacer />
 
       <SafeLink to="/work#apps">
         <button>

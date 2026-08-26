@@ -170,6 +170,16 @@ export default defineNuxtConfig({
         ],
       },
       {
+        code: 'kk',
+        name: 'Қазақша',
+        language: 'kk-KZ',
+        files: [
+          'global/global-kk.json',
+          'meta/meta-kk.json',
+          'pages/pages-kk.json',
+        ],
+      },
+      {
         code: 'fi',
         name: 'Suomi',
         language: 'fi-FI',
@@ -177,6 +187,16 @@ export default defineNuxtConfig({
           'global/global-fi.json',
           'meta/meta-fi.json',
           'pages/pages-fi.json',
+        ],
+      },
+      {
+        code: 'pl',
+        name: 'Polski',
+        language: 'pl-PL',
+        files: [
+          'global/global-pl.json',
+          'meta/meta-pl.json',
+          'pages/pages-pl.json',
         ],
       },
     ],

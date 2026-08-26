@@ -7,7 +7,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "7.0.0-beta19",
+  "version": "7.0.0-beta20",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -38,7 +38,6 @@
     "@takumi-rs/wasm": "^2.5.9",
     "cobe": "^0.6.5",
     "floating-vue": "^5.2.2",
-    "html2canvas": "^1.4.1",
     "marked": "^17.0.3",
     "motion-v": "^2.3.0",
     "postcss-load-config": "^6.0.1",

@@ -89,6 +89,7 @@
 <template>
   <h1 class="hidden">Your CSS is disabled!</h1>
   <noscript><h1>Your JS is disabled!</h1></noscript>
+
   <NuxtRouteAnnouncer />
   <NuxtLayout><NuxtPage /></NuxtLayout>
 

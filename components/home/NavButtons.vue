@@ -11,7 +11,10 @@
 <template>
   <VStack class="fullWidth" id="navButtons">
     <SafeLink v-for="link in NavLinks" :to="link.link" class="fullWidth">
-      <button class="transparent navButton">
+      <button
+        class="transparent navButton"
+        :disabled="$route.path.includes(link.link)"
+      >
         <Icon v-if="link.icon" :icon="link.icon" />
         {{ t(link.text) }}
       </button>

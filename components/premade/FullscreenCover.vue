@@ -21,7 +21,7 @@
     padding: var(--contentPadding)
 
     opacity: 0
-    background: var(--foregroundDark)
+    background: rgba(0, 0, 0, 0.5)
     backdrop-filter: blur(0.5rem)
     border-radius: 0
     animation: opacity 0.2s ease forwards

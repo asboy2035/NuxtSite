@@ -1,0 +1,46 @@
+{
+  "name": "ash",
+  "intro": {
+    "desc": "Jestem projektantem i programistą mieszkającym we Francji.",
+    "github": "GitHub",
+    "email": "E-mail",
+    "artBy": "Grafika autorstwa {artist}!"
+  },
+  "sites": {
+    "title": "Strony",
+    "search": "Szukaj",
+    "repos": "Repozytoria",
+    "pages": "Podstrony",
+    "fonts": "Czcionki",
+    "big": "Byg",
+    "guides": "Poradniki"
+  },
+  "app": {
+    "hideInterface": "Ukryj stronę",
+    "showInterface": "Pokaż stronę",
+    "getWalls": "Tapety",
+    "comingSoon": "Już wkrótce!",
+    "connecting": "Łączenie...",
+    "more": "Więcej"
+  },
+  "sharing": {
+    "title": "Udostępnij",
+    "showQr": "Pokaż kod QR",
+    "hideQr": "Ukryj kod QR"
+  },
+  "navbar": {
+    "go": "Przejdź do...",
+    "launchers": {
+      "apps": "Aplikacje",
+      "creators": "Twórz..."
+    }
+  },
+  "footer": {
+    "thanks": "Dzięki za przeczytanie!",
+    "createdBy": "Stworzone przez ash z użyciem NuxtJS w 2026 <3",
+    "codeOnGh": "Kod na GitHubie.",
+    "version": "Wersja: {version}",
+    "release": "Wydanie: {release}",
+    "readMore": "Czytaj więcej:"
+  }
+}

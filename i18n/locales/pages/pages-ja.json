@@ -48,7 +48,7 @@
     "tools": "ツール"
   },
   "languages": {
-    "choose": "選択...",
+    "choose": "言語を選択...",
     "betaNotice": "この機能はベータ版です。",
     "errorNotice": "翻訳に誤りが含まれる場合があります。",
     "foundError": "間違いを見つけましたか？",

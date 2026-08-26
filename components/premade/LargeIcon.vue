@@ -20,16 +20,25 @@
   .largeIconContainer
     justify-content: center
     align-items: center
-    width: 100%
-    height: 100%
+    padding: var(--contentPadding)
 
     .largeIcon
       justify-content: center
       align-items: center
       animation: largeIconSpinIn 0.4s ease forwards
 
-      width: 60%
+      width: 100%
       aspect-ratio: 1/1
+
+      cursor: pointer
+
+      &:hover:not(:active)
+        svg
+          scale: 1.1
+
+        .largeIconBackground
+          box-shadow: 0 0 4rem var(--tint)
+          transform: rotate(10deg)
 
       svg
         transform: rotate(25deg)
@@ -38,6 +47,7 @@
         filter: drop-shadow(0 0 2rem rgb(73 73 73 / 0.6))
         opacity: 0.8
         animation: largeIconContentScale 0.4s ease forwards
+        transition: 0.2s ease
 
       .largeIconBackground
         position: absolute
@@ -46,8 +56,9 @@
         background: linear-gradient(-45deg, var(--tint), hsl(from var(--tint) calc(h + 40) s l))
         z-index: -1
         border-radius: 35%
-        filter: blur(10vh)
         opacity: 0.7
+        box-shadow: 0 0 3rem var(--tint)
+        transition: 0.2s ease
 
   @keyframes largeIconSpinIn
     from

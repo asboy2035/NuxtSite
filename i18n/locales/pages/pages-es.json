@@ -48,7 +48,7 @@
     "tools": "Herramientas"
   },
   "languages": {
-    "choose": "Elige...",
+    "choose": "Elige un idioma...",
     "betaNotice": "Esta función está en beta.",
     "errorNotice": "Las traducciones pueden incluir errores.",
     "foundError": "¿Encontraste un error?",

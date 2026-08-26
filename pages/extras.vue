@@ -32,18 +32,18 @@
 
 <template>
   <div class="contentView">
-    <Hero icon="solar:inbox-line-bold-duotone" tint="#dfac3b">
+    <Hero icon="solar:layers-minimalistic-bold-duotone" tint="#dfac3b">
       <h1>{{ t('pages.extras') }}</h1>
       <h2>{{ t('meta.subtitles.extras') }}</h2>
 
-      <HStack>
-        <a href="https://a35hie.gumroad.com" target="_blank">
-          <button id="goToGumroadButton">
-            <icon icon="mingcute:gumroad-fill" />
-            Gumroad
-          </button>
-        </a>
-      </HStack>
+      <Spacer />
+
+      <a href="https://a35hie.gumroad.com" target="_blank">
+        <button id="goToGumroadButton">
+          <icon icon="mingcute:gumroad-fill" />
+          Gumroad
+        </button>
+      </a>
     </Hero>
 
     <Card class="spaced" :index="1">

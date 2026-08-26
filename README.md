@@ -1,62 +1,47 @@
-# NuxtSite
+# NuxtSite v7
 
 [My personal site](https://a35.dev).
 
 ## Supported Languages
-- English
-- French
-- Spanish
-- Chinese
-- Russian
-- Japanese
-- Korean
-- Portuguese
-- Polish
-- Eesti
-- Swedish
-- Dutch
-- Finnish
-- Catspeak
-- Piratespeak
-- Hieroglyphs
-- Emojis
-
-### Translators
-*Some languages are automatically translated.*
-- ash: English/French
+- 🇨🇦 English
+- 🇫🇷 French
+- 🇪🇸 Spanish
+- 🇯🇵 Japanese
+- 🇨🇳 Chinese
+- 🇩🇪 German
+- 🇷🇺 Russian
+- 🇺🇦 Ukrainian
+- 🇧🇷 Portuguese
+- 🇰🇿 Kazakh
+- 🇫🇮 Finnish
+- 🇵🇱 Polish
 
 ## Thanks
 Many thanks to all the people, projects, tools, and providers that make this site possible.
 
-### PangramPangram
-Check out all their cool fonts [here](https://pangrampangram.com/).
+#### Fonts
+All fonts can be found on Google Fonts.
 
-#### Used:
-- PP Agrandir
-- PP Neue Montreal
-- PP Pangaia
-- PP Supply Mono
-
-These fonts are being used non-commercially.
-If you'd like to use them commercially, buy a license.
+- Nata Sans
+- JetBrains Mono
+- Noto Sans JP (Japanese Only)
+- Noto Sans SC (Chinese Only)
 
 ### Packages & Frameworks
 - [**Vue.js:**](https://vuejs.org)
   Awesome web framework.
 - [**Nuxt:**](https://nuxt.com)
-  Framework for building modern Vue apps with zero config.
+  Framework for building modern, full-stack Vue apps.
 - [**Vue Router:**](https://router.vuejs.org)
   The official router for Vue.js.
-- [**@iconify/vue:**](https://iconify.design/docs/icon-components/vue/)
+- [**Iconify:**](https://iconify.design/)
   Huge collection of icons as Vue components.
-- [**VitePWA:**](https://vite-pwa-org.netlify.app/frameworks/nuxt/)
-  Adds Progressive Web App support to Nuxt.
+- [**Nuxt OG Image:**](https://nuxtseo.com/docs/og-image/)
+  Programmatically generate Open Graph images for Nuxt.
 - [**Nuxt I18N**](https://i18n.nuxtjs.org/)
   Internationalization for Nuxt Applications.
 - [**Cobe:**](https://cobe.vercel.app/)
   Light, interactive globe for the web.
-- [**html2canvas:**](https://html2canvas.hertzen.com/)
-  Renders DOM elements into a canvas.
 - [**Marked:**](https://marked.js.org/)
   Fast, lightweight Markdown parser.
 - [**Vue Progressive Blur:**](https://www.npmjs.com/package/vue-progressive-blur)
@@ -76,9 +61,8 @@ If you'd like to use them commercially, buy a license.
 - **[GitHub](https://github.com) and [Cloudflare](https://cloudflare.com)**:
   Git/Web hosting!
 
-
 ### Contributors
-- Liz: Design help
+- Liz: Design-related help!
 
 ---
 

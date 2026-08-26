@@ -26,12 +26,6 @@ export const NavLinks: NavLink[] = [
   {
     link: '/extras',
     text: 'pages.extras',
-    icon: 'solar:menu-dots-line-duotone',
+    icon: 'solar:layers-minimalistic-line-duotone',
   },
 ]
-
-export function useCurrentNavLink() {
-  const route = useRoute()
-
-  return computed(() => NavLinks.find((link) => link.link === route.path))
-}

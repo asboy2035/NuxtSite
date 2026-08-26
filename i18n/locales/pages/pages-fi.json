@@ -48,7 +48,7 @@
     "tools": "Työkalut"
   },
   "languages": {
-    "choose": "Valitse...",
+    "choose": "Valitse kieli...",
     "betaNotice": "Tämä ominaisuus on beta-versiossa.",
     "errorNotice": "Käännökset voivat sisältää virheitä.",
     "foundError": "Löysitkö virheen?",

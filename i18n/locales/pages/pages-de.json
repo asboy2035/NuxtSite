@@ -48,7 +48,7 @@
     "tools": "Tools"
   },
   "languages": {
-    "choose": "Wählen...",
+    "choose": "Sprache auswählen...",
     "betaNotice": "Dieses Feature ist in der Beta.",
     "errorNotice": "Übersetzungen können Fehler enthalten.",
     "foundError": "Fehler gefunden?",

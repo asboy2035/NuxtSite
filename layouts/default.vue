@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import { onBeforeUnmount, ref, watch } from 'vue'
+  import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
 
   import HStack from '+/layout/HStack.vue'
@@ -11,14 +11,51 @@
   const { t } = useI18n()
   const showingUi = ref(true)
 
+  const scrollingDown = ref(false)
+
+  let lastScrollY = 0
+  let accumulatedDownScroll = 0
+
+  const handleScroll = () => {
+    const scrollY = document.documentElement.scrollTop
+    const delta = scrollY - lastScrollY
+
+    if (delta > 0) {
+      accumulatedDownScroll += delta
+
+      if (accumulatedDownScroll >= 24) {
+        scrollingDown.value = true
+      }
+    } else if (delta < 0) {
+      accumulatedDownScroll = 0
+      scrollingDown.value = false
+    }
+
+    lastScrollY = scrollY
+  }
+
+  onMounted(() => {
+    lastScrollY = document.documentElement.scrollTop
+
+    window.addEventListener('scroll', handleScroll, {
+      passive: true,
+    })
+  })
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('scroll', handleScroll)
+  })
+
   watch(
     showingUi,
     (visible) => {
       if (!import.meta.client) return
+
       document.documentElement.style.setProperty(
         '--backgroundOpacity',
         visible ? '0.25' : '1'
       )
+
       document.documentElement.style.setProperty(
         '--backgroundFilter',
         visible ? 'blur(0.5rem)' : 'none'
@@ -29,6 +66,7 @@
 
   onBeforeUnmount(() => {
     if (!import.meta.client) return
+
     document.documentElement.style.removeProperty('--backgroundOpacity')
     document.documentElement.style.removeProperty('--backgroundFilter')
   })
@@ -42,6 +80,7 @@
       <HStack
         v-if="$route.meta.showingInterfaceOptions !== false"
         class="interfaceOptions"
+        :class="{ isHidden: scrollingDown }"
       >
         <button @click="showingUi = !showingUi">
           <Icon
@@ -102,14 +141,23 @@
       opacity: 0.6
 
   .interfaceOptions
+    position: sticky
+    top: var(--contentPadding)
     z-index: 11
     width: calc(100vw - 2rem)
     max-width: 30rem
     margin-top: 1rem
+    transition: 0.3s ease
 
     button
-      backdrop-filter: blur(0.5rem)
+      backdrop-filter: blur(0.75rem)
+      background: var(--foregroundDark)
 
     button, a
       flex-grow: 1
+
+    &.isHidden
+      opacity: 0
+      transform: translateY(-0.75rem)
+      pointer-events: none
 </style>
