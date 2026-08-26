@@ -16,9 +16,10 @@
   import SafeLink from '+/utils/SafeLink.vue'
   import type { AppPageMeta } from '$/appsPages'
   import { appsPages } from '$/appsPages'
-  const { t } = useI18n()
 
+  const { t } = useI18n()
   const route = useRoute()
+
   const slug: string = route.params.slug as string
   const app: AppPageMeta | undefined = appsPages.find(
     (app) => app.slug === slug
@@ -59,53 +60,71 @@
 <template>
   <div v-if="app" class="contentView">
     <Hero :image="app.headerImagePath" :image-alt="`${app.title} screenshot`">
-      <UpdatedBadge v-if="app.updatedBadge">{{
-        app.updatedBadge
-      }}</UpdatedBadge>
+      <UpdatedBadge v-if="app.updatedBadge">
+        {{ app.updatedBadge }}
+      </UpdatedBadge>
+
       <h1>{{ app.title }}</h1>
       <h2>{{ app.shortDescription }}</h2>
 
-      <SafeLink to="/apps">
+      <SafeLink to="/work#apps">
         <button>
           <Icon icon="solar:arrow-left-line-duotone" />
-          {{ t('pages.apps') }}
+          {{ t('pages.work') }}
         </button>
       </SafeLink>
     </Hero>
 
-    <Card v-if="app.appLinks?.length" class="hStack autoSpace centered">
-      <HStack>
-        <a
-          v-for="(link, index) in app.appLinks"
-          :key="index"
-          :href="link.url"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>
-            <component :is="getIcon(link.type)" class="icon" />
-            {{ link.title }}
-          </button>
-        </a>
+    <Card
+      v-if="app.appLinks?.length"
+      class="appLinks"
+      :class="{ small: !app.brewCmd }"
+    >
+      <HStack :class="app.brewCmd ? ['fullWidth', 'autoSpace'] : []">
+        <HStack>
+          <a
+            v-for="(link, index) in app.appLinks"
+            :key="index"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>
+              <component :is="getIcon(link.type)" class="icon" />
+              {{ link.title }}
+            </button>
+          </a>
+        </HStack>
 
         <p class="brewCmd" v-if="app.brewCmd">{{ app.brewCmd }}</p>
       </HStack>
     </Card>
 
     <!-- Markdown Info -->
-    <Card v-html="longDescription" />
+    <article class="content" v-html="longDescription" />
 
     <BottomFooter />
   </div>
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/fonts"
-
   .brewCmd
-    font-family: fonts.$mono
+    font-family: var(--monoFont)
     opacity: 0.7
     user-select: all
     -webkit-user-select: all
     scale: 0.9
+    z-index: 10
+
+  .content
+    width: 100%
+    padding: var(--contentPadding)
+
+  .appLinks
+    padding: 0.75rem
+    margin: var(--contentPadding) var(--contentPadding) 0
+
+    &.small
+      width: fit-content
+      margin-inline-end: auto
 </style>

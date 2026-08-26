@@ -9,17 +9,10 @@
   import { apps } from '$/apps'
 
   const { t } = useI18n()
-  const route = useRoute()
 
   setHeadMeta({
     page: 'pages.work',
     subtitle: 'meta.subtitles.work',
-  })
-
-  onMounted(() => {
-    if (route.query.scroll) {
-      navigateTo(`#${route.query.scroll}`)
-    }
   })
 </script>
 
@@ -28,10 +21,12 @@
     <Hero icon="solar:widget-3-bold-duotone" tint="#378be7">
       <h1>{{ t('pages.work') }}</h1>
       <h2>{{ t('meta.subtitles.work') }}</h2>
+
       <Spacer />
-      <a href="https://github.com/a35hie?tab=repositories">
+
+      <a href="https://repos.a35hie.me" target="_blank">
         <button id="allAppsButton">
-          <Icon icon="mingcute:github-fill" width="24" height="24" />
+          <Icon icon="mingcute:github-fill" />
           {{ t('apps.allApps') }}
         </button>
       </a>

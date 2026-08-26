@@ -7,43 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add redirects from legacy pages to /works, use unstyled kofi tools and scope styles correctly, fix card animation timings in links">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove services, remove toolbox, update button styling, sidebar, add new sites">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/services/ServiceItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/NavLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Services.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-uk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-zh.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-uk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-zh.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/work/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/[slug].vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navigation.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +56,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="206" />
+    <option name="cachedIndexableFilesCount" value="203" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -94,8 +66,8 @@
         <option value="Sass File" />
         <option value="HTML File" />
         <option value="JSON File" />
-        <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -131,58 +103,58 @@
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000003455898" />
-      <entry key="S10" value="1.0000191167927106" />
-      <entry key="S30" value="1.043597407799253" />
-      <entry key="S60" value="1.5012908965017986" />
-      <entry key="M2" value="3.39962187370311" />
-      <entry key="M5" value="9.868759679819803" />
-      <entry key="M10" value="23.321415181508673" />
-      <entry key="M15" value="40.8582436769516" />
-      <entry key="M30" value="97.69530519899011" />
-      <entry key="H1" value="201.75604129565377" />
-      <entry key="H2" value="388.2557559627244" />
-      <entry key="H4" value="684.3557319873063" />
-      <entry key="D1" value="1937.3961079147045" />
-      <entry key="W1" value="2851.5960167215067" />
+      <entry key="S5" value="1.0000000000000073" />
+      <entry key="S10" value="1.0000001473722309" />
+      <entry key="S30" value="1.010998218159295" />
+      <entry key="S60" value="1.1868830900779719" />
+      <entry key="M2" value="1.8734663384812484" />
+      <entry key="M5" value="4.607296659172372" />
+      <entry key="M10" value="9.205398009354846" />
+      <entry key="M15" value="12.430101262624586" />
+      <entry key="M30" value="17.39568559311347" />
+      <entry key="H1" value="24.67994547627502" />
+      <entry key="H2" value="77.93982451999663" />
+      <entry key="H4" value="286.5130541122282" />
+      <entry key="D1" value="1717.5270494326317" />
+      <entry key="W1" value="2891.704613945696" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.424950586034303E-70" />
-      <entry key="S2" value="7.65181420634468E-18" />
-      <entry key="S5" value="2.857858670324607E-7" />
-      <entry key="S10" value="0.0010574145475388532" />
-      <entry key="S30" value="0.2823603352848635" />
-      <entry key="S60" value="1.2302896045831302" />
-      <entry key="M2" value="2.9553616336940065" />
-      <entry key="M5" value="6.610984689172304" />
-      <entry key="M10" value="12.020638918299584" />
-      <entry key="M15" value="18.516216111529626" />
-      <entry key="M30" value="37.67733469489486" />
-      <entry key="H1" value="65.63637551841904" />
-      <entry key="H2" value="112.82214120300345" />
-      <entry key="H4" value="196.5248361538359" />
-      <entry key="D1" value="585.5143917034914" />
-      <entry key="W1" value="890.3763424115176" />
+      <entry key="MS500" value="2.450334364546472E-153" />
+      <entry key="S2" value="1.1569874893008887E-38" />
+      <entry key="S5" value="1.0118828933381234E-15" />
+      <entry key="S10" value="4.497210063171262E-8" />
+      <entry key="S30" value="0.005667337205415679" />
+      <entry key="S60" value="0.1128310976523373" />
+      <entry key="M2" value="0.5772379055874737" />
+      <entry key="M5" value="1.914840863862361" />
+      <entry key="M10" value="3.3270248697381697" />
+      <entry key="M15" value="4.155287534580607" />
+      <entry key="M30" value="5.332590085652889" />
+      <entry key="H1" value="7.391599375221783" />
+      <entry key="H2" value="23.23561384041585" />
+      <entry key="H4" value="84.28751893926723" />
+      <entry key="D1" value="522.5416685020593" />
+      <entry key="W1" value="905.8965600462689" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7320428479728127" />
-      <entry key="MS500" value="0.9395227492140118" />
-      <entry key="S2" value="0.984525173337414" />
-      <entry key="S5" value="0.9937813400661789" />
-      <entry key="S10" value="0.9978796597587359" />
-      <entry key="S30" value="1.316535891471586" />
-      <entry key="S60" value="2.710262521678895" />
-      <entry key="M2" value="6.325694770219425" />
-      <entry key="M5" value="16.450361107907874" />
-      <entry key="M10" value="35.313704553336976" />
-      <entry key="M15" value="59.34421457631542" />
-      <entry key="M30" value="135.33961816321667" />
-      <entry key="H1" value="267.361411961414" />
-      <entry key="H2" value="501.04966769518387" />
-      <entry key="H4" value="880.8557530291886" />
-      <entry key="D1" value="2522.898400917863" />
-      <entry key="W1" value="3741.969741004282" />
+      <entry key="MS100" value="0.4506252313054151" />
+      <entry key="MS500" value="0.8526348917679567" />
+      <entry key="S2" value="0.9609278384610339" />
+      <entry key="S5" value="0.9841840220338083" />
+      <entry key="S10" value="0.9920606819458753" />
+      <entry key="S30" value="1.0138882516082628" />
+      <entry key="S60" value="1.2971786132470944" />
+      <entry key="M2" value="2.446734497724789" />
+      <entry key="M5" value="6.516194293990176" />
+      <entry key="M10" value="12.526281261956157" />
+      <entry key="M15" value="16.579900557841448" />
+      <entry key="M30" value="22.7244862752957" />
+      <entry key="H1" value="32.06871368041895" />
+      <entry key="H2" value="101.17020727121151" />
+      <entry key="H4" value="370.79041361697205" />
+      <entry key="D1" value="2240.0580542093694" />
+      <entry key="W1" value="3797.598531304007" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -1526,7 +1498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="switch from Prettier to Oxfmt" />
     <MESSAGE value="add release state" />
     <MESSAGE value="update to a35hie.me for more places" />
     <MESSAGE value="fix display being too narrow" />
@@ -1551,7 +1522,8 @@
     <MESSAGE value="re-add jp/sc fonts" />
     <MESSAGE value="add new favicon/logo assets" />
     <MESSAGE value="add redirects from legacy pages to /works, use unstyled kofi tools and scope styles correctly, fix card animation timings in links" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redirects from legacy pages to /works, use unstyled kofi tools and scope styles correctly, fix card animation timings in links" />
+    <MESSAGE value="remove services, remove toolbox, update button styling, sidebar, add new sites" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove services, remove toolbox, update button styling, sidebar, add new sites" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

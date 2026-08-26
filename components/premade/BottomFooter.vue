@@ -34,7 +34,7 @@
           <VStack>
             <p>{{ t('footer.createdBy') }}</p>
 
-            <a href="https://github.com/main35/NuxtSite">
+            <a href="https://repos.a35hie.me/main35/NuxtSite" target="_blank">
               <button>
                 <Icon icon="mingcute:github-fill" />
                 {{ t('footer.codeOnGh') }}
@@ -81,12 +81,12 @@
     height: auto
     margin: 1rem 3%
     mask: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5))
-    z-index: 1
+    z-index: 10
 
   .footerContainer
     padding: var(--contentPadding)
     padding-top: 0
-    z-index: 1
+    z-index: 10
 
   .footerContent
     width: 100%

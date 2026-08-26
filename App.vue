@@ -115,7 +115,7 @@
     left: 50%
     min-width: 100%
     min-height: 100%
-    z-index: 0
+    z-index: -1
     pointer-events: none
     transform: translate(-50%, -50%)
     opacity: var(--backgroundOpacity, 1)
