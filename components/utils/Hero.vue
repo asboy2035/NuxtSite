@@ -13,14 +13,16 @@
 </script>
 
 <template>
-  <Card class="hero">
+  <Card class="hero" :class="{ compact: !image }">
     <DynamicImage
       class="heroResizableImage"
       v-if="image"
       :src="image"
       :alt="imageAlt ?? 'Image'"
     />
+
     <LargeIcon class="heroIcon" v-if="icon && tint" :icon="icon" :tint="tint" />
+
     <p v-else>invalid props</p>
 
     <VStack class="heroContent">
@@ -36,11 +38,14 @@
     justify-content: flex-end
     z-index: 2
     height: fit-content
-    min-height: 75vh
-    max-height: 90vh
     overflow: hidden
+    margin-top: 1rem
 
-    .heroResizableImage, .heroIcon
+    &:not(.compact)
+      min-height: 55vh
+      max-height: 75vh
+
+    .heroResizableImage
       position: absolute
       top: 0
       bottom: 0
@@ -50,6 +55,10 @@
       object-fit: cover
       z-index: 1
 
+    .heroIcon
+      width: 10rem
+      aspect-ratio: 1/1
+
   .heroContent
     z-index: 5
     align-items: flex-start
@@ -58,7 +67,7 @@
 
   ::v-deep(h1)
     font-family: fonts.$prominent
-    font-size: 5rem
+    font-size: 3.5rem
     line-height: 0.9
 
   @media (max-width: 35rem)

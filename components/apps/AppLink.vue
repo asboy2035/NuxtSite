@@ -1,7 +1,9 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { computed } from 'vue'
+
   const localePath = useLocalePath()
+  const { t } = useI18n()
 
   const props = defineProps<{
     to: string
@@ -15,7 +17,7 @@
 </script>
 
 <template>
-  <component
+  <Component
     :is="isExternal ? 'a' : 'RouterLink'"
     :href="isExternal ? to : undefined"
     :to="!isExternal ? localePath(to) : undefined"
@@ -24,7 +26,7 @@
     class="app-link"
   >
     <button :disabled="disabled ?? false" class="appLinkButton">
-      <icon
+      <Icon
         :icon="
           disabled
             ? 'solar:clock-circle-line-duotone'
@@ -32,9 +34,9 @@
         "
       />
 
-      {{ disabled ? 'Soon' : (label ?? 'Go') }}
+      {{ disabled ? t('apps.buttons.soon') : (label ?? t('apps.buttons.go')) }}
     </button>
-  </component>
+  </Component>
 </template>
 
 <style scoped lang="sass">

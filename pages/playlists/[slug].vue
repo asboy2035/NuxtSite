@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { computed, onMounted } from 'vue'
-  import { useRoute } from 'vue-router'
 
   import setHeadMeta from '&/setHeadMeta'
   import LinkIcon from '+/apps/LinkIcon.vue'
@@ -13,12 +12,13 @@
   import Deezer from '+/playlists/Deezer.vue'
   import Spotify from '+/playlists/Spotify.vue'
   import YoutubeMusic from '+/playlists/YoutubeMusic.vue'
+  import BottomFooter from '+/premade/BottomFooter.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { playlists } from '$/playlists'
-  const { t } = useI18n()
 
+  const { t } = useI18n()
   const route = useRoute()
 
   const playlist = computed(() =>
@@ -76,6 +76,7 @@
         title="playlists.streamTitle"
         icon="solar:headphones-square-line-duotone"
       />
+
       <p class="light">{{ t('playlists.streamDesc') }}</p>
 
       <grid class="tight spaced">
@@ -93,11 +94,14 @@
         </a>
       </grid>
     </Card>
+
+    <BottomFooter />
   </div>
 </template>
 
 <style scoped lang="sass">
   .playlistArt
+    border-radius: 1rem
     width: 14rem
 
   @media (max-width: 35rem)

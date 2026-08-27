@@ -1,0 +1,88 @@
+{
+  "home": {
+    "intro": "Cześć, jestem ash~",
+    "desc1": "Jestem nastolatkiem z Francji i oficjalnie najbardziej wyluzowaną osobą, jaką kiedykolwiek poznasz.",
+    "desc2": "Obecnie uczę się tworzenia stron internetowych i aplikacji na urządzenia Apple. Ćwiczę również projektowanie interfejsów i grafikę.",
+    "location": "Bordeaux, Francja",
+    "languages": {
+      "title": "Języki",
+      "desc": "Mówię płynnie po angielsku i francusku, znam biegle hiszpański i chiński, a teraz uczę się rosyjskiego!",
+      "programming": "Języki programowania",
+      "using": "Używane",
+      "learning": "W trakcie nauki",
+      "find": "Znajdź język...",
+      "confirm": "Przełącz na {language}"
+    }
+  },
+  "links": {
+    "socialTitle": "Moje media społecznościowe",
+    "socialDesc": "Moje media społecznościowe i sposoby kontaktu :3",
+    "more": "Więcej linków",
+    "playlists": "Playlisty",
+    "check": "Sprawdź moje"
+  },
+  "apps": {
+    "allRepos": "Wszystkie aplikacje",
+    "allProjects": "Wszystkie projekty",
+    "pwaInstall": "Instalacja PWA",
+    "buttons": {
+      "go": "Otwórz",
+      "soon": "Wkrótce"
+    }
+  },
+  "goodies": {
+    "cursors": {
+      "title": "Kursory",
+      "desc": "Kursory macOS.",
+      "download": "Pobierz"
+    },
+    "wallpapers": {
+      "title": "Tapety",
+      "desc": "Tapety na każde urządzenie.",
+      "comingSoon": "Już wkrótce."
+    }
+  },
+  "playlists": {
+    "by": "Autor:",
+    "streamTitle": "Odtwarzaj",
+    "streamDesc": "Gdzie możesz odtwarzać moje playlisty:"
+  },
+  "creators": {
+    "choose": "Wybierz narzędzie...",
+    "tools": "Narzędzia"
+  },
+  "languages": {
+    "choose": "Wybierz język...",
+    "betaNotice": "Ta funkcja jest w wersji beta.",
+    "errorNotice": "Tłumaczenia mogą zawierać błędy.",
+    "foundError": "Znalazłeś błąd w tłumaczeniu?",
+    "reportError": "Daj mi znać."
+  },
+  "ring": {
+    "title": "Ring",
+    "description": "Obrotowa wersja klasycznej gry Breakout.",
+    "controls": "Poruszaj się za pomocą myszy, klawiszy A/S lub strzałek. Nie pozwól, aby piłka wypadła!",
+    "start": "Start",
+    "restart": "Zagraj ponownie",
+    "level": "Poziom",
+    "blocks": "Bloki",
+    "lives": "Życia",
+    "gameOver": "Koniec gry",
+    "complete": "Poziom ukończony!",
+    "aria": "Gra Ring",
+    "left": "Porusz w lewo",
+    "right": "Porusz w prawo",
+    "paused": "Wstrzymano",
+    "resume": "Wznów",
+    "lifeLost": "Straciłeś życie!",
+    "continue": "Kontynuuj",
+    "nextLevel": "Przechodzenie do następnego poziomu..."
+  },
+  "error": {
+    "label": "Błąd",
+    "message404": "Nie udało się znaleźć tej strony.",
+    "messageDefault": "Spróbuj ponownie lub wróć na stronę główną.",
+    "goHome": "Strona główna",
+    "playRing": "Zagraj w Ring"
+  }
+}

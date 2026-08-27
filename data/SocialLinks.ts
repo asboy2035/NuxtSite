@@ -3,20 +3,20 @@ import type SocialLink from ':/SocialLink'
 export const IntlSocialLinks: SocialLink[] = [
   {
     name: 'ВКонтакте',
-    url: 'https://vk.com/a35hie',
-    icon: 'ri:vk-fill',
+    url: 'https://vk.ru/a35hie',
+    icon: 'thesvg-color:vk',
     lang: 'RU',
   },
   {
     name: 'Одноклассники',
     url: 'https://ok.ru/profile/910193223122',
-    icon: 'simple-icons:odnoklassniki',
+    icon: 'thesvg-color:odnoklassniki',
     lang: 'RU',
   },
   {
     name: '微博',
     url: 'https://weibo.com/a35hie',
-    icon: 'simple-icons:sinaweibo',
+    icon: 'thesvg-color:sina-weibo',
     lang: 'CN',
   },
 ]
@@ -25,49 +25,29 @@ export const SocialMediaLinks: SocialLink[] = [
   {
     name: 'Email',
     url: 'mailto:ash@a35.dev',
-    icon: 'solar:plain-bold',
+    icon: 'fluent-color:mail-20',
   },
   {
     name: 'GitHub',
     url: 'https://github.com/a35hie',
-    icon: 'mingcute:github-fill',
+    icon: 'skill-icons:github-light',
+  },
+  {
+    name: 'Discord',
+    url: 'https://discord.com/users/1118629361675939860',
+    icon: 'logos:discord-icon',
   },
   {
     name: 'Instagram',
     url: 'https://www.instagram.com/a35hie/',
-    icon: 'ri:instagram-fill',
+    icon: 'skill-icons:instagram',
   },
   {
     name: 'Ko-Fi',
     url: 'https://ko-fi.com/a35hie',
-    icon: 'cib:ko-fi',
+    icon: 'selfhst:ko-fi',
   },
   ...IntlSocialLinks,
-  {
-    name: 'Discord',
-    url: 'https://discord.com/users/1118629361675939860',
-    icon: 'ic:baseline-discord',
-  },
-  {
-    name: 'Threads',
-    url: 'https://www.threads.com/@a35hie',
-    icon: 'ri:threads-fill',
-  },
-  {
-    name: 'Snapchat',
-    url: 'https://snapchat.com/t/BzWqgpTE',
-    icon: 'mingcute:snapchat-fill',
-  },
-  {
-    name: 'Byg',
-    url: 'https://byg.gg/u/a35hie',
-    icon: 'glyphs:y-bold',
-  },
-  {
-    name: 'BlueSky',
-    url: 'https://bsky.app/profile/a35hie.me',
-    icon: 'ri:bluesky-fill',
-  },
 ]
 
 export const MoreLinks: SocialLink[] = [

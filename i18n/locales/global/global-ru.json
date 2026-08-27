@@ -1,34 +1,27 @@
 {
+  "name": "аш",
+  "copy": "Копировать",
   "intro": {
-    "hi": "привет, я ash.",
     "desc": "Я дизайнер и разработчик из Франции.",
-    "knowMe": "Узнай меня!",
-    "github": "Github",
+    "github": "GitHub",
     "email": "Почта",
-    "about": "Обо мне"
+    "artBy": "Арт от {artist}!"
   },
   "sites": {
     "title": "Сайты",
+    "search": "Поиск",
+    "repos": "Репозитории",
     "pages": "Страницы",
     "fonts": "Шрифты",
     "big": "Byg",
-    "guides": "Гайды",
-    "portfolio": "Портфолио"
+    "guides": "Гайды"
   },
   "app": {
     "hideInterface": "Скрыть страницу",
-    "showInterface": "Показать интерфейс",
+    "showInterface": "Показать страницу",
     "getWalls": "Обои",
     "comingSoon": "Скоро!",
-    "myTime": "Мое время",
     "connecting": "Подключение...",
-    "oldDomain": {
-      "title": "Вы на старом домене!",
-      "desc": "Откройте этот сайт на a35hie.me для более чистой ссылки!",
-      "never": "Никогда",
-      "later": "Позже",
-      "go": "Поехали!"
-    },
     "more": "Больше"
   },
   "sharing": {
@@ -37,7 +30,7 @@
     "hideQr": "Скрыть QR-код"
   },
   "navbar": {
-    "hide": "Скрыть",
+    "go": "Перейти...",
     "launchers": {
       "apps": "Приложения",
       "creators": "Создать..."
@@ -45,10 +38,15 @@
   },
   "footer": {
     "thanks": "Спасибо за чтение!",
-    "createdBy": "Создано Ash, с использованием NuxtJS, в 2026 <3",
+    "createdBy": "Создано аш с использованием NuxtJS в 2026 <3",
     "codeOnGh": "Код на GitHub.",
-    "version": "Версия:",
-    "release": "Релиз:",
-    "readMore": "Читать далее:"
+    "version": "Версия: {version}",
+    "release": "Релиз: {release}",
+    "readMore": "Читать далее:",
+    "cuties": {
+      "title": "Мои друзья",
+      "desc": "Это мои милейшие друзья, они просто потрясающие! :3",
+      "embed": "Встроить мой значок!"
+    }
   }
 }

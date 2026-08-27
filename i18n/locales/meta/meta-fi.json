@@ -2,26 +2,23 @@
   "pages": {
     "home": "Koti",
     "links": "Linkit",
-    "apps": "Sovellukset",
+    "work": "Työ",
     "projects": "Projektit",
-    "goodies": "Herkkuja",
+    "extras": "Lisäsisältö",
     "languages": "Kielet",
     "creators": "Tekijät",
-    "toolbox": "Toolbox"
+    "services": "Palvelut"
   },
   "meta": {
     "groups": {
-      "ash": "Ash"
+      "ash": "ash"
     },
     "subtitles": {
-      "global": "Ash (a35hie) - Portfolio",
+      "global": "ash (a35hie) - Portfolio",
       "links": "Minun sosiaalinen media, yhteystiedot ja paljon muuta :)",
-      "apps": "Minun web-/Apple-sovellukset.",
-      "projects": "Minun avoimen lähdekoodin projektit.",
-      "goodies": "Muu ladattava sisältö.",
-      "creators": "Minun työkalut ja tekijät.",
-      "toolbox": "a35hien Toolbox-sovellus.",
-      "services": "Isännöidyt ja pilvipalvelut."
+      "work": "Web-/Apple-sovellukseni, projektini ja paljon muuta.",
+      "extras": "Muu ladattava sisältö.",
+      "creators": "Minun työkalut ja tekijät."
     }
   }
 }

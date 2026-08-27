@@ -1,7 +1,4 @@
 {
-  "pages": {
-    "services": "Servicios"
-  },
   "home": {
     "intro": "Hai, soy ash~",
     "desc1": "Soy un adolescente de Francia y, oficialmente, la persona más relajada que conocerás.",
@@ -14,8 +11,7 @@
       "using": "Uso",
       "learning": "Aprendiendo",
       "find": "Buscar idioma...",
-      "selected": "Seleccionado:",
-      "confirm": "Confirmar idioma"
+      "confirm": "Cambiar a {language}"
     }
   },
   "links": {
@@ -26,8 +22,10 @@
     "check": "Echa un vistazo a mi"
   },
   "apps": {
-    "allApps": "Todas las Apps",
-    "pwaInstall": "Instalación PWA"
+    "allRepos": "Todas las Apps",
+    "allProjects": "Todos los proyectos",
+    "pwaInstall": "Instalación PWA",
+    "buttons": { "go": "Ir", "soon": "Pronto" }
   },
   "goodies": {
     "cursors": {
@@ -50,47 +48,38 @@
     "choose": "Elige una herramienta...",
     "tools": "Herramientas"
   },
-  "toolbox": {
-    "desc1": "Toolbox es la parada única para todos mis recursos y aplicaciones.",
-    "desc2": "Aquí puedes encontrar apps, herramientas y más, directamente desde una aplicación que puedes añadir a tu pantalla de inicio.",
-    "quickLinks": "Enlaces Rápidos",
-    "about": "Acerca de"
-  },
   "languages": {
-    "choose": "Elige...",
+    "choose": "Elige un idioma...",
     "betaNotice": "Esta función está en beta.",
     "errorNotice": "Las traducciones pueden incluir errores.",
     "foundError": "¿Encontraste un error?",
-    "reportError": "Repórtalo."
+    "reportError": "Avísame."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Un plataformas infinito y soñador: salta entre plataformas brillantes, recoge fichas de luz estelar y esquiva a los pequeños enemigos rojos.",
-    "controls": "Controles: toca/haz clic o pulsa Espacio para saltar.",
-    "metaDesc": "Un pequeño plataformas pastel escondido como huevo de pascua.",
-    "hud": "Salta entre plataformas brillantes, recoge fichas y esquiva a los pequeños enemigos rojos.",
-    "statusReady": "Toca o pulsa Espacio para saltar",
-    "statusRetry": "¡Ups! Toca o pulsa Espacio para reintentar",
-    "easyMode": "Modo fácil (sin enemigos)",
+  "ring": {
+    "title": "Ring",
+    "description": "Una versión circular del clásico juego Breakout.",
+    "controls": "Muévete con el ratón, A/S o las flechas. ¡No dejes que la pelota salga!",
+    "start": "Comenzar",
+    "restart": "Jugar de nuevo",
+    "level": "Nivel",
+    "blocks": "Bloques",
+    "lives": "Vidas",
     "gameOver": "Fin de la partida",
-    "score": "Puntuación",
-    "tokens": "Fichas",
-    "best": "Mejor",
-    "aria": "Minijuego Starhop"
-  },
-  "services": {
-    "title": "Servicios",
-    "subtitle": "Servicios alojados y en la nube.",
-    "source": "Código fuente",
-    "use": "Usar"
+    "complete": "¡Nivel completado!",
+    "aria": "Juego Ring",
+    "left": "Mover a la izquierda",
+    "right": "Mover a la derecha",
+    "paused": "Pausado",
+    "resume": "Reanudar",
+    "lifeLost": "¡Perdiste una vida!",
+    "continue": "Continuar",
+    "nextLevel": "Continuando al siguiente nivel..."
   },
   "error": {
     "label": "Error",
-    "title404": "Perdido en las estrellas",
-    "titleDefault": "Algo salió mal",
-    "message404": "No encontramos esa página, pero sí un pequeño juego escondido.",
+    "message404": "No pudimos encontrar esa página.",
     "messageDefault": "Inténtalo de nuevo o vuelve al inicio.",
     "goHome": "Inicio",
-    "openFullGame": "Abrir juego completo"
+    "playRing": "Jugar Ring"
   }
 }

@@ -1,0 +1,85 @@
+{
+  "home": {
+    "intro": "嗨，我是阿什~",
+    "desc1": "我是一名来自法国的青少年，也是你见过的最“佛系”的人。",
+    "desc2": "目前正在学习 Web 和 Apple 平台开发。我也在练习 UI 和平面设计。",
+    "location": "法国 波尔多",
+    "languages": {
+      "title": "语言",
+      "desc": "我的母语是英语和法语，精通西班牙语和中文，正在学习俄语",
+      "programming": "编程语言",
+      "using": "正在使用",
+      "learning": "正在学习",
+      "find": "搜索语言...",
+      "confirm": "切换到{language}"
+    }
+  },
+  "links": {
+    "socialTitle": "我的社交",
+    "socialDesc": "我的社交和联系方式 :3",
+    "more": "更多链接",
+    "playlists": "播放列表",
+    "check": "查看我的"
+  },
+  "apps": {
+    "allRepos": "所有应用",
+    "allProjects": "所有项目",
+    "pwaInstall": "PWA 安装",
+    "buttons": { "go": "前往", "soon": "即将推出" }
+  },
+  "goodies": {
+    "cursors": {
+      "title": "光标",
+      "desc": "macOS 光标。",
+      "download": "下载"
+    },
+    "wallpapers": {
+      "title": "壁纸",
+      "desc": "适用于任何设备的壁纸。",
+      "comingSoon": "即将推出。"
+    }
+  },
+  "playlists": {
+    "by": "来自:",
+    "streamTitle": "流媒体",
+    "streamDesc": "我的播放列表发布于:"
+  },
+  "creators": {
+    "choose": "选择一个工具...",
+    "tools": "工具"
+  },
+  "languages": {
+    "choose": "选择语言...",
+    "betaNotice": "此功能处于 Beta 测试中。",
+    "errorNotice": "翻译可能包含错误。",
+    "foundError": "发现了错误？",
+    "reportError": "告诉我吧。"
+  },
+  "ring": {
+    "title": "Ring",
+    "description": "经典 Breakout 游戏的环形版本。",
+    "controls": "使用鼠标、A/S 键或方向键移动。不要让球飞出去！",
+    "start": "开始",
+    "restart": "重新开始",
+    "level": "关卡",
+    "blocks": "方块",
+    "lives": "生命",
+    "gameOver": "游戏结束",
+    "complete": "关卡完成！",
+    "aria": "Ring 游戏",
+    "left": "向左移动",
+    "right": "向右移动",
+    "paused": "已暂停",
+    "resume": "继续",
+    "lifeLost": "你失去了一条生命！",
+    "continue": "继续",
+    "nextLevel": "正在进入下一关..."
+  },
+  "error": {
+    "label": "错误",
+    "message404": "未找到该页面。",
+    "messageDefault": "请重试或返回首页。",
+    "goHome": "返回首页",
+    "playRing": "玩 Ring"
+  }
+}

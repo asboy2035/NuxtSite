@@ -1,9 +1,17 @@
 import type { NavLink } from ':/navLink'
 
 export const HomeNavLink: NavLink = {
-  link: '/home',
+  link: '/',
   text: 'pages.home',
+  icon: 'solar:home-angle-line-duotone',
 }
+
+export const RingNavLink: NavLink = {
+  link: '/ring',
+  text: 'ring.title',
+  icon: 'solar:gamepad-line-duotone',
+}
+
 export const NavLinks: NavLink[] = [
   {
     link: '/links',
@@ -11,28 +19,13 @@ export const NavLinks: NavLink[] = [
     icon: 'solar:link-minimalistic-2-line-duotone',
   },
   {
-    link: '/apps',
-    text: 'pages.apps',
-    icon: 'solar:widget-3-line-duotone',
-  },
-  {
-    link: '/projects',
-    text: 'pages.projects',
+    link: '/work',
+    text: 'pages.work',
     icon: 'solar:folder-open-line-duotone',
   },
   {
-    link: '/services',
-    text: 'pages.services',
-    icon: 'solar:cloud-line-duotone',
-  },
-  {
-    link: '/goodies',
-    text: 'pages.goodies',
-    icon: 'solar:inbox-line-line-duotone',
-  },
-  {
-    link: '/languages',
-    text: 'pages.languages',
-    icon: 'solar:global-line-duotone',
+    link: '/extras',
+    text: 'pages.extras',
+    icon: 'solar:layers-minimalistic-line-duotone',
   },
 ]

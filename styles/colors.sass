@@ -1,45 +1,40 @@
-:root
+:root, .lightMode
   --backgroundColor: #c3acff
   --foregroundColor: rgba(196, 196, 196, 0.1)
+  --foregroundDark: rgb(192 182 209 / 0.4)
   --foregroundOpaque: rgb(162, 143, 201)
   --textColor: rgba(25, 0, 67, 0.95)
   --accentColor: rgb(159, 117, 232)
+  --accentColor2: rgb(218, 90, 189)
   --shadowColor: rgba(244, 226, 255, 0.8)
 
-  --swirly01: #8f5bea
-  --swirly02: rgb(218, 90, 189)
+:root
+  --dark-backgroundColor: #0c0023
+  --dark-foregroundColor: rgba(134, 134, 134, 0.1)
+  --dark-foregroundDark: rgb(90 83 96 / 0.4)
+  --dark-foregroundOpaque: rgb(69, 53, 89)
+  --dark-textColor: rgba(235, 222, 255, 0.95)
+  --dark-accentColor: rgb(90, 20, 209)
+  --dark-accentColor2: rgb(143, 33, 180)
+  --dark-shadowColor: rgba(155, 132, 220, 0.8)
+
+.darkMode
+  --backgroundColor: var(--dark-backgroundColor)
+  --foregroundColor: var(--dark-foregroundColor)
+  --foregroundDark: var(--dark-foregroundDark)
+  --foregroundOpaque: var(--dark-foregroundOpaque)
+  --textColor: var(--dark-textColor)
+  --accentColor: var(--dark-accentColor)
+  --accentColor2: var(--dark-accentColor2)
+  --shadowColor: var(--dark-shadowColor)
 
 @media (prefers-color-scheme: dark)
   :root
-    --backgroundColor: #0c0023
-    --foregroundColor: rgba(134, 134, 134, 0.1)
-    --foregroundOpaque: rgb(69, 53, 89)
-    --textColor: rgba(235, 222, 255, 0.95)
-    --accentColor: rgb(90, 20, 209)
-    --shadowColor: rgba(155, 132, 220, 0.8)
-
-    --swirly01: #4017b7
-    --swirly02: rgb(143, 33, 180)
-
-// UwU Support
-html[lang="en-Uwu"]
-  --backgroundColor: #fdb4ff
-  --foregroundColor: rgba(196, 196, 196, 0.1)
-  --foregroundOpaque: rgb(188, 143, 201)
-  --textColor: rgba(52, 0, 67, 0.95)
-  --accentColor: rgb(217, 117, 232)
-  --shadowColor: rgba(254, 226, 255, 0.8)
-
-  --swirly01: #e55bea
-  --swirly02: rgb(218, 90, 143)
-
-// SASS aliases
-$backgroundColor: var(--backgroundColor)
-$foregroundColor: var(--foregroundColor)
-$foregroundOpaque: var(--foregroundOpaque)
-$textColor: var(--textColor)
-$accentColor: var(--accentColor)
-$shadowColor: var(--shadowColor)
-
-$swirly01: var(--swirly01)
-$swirly02: var(--swirly02)
+    --backgroundColor: var(--dark-backgroundColor)
+    --foregroundColor: var(--dark-foregroundColor)
+    --foregroundDark: var(--dark-foregroundDark)
+    --foregroundOpaque: var(--dark-foregroundOpaque)
+    --textColor: var(--dark-textColor)
+    --accentColor: var(--dark-accentColor)
+    --accentColor2: var(--dark-accentColor2)
+    --shadowColor: var(--dark-shadowColor)

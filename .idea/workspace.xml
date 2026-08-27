@@ -7,54 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove all asboy2035, replace reddit with byg, remove craft pages">
-      <change afterPath="$PROJECT_DIR$/data/appsPages.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cursors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/playlists.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update projects, apps, fix readme, update some designs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/apps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/apps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/visibility.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ca-uw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-hgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pirate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-ca-uw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-hgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-kr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pirate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ca-uw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-hgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-kr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pirate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-sv.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,24 +52,25 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="226" />
+    <option name="cachedIndexableFilesCount" value="211" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSON File" />
         <option value="JavaScript File" />
         <option value="Sass File" />
-        <option value="Vue Composition API Component" />
+        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="JSON File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,8 +83,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/main35/NuxtSite.git&quot;,
-    &quot;accountId&quot;: &quot;5db3f81a-86d7-49ba-bb45-7204c769975f&quot;
+    &quot;url&quot;: &quot;https://a35hie@github.com/main35/NuxtSite.git&quot;,
+    &quot;accountId&quot;: &quot;3a099e4d-a960-4419-accc-5f28f60b6a13&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -138,61 +96,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0015408491122526" />
-      <entry key="MS500" value="1.5489140799450274" />
-      <entry key="S2" value="4.6629249815703995" />
-      <entry key="S5" value="9.81128577367479" />
-      <entry key="S10" value="14.760001530268216" />
-      <entry key="S30" value="20.74990212701729" />
-      <entry key="S60" value="23.343824403479626" />
-      <entry key="M2" value="25.870001847896855" />
-      <entry key="M5" value="30.5292339733782" />
-      <entry key="M10" value="40.28075505234636" />
-      <entry key="M15" value="51.66573254596603" />
-      <entry key="M30" value="83.19834719407865" />
-      <entry key="H1" value="123.46763712570393" />
-      <entry key="H2" value="159.09991674779508" />
-      <entry key="H4" value="183.50168170744328" />
-      <entry key="D1" value="208.42387512249078" />
-      <entry key="W1" value="213.19029821402665" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000102258184" />
+      <entry key="S30" value="1.0122096992135847" />
+      <entry key="S60" value="1.5134115739133107" />
+      <entry key="M2" value="5.138334847701149" />
+      <entry key="M5" value="19.656973792819876" />
+      <entry key="M10" value="41.3193316783766" />
+      <entry key="M15" value="61.253299444959836" />
+      <entry key="M30" value="111.49527289142195" />
+      <entry key="H1" value="195.9738519919016" />
+      <entry key="H2" value="339.3006430108973" />
+      <entry key="H4" value="583.4595076404588" />
+      <entry key="D1" value="2161.847318754373" />
+      <entry key="W1" value="3598.72476950262" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.4617300411068274E-111" />
-      <entry key="S5" value="6.983483934877209E-45" />
-      <entry key="S10" value="1.1806782019566163E-22" />
-      <entry key="S30" value="7.836200751754196E-8" />
-      <entry key="S60" value="4.368933165820348E-4" />
-      <entry key="M2" value="0.044243001587097694" />
-      <entry key="M5" value="1.15207016487107" />
-      <entry key="M10" value="4.515628926061039" />
-      <entry key="M15" value="7.961057521351888" />
-      <entry key="M30" value="16.262810265438084" />
-      <entry key="H1" value="25.5683053029628" />
-      <entry key="H2" value="33.126146311501074" />
-      <entry key="H4" value="38.054755878079405" />
-      <entry key="D1" value="42.92862274701387" />
-      <entry key="W1" value="43.844829667236" />
+      <entry key="MS100" value="6.102546639134078E-36" />
+      <entry key="MS500" value="9.059458115109886E-8" />
+      <entry key="S2" value="0.017349044275447482" />
+      <entry key="S5" value="0.19756509704888495" />
+      <entry key="S10" value="0.44448295473398974" />
+      <entry key="S30" value="0.7632615667397594" />
+      <entry key="S60" value="0.8955843285532217" />
+      <entry key="M2" value="1.355962538601772" />
+      <entry key="M5" value="4.38739384871337" />
+      <entry key="M10" value="9.999406442214307" />
+      <entry key="M15" value="14.80141284628717" />
+      <entry key="M30" value="25.87875295917918" />
+      <entry key="H1" value="46.78418442458427" />
+      <entry key="H2" value="84.6010562247396" />
+      <entry key="H4" value="149.58632169962954" />
+      <entry key="D1" value="614.0773758659141" />
+      <entry key="W1" value="1072.1354663093782" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.011686365427492065" />
-      <entry key="MS500" value="0.9466794549117592" />
-      <entry key="S2" value="4.454158037127316" />
-      <entry key="S5" value="9.718849333989544" />
-      <entry key="S10" value="14.710677561885133" />
-      <entry key="S30" value="20.732157329525982" />
-      <entry key="S60" value="23.334706881145866" />
-      <entry key="M2" value="25.907809770180346" />
-      <entry key="M5" value="31.668905860488316" />
-      <entry key="M10" value="44.775850172276485" />
-      <entry key="M15" value="59.60382910203165" />
-      <entry key="M30" value="99.43930075699521" />
-      <entry key="H1" value="149.01956250642073" />
-      <entry key="H2" value="192.21573475149324" />
-      <entry key="H4" value="221.5505881721634" />
-      <entry key="D1" value="251.35141121048835" />
-      <entry key="W1" value="257.03496965929327" />
+      <entry key="MS100" value="0.4413514981453274" />
+      <entry key="MS500" value="0.8490962870452927" />
+      <entry key="S2" value="0.9741239987346233" />
+      <entry key="S5" value="1.1661017807551213" />
+      <entry key="S10" value="1.4188518707823197" />
+      <entry key="S30" value="1.7624140181494448" />
+      <entry key="S60" value="2.397860338870868" />
+      <entry key="M2" value="6.472853259123248" />
+      <entry key="M5" value="24.004431581737286" />
+      <entry key="M10" value="51.274421248643435" />
+      <entry key="M15" value="76.01158014163015" />
+      <entry key="M30" value="137.33634559073724" />
+      <entry key="H1" value="242.7247945520592" />
+      <entry key="H2" value="423.8731686619645" />
+      <entry key="H4" value="733.0223320910684" />
+      <entry key="D1" value="2775.9109899104105" />
+      <entry key="W1" value="4670.856931136354" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -209,6 +167,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "CidrDebugProfileConversion": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "KEY_CHAT_IN_TOOLWINDOW": "false",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -219,10 +180,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "7",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/cursors/site",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/badges",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
@@ -232,7 +194,7 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/opt/homebrew/bin/node",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "bun",
     "npm.build.executor": "Run",
     "npm.cleanup.executor": "Run",
@@ -249,8 +211,8 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/opt/homebrew/lib/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -261,26 +223,82 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/cursors/site" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/.idea" />
-      <recent name="$PROJECT_DIR$/public/backgrounds" />
+      <recent name="$PROJECT_DIR$/public/badges" />
+      <recent name="$PROJECT_DIR$/.output/public/_og-static-fonts" />
+      <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/cursors/site" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/avatar-27" />
       <recent name="$PROJECT_DIR$/.output" />
       <recent name="$PROJECT_DIR$/components/langs" />
       <recent name="$PROJECT_DIR$/i18n/locales/pages" />
-      <recent name="$PROJECT_DIR$/i18n/locales/meta" />
-      <recent name="$PROJECT_DIR$/i18n/locales/global" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.fastFormat">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="bun" />
@@ -314,6 +332,30 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="fastFormat" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="fastFormat" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="format" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
     <configuration name="format" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -338,11 +380,49 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="lint" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="prettier" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="preview" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="preview" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="bun" />
@@ -380,6 +460,20 @@
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <configuration name="verifyTranslations" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="verifyTranslations" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.build" />
       <item itemvalue="npm.dev" />
@@ -394,8 +488,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-58e2ab36d051-intellij.indexing.shared.core-IU-262.8377.35" />
-        <option value="bundled-js-predefined-d6986cc7102b-24ccedb99027-JavaScript-IU-262.8377.35" />
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
       </set>
     </attachedChunks>
   </component>
@@ -964,135 +1058,28 @@
       <workItem from="1778835102678" duration="3771000" />
       <workItem from="1779007290102" duration="6000" />
       <workItem from="1779007463549" duration="10000" />
-      <workItem from="1782635685269" duration="3059000" />
-    </task>
-    <task id="LOCAL-00082" summary="clean up imports with new aliases">
-      <option name="closed" value="true" />
-      <created>1769188212378</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1769188212378</updated>
-    </task>
-    <task id="LOCAL-00083" summary="update fix paths command">
-      <option name="closed" value="true" />
-      <created>1769188525247</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1769188525247</updated>
-    </task>
-    <task id="LOCAL-00084" summary="add translation verification, improve localization, add link ticker, update Nuxt">
-      <option name="closed" value="true" />
-      <created>1769344854271</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1769344854284</updated>
-    </task>
-    <task id="LOCAL-00085" summary="improve prettier config, improve bottom logo, improve links data, update usernames">
-      <option name="closed" value="true" />
-      <created>1769348577658</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1769348577658</updated>
-    </task>
-    <task id="LOCAL-00086" summary="improve formatting, move interfaces to types/">
-      <option name="closed" value="true" />
-      <created>1769350702480</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1769350702480</updated>
-    </task>
-    <task id="LOCAL-00087" summary="improve card styling, improve navbar, increase corner rounding, improve light mode coloring, add notification badge to site picker Byg, shorten toolbar strings, misc fixes">
-      <option name="closed" value="true" />
-      <created>1769713241613</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1769713241613</updated>
-    </task>
-    <task id="LOCAL-00088" summary="add eslint import fixing">
-      <option name="closed" value="true" />
-      <created>1769795624902</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1769795624902</updated>
-    </task>
-    <task id="LOCAL-00089" summary="fix localization for link ticker, add intro page">
-      <option name="closed" value="true" />
-      <created>1769884566953</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1769884566954</updated>
-    </task>
-    <task id="LOCAL-00090" summary="localize intro, animate navbar">
-      <option name="closed" value="true" />
-      <created>1769890269257</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1769890269257</updated>
-    </task>
-    <task id="LOCAL-00091" summary="reformat, fix mobile navbar spacing">
-      <option name="closed" value="true" />
-      <created>1769890679575</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1769890679575</updated>
-    </task>
-    <task id="LOCAL-00092" summary="bump version">
-      <option name="closed" value="true" />
-      <created>1769890701528</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1769890701529</updated>
-    </task>
-    <task id="LOCAL-00093" summary="[EXPERIMENTAL] add ads">
-      <option name="closed" value="true" />
-      <created>1769945463614</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1769945463614</updated>
-    </task>
-    <task id="LOCAL-00094" summary="[EXPERIMENTAL] update ads id">
-      <option name="closed" value="true" />
-      <created>1769945765173</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1769945765173</updated>
-    </task>
-    <task id="LOCAL-00095" summary="[EXPERIMENTAL] switch to native ads">
-      <option name="closed" value="true" />
-      <created>1769946905730</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1769946905730</updated>
-    </task>
-    <task id="LOCAL-00096" summary="move ads to footer">
-      <option name="closed" value="true" />
-      <created>1769948378128</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1769948378128</updated>
-    </task>
-    <task id="LOCAL-00097" summary="apply text wrap everywhere">
-      <option name="closed" value="true" />
-      <created>1769950074975</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1769950074975</updated>
+      <workItem from="1782635685269" duration="3329000" />
+      <workItem from="1782639136534" duration="3000" />
+      <workItem from="1782743456335" duration="271000" />
+      <workItem from="1782749153230" duration="321000" />
+      <workItem from="1783162681049" duration="27000" />
+      <workItem from="1783162741429" duration="19000" />
+      <workItem from="1783163414957" duration="2000" />
+      <workItem from="1783513018813" duration="285000" />
+      <workItem from="1783936631978" duration="267000" />
+      <workItem from="1784030271531" duration="14000" />
+      <workItem from="1784302209919" duration="335000" />
+      <workItem from="1784364651235" duration="9000" />
+      <workItem from="1784365625330" duration="11000" />
+      <workItem from="1784538888893" duration="11547000" />
+      <workItem from="1784574903877" duration="11702000" />
+      <workItem from="1784638353679" duration="28000" />
+      <workItem from="1784755409751" duration="23546000" />
+      <workItem from="1784996245732" duration="48000" />
+      <workItem from="1784996650486" duration="1099000" />
+      <workItem from="1785317243290" duration="9086000" />
+      <workItem from="1785937968404" duration="19709000" />
+      <workItem from="1786028365268" duration="528000" />
     </task>
     <task id="LOCAL-00098" summary="add project icon">
       <option name="closed" value="true" />
@@ -1358,7 +1345,135 @@
       <option name="project" value="LOCAL" />
       <updated>1777891418660</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="add new navbar starter, update for v7">
+      <option name="closed" value="true" />
+      <created>1784547758350</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1784547758352</updated>
+    </task>
+    <task id="LOCAL-00132" summary="update new navbar expanded view, update navlinks">
+      <option name="closed" value="true" />
+      <created>1784549992295</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1784549992295</updated>
+    </task>
+    <task id="LOCAL-00133" summary="remove more legacy stuff, change about back to links">
+      <option name="closed" value="true" />
+      <created>1784554032118</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1784554032119</updated>
+    </task>
+    <task id="LOCAL-00134" summary="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets">
+      <option name="closed" value="true" />
+      <created>1784632841604</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1784632841604</updated>
+    </task>
+    <task id="LOCAL-00135" summary="optimize CSS vars, update nuxt config">
+      <option name="closed" value="true" />
+      <created>1784801760886</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1784801760887</updated>
+    </task>
+    <task id="LOCAL-00136" summary="fix cobe version back to 0.6.5">
+      <option name="closed" value="true" />
+      <created>1784803927277</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1784803927277</updated>
+    </task>
+    <task id="LOCAL-00137" summary="add translations, remove old unused content, animate sidebar, add home to sidebar">
+      <option name="closed" value="true" />
+      <created>1784811013878</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1784811013878</updated>
+    </task>
+    <task id="LOCAL-00138" summary="add og image generation">
+      <option name="closed" value="true" />
+      <created>1784822847700</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1784822847700</updated>
+    </task>
+    <task id="LOCAL-00139" summary="make baseurl dynamic">
+      <option name="closed" value="true" />
+      <created>1784834705559</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1784834705559</updated>
+    </task>
+    <task id="LOCAL-00140" summary="fix up og image">
+      <option name="closed" value="true" />
+      <created>1784835210282</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1784835210282</updated>
+    </task>
+    <task id="LOCAL-00141" summary="switch to webp rendering for og image">
+      <option name="closed" value="true" />
+      <created>1784835898088</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1784835898088</updated>
+    </task>
+    <task id="LOCAL-00142" summary="add ring instead of starhop">
+      <option name="closed" value="true" />
+      <created>1784841297110</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1784841297110</updated>
+    </task>
+    <task id="LOCAL-00143" summary="fix locale codes to correct locales, add flags, convert american english to canadian english, update footer / langs card designs, clean up colors.sass, localize app button names, add new large name logo asset, update project view to give stack items more space + make going to link more clear, remove typeerrors in lang picker, more cleanup">
+      <option name="closed" value="true" />
+      <created>1785326171709</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1785326171710</updated>
+    </task>
+    <task id="LOCAL-00144" summary="remove more dead code, update minimal navbar, clean up game, clean up 404 page, code improvements">
+      <option name="closed" value="true" />
+      <created>1785946708023</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1785946708024</updated>
+    </task>
+    <task id="LOCAL-00145" summary="add clock to sidebar, add ukrainian, improve ring game, fix package.json formatting, update deps">
+      <option name="closed" value="true" />
+      <created>1785954704204</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1785954704205</updated>
+    </task>
+    <task id="LOCAL-00146" summary="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image">
+      <option name="closed" value="true" />
+      <created>1785957589561</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1785957589561</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1379,32 +1494,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update packages" />
-    <MESSAGE value="update language picker, add catspeak, add swedish, add polish, add dutch" />
-    <MESSAGE value="add emojispeak, piratespeak, bump version, remove dead code" />
-    <MESSAGE value="update readme, add hieroglyphics, add polish, update meta" />
-    <MESSAGE value="update language ordering" />
-    <MESSAGE value="add pm field, update ts-pkg version" />
-    <MESSAGE value="add initial services implementation" />
-    <MESSAGE value="add localizations, add expanded navbar mode, improve navbar UI, redesign hero" />
-    <MESSAGE value="code cleanup, add state labels to services" />
-    <MESSAGE value="update packages, fix mobile navbar" />
-    <MESSAGE value="improve navbar, add card enter transition, remove some legacy code, fix header" />
-    <MESSAGE value="fix home card tuning, update loader design, fix bottom mask" />
-    <MESSAGE value="add more loading in animations, improve navbar, add cursor particles" />
-    <MESSAGE value="add wallpapers to goodies (finally)" />
-    <MESSAGE value="fix catgirl theme" />
-    <MESSAGE value="add intl/localized social media platforms" />
-    <MESSAGE value="re-show powered by kofi tools" />
-    <MESSAGE value="add projects, switch to border-box" />
-    <MESSAGE value="update version" />
-    <MESSAGE value="switch from Prettier to Oxfmt" />
-    <MESSAGE value="add release state" />
-    <MESSAGE value="update to a35hie.me for more places" />
-    <MESSAGE value="fix display being too narrow" />
-    <MESSAGE value="update to proxy" />
     <MESSAGE value="remove all asboy2035, replace reddit with byg, remove craft pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove all asboy2035, replace reddit with byg, remove craft pages" />
+    <MESSAGE value="add new navbar starter, update for v7" />
+    <MESSAGE value="update new navbar expanded view, update navlinks" />
+    <MESSAGE value="remove more legacy stuff, change about back to links" />
+    <MESSAGE value="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets" />
+    <MESSAGE value="optimize CSS vars, update nuxt config" />
+    <MESSAGE value="fix cobe version back to 0.6.5" />
+    <MESSAGE value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
+    <MESSAGE value="add og image generation" />
+    <MESSAGE value="make baseurl dynamic" />
+    <MESSAGE value="fix up og image" />
+    <MESSAGE value="switch to webp rendering for og image" />
+    <MESSAGE value="add ring instead of starhop" />
+    <MESSAGE value="fix locale codes to correct locales, add flags, convert american english to canadian english, update footer / langs card designs, clean up colors.sass, localize app button names, add new large name logo asset, update project view to give stack items more space + make going to link more clear, remove typeerrors in lang picker, more cleanup" />
+    <MESSAGE value="remove more dead code, update minimal navbar, clean up game, clean up 404 page, code improvements" />
+    <MESSAGE value="add clock to sidebar, add ukrainian, improve ring game, fix package.json formatting, update deps" />
+    <MESSAGE value="remove jp/sc fonts, subset fonts, awaiting fix from nuxt og image" />
+    <MESSAGE value="re-add jp/sc fonts" />
+    <MESSAGE value="add new favicon/logo assets" />
+    <MESSAGE value="add redirects from legacy pages to /works, use unstyled kofi tools and scope styles correctly, fix card animation timings in links" />
+    <MESSAGE value="remove services, remove toolbox, update button styling, sidebar, add new sites" />
+    <MESSAGE value="update design of app pages, fix up work section navigation" />
+    <MESSAGE value="add kazakh, polish, refresh hero design, stick page controls, make modal easier to see, update readme, fix deps" />
+    <MESSAGE value="add codeblock, cuties card, badge" />
+    <MESSAGE value="update projects, apps, fix readme, update some designs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update projects, apps, fix readme, update some designs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

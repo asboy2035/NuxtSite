@@ -2,25 +2,37 @@
   import { ref } from 'vue'
 
   import Loader from '+/premade/Loader.vue'
+
   const { t } = useI18n()
 
-  const isActive: Ref<boolean> = ref(false)
-  const showingConnecting: Ref<boolean> = ref(false)
+  const isActive = ref(false) // Progress bar
+  const showOverlay = ref(false) // Fullscreen overlay
+  const showingConnecting = ref(false)
+
+  let overlayTimeout: ReturnType<typeof setTimeout> | undefined
+  let connectingTimeout: ReturnType<typeof setTimeout> | undefined
 
   function show() {
     isActive.value = true
-    showConnecting()
+    showOverlay.value = false
+    showingConnecting.value = false
+
+    overlayTimeout = setTimeout(() => {
+      showOverlay.value = true
+    }, 500)
+
+    connectingTimeout = setTimeout(() => {
+      showingConnecting.value = true
+    }, 4000)
   }
 
   function hide() {
     isActive.value = false
+    showOverlay.value = false
     showingConnecting.value = false
-  }
 
-  function showConnecting() {
-    setTimeout(() => {
-      showingConnecting.value = true
-    }, 4000)
+    clearTimeout(overlayTimeout)
+    clearTimeout(connectingTimeout)
   }
 
   defineExpose({ show, hide })
@@ -31,15 +43,15 @@
     <div v-if="isActive" class="progressBar" />
   </Transition>
 
-  <div class="transitionElement" :class="{ active: isActive }">
+  <div class="transitionElement" :class="{ active: showOverlay }">
     <Loader class="loadingIcon" />
-    <p :class="{ hidden: !showingConnecting }">{{ t('app.connecting') }}</p>
+    <p :class="{ hidden: !showingConnecting }">
+      {{ t('app.connecting') }}
+    </p>
   </div>
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .transitionElement
     position: fixed
     display: flex
@@ -49,9 +61,9 @@
     bottom: 0
     left: 0
     right: 0
-    z-index: 2
+    z-index: 21
     pointer-events: none
-    background: colors.$backgroundColor
+    background: var(--backgroundColor)
     border-radius: 0
 
     // Animation
@@ -71,7 +83,7 @@
     height: 0.1rem
     z-index: 7
 
-    background: linear-gradient(to right, colors.$accentColor, colors.$swirly02)
+    background: linear-gradient(to right, var(--accentColor), var(--accentColor2))
 
   .loader-enter-from
     transform: translateX(-100%)

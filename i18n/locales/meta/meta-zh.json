@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "首页",
+    "links": "链接",
+    "work": "作品",
+    "projects": "项目",
+    "extras": "其他内容",
+    "languages": "语言",
+    "creators": "创作者",
+    "services": "服务"
+  },
+  "meta": {
+    "groups": {
+      "ash": "阿什"
+    },
+    "subtitles": {
+      "global": "阿什 (a35hie) - 作品集",
+      "links": "我的社交媒体、联系方式及更多 :)",
+      "work": "我的 Web/Apple 应用、项目及更多内容。",
+      "extras": "其他可下载内容。",
+      "creators": "我的工具和创作者。"
+    }
+  }
+}

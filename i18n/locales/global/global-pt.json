@@ -1,34 +1,27 @@
 {
+  "name": "ash",
+  "copy": "Copiar",
   "intro": {
-    "hi": "oi, sou ash.",
     "desc": "Sou um designer e desenvolvedor baseado na França.",
-    "knowMe": "Conheça-me!",
-    "github": "Github",
+    "github": "GitHub",
     "email": "Email",
-    "about": "Sobre Mim"
+    "artBy": "Arte por {artist}!"
   },
   "sites": {
     "title": "Sites",
+    "search": "Pesquisar",
+    "repos": "Repositórios",
     "pages": "Páginas",
     "fonts": "Fontes",
     "big": "Byg",
-    "guides": "Guias",
-    "portfolio": "Portfólio"
+    "guides": "Guias"
   },
   "app": {
     "hideInterface": "Ocultar Página",
-    "showInterface": "Mostrar Interface",
+    "showInterface": "Mostrar Página",
     "getWalls": "Papéis de Parede",
     "comingSoon": "Em Breve!",
-    "myTime": "Minha Hora",
     "connecting": "Conectando...",
-    "oldDomain": {
-      "title": "Você está no domínio antigo!",
-      "desc": "Acesse este site em a35hie.me para um link mais limpo!",
-      "never": "Nunca",
-      "later": "Mais Tarde",
-      "go": "Vamos!"
-    },
     "more": "Mais"
   },
   "sharing": {
@@ -37,7 +30,7 @@
     "hideQr": "Ocultar Código QR"
   },
   "navbar": {
-    "hide": "Ocultar",
+    "go": "Ir para...",
     "launchers": {
       "apps": "Apps",
       "creators": "Criar..."
@@ -47,8 +40,13 @@
     "thanks": "Obrigado por ler!",
     "createdBy": "Criado por ash, usando NuxtJS, em 2026 <3",
     "codeOnGh": "Código no GitHub.",
-    "version": "Versão:",
-    "release": "Lançamento:",
-    "readMore": "Leia mais:"
+    "version": "Versão: {version}",
+    "release": "Lançamento: {release}",
+    "readMore": "Saiba mais:",
+    "cuties": {
+      "title": "Meus amigos",
+      "desc": "Estes são os meus amiguinhos fofinhos, eles são incríveis! :3",
+      "embed": "Incorporar o meu badge!"
+    }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "name": "アッシュ",
+  "copy": "コピー",
+  "intro": {
+    "desc": "フランスを拠点とするデザイナー兼開発者です。",
+    "github": "GitHub",
+    "email": "メール",
+    "artBy": "アート：{artist}"
+  },
+  "sites": {
+    "title": "サイト",
+    "search": "検索",
+    "repos": "リポジトリ",
+    "pages": "ページ",
+    "fonts": "フォント",
+    "big": "Byg",
+    "guides": "ガイド"
+  },
+  "app": {
+    "hideInterface": "ページを隠す",
+    "showInterface": "ページを表示",
+    "getWalls": "壁紙",
+    "comingSoon": "近日公開！",
+    "connecting": "接続中...",
+    "more": "もっと"
+  },
+  "sharing": {
+    "title": "共有",
+    "showQr": "QRコードを表示",
+    "hideQr": "QRコードを隠す"
+  },
+  "navbar": {
+    "go": "移動...",
+    "launchers": {
+      "apps": "アプリ",
+      "creators": "作成..."
+    }
+  },
+  "footer": {
+    "thanks": "読んでくれてありがとう！",
+    "createdBy": "アッシュが NuxtJS を使って 2026 年に制作 <3",
+    "codeOnGh": "GitHubのコード。",
+    "version": "バージョン: {version}",
+    "release": "リリース: {release}",
+    "readMore": "もっと読む:",
+    "cuties": {
+      "title": "友達",
+      "desc": "この子たちは私のかわいい友達です。最高です！ :3",
+      "embed": "バッジを埋め込む！"
+    }
+  }
+}

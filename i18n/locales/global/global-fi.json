@@ -1,34 +1,27 @@
 {
+  "name": "ash",
+  "copy": "Kopioi",
   "intro": {
-    "hi": "terve, olen ash.",
     "desc": "Olen suunnittelija ja kehittäjä, joka perustuu Ranskaan.",
-    "knowMe": "Tunne minut!",
-    "github": "Github",
+    "github": "GitHub",
     "email": "Sähköposti",
-    "about": "Tietoja Minusta"
+    "artBy": "Taide: {artist}!"
   },
   "sites": {
     "title": "Sivustot",
+    "search": "Hae",
+    "repos": "Tietovarastot",
     "pages": "Sivut",
     "fonts": "Fontit",
     "big": "Byg",
-    "guides": "Oppaat",
-    "portfolio": "Portfolio"
+    "guides": "Oppaat"
   },
   "app": {
     "hideInterface": "Piilota sivu",
-    "showInterface": "Näytä käyttöliittymä",
+    "showInterface": "Näytä sivu",
     "getWalls": "Taustakuvat",
     "comingSoon": "Tulossa pian!",
-    "myTime": "Minun aika",
     "connecting": "Yhdistetään...",
-    "oldDomain": {
-      "title": "Olet vanhalla alueella!",
-      "desc": "Käytä tätä sivustoa osoitteessa a35hie.me puhtaammalle linkkille!",
-      "never": "Ei koskaan",
-      "later": "Myöhemmin",
-      "go": "Mennään!"
-    },
     "more": "Lisää"
   },
   "sharing": {
@@ -37,7 +30,7 @@
     "hideQr": "Piilota QR-koodi"
   },
   "navbar": {
-    "hide": "Piilota",
+    "go": "Siirry...",
     "launchers": {
       "apps": "Sovellukset",
       "creators": "Luo..."
@@ -47,8 +40,13 @@
     "thanks": "Kiitos että luit!",
     "createdBy": "Tekijä ash, NuxtJS:lla, vuonna 2026 <3",
     "codeOnGh": "Koodi GitHubissa.",
-    "version": "Versio:",
-    "release": "Julkaisu:",
-    "readMore": "Lue lisää:"
+    "version": "Versio: {version}",
+    "release": "Julkaisu: {release}",
+    "readMore": "Lue lisää:",
+    "cuties": {
+      "title": "Ystäväni",
+      "desc": "Nämä ovat suloiset ystäväni, he ovat mahtavia! :3",
+      "embed": "Upota merkkini!"
+    }
   }
 }

@@ -8,12 +8,17 @@
 @use "navigation"
 @use "button"
 @use "popovers"
-@use "nuxtPages"
-@use "kofiTools"
 
 *
   scrollbar-width: none !important
   box-sizing: border-box
+  scroll-behavior: smooth
+
+  &:focus-visible
+    outline: var(--accentColor) solid 0.1rem
+
+html
+  overflow-x: hidden
 
 body
   display: flex
@@ -22,9 +27,10 @@ body
   margin: 0
   padding: 0
   min-height: 100vh
+  width: 100vw
 
-  background: colors.$backgroundColor
-  color: colors.$textColor
+  background: var(--backgroundColor)
+  color: var(--textColor)
   user-select: none
   -webkit-user-select: none
 
@@ -47,17 +53,20 @@ a
   align-items: center
   justify-content: center
   text-decoration: none
-  color: colors.$textColor
+  color: var(--textColor)
   cursor: pointer
 
 svg
-  color: colors.$textColor
+  color: var(--textColor)
 
 input, textarea
   margin: 0.5rem
   padding: 0.5rem 0.75rem
   border-radius: 1rem
-  background: colors.$foregroundColor
+  background: var(--foregroundColor)
   border: none
   outline: none
-  color: colors.$textColor
+  color: var(--textColor)
+
+  &::placeholder
+    color: var(--foregroundOpaque)

@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "Strona główna",
+    "links": "Linki",
+    "work": "Prace",
+    "projects": "Projekty",
+    "extras": "Dodatki",
+    "languages": "Języki",
+    "creators": "Twórcy",
+    "services": "Usługi"
+  },
+  "meta": {
+    "groups": {
+      "ash": "ash"
+    },
+    "subtitles": {
+      "global": "ash (a35hie) — Portfolio",
+      "links": "Moje media społecznościowe, kontakty i więcej :)",
+      "work": "Moje aplikacje webowe i Apple, projekty i więcej.",
+      "extras": "Inne materiały do pobrania.",
+      "creators": "Moje narzędzia i twórcy."
+    }
+  }
+}

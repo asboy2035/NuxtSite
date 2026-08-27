@@ -7,7 +7,10 @@
   import Grid from '+/layout/Grid.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   import VStack from '+/layout/VStack.vue'
+  import CardTitle from '+/utils/CardTitle.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
+
+  const { t } = useI18n()
 
   defineProps<{
     appsData: AppCategory[]
@@ -16,14 +19,15 @@
 </script>
 
 <template>
-  <VStack id="appsContainer">
+  <VStack class="fullWidth" id="apps">
     <Card
       v-for="(category, i) in appsData"
       :key="category.name"
       :index="index ? index + i : undefined"
     >
-      <h2>{{ category.name }}</h2>
-      <grid class="appGrid">
+      <CardTitle :title="category.name" :icon="category.icon" />
+
+      <Grid class="appGrid">
         <InteriorItem
           v-for="app in category.apps"
           :key="app.name"
@@ -38,12 +42,13 @@
           </div>
 
           <div class="appDetails">
-            <h3>{{ app.name }}</h3>
-            <p class="light">{{ app.description }}</p>
+            <h3>{{ t(app.name) }}</h3>
+            <p class="light">{{ t(app.description) }}</p>
           </div>
 
           <div class="appDownloads">
             <AppLink :to="app.link" :disabled="app.disabled ?? false" />
+
             <a v-if="app.github" :href="app.github">
               <button class="transparent">
                 <Icon icon="mingcute:github-fill" width="24" height="24" />
@@ -51,17 +56,12 @@
             </a>
           </div>
         </InteriorItem>
-      </grid>
+      </Grid>
     </Card>
   </VStack>
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
-  #appsContainer
-    width: 100%
-
   .appGrid
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
     gap: 0.5rem
@@ -71,7 +71,7 @@
     gap: 0.25rem
     padding: 0.75rem
     align-items: center
-    background: colors.$foregroundColor
+    background: var(--foregroundColor)
 
     ::v-deep(svg)
       width: 1.25rem
@@ -103,4 +103,8 @@
     gap: 0.5rem
     align-items: center
     justify-content: center
+
+  @media (max-width: 25rem)
+    .appGrid
+      grid-template-columns: 100%
 </style>

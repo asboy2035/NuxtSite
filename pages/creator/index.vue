@@ -22,7 +22,7 @@
     <LauncherCard
       title="creators.tools"
       icon="solar:sledgehammer-line-duotone"
-      base-url="/toolbox"
+      base-url="/creator"
       :launcher-items="LauncherCreators"
     />
 

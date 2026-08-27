@@ -9,16 +9,16 @@ button
 
   border: none
   border-radius: var(--buttonRadius)
-  background: colors.$foregroundColor
+  background: var(--foregroundColor)
   font-size: medium
-  color: colors.$textColor
+  color: var(--textColor)
   padding: 0.5rem 0.75rem
   cursor: pointer
   transition: 0.2s ease-in-out
   backdrop-filter: blur(0.5rem) saturate(150%)
 
   &.prominent
-    background: colors.$accentColor
+    background: var(--accentColor)
 
   &:not(.transparent)::after
     content: ""
@@ -29,17 +29,23 @@ button
     left: 0
 
     border-radius: var(--buttonRadius)
-    border: 0.1rem solid colors.$shadowColor
-    box-shadow: 0 0.5rem 0.5rem colors.$shadowColor
+    border: 0.1rem solid var(--shadowColor)
+    box-shadow: 0 0.5rem 0.5rem var(--shadowColor)
     transition: 0.2s ease-in-out
     opacity: 0.1
 
-  &:hover::after
-    box-shadow: 0 0 0.75rem colors.$shadowColor
-    opacity: 0.3
+  &:hover
+    gap: 0.75rem
 
-  &:active::after
-    box-shadow: 0 0 0.5rem colors.$shadowColor
+    &::after
+      box-shadow: 0 0 0.75rem var(--shadowColor)
+      opacity: 0.3
+
+  &:active
+    scale: 0.95
+
+    ::after
+      box-shadow: 0 0 0.5rem var(--shadowColor)
 
   &:disabled
     opacity: 0.7

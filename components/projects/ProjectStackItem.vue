@@ -14,7 +14,7 @@
 <template>
   <VTooltip>
     <HStack class="projectStackItem">
-      <Icon :icon="technology.colorIcon || technology.icon" />
+      <Icon :icon="technology.icon" />
     </HStack>
 
     <template #popper>

@@ -75,8 +75,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .sentinel
     position: absolute
     top: 0
@@ -102,7 +100,7 @@
 
       .titleContent
         justify-content: center
-        background: linear-gradient(to top, transparent, colors.$backgroundColor)
+        background: linear-gradient(to top, transparent, var(--backgroundColor))
 
     .titleContent
       display: flex

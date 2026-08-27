@@ -1,7 +1,4 @@
 {
-  "pages": {
-    "services": "Palvelut"
-  },
   "home": {
     "intro": "Terve, olen ash~",
     "desc1": "Olen teini-ikäinen Ranskasta ja virallisesti ystävällisin ihminen jonka tapauksesi.",
@@ -14,8 +11,7 @@
       "using": "Käytä",
       "learning": "Oppii",
       "find": "Hae kielta...",
-      "selected": "Valittu:",
-      "confirm": "Vahvista kieli"
+      "confirm": "Vaihda kieleen {language}"
     }
   },
   "links": {
@@ -26,8 +22,10 @@
     "check": "Tarkista minun"
   },
   "apps": {
-    "allApps": "Kaikki sovellukset",
-    "pwaInstall": "PWA-asennus"
+    "allRepos": "Kaikki sovellukset",
+    "allProjects": "Kaikki projektit",
+    "pwaInstall": "PWA-asennus",
+    "buttons": { "go": "Siirry", "soon": "Pian" }
   },
   "goodies": {
     "cursors": {
@@ -50,47 +48,38 @@
     "choose": "Valitse työkalu...",
     "tools": "Työkalut"
   },
-  "toolbox": {
-    "desc1": "Toolbox on kaiken mitä-haluat-kaiken myymälä kaikille minun resursseille ja sovelluksille.",
-    "desc2": "Täällä voit löytää sovelluksia, työkaluja ja paljon muuta, kaikki yhdessä sovelluksessa, jonka voit lisätä suoraan kotiruutuusi.",
-    "quickLinks": "Pika-linkit",
-    "about": "Tietoja"
-  },
   "languages": {
-    "choose": "Valitse...",
+    "choose": "Valitse kieli...",
     "betaNotice": "Tämä ominaisuus on beta-versiossa.",
     "errorNotice": "Käännökset voivat sisältää virheitä.",
     "foundError": "Löysitkö virheen?",
-    "reportError": "Ilmoita se."
+    "reportError": "Kerro minulle."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Unelmallinen loputon alusta: hyppää loistavien alustojen välillä, napaa tähtivalohjaustokenit ja väistele pieniä punaisia olentoja.",
-    "controls": "Ohjaimet: Napauta/napsauta tai paina välilyöntiä hypätäksesi.",
-    "metaDesc": "Pieni pastelli-alusta piilotettu pääsiäismuna.",
-    "hud": "Hyppää loistavien alustojen välillä, napaa tokenit ja väistele punaisia olentoja.",
-    "statusReady": "Napauta tai paina välilyöntiä hypätäksesi",
-    "statusRetry": "Oops! Napauta tai paina välilyöntiä yrittääksesi uudelleen",
-    "easyMode": "Helppo tila (ei vihollisia)",
-    "gameOver": "Peli Ohi",
-    "score": "Pisteet",
-    "tokens": "Rahakkeet",
-    "best": "Paras",
-    "aria": "Starhop minipeli"
-  },
-  "services": {
-    "title": "Palvelut",
-    "subtitle": "Isännöidyt ja pilvipalvelut.",
-    "source": "Lähde",
-    "use": "Käytä"
+  "ring": {
+    "title": "Ring",
+    "description": "Pyöreä versio klassisesta Breakout-pelistä.",
+    "controls": "Liiku hiirellä, A/S-näppäimillä tai nuolinäppäimillä. Älä päästä palloa ulos!",
+    "start": "Aloita",
+    "restart": "Pelaa uudelleen",
+    "level": "Taso",
+    "blocks": "Palikat",
+    "lives": "Elämät",
+    "gameOver": "Peli ohi",
+    "complete": "Taso suoritettu!",
+    "aria": "Ring-peli",
+    "left": "Liiku vasemmalle",
+    "right": "Liiku oikealle",
+    "paused": "Tauolla",
+    "resume": "Jatka",
+    "lifeLost": "Menetit yhden elämän!",
+    "continue": "Jatka",
+    "nextLevel": "Siirrytään seuraavalle tasolle..."
   },
   "error": {
     "label": "Virhe",
-    "title404": "Eksynyt tähtiin",
-    "titleDefault": "Jotain meni pieleen",
-    "message404": "Emme löytäneet sitä sivua, mutta löysimme pienen piilotetun pelin.",
+    "message404": "Sivua ei löytynyt.",
     "messageDefault": "Yritä uudelleen tai mene takaisin kotiin.",
     "goHome": "Mene kotiin",
-    "openFullGame": "Avaa täysi peli"
+    "playRing": "Pelaa Ringiä"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "apps": {
+    "stand": {
+      "title": "Stand",
+      "description": "A simple, beautiful standing desk timer."
+    },
+    "serialplotter": {
+      "title": "SerialPlotter",
+      "description": "A beautiful serial grapher for Arduino."
+    },
+    "serialbridge": {
+      "title": "SerialBridge",
+      "description": "View your SerialPlotter graphs on iOS."
+    },
+    "sideeye": {
+      "title": "SideEye",
+      "description": "PiP for external screens."
+    },
+    "backed": {
+      "title": "Backed",
+      "description": "Video wallpapers player for macOS."
+    },
+    "shimetomo": {
+      "title": "しめとも / Shimetomo",
+      "description": "Desktop pets for macOS."
+    }
+  }
+}

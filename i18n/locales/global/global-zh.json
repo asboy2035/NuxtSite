@@ -1,0 +1,52 @@
+{
+  "name": "阿什",
+  "copy": "复制",
+  "intro": {
+    "desc": "我是一名设计师和开发者，现居法国。",
+    "github": "GitHub",
+    "email": "邮件",
+    "artBy": "美术由 {artist} 创作！"
+  },
+  "sites": {
+    "title": "站点",
+    "search": "搜索",
+    "repos": "代码仓库",
+    "pages": "页面",
+    "fonts": "字体",
+    "big": "Byg",
+    "guides": "指南"
+  },
+  "app": {
+    "hideInterface": "隐藏页面",
+    "showInterface": "显示页面",
+    "getWalls": "壁纸",
+    "comingSoon": "即将推出！",
+    "connecting": "正在连接...",
+    "more": "更多"
+  },
+  "sharing": {
+    "title": "分享",
+    "showQr": "显示二维码",
+    "hideQr": "隐藏二维码"
+  },
+  "navbar": {
+    "go": "前往...",
+    "launchers": {
+      "apps": "应用",
+      "creators": "创建..."
+    }
+  },
+  "footer": {
+    "thanks": "感谢阅读！",
+    "createdBy": "由 阿什 创建，使用 NuxtJS，2026年 <3",
+    "codeOnGh": "GitHub 上的代码。",
+    "version": "版本: {version}",
+    "release": "发布: {release}",
+    "readMore": "阅读更多:",
+    "cuties": {
+      "title": "我的朋友们",
+      "desc": "这些是我可爱的小伙伴，他们太棒了！:3",
+      "embed": "嵌入我的徽章！"
+    }
+  }
+}

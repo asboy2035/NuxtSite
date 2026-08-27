@@ -3,10 +3,8 @@
   import { onMounted, ref } from 'vue'
 
   import Card from '+/layout/Card.vue'
-  import HStack from '+/layout/HStack.vue'
   import VStack from '+/layout/VStack.vue'
   import SitePick from '+/premade/navbar/SitePick.vue'
-  import NotificationDot from '+/premade/NotificationDot.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Spacer from '+/utils/Spacer.vue'
   const { t } = useI18n()
@@ -32,34 +30,36 @@
   <VStack class="sitePicker">
     <Card :index="index" v-if="!showingShareModal">
       <VStack class="fullWidth">
-        <HStack class="autoSpace fullWidth">
-          <CardTitle
-            title="sites.title"
-            icon="solar:three-squares-line-duotone"
-          />
+        <CardTitle title="sites.title" icon="solar:three-squares-line-duotone">
           <!-- Insert close button here -->
           <slot />
-        </HStack>
+        </CardTitle>
 
         <SitePick
-          to="/"
-          title="sites.portfolio"
-          icon="solar:bag-heart-line-duotone"
+          title="sites.search"
+          to="https://search.a35hie.me"
+          icon="solar:magnifier-line-duotone"
         />
+
         <SitePick
-          to="https://g.a35.dev/"
+          to="https://guides.a35hie.me/"
           title="sites.guides"
           icon="solar:book-line-duotone"
         />
-        <HStack>
-          <SitePick
-            to="https://byg.a35.dev"
-            title="sites.big"
-            icon="solar:posts-carousel-vertical-line-duotone"
-          />
 
-          <NotificationDot />
-        </HStack>
+        <SitePick
+          title="sites.repos"
+          to="https://repos.a35hie.me"
+          icon="solar:inbox-archive-line-duotone"
+        />
+
+        <SitePick
+          to="https://byg.gg"
+          title="sites.big"
+          icon="solar:posts-carousel-vertical-line-duotone"
+          updated
+        />
+
         <SitePick
           to="https://fonts.a35hie.me/"
           title="sites.fonts"
@@ -103,7 +103,6 @@
 
 <style lang="sass">
   .sitePicker
-    min-width: 15rem
     max-width: 100%
 
   .qrCode

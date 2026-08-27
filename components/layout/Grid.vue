@@ -16,4 +16,8 @@
 
   .grid.tight
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr))
+
+  @media (max-width: 20rem)
+    .grid
+      grid-template-columns: 100%
 </style>

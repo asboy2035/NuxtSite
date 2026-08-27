@@ -1,33 +1,34 @@
 {
-  "pages": {
-    "services": "Services"
-  },
   "home": {
     "intro": "Hai, I'm ash~",
-    "desc1": "I'm a teenager from France, and officially the chillest person you'll meet.",
-    "desc2": "I'm currently learning to develop on Web and Apple platforms. I'm also practicing UI and graphic design.",
+    "desc1": "I'm a teenager from France and officially the chillest person you'll ever meet.",
+    "desc2": "I'm currently learning web and Apple app development. I'm also practising UI and graphic design.",
     "location": "Bordeaux, France",
     "languages": {
       "title": "Languages",
-      "desc": "I speak English and French natively, I'm proficient in Spanish and Chinese, and am learning Russian",
+      "desc": "I speak English and French natively, I'm proficient in Spanish and Chinese, and am learning Russian!",
       "programming": "Programming Languages",
       "using": "Using",
       "learning": "Learning",
       "find": "Find language...",
-      "selected": "Selected:",
-      "confirm": "Confirm language"
+      "confirm": "Switch to {language}"
     }
   },
   "links": {
     "socialTitle": "My Socials",
-    "socialDesc": "My socials and contact methods :3",
+    "socialDesc": "My socials and ways to contact me :3",
     "more": "More Links",
     "playlists": "Playlists",
     "check": "Check out my"
   },
   "apps": {
-    "allApps": "All Apps",
-    "pwaInstall": "PWA Installation"
+    "allRepos": "All Repos",
+    "allProjects": "All Projects",
+    "pwaInstall": "PWA Installation",
+    "buttons": {
+      "go": "Go",
+      "soon": "Soon"
+    }
   },
   "goodies": {
     "cursors": {
@@ -44,53 +45,44 @@
   "playlists": {
     "by": "By:",
     "streamTitle": "Stream",
-    "streamDesc": "Where I stream my playlists:"
+    "streamDesc": "Where you can stream my playlists:"
   },
   "creators": {
     "choose": "Choose a tool...",
     "tools": "Tools"
   },
-  "toolbox": {
-    "desc1": "Toolbox is the one-stop shop for all resources and apps by me.",
-    "desc2": "Here, you can find apps, tools, and more, right from one app that you can add directly to your home screen.",
-    "quickLinks": "Quick Links",
-    "about": "About"
-  },
   "languages": {
-    "choose": "Choose...",
+    "choose": "Choose Language...",
     "betaNotice": "This feature is in beta.",
     "errorNotice": "Translations may include errors.",
-    "foundError": "Found an error?",
-    "reportError": "Report it."
+    "foundError": "Found a translation error?",
+    "reportError": "Let me know."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "A dreamy infinite platformer: hop between glowing platforms, snag starlight tokens, and dodge the tiny red critters.",
-    "controls": "Controls: Tap/click or press Space to jump.",
-    "metaDesc": "A tiny pastel platformer hidden as an easter egg.",
-    "hud": "Hop across glowing platforms, grab tokens, and dodge the red critters.",
-    "statusReady": "Tap or press Space to hop",
-    "statusRetry": "Oops! Tap or press Space to retry",
-    "easyMode": "Easy mode (no enemies)",
+  "ring": {
+    "title": "Ring",
+    "description": "A rotary version of a classic Breakout game.",
+    "controls": "Move with mouse, A/S, or arrow keys. Don't let the ball go out!",
+    "start": "Start",
+    "restart": "Play again",
+    "level": "Level",
+    "blocks": "Blocks",
+    "lives": "Lives",
     "gameOver": "Game Over",
-    "score": "Score",
-    "tokens": "Tokens",
-    "best": "Best",
-    "aria": "Starhop mini game"
-  },
-  "services": {
-    "title": "Services",
-    "subtitle": "Hosted and cloud services.",
-    "source": "Source",
-    "use": "Use"
+    "complete": "Level complete!",
+    "aria": "Ring game",
+    "left": "Move left",
+    "right": "Move right",
+    "paused": "Paused",
+    "resume": "Resume",
+    "lifeLost": "You lost a life!",
+    "continue": "Continue",
+    "nextLevel": "Continuing to next level..."
   },
   "error": {
     "label": "Error",
-    "title404": "Lost in the stars",
-    "titleDefault": "Something went wrong",
-    "message404": "We couldn't find that page, but we did find a tiny hidden game.",
+    "message404": "We couldn't find that page.",
     "messageDefault": "Try again or head back home.",
     "goHome": "Go Home",
-    "openFullGame": "Open Full Game"
+    "playRing": "Play Ring"
   }
 }

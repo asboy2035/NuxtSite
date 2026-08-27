@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "home": "ホーム",
+    "links": "リンク",
+    "work": "作品",
+    "projects": "プロジェクト",
+    "extras": "その他",
+    "languages": "言語",
+    "creators": "クリエイター",
+    "services": "サービス"
+  },
+  "meta": {
+    "groups": {
+      "ash": "アッシュ"
+    },
+    "subtitles": {
+      "global": "アッシュ (a35hie) - ポートフォリオ",
+      "links": "SNS、連絡先、その他 :)",
+      "work": "私の Web/Apple アプリ、プロジェクトなど。",
+      "extras": "その他のダウンロードコンテンツ。",
+      "creators": "私のツールとクリエイター。"
+    }
+  }
+}

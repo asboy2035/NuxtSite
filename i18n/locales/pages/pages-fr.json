@@ -1,7 +1,4 @@
 {
-  "pages": {
-    "services": "Services"
-  },
   "home": {
     "intro": "Hai, je suis ash~",
     "desc1": "Je suis un jeune français, et officiellement la personne la plus chic que vous connaissiez.",
@@ -14,8 +11,7 @@
       "using": "Utilisés",
       "learning": "Appris",
       "find": "Trouver une langue...",
-      "selected": "Sélectionné:",
-      "confirm": "Confirmer la langue"
+      "confirm": "Passer à {language}"
     }
   },
   "links": {
@@ -26,8 +22,10 @@
     "check": "Découvrez mon"
   },
   "apps": {
-    "allApps": "Toutes les applications",
-    "pwaInstall": "Installer en tant que PWA"
+    "allRepos": "Toutes les applications",
+    "allProjects": "Tous les projets",
+    "pwaInstall": "Installer en tant que PWA",
+    "buttons": { "go": "Aller", "soon": "Bientôt" }
   },
   "goodies": {
     "cursors": {
@@ -50,47 +48,38 @@
     "choose": "Choisissez un outil...",
     "tools": "Outils"
   },
-  "toolbox": {
-    "desc1": "Toolbox est le guichet unique pour toutes les ressources et applications que je propose.",
-    "desc2": "Ici, vous pouvez trouver des applications, des outils et bien plus encore, directement à partir d'une application que vous pouvez ajouter directement à votre écran d'accueil.",
-    "quickLinks": "Liens rapides",
-    "about": "À Propos"
-  },
   "languages": {
-    "choose": "Choisir...",
+    "choose": "Choisir une langue...",
     "betaNotice": "Cette fonctionnalité est en bêta.",
     "errorNotice": "Les traductions peuvent contenir des erreurs.",
     "foundError": "Vous avez trouvé une erreur ?",
-    "reportError": "Signalez-la."
+    "reportError": "Fais-moi signe."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Un plateforme infini et rêveur : saute entre des plateformes lumineuses, attrape des jetons d’étoiles et évite les petits monstres rouges.",
-    "controls": "Commandes : touche/clic ou Espace pour sauter.",
-    "metaDesc": "Un petit jeu de plateforme pastel caché en easter egg.",
-    "hud": "Saute sur les plateformes lumineuses, attrape des jetons et évite les petits monstres rouges.",
-    "statusReady": "Touche/clic ou Espace pour sauter",
-    "statusRetry": "Oups ! Touche/clic ou Espace pour réessayer",
-    "easyMode": "Mode facile (sans ennemis)",
+  "ring": {
+    "title": "Ring",
+    "description": "Une version circulaire du célèbre jeu Breakout.",
+    "controls": "Déplacez-vous avec la souris, A/S ou les flèches. Ne laissez pas la balle sortir !",
+    "start": "Commencer",
+    "restart": "Rejouer",
+    "level": "Niveau",
+    "blocks": "Blocs",
+    "lives": "Vies",
     "gameOver": "Partie terminée",
-    "score": "Score",
-    "tokens": "Jetons",
-    "best": "Record",
-    "aria": "Mini-jeu Starhop"
-  },
-  "services": {
-    "title": "Services",
-    "subtitle": "Services hébergés et cloud.",
-    "source": "Source",
-    "use": "Utiliser"
+    "complete": "Niveau terminé !",
+    "aria": "Jeu Ring",
+    "left": "Déplacer à gauche",
+    "right": "Déplacer à droite",
+    "paused": "En pause",
+    "resume": "Reprendre",
+    "lifeLost": "Vous avez perdu une vie !",
+    "continue": "Continuer",
+    "nextLevel": "Passage au niveau suivant..."
   },
   "error": {
     "label": "Erreur",
-    "title404": "Perdu·e dans les étoiles",
-    "titleDefault": "Un problème est survenu",
-    "message404": "Cette page est introuvable, mais on a trouvé un petit jeu caché.",
+    "message404": "Cette page est introuvable.",
     "messageDefault": "Réessaie ou retourne à l’accueil.",
     "goHome": "Accueil",
-    "openFullGame": "Ouvrir le jeu complet"
+    "playRing": "Jouer à Ring"
   }
 }

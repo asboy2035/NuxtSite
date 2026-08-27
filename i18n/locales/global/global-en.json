@@ -1,34 +1,27 @@
 {
+  "name": "ash",
+  "copy": "Copy",
   "intro": {
-    "hi": "hi, I'm ash.",
     "desc": "I'm a designer and developer based in France.",
-    "knowMe": "Get to know me!",
-    "github": "Github",
+    "github": "GitHub",
     "email": "Email",
-    "about": "About Me"
+    "artBy": "Art by {artist}!"
   },
   "sites": {
     "title": "Sites",
+    "search": "Search",
+    "repos": "Repos",
     "pages": "Pages",
     "fonts": "Fonts",
     "big": "Byg",
-    "guides": "Guides",
-    "portfolio": "Portfolio"
+    "guides": "Guides"
   },
   "app": {
     "hideInterface": "Hide Page",
-    "showInterface": "Show Interface",
+    "showInterface": "Show Page",
     "getWalls": "Wallpapers",
     "comingSoon": "Coming Soon!",
-    "myTime": "My Time",
     "connecting": "Connecting...",
-    "oldDomain": {
-      "title": "You're on the old domain!",
-      "desc": "Access this site at a35hie.me for a cleaner link!",
-      "never": "Never",
-      "later": "Later",
-      "go": "Let's go!"
-    },
     "more": "More"
   },
   "sharing": {
@@ -37,7 +30,7 @@
     "hideQr": "Hide QR Code"
   },
   "navbar": {
-    "hide": "Hide",
+    "go": "Go...",
     "launchers": {
       "apps": "Apps",
       "creators": "Create..."
@@ -47,8 +40,14 @@
     "thanks": "Thanks for reading!",
     "createdBy": "Created by ash, using NuxtJS, in 2026 <3",
     "codeOnGh": "Code on GitHub.",
-    "version": "Version:",
-    "release": "Release:",
-    "readMore": "Read more:"
+    "version": "Version: {version}",
+    "release": "Release: {release}",
+    "readMore": "Read more:",
+
+    "cuties": {
+      "title": "My Friends",
+      "desc": "These are my cutie patootie frensies, they are awesome! :3",
+      "embed": "Embed my Badge!"
+    }
   }
 }

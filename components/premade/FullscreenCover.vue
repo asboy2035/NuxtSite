@@ -7,8 +7,6 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .fullScreenCover
     position: fixed
     display: flex
@@ -19,18 +17,19 @@
     height: 100dvh
     align-items: center
     justify-content: center
-    z-index: 5
+    z-index: 34
+    padding: var(--contentPadding)
 
     opacity: 0
-    background: colors.$foregroundColor
+    background: rgba(0, 0, 0, 0.5)
     backdrop-filter: blur(0.5rem)
     border-radius: 0
     animation: opacity 0.2s ease forwards
 
   .fullScreenCoverContent
     flex-direction: column
+    overflow-y: scroll
     width: 100%
-    overflow: scroll
 
   @keyframes opacity
     0%
@@ -38,4 +37,8 @@
 
     100%
       opacity: 1
+
+  @media (prefers-color-scheme: light)
+    .fullScreenCover
+      background: rgb(225 225 225 / 0.3)
 </style>

@@ -1,0 +1,85 @@
+{
+  "home": {
+    "intro": "はい、私はアッシュです~",
+    "desc1": "フランス在住のティーンエイジャーで、あなたが会う中で最も「チル」な人間です。",
+    "desc2": "現在、WebおよびAppleプラットフォームでの開発を学んでいます。UIやグラフィックデザインも練習中です。",
+    "location": "フランス・ボルドー",
+    "languages": {
+      "title": "言語",
+      "desc": "英語とフランス語はネイティブで、スペイン語と中国語に堪能で、ロシア語を学んでいます",
+      "programming": "プログラミング言語",
+      "using": "使用中",
+      "learning": "学習中",
+      "find": "言語を検索...",
+      "confirm": "{language}に切り替える"
+    }
+  },
+  "links": {
+    "socialTitle": "私のソーシャル",
+    "socialDesc": "私のソーシャルと連絡方法 :3",
+    "more": "もっとリンク",
+    "playlists": "プレイリスト",
+    "check": "私のものをチェック"
+  },
+  "apps": {
+    "allRepos": "すべてのアプリ",
+    "allProjects": "すべてのプロジェクト",
+    "pwaInstall": "PWAのインストール",
+    "buttons": { "go": "開く", "soon": "近日公開" }
+  },
+  "goodies": {
+    "cursors": {
+      "title": "カーソル",
+      "desc": "macOS用カーソル。",
+      "download": "ダウンロード"
+    },
+    "wallpapers": {
+      "title": "壁紙",
+      "desc": "あらゆるデバイス用の壁紙。",
+      "comingSoon": "近日公開。"
+    }
+  },
+  "playlists": {
+    "by": "作成者:",
+    "streamTitle": "ストリーム",
+    "streamDesc": "プレイリストの配信先:"
+  },
+  "creators": {
+    "choose": "ツールを選択...",
+    "tools": "ツール"
+  },
+  "languages": {
+    "choose": "言語を選択...",
+    "betaNotice": "この機能はベータ版です。",
+    "errorNotice": "翻訳に誤りが含まれる場合があります。",
+    "foundError": "間違いを見つけましたか？",
+    "reportError": "教えてね。"
+  },
+  "ring": {
+    "title": "Ring",
+    "description": "クラシックなBreakoutゲームの円形バージョンです。",
+    "controls": "マウス、A/Sキー、または矢印キーで操作します。ボールを外に出さないでください！",
+    "start": "開始",
+    "restart": "もう一度プレイ",
+    "level": "レベル",
+    "blocks": "ブロック",
+    "lives": "ライフ",
+    "gameOver": "ゲームオーバー",
+    "complete": "レベルクリア！",
+    "aria": "Ringゲーム",
+    "left": "左へ移動",
+    "right": "右へ移動",
+    "paused": "一時停止",
+    "resume": "再開",
+    "lifeLost": "ライフを失いました！",
+    "continue": "続ける",
+    "nextLevel": "次のレベルへ進んでいます..."
+  },
+  "error": {
+    "label": "エラー",
+    "message404": "このページは見つかりませんでした。",
+    "messageDefault": "もう一度試すか、ホームへ戻ってください。",
+    "goHome": "ホームへ",
+    "playRing": "Ring を遊ぶ"
+  }
+}

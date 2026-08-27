@@ -2,26 +2,23 @@
   "pages": {
     "home": "Inicio",
     "links": "Enlaces",
-    "apps": "Apps",
+    "work": "Trabajo",
     "projects": "Proyectos",
-    "goodies": "Extras",
+    "extras": "Extras",
     "languages": "Idiomas",
     "creators": "Creadores",
-    "toolbox": "Toolbox"
+    "services": "Servicios"
   },
   "meta": {
     "groups": {
-      "ash": "Ash"
+      "ash": "ash"
     },
     "subtitles": {
       "global": "ash (a35hie) - Portafolio",
       "links": "Mis redes, contactos y más :)",
-      "apps": "Mis aplicaciones web/Apple.",
-      "projects": "Mis proyectos de código abierto.",
-      "goodies": "Otro contenido descargable.",
-      "creators": "Mis herramientas y creadores.",
-      "toolbox": "La aplicación Toolbox de a35hie.",
-      "services": "Servicios alojados y en la nube."
+      "work": "Mis aplicaciones web/Apple, proyectos y más.",
+      "extras": "Otro contenido descargable.",
+      "creators": "Mis herramientas y creadores."
     }
   }
 }

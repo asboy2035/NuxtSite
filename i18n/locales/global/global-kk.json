@@ -1,0 +1,52 @@
+{
+  "name": "ash",
+  "copy": "Көшіру",
+  "intro": {
+    "desc": "Мен Францияда тұратын дизайнер әрі әзірлеушімін.",
+    "github": "GitHub",
+    "email": "Электрондық пошта",
+    "artBy": "Сурет авторы: {artist}!"
+  },
+  "sites": {
+    "title": "Сайттар",
+    "search": "Іздеу",
+    "repos": "Репозиторийлер",
+    "pages": "Беттер",
+    "fonts": "Қаріптер",
+    "big": "Byg",
+    "guides": "Нұсқаулықтар"
+  },
+  "app": {
+    "hideInterface": "Бетті жасыру",
+    "showInterface": "Бетті көрсету",
+    "getWalls": "Тұсқағаздар",
+    "comingSoon": "Жақында!",
+    "connecting": "Қосылуда...",
+    "more": "Толығырақ"
+  },
+  "sharing": {
+    "title": "Бөлісу",
+    "showQr": "QR кодын көрсету",
+    "hideQr": "QR кодын жасыру"
+  },
+  "navbar": {
+    "go": "Өту...",
+    "launchers": {
+      "apps": "Қолданбалар",
+      "creators": "Жасау..."
+    }
+  },
+  "footer": {
+    "thanks": "Оқығаныңызға рақмет!",
+    "createdBy": "ash жасаған, NuxtJS көмегімен, 2026 <3",
+    "codeOnGh": "GitHub-тағы код.",
+    "version": "Нұсқа: {version}",
+    "release": "Релиз: {release}",
+    "readMore": "Толығырақ оқу:",
+    "cuties": {
+      "title": "Достарым",
+      "desc": "Бұлар менің сүйкімді достарым, олар керемет! :3",
+      "embed": "Бейджімді ендіру!"
+    }
+  }
+}

@@ -3,50 +3,43 @@ import type { Technology } from ':/technology'
 // Languages / Frameworks
 export const Vue: Technology = {
   name: 'Vue / Nuxt',
-  icon: 'proicons:vuejs',
-  colorIcon: 'logos:vue',
-  link: 'https://vuejs.org/',
+  icon: 'logos:nuxt-icon',
+  link: 'https://nuxt.com/',
 }
 
 export const TypeScript: Technology = {
   name: 'TypeScript',
-  icon: 'proicons:typescript',
-  colorIcon: 'skill-icons:typescript',
+  icon: 'logos:typescript-icon',
   link: 'https://www.typescriptlang.org/',
 }
 
 export const Swift: Technology = {
   name: 'Swift',
-  icon: 'iconoir:apple-swift',
-  colorIcon: 'skill-icons:swift',
+  icon: 'logos:swift',
   link: 'https://www.swift.org/',
 }
 
 export const Cpp: Technology = {
   name: 'C++',
-  icon: 'bxl:c-plus-plus',
-  colorIcon: 'devicon:cplusplus',
+  icon: 'logos:c-plusplus',
   link: 'https://cplusplus.com/',
 }
 
 export const Python: Technology = {
   name: 'Python',
-  icon: 'proicons:python',
-  colorIcon: 'logos:python',
+  icon: 'logos:python',
   link: 'https://www.python.org/',
 }
 
 export const SQL: Technology = {
   name: '(PG) SQL',
-  icon: 'tabler:file-type-sql',
-  colorIcon: 'logos:postgresql',
+  icon: 'logos:postgresql',
   link: 'https://www.sqlite.org/index.html',
 }
 
 export const Go: Technology = {
   name: 'Go',
-  icon: 'nonicons:go-16',
-  colorIcon: 'devicon:go',
+  icon: 'logos:go',
   isLearning: true,
 }
 

@@ -1,11 +1,11 @@
 :root
-  --contentPadding: 1rem 1rem 0
+  --contentPadding: 1rem
 
 .contentView
   display: flex
   flex-direction: column
-  width: 100%
-  max-width: 55rem
+  width: 60rem
+  max-width: 100%
   min-height: 100vh
   padding: var(--contentPadding)
   gap: 0.5rem
@@ -13,11 +13,10 @@
 .navigationView
   display: flex
   flex-direction: row
-  flex-wrap: wrap
+  flex-wrap: nowrap
   align-items: flex-start
   justify-content: center
   width: 100%
-  max-width: 80rem
   padding: var(--contentPadding)
   gap: 1rem
 
@@ -26,21 +25,13 @@
 
 @media (max-width: 35rem)
   :root
-    --contentPadding: 1rem 0.5rem 0
-
+    --contentPadding: 0.5rem
 
 // Conditionals
-.sidebarModeOnly
-  display: none
-
-.stackModeOnly
-  display: flex
-  flex-direction: column
-
-@media (min-width: 80rem)
+@media (max-width: 85rem)
   .sidebarModeOnly
-    display: flex
-    flex-direction: column
+    display: none !important
 
+@media (min-width: 85rem)
   .stackModeOnly
     display: none !important

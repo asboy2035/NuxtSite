@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <Card class="spaced">
+  <Card :index="3" class="spaced">
     <CardTitle title="links.socialTitle" icon="solar:share-line-duotone" />
 
     <p>{{ t('links.socialDesc') }}</p>
@@ -23,6 +23,7 @@
         :link="link.url"
         :icon="link.icon"
         :tag="link.lang"
+        colored
       />
     </Grid>
   </Card>
@@ -34,5 +35,5 @@
 
   @media (max-width: 35rem)
     .linksGrid
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr))
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
 </style>

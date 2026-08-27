@@ -105,7 +105,7 @@
 </script>
 
 <template>
-  <Card :index="3" class="autoSpace locationCard">
+  <Card :index="2" class="autoSpace locationCard">
     <CardTitle title="home.location" icon="solar:point-on-map-line-duotone" />
 
     <!--Cobe Globe-->

@@ -1,7 +1,4 @@
 {
-  "pages": {
-    "services": "Dienste"
-  },
   "home": {
     "intro": "Hai, ich bin ash~",
     "desc1": "Ich bin ein Teenager aus Frankreich und offiziell die entspannteste Person, die du treffen wirst.",
@@ -14,8 +11,7 @@
       "using": "Nutze",
       "learning": "Lerne",
       "find": "Sprache suchen...",
-      "selected": "Ausgewählt:",
-      "confirm": "Sprache bestätigen"
+      "confirm": "Zu {language} wechseln"
     }
   },
   "links": {
@@ -26,8 +22,10 @@
     "check": "Schau dir meine"
   },
   "apps": {
-    "allApps": "Alle Apps",
-    "pwaInstall": "PWA-Installation"
+    "allRepos": "Alle Apps",
+    "allProjects": "Alle Projekte",
+    "pwaInstall": "PWA-Installation",
+    "buttons": { "go": "Los", "soon": "Bald" }
   },
   "goodies": {
     "cursors": {
@@ -50,47 +48,38 @@
     "choose": "Wähle ein Tool...",
     "tools": "Tools"
   },
-  "toolbox": {
-    "desc1": "Toolbox ist die zentrale Anlaufstelle für alle meine Ressourcen und Apps.",
-    "desc2": "Hier findest du Apps, Tools und mehr, direkt aus einer App, die du deinem Startbildschirm hinzufügen kannst.",
-    "quickLinks": "Quick Links",
-    "about": "Über"
-  },
   "languages": {
-    "choose": "Wählen...",
+    "choose": "Sprache auswählen...",
     "betaNotice": "Dieses Feature ist in der Beta.",
     "errorNotice": "Übersetzungen können Fehler enthalten.",
     "foundError": "Fehler gefunden?",
-    "reportError": "Melde es."
+    "reportError": "Gib mir Bescheid."
   },
-  "starhop": {
-    "title": "Starhop",
-    "description": "Ein verträumter Endlos-Plattformer: Springe über leuchtende Plattformen, sammle Sternen-Token und weiche den kleinen roten Gegnern aus.",
-    "controls": "Steuerung: Tippen/Klicken oder Leertaste zum Springen.",
-    "metaDesc": "Ein kleines pastellfarbenes Plattformspiel als Easter Egg.",
-    "hud": "Springe über leuchtende Plattformen, sammle Token und weiche den kleinen roten Gegnern aus.",
-    "statusReady": "Tippen oder Leertaste zum Springen",
-    "statusRetry": "Ups! Tippen oder Leertaste zum Wiederholen",
-    "easyMode": "Leichtmodus (keine Gegner)",
-    "gameOver": "Game Over",
-    "score": "Punktzahl",
-    "tokens": "Token",
-    "best": "Bestwert",
-    "aria": "Starhop-Minispiel"
-  },
-  "services": {
-    "title": "Dienste",
-    "subtitle": "Gehostete und Cloud-Dienste.",
-    "source": "Quelle",
-    "use": "Verwenden"
+  "ring": {
+    "title": "Ring",
+    "description": "Eine kreisförmige Version des klassischen Breakout-Spiels.",
+    "controls": "Bewege dich mit der Maus, A/S oder den Pfeiltasten. Lass den Ball nicht hinausfliegen!",
+    "start": "Start",
+    "restart": "Erneut spielen",
+    "level": "Level",
+    "blocks": "Blöcke",
+    "lives": "Leben",
+    "gameOver": "Spiel vorbei",
+    "complete": "Level abgeschlossen!",
+    "aria": "Ring-Spiel",
+    "left": "Nach links bewegen",
+    "right": "Nach rechts bewegen",
+    "paused": "Pausiert",
+    "resume": "Fortsetzen",
+    "lifeLost": "Du hast ein Leben verloren!",
+    "continue": "Weiter",
+    "nextLevel": "Nächstes Level wird geladen..."
   },
   "error": {
     "label": "Fehler",
-    "title404": "Verloren zwischen den Sternen",
-    "titleDefault": "Etwas ist schiefgelaufen",
-    "message404": "Diese Seite wurde nicht gefunden, aber wir haben ein kleines verstecktes Spiel entdeckt.",
+    "message404": "Diese Seite wurde nicht gefunden.",
     "messageDefault": "Versuch es erneut oder geh zurück zur Startseite.",
     "goHome": "Zur Startseite",
-    "openFullGame": "Vollversion öffnen"
+    "playRing": "Ring spielen"
   }
 }

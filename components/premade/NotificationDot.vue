@@ -13,14 +13,12 @@
 </template>
 
 <style scoped lang="sass">
-  @use "@/styles/colors"
-
   .notificationDot
     position: relative
     min-width: 0.5rem
     min-height: 0.5rem
     width: fit-content
-    background: colors.$shadowColor
+    background: var(--shadowColor)
 
     &.large
       min-width: 1rem
@@ -29,7 +27,7 @@
     .notificationDotBackground
       position: absolute
       border-radius: 50rem
-      background: colors.$shadowColor
+      background: var(--shadowColor)
       opacity: 0.4
       animation: pulseNotificationDot 1s infinite
       filter: blur(0.1rem)
