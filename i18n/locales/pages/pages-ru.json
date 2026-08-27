@@ -22,7 +22,8 @@
     "check": "Посмотри мои"
   },
   "apps": {
-    "allApps": "Все Приложения",
+    "allRepos": "Все Приложения",
+    "allProjects": "Все проекты",
     "pwaInstall": "Установка PWA",
     "buttons": { "go": "Перейти", "soon": "Скоро" }
   },

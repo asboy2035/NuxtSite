@@ -22,7 +22,8 @@
     "check": "私のものをチェック"
   },
   "apps": {
-    "allApps": "すべてのアプリ",
+    "allRepos": "すべてのアプリ",
+    "allProjects": "すべてのプロジェクト",
     "pwaInstall": "PWAのインストール",
     "buttons": { "go": "開く", "soon": "近日公開" }
   },

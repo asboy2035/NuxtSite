@@ -22,7 +22,8 @@
     "check": "Check out my"
   },
   "apps": {
-    "allApps": "All Apps",
+    "allRepos": "All Repos",
+    "allProjects": "All Projects",
     "pwaInstall": "PWA Installation",
     "buttons": {
       "go": "Go",

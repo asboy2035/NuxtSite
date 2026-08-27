@@ -661,6 +661,16 @@
     overflow: hidden
     border-radius: 2rem
     background: var(--foregroundColor)
+    border: 0.1rem solid var(--foregroundDark)
+    animation: scaleIn 0.3s ease-out
+
+  @keyframes scaleIn
+    0%
+      transform: scale(0.4)
+    70%
+      transform: scale(1.05)
+    100%
+      transform: scale(1)
 
   .hud
     position: absolute

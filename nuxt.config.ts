@@ -77,6 +77,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    vueI18n: 'i18n.config.ts',
     strategy: 'prefix_except_default',
     baseUrl: import.meta.env.BASE_URL,
     defaultLocale: 'en',
@@ -94,6 +95,7 @@ export default defineNuxtConfig({
           'global/global-en.json',
           'meta/meta-en.json',
           'pages/pages-en.json',
+          'projects/projects-en.json',
         ],
       },
       {
@@ -154,6 +156,7 @@ export default defineNuxtConfig({
           'global/global-ru.json',
           'meta/meta-ru.json',
           'pages/pages-ru.json',
+          'projects/projects-ru.json',
         ],
       },
       {

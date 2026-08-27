@@ -24,7 +24,7 @@ export const appsPages: AppPageMeta[] = [
     title: 'Stand',
     shortDescription: 'Keep track of sitting/standing time!',
     ogDescription: 'Keep track of sitting/standing time!',
-    iconPath: '/images/icons/Stand-Icon.png',
+    iconPath: 'https://a35hie.com/icons/apps/stand.webp',
     headerImagePath: '/images/Stand-Hero.jpeg',
     socialPreview: '/apps/social-previews/Stand-SocialPreview.png',
     longDescriptionMarkdown: '/apps/markdown/stand.md',

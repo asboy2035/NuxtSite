@@ -22,7 +22,8 @@
     "check": "查看我的"
   },
   "apps": {
-    "allApps": "所有应用",
+    "allRepos": "所有应用",
+    "allProjects": "所有项目",
     "pwaInstall": "PWA 安装",
     "buttons": { "go": "前往", "soon": "即将推出" }
   },

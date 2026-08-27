@@ -22,7 +22,8 @@
     "check": "Confira meu"
   },
   "apps": {
-    "allApps": "Todos os Apps",
+    "allRepos": "Todos os Apps",
+    "allProjects": "Todos os projetos",
     "pwaInstall": "Instalação de PWA",
     "buttons": { "go": "Ir", "soon": "Em breve" }
   },

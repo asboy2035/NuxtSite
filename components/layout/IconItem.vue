@@ -74,7 +74,7 @@
 
 <template>
   <a v-if="link" :href="link" target="_blank" rel="noopener noreferrer">
-    <InteriorItem class="centered iconItem" :class="{ light, colored }">
+    <InteriorItem class="iconItem" :class="{ light, colored }">
       <div v-if="tag" class="tag">{{ tag }}</div>
 
       <div class="iconContainer">
@@ -92,7 +92,7 @@
     </InteriorItem>
   </a>
 
-  <InteriorItem v-else class="centered iconItem" :class="{ light, colored }">
+  <InteriorItem v-else class="iconItem" :class="{ light, colored }">
     <div v-if="tag" class="tag">{{ tag }}</div>
 
     <div class="iconContainer">
@@ -105,6 +105,10 @@
 
 <style scoped lang="sass">
   .iconItem
+    padding: 1rem
+    align-items: flex-start
+    gap: 0.5rem
+
     .tag
       position: absolute
       top: 0.75rem
@@ -143,6 +147,7 @@
         -webkit-mask-repeat: no-repeat
         -webkit-mask-position: center
         -webkit-mask-size: contain
+        backdrop-filter: saturate(150%)
 
       .iconHover
         display: block
@@ -163,4 +168,8 @@
 
       .iconHover
         opacity: 1
+
+  @media (max-width: 35rem)
+    .iconItem
+      padding: 0.75rem
 </style>

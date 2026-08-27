@@ -6,8 +6,17 @@ export const BygPlatformProj: Project = {
   description:
     'The beautiful, unhinged social media. Write posts, chat with friends, and more.',
   link: 'https://byg.gg/',
-  preview: 'https://i.ibb.co/HLPpxC3m/Byg-2-15-3.png',
+  preview: 'https://i.ibb.co/CKthPN6G/Byg-2-15-3.png',
   technologies: [ Elysia, Vue, TypeScript ],
+}
+
+export const ComProj: Project = {
+  name: 'a35hie.com',
+  description:
+    'About the a35hie company/brand, as well as all projects associated.',
+  link: 'https://a35hie.com',
+  preview: 'https://i.ibb.co/nsgSLBqG/a35hie-com-en-projects.jpg',
+  technologies: [ TypeScript, Vue ],
 }
 
 export const OpkProj: Project = {
@@ -18,4 +27,4 @@ export const OpkProj: Project = {
   technologies: [ TypeScript, Vue ],
 }
 
-export const Projects: Project[] = [ BygPlatformProj, OpkProj ]
+export const Projects: Project[] = [ BygPlatformProj, ComProj ]

@@ -23,6 +23,7 @@
         :link="link.url"
         :icon="link.icon"
         :tag="link.lang"
+        colored
       />
     </Grid>
   </Card>
@@ -34,5 +35,5 @@
 
   @media (max-width: 35rem)
     .linksGrid
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr))
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
 </style>

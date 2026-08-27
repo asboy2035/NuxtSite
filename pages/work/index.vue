@@ -25,9 +25,9 @@
       <Spacer />
 
       <a href="https://repos.a35hie.me" target="_blank">
-        <button id="allAppsButton">
+        <button id="allReposButton">
           <Icon icon="mingcute:github-fill" />
-          {{ t('apps.allApps') }}
+          {{ t('apps.allRepos') }}
         </button>
       </a>
     </Hero>

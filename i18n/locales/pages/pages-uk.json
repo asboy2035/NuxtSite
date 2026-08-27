@@ -22,7 +22,8 @@
     "check": "Перегляньте мої"
   },
   "apps": {
-    "allApps": "Усі додатки",
+    "allRepos": "Усі додатки",
+    "allProjects": "Усі проєкти",
     "pwaInstall": "Встановлення PWA",
     "buttons": {
       "go": "Відкрити",

@@ -40,6 +40,8 @@ All fonts can be found on Google Fonts.
   Programmatically generate Open Graph images for Nuxt.
 - [**Nuxt I18N**](https://i18n.nuxtjs.org/)
   Internationalization for Nuxt Applications.
+- [**Shiki:**](https://shiki.style/)
+  The best syntax highlighter for JavaScript.
 - [**Cobe:**](https://cobe.vercel.app/)
   Light, interactive globe for the web.
 - [**Marked:**](https://marked.js.org/)

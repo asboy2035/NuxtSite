@@ -22,7 +22,8 @@
     "check": "Tarkista minun"
   },
   "apps": {
-    "allApps": "Kaikki sovellukset",
+    "allRepos": "Kaikki sovellukset",
+    "allProjects": "Kaikki projektit",
     "pwaInstall": "PWA-asennus",
     "buttons": { "go": "Siirry", "soon": "Pian" }
   },

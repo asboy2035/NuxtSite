@@ -10,6 +10,8 @@
   import CardTitle from '+/utils/CardTitle.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
 
+  const { t } = useI18n()
+
   defineProps<{
     appsData: AppCategory[]
     index?: number
@@ -40,8 +42,8 @@
           </div>
 
           <div class="appDetails">
-            <h3>{{ app.name }}</h3>
-            <p class="light">{{ app.description }}</p>
+            <h3>{{ t(app.name) }}</h3>
+            <p class="light">{{ t(app.description) }}</p>
           </div>
 
           <div class="appDownloads">

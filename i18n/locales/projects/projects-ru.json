@@ -1,0 +1,28 @@
+{
+  "apps": {
+    "stand": {
+      "title": "Stand",
+      "description": "Простой и красивый таймер для работы за столом стоя."
+    },
+    "serialplotter": {
+      "title": "SerialPlotter",
+      "description": "Красивый график последовательных данных для Arduino."
+    },
+    "serialbridge": {
+      "title": "SerialBridge",
+      "description": "Просматривайте графики SerialPlotter на iOS."
+    },
+    "sideeye": {
+      "title": "SideEye",
+      "description": "PiP для внешних экранов."
+    },
+    "backed": {
+      "title": "Backed",
+      "description": "Проигрыватель видеообоев для macOS."
+    },
+    "shimetomo": {
+      "title": "しめとも / Shimetomo",
+      "description": "Питомцы на рабочем столе для macOS."
+    }
+  }
+}

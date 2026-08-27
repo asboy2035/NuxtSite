@@ -34,7 +34,7 @@
 </script>
 
 <template>
-  <div class="codeBlock dark">
+  <div class="codeBlock darkMode">
     <HStack v-if="showHeader" class="codeHeader">
       <span class="code-language">
         {{ filename || lang }}
