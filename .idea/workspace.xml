@@ -7,41 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add codeblock, cuties card, badge">
-      <change afterPath="$PROJECT_DIR$/components/apps/ComButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n/i18n.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n/locales/projects/projects-en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n/locales/projects/projects-ru.json" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update projects, apps, fix readme, update some designs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/games/RingGame.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/games/RingGame.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/CodeBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/CodeBlock.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/ProjectsCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/Projects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SocialLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/SocialLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/apps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/apps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/appsPages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/appsPages.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-uk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-zh.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/Stand-Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,61 +96,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000177736658244" />
-      <entry key="MS500" value="1.1374535129910806" />
-      <entry key="S2" value="2.243638040113086" />
-      <entry key="S5" value="3.1495565647415797" />
-      <entry key="S10" value="3.945493717488049" />
-      <entry key="S30" value="6.764110761197103" />
-      <entry key="S60" value="11.118368043808934" />
-      <entry key="M2" value="17.563073928177555" />
-      <entry key="M5" value="29.940044589696363" />
-      <entry key="M10" value="48.91681078835501" />
-      <entry key="M15" value="67.5352263000341" />
-      <entry key="M30" value="115.1422023812368" />
-      <entry key="H1" value="197.2476564927673" />
-      <entry key="H2" value="338.5178909436722" />
-      <entry key="H4" value="580.91040941335" />
-      <entry key="D1" value="2155.2785550038366" />
-      <entry key="W1" value="3587.2531082845867" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000102258184" />
+      <entry key="S30" value="1.0122096992135847" />
+      <entry key="S60" value="1.5134115739133107" />
+      <entry key="M2" value="5.138334847701149" />
+      <entry key="M5" value="19.656973792819876" />
+      <entry key="M10" value="41.3193316783766" />
+      <entry key="M15" value="61.253299444959836" />
+      <entry key="M30" value="111.49527289142195" />
+      <entry key="H1" value="195.9738519919016" />
+      <entry key="H2" value="339.3006430108973" />
+      <entry key="H4" value="583.4595076404588" />
+      <entry key="D1" value="2161.847318754373" />
+      <entry key="W1" value="3598.72476950262" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.399461886694297E-157" />
-      <entry key="MS500" value="4.7426685165237236E-32" />
-      <entry key="S2" value="1.4757259885603245E-8" />
-      <entry key="S5" value="7.382802043418214E-4" />
-      <entry key="S10" value="0.028279888954817704" />
-      <entry key="S30" value="0.5084000804476444" />
-      <entry key="S60" value="1.5945765166231092" />
-      <entry key="M2" value="3.5874820624310724" />
-      <entry key="M5" value="8.04174396093212" />
-      <entry key="M10" value="13.832500916869627" />
-      <entry key="M15" value="18.375198906703023" />
-      <entry key="M30" value="28.702534132334044" />
-      <entry key="H1" value="49.174891915046395" />
-      <entry key="H2" value="86.64049143353417" />
-      <entry key="H4" value="151.26279638383338" />
-      <entry key="D1" value="614.9039708949597" />
-      <entry key="W1" value="1071.5907791612494" />
+      <entry key="MS100" value="6.102546639134078E-36" />
+      <entry key="MS500" value="9.059458115109886E-8" />
+      <entry key="S2" value="0.017349044275447482" />
+      <entry key="S5" value="0.19756509704888495" />
+      <entry key="S10" value="0.44448295473398974" />
+      <entry key="S30" value="0.7632615667397594" />
+      <entry key="S60" value="0.8955843285532217" />
+      <entry key="M2" value="1.355962538601772" />
+      <entry key="M5" value="4.38739384871337" />
+      <entry key="M10" value="9.999406442214307" />
+      <entry key="M15" value="14.80141284628717" />
+      <entry key="M30" value="25.87875295917918" />
+      <entry key="H1" value="46.78418442458427" />
+      <entry key="H2" value="84.6010562247396" />
+      <entry key="H4" value="149.58632169962954" />
+      <entry key="D1" value="614.0773758659141" />
+      <entry key="W1" value="1072.1354663093782" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8645538147254792" />
-      <entry key="MS500" value="1.1063508475442385" />
-      <entry key="S2" value="2.2272839004885134" />
-      <entry key="S5" value="3.1399029427961245" />
-      <entry key="S10" value="3.964078227119728" />
-      <entry key="S30" value="7.239568392595255" />
-      <entry key="S60" value="12.651633123344022" />
-      <entry key="M2" value="21.076564731435663" />
-      <entry key="M5" value="37.915575186704004" />
-      <entry key="M10" value="62.69368885010389" />
-      <entry key="M15" value="85.86100211207192" />
-      <entry key="M30" value="143.80511690334745" />
-      <entry key="H1" value="246.3887354252237" />
-      <entry key="H2" value="425.1297513303717" />
-      <entry key="H4" value="732.1497515847273" />
-      <entry key="D1" value="2770.16885778367" />
-      <entry key="W1" value="4658.840592419385" />
+      <entry key="MS100" value="0.4413514981453274" />
+      <entry key="MS500" value="0.8490962870452927" />
+      <entry key="S2" value="0.9741239987346233" />
+      <entry key="S5" value="1.1661017807551213" />
+      <entry key="S10" value="1.4188518707823197" />
+      <entry key="S30" value="1.7624140181494448" />
+      <entry key="S60" value="2.397860338870868" />
+      <entry key="M2" value="6.472853259123248" />
+      <entry key="M5" value="24.004431581737286" />
+      <entry key="M10" value="51.274421248643435" />
+      <entry key="M15" value="76.01158014163015" />
+      <entry key="M30" value="137.33634559073724" />
+      <entry key="H1" value="242.7247945520592" />
+      <entry key="H2" value="423.8731686619645" />
+      <entry key="H4" value="733.0223320910684" />
+      <entry key="D1" value="2775.9109899104105" />
+      <entry key="W1" value="4670.856931136354" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -1524,7 +1494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update to proxy" />
     <MESSAGE value="remove all asboy2035, replace reddit with byg, remove craft pages" />
     <MESSAGE value="add new navbar starter, update for v7" />
     <MESSAGE value="update new navbar expanded view, update navlinks" />
@@ -1549,7 +1518,8 @@
     <MESSAGE value="update design of app pages, fix up work section navigation" />
     <MESSAGE value="add kazakh, polish, refresh hero design, stick page controls, make modal easier to see, update readme, fix deps" />
     <MESSAGE value="add codeblock, cuties card, badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="add codeblock, cuties card, badge" />
+    <MESSAGE value="update projects, apps, fix readme, update some designs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update projects, apps, fix readme, update some designs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
