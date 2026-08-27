@@ -1,5 +1,6 @@
 {
   "name": "アッシュ",
+  "copy": "コピー",
   "intro": {
     "desc": "フランスを拠点とするデザイナー兼開発者です。",
     "github": "GitHub",
@@ -41,6 +42,11 @@
     "codeOnGh": "GitHubのコード。",
     "version": "バージョン: {version}",
     "release": "リリース: {release}",
-    "readMore": "もっと読む:"
+    "readMore": "もっと読む:",
+    "cuties": {
+      "title": "友達",
+      "desc": "この子たちは私のかわいい友達です。最高です！ :3",
+      "embed": "バッジを埋め込む！"
+    }
   }
 }

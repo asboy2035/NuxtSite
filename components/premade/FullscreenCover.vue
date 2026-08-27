@@ -37,4 +37,8 @@
 
     100%
       opacity: 1
+
+  @media (prefers-color-scheme: light)
+    .fullScreenCover
+      background: rgb(225 225 225 / 0.3)
 </style>

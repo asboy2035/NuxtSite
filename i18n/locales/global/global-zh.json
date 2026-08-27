@@ -1,5 +1,6 @@
 {
   "name": "阿什",
+  "copy": "复制",
   "intro": {
     "desc": "我是一名设计师和开发者，现居法国。",
     "github": "GitHub",
@@ -41,6 +42,11 @@
     "codeOnGh": "GitHub 上的代码。",
     "version": "版本: {version}",
     "release": "发布: {release}",
-    "readMore": "阅读更多:"
+    "readMore": "阅读更多:",
+    "cuties": {
+      "title": "我的朋友们",
+      "desc": "这些是我可爱的小伙伴，他们太棒了！:3",
+      "embed": "嵌入我的徽章！"
+    }
   }
 }

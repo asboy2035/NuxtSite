@@ -32,6 +32,7 @@
         :icon="lang.icon"
         :link="lang.link"
         :light="lang.isLearning"
+        colored
       />
     </Grid>
   </Card>

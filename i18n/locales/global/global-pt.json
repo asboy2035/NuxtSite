@@ -1,5 +1,6 @@
 {
   "name": "ash",
+  "copy": "Copiar",
   "intro": {
     "desc": "Sou um designer e desenvolvedor baseado na França.",
     "github": "GitHub",
@@ -41,6 +42,11 @@
     "codeOnGh": "Código no GitHub.",
     "version": "Versão: {version}",
     "release": "Lançamento: {release}",
-    "readMore": "Saiba mais:"
+    "readMore": "Saiba mais:",
+    "cuties": {
+      "title": "Meus amigos",
+      "desc": "Estes são os meus amiguinhos fofinhos, eles são incríveis! :3",
+      "embed": "Incorporar o meu badge!"
+    }
   }
 }

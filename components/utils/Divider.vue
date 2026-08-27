@@ -9,5 +9,5 @@
     height: 0.2rem
     border-radius: 0.1rem
     background: var(--textColor)
-    opacity: 0.4
+    opacity: 0.2
 </style>

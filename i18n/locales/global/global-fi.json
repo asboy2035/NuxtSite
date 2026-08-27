@@ -1,5 +1,6 @@
 {
   "name": "ash",
+  "copy": "Kopioi",
   "intro": {
     "desc": "Olen suunnittelija ja kehittäjä, joka perustuu Ranskaan.",
     "github": "GitHub",
@@ -41,6 +42,11 @@
     "codeOnGh": "Koodi GitHubissa.",
     "version": "Versio: {version}",
     "release": "Julkaisu: {release}",
-    "readMore": "Lue lisää:"
+    "readMore": "Lue lisää:",
+    "cuties": {
+      "title": "Ystäväni",
+      "desc": "Nämä ovat suloiset ystäväni, he ovat mahtavia! :3",
+      "embed": "Upota merkkini!"
+    }
   }
 }

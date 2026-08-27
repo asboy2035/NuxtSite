@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     'motion-v/nuxt',
     'nuxt-og-image',
+    'nuxt-shiki',
   ],
 
   alias: {
@@ -46,6 +47,11 @@ export default defineNuxtConfig({
     '&': fileURLToPath(new URL('./utils', import.meta.url)),
   },
 
+  shiki: {
+    bundledLangs: [ 'javascript', 'typescript', 'css', 'html', 'json', 'vue' ],
+    bundledThemes: [ 'houston' ],
+  },
+
   fonts: {
     families: [
       {
@@ -54,6 +60,7 @@ export default defineNuxtConfig({
       },
       {
         name: 'Nata Sans',
+        weights: [ 400, 600, 700 ],
         global: true,
       },
       {

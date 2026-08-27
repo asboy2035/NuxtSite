@@ -67,7 +67,7 @@
 
   ::v-deep(h1)
     font-family: fonts.$prominent
-    font-size: 4rem
+    font-size: 3.5rem
     line-height: 0.9
 
   @media (max-width: 35rem)
