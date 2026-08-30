@@ -1,6 +1,6 @@
 {
   "pages": {
-    "home": "Strona główna",
+    "home": "Główna",
     "links": "Linki",
     "work": "Prace",
     "projects": "Projekty",
@@ -11,10 +11,10 @@
   },
   "meta": {
     "groups": {
-      "ash": "ash"
+      "ash": "asz"
     },
     "subtitles": {
-      "global": "ash (a35hie) — Portfolio",
+      "global": "asz (a35hie) — Portfolio",
       "links": "Moje media społecznościowe, kontakty i więcej :)",
       "work": "Moje aplikacje webowe i Apple, projekty i więcej.",
       "extras": "Inne materiały do pobrania.",

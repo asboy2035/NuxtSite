@@ -1,10 +1,10 @@
 {
-  "name": "ash",
+  "name": "әш",
   "copy": "Көшіру",
   "intro": {
     "desc": "Мен Францияда тұратын дизайнер әрі әзірлеушімін.",
     "github": "GitHub",
-    "email": "Электрондық пошта",
+    "email": "Э-пошта",
     "artBy": "Сурет авторы: {artist}!"
   },
   "sites": {
@@ -38,7 +38,7 @@
   },
   "footer": {
     "thanks": "Оқығаныңызға рақмет!",
-    "createdBy": "ash жасаған, NuxtJS көмегімен, 2026 <3",
+    "createdBy": "әш жасаған, NuxtJS көмегімен, 2026 <3",
     "codeOnGh": "GitHub-тағы код.",
     "version": "Нұсқа: {version}",
     "release": "Релиз: {release}",

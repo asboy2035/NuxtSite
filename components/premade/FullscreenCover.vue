@@ -40,5 +40,5 @@
 
   @media (prefers-color-scheme: light)
     .fullScreenCover
-      background: rgb(225 225 225 / 0.3)
+      background: rgb(143 142 142 / 0.3)
 </style>

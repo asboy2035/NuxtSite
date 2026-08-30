@@ -9,9 +9,22 @@
   <component name="ChangeListManager">
     <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update projects, apps, fix readme, update some designs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-kk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-kk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-kk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +65,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="211" />
+    <option name="cachedIndexableFilesCount" value="217" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -96,61 +109,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000102258184" />
-      <entry key="S30" value="1.0122096992135847" />
-      <entry key="S60" value="1.5134115739133107" />
-      <entry key="M2" value="5.138334847701149" />
-      <entry key="M5" value="19.656973792819876" />
-      <entry key="M10" value="41.3193316783766" />
-      <entry key="M15" value="61.253299444959836" />
-      <entry key="M30" value="111.49527289142195" />
-      <entry key="H1" value="195.9738519919016" />
-      <entry key="H2" value="339.3006430108973" />
-      <entry key="H4" value="583.4595076404588" />
-      <entry key="D1" value="2161.847318754373" />
-      <entry key="W1" value="3598.72476950262" />
+      <entry key="MS100" value="1.0000553905734446" />
+      <entry key="MS500" value="1.140827403562192" />
+      <entry key="S2" value="1.6135476322079136" />
+      <entry key="S5" value="1.9498350192752352" />
+      <entry key="S10" value="2.5972927314413634" />
+      <entry key="S30" value="4.172718737795178" />
+      <entry key="S60" value="4.94942344121983" />
+      <entry key="M2" value="5.447664717845764" />
+      <entry key="M5" value="6.183947792045341" />
+      <entry key="M10" value="9.86862417797461" />
+      <entry key="M15" value="18.103207671739465" />
+      <entry key="M30" value="56.69076675529179" />
+      <entry key="H1" value="142.66205880670506" />
+      <entry key="H2" value="296.3368418239473" />
+      <entry key="H4" value="554.0615176514492" />
+      <entry key="D1" value="2169.6390329131937" />
+      <entry key="W1" value="3653.130191589753" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.102546639134078E-36" />
-      <entry key="MS500" value="9.059458115109886E-8" />
-      <entry key="S2" value="0.017349044275447482" />
-      <entry key="S5" value="0.19756509704888495" />
-      <entry key="S10" value="0.44448295473398974" />
-      <entry key="S30" value="0.7632615667397594" />
-      <entry key="S60" value="0.8955843285532217" />
-      <entry key="M2" value="1.355962538601772" />
-      <entry key="M5" value="4.38739384871337" />
-      <entry key="M10" value="9.999406442214307" />
-      <entry key="M15" value="14.80141284628717" />
-      <entry key="M30" value="25.87875295917918" />
-      <entry key="H1" value="46.78418442458427" />
-      <entry key="H2" value="84.6010562247396" />
-      <entry key="H4" value="149.58632169962954" />
-      <entry key="D1" value="614.0773758659141" />
-      <entry key="W1" value="1072.1354663093782" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="2.4411942574856615E-117" />
+      <entry key="S5" value="2.264857779237477E-47" />
+      <entry key="S10" value="4.759052194835325E-24" />
+      <entry key="S30" value="1.6827475101889204E-8" />
+      <entry key="S60" value="1.3341582462327438E-4" />
+      <entry key="M2" value="0.014127853032047222" />
+      <entry key="M5" value="0.3416610942012546" />
+      <entry key="M10" value="1.740410164819888" />
+      <entry key="M15" value="4.172374885821155" />
+      <entry key="M30" value="14.053199585532662" />
+      <entry key="H1" value="35.50519091246741" />
+      <entry key="H2" value="75.25076751499792" />
+      <entry key="H4" value="143.1901729738502" />
+      <entry key="D1" value="615.7013936165627" />
+      <entry key="W1" value="1086.7917957416894" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.4413514981453274" />
-      <entry key="MS500" value="0.8490962870452927" />
-      <entry key="S2" value="0.9741239987346233" />
-      <entry key="S5" value="1.1661017807551213" />
-      <entry key="S10" value="1.4188518707823197" />
-      <entry key="S30" value="1.7624140181494448" />
-      <entry key="S60" value="2.397860338870868" />
-      <entry key="M2" value="6.472853259123248" />
-      <entry key="M5" value="24.004431581737286" />
-      <entry key="M10" value="51.274421248643435" />
-      <entry key="M15" value="76.01158014163015" />
-      <entry key="M30" value="137.33634559073724" />
-      <entry key="H1" value="242.7247945520592" />
-      <entry key="H2" value="423.8731686619645" />
-      <entry key="H4" value="733.0223320910684" />
-      <entry key="D1" value="2775.9109899104105" />
-      <entry key="W1" value="4670.856931136354" />
+      <entry key="MS100" value="5.616571421792068E-4" />
+      <entry key="MS500" value="0.2836272188709334" />
+      <entry key="S2" value="1.183308552313167" />
+      <entry key="S5" value="1.7395232838477597" />
+      <entry key="S10" value="2.4769394591210374" />
+      <entry key="S30" value="4.1236461430854146" />
+      <entry key="S60" value="4.922992816656098" />
+      <entry key="M2" value="5.447792282640756" />
+      <entry key="M5" value="6.518650152198819" />
+      <entry key="M10" value="11.600715834553524" />
+      <entry key="M15" value="22.263095906794867" />
+      <entry key="M30" value="70.7229036461313" />
+      <entry key="H1" value="178.14114010424476" />
+      <entry key="H2" value="371.5613349401283" />
+      <entry key="H4" value="697.2284780646127" />
+      <entry key="D1" value="2785.326477653601" />
+      <entry key="W1" value="4739.918605162612" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -164,63 +177,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "CidrDebugProfileConversion": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "KEY_CHAT_IN_TOOLWINDOW": "false",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "7",
-    "javascript.preferred.runtime.type.id": "node",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/badges",
-    "list.type.of.created.stylesheet": "Sass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "bun",
-    "npm.build.executor": "Run",
-    "npm.cleanup.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.fastFormat.executor": "Run",
-    "npm.format.executor": "Run",
-    "npm.lint.executor": "Run",
-    "npm.prettier.executor": "Run",
-    "npm.preview.executor": "Run",
-    "npm.reInit.executor": "Run",
-    "npm.verifyTranslations.executor": "Run",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;KEY_CHAT_IN_TOOLWINDOW&quot;: &quot;false&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/badges&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;bun&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.fastFormat.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
+    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
+    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
+    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/badges" />

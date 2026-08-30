@@ -23,6 +23,8 @@
 
     border-radius: var(--card-radius)
     background: var(--foregroundColor)
+    transition: 0.2s ease
+    box-shadow: inset 0.1rem 0.3rem 0.2rem 0 var(--foregroundColor)
     z-index: 2
 
     transform: translateY(1.5rem)
@@ -37,27 +39,6 @@
       to
         transform: none
         opacity: 1
-
-    // Border
-    &::after
-      content: ""
-      position: absolute
-      top: 0
-      bottom: 0
-      right: 0
-      left: 0
-
-      border-radius: var(--card-radius)
-      box-shadow: inset 0 0 0.5rem var(--shadowColor)
-      opacity: 0.6
-      pointer-events: none
-      transition: opacity 0.2s ease
-      mask: conic-gradient(from -45deg, black, rgba(0, 0, 0, 0.1), black, rgba(0, 0, 0, 0.1), black)
-      z-index: 3
-
-    &:hover
-      &::after
-        opacity: 0.8
 
     ::v-deep(img)
       max-width: 100%

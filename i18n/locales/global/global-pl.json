@@ -1,5 +1,5 @@
 {
-  "name": "ash",
+  "name": "asz",
   "copy": "Kopiuj",
   "intro": {
     "desc": "Jestem projektantem i programistą mieszkającym we Francji.",
@@ -38,7 +38,7 @@
   },
   "footer": {
     "thanks": "Dzięki za przeczytanie!",
-    "createdBy": "Stworzone przez ash z użyciem NuxtJS w 2026 <3",
+    "createdBy": "Stworzone przez asz z użyciem NuxtJS w 2026 <3",
     "codeOnGh": "Kod na GitHubie.",
     "version": "Wersja: {version}",
     "release": "Wydanie: {release}",

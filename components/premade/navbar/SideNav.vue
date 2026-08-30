@@ -100,6 +100,7 @@
       &:hover, &.selected
         background: var(--foregroundDark)
         backdrop-filter: blur(1rem)
+        box-shadow: inset 0 0.2rem 0.2rem 0 var(--foregroundDark)
 
       &:active
         scale: 0.95

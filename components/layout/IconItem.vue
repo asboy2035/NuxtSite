@@ -135,7 +135,7 @@
       .iconMask
         display: block
         opacity: 1
-        background: white
+        background: var(--textColor)
 
         mask-image: var(--icon-mask)
         mask-mode: luminance
