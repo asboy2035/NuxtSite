@@ -22,9 +22,10 @@
     flex-grow: 1
 
     border-radius: var(--card-radius)
+    border: 0.1rem solid var(--foregroundColor)
     background: var(--foregroundColor)
     transition: 0.2s ease
-    box-shadow: inset 0.1rem 0.3rem 0.2rem 0 var(--foregroundColor)
+    box-shadow: inset 0 0.3rem 0.5rem 0 var(--foregroundDark)
     z-index: 2
 
     transform: translateY(1.5rem)

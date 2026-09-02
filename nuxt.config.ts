@@ -7,6 +7,9 @@ import meta from './package'
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        style: '--backgroundOpacity: 0.25; --backgroundFilter: blur(0.5rem)',
+      },
       link: [
         {
           rel: 'preconnect',
@@ -23,7 +26,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'v7.1 Refresh',
+      siteRelease: 'Style Tweaks',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://s.a35.dev',
       posthogDefaults: '2025-05-24',

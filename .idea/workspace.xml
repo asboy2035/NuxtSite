@@ -7,23 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update projects, apps, fix readme, update some designs">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode">
+      <change afterPath="$PROJECT_DIR$/public/lgTest.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/FullscreenCover.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/meta/meta-pl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/pages/pages-pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/test.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,61 +104,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000553905734446" />
-      <entry key="MS500" value="1.140827403562192" />
-      <entry key="S2" value="1.6135476322079136" />
-      <entry key="S5" value="1.9498350192752352" />
-      <entry key="S10" value="2.5972927314413634" />
-      <entry key="S30" value="4.172718737795178" />
-      <entry key="S60" value="4.94942344121983" />
-      <entry key="M2" value="5.447664717845764" />
-      <entry key="M5" value="6.183947792045341" />
-      <entry key="M10" value="9.86862417797461" />
-      <entry key="M15" value="18.103207671739465" />
-      <entry key="M30" value="56.69076675529179" />
-      <entry key="H1" value="142.66205880670506" />
-      <entry key="H2" value="296.3368418239473" />
-      <entry key="H4" value="554.0615176514492" />
-      <entry key="D1" value="2169.6390329131937" />
-      <entry key="W1" value="3653.130191589753" />
+      <entry key="MS100" value="1.008492721628501" />
+      <entry key="MS500" value="1.461700571534958" />
+      <entry key="S2" value="2.3136226465415604" />
+      <entry key="S5" value="2.684814942357848" />
+      <entry key="S10" value="2.9153422421288218" />
+      <entry key="S30" value="4.557392400415717" />
+      <entry key="S60" value="7.170161631469708" />
+      <entry key="M2" value="10.006229497631281" />
+      <entry key="M5" value="12.961569170511153" />
+      <entry key="M10" value="16.849814596793188" />
+      <entry key="M15" value="22.09628075865517" />
+      <entry key="M30" value="47.06738915271854" />
+      <entry key="H1" value="119.5123494085708" />
+      <entry key="H2" value="276.1884741019866" />
+      <entry key="H4" value="554.1447998491728" />
+      <entry key="D1" value="2251.1891365767574" />
+      <entry key="W1" value="3839.8810621998573" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.4411942574856615E-117" />
-      <entry key="S5" value="2.264857779237477E-47" />
-      <entry key="S10" value="4.759052194835325E-24" />
-      <entry key="S30" value="1.6827475101889204E-8" />
-      <entry key="S60" value="1.3341582462327438E-4" />
-      <entry key="M2" value="0.014127853032047222" />
-      <entry key="M5" value="0.3416610942012546" />
-      <entry key="M10" value="1.740410164819888" />
-      <entry key="M15" value="4.172374885821155" />
-      <entry key="M30" value="14.053199585532662" />
-      <entry key="H1" value="35.50519091246741" />
-      <entry key="H2" value="75.25076751499792" />
-      <entry key="H4" value="143.1901729738502" />
-      <entry key="D1" value="615.7013936165627" />
-      <entry key="W1" value="1086.7917957416894" />
+      <entry key="S2" value="7.404664387186119E-262" />
+      <entry key="S5" value="4.839070865629072E-105" />
+      <entry key="S10" value="9.640079299409199E-53" />
+      <entry key="S30" value="7.398053242747363E-18" />
+      <entry key="S60" value="4.446969161201896E-9" />
+      <entry key="M2" value="1.3210156002772905E-4" />
+      <entry key="M5" value="0.07564917537786808" />
+      <entry key="M10" value="0.6999651062196267" />
+      <entry key="M15" value="1.7563145390910382" />
+      <entry key="M30" value="7.393747417340067" />
+      <entry key="H1" value="24.656793256971543" />
+      <entry key="H2" value="63.49438704201936" />
+      <entry key="H4" value="134.89029103413557" />
+      <entry key="D1" value="623.9428821094933" />
+      <entry key="W1" value="1123.9965579511882" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.616571421792068E-4" />
-      <entry key="MS500" value="0.2836272188709334" />
-      <entry key="S2" value="1.183308552313167" />
-      <entry key="S5" value="1.7395232838477597" />
-      <entry key="S10" value="2.4769394591210374" />
-      <entry key="S30" value="4.1236461430854146" />
-      <entry key="S60" value="4.922992816656098" />
-      <entry key="M2" value="5.447792282640756" />
-      <entry key="M5" value="6.518650152198819" />
-      <entry key="M10" value="11.600715834553524" />
-      <entry key="M15" value="22.263095906794867" />
-      <entry key="M30" value="70.7229036461313" />
-      <entry key="H1" value="178.14114010424476" />
-      <entry key="H2" value="371.5613349401283" />
-      <entry key="H4" value="697.2284780646127" />
-      <entry key="D1" value="2785.326477653601" />
-      <entry key="W1" value="4739.918605162612" />
+      <entry key="MS100" value="0.2598297796981999" />
+      <entry key="MS500" value="1.1282247950573236" />
+      <entry key="S2" value="2.1693927505452097" />
+      <entry key="S5" value="2.6157892776108977" />
+      <entry key="S10" value="2.869141817363468" />
+      <entry key="S30" value="4.497031865778112" />
+      <entry key="S60" value="7.107232902964916" />
+      <entry key="M2" value="9.957620874683643" />
+      <entry key="M5" value="13.010421521650832" />
+      <entry key="M10" value="17.53102147707378" />
+      <entry key="M15" value="23.835715892049766" />
+      <entry key="M30" value="54.444217872636564" />
+      <entry key="H1" value="144.14898217090865" />
+      <entry key="H2" value="339.6598808448604" />
+      <entry key="H4" value="689.0125851244745" />
+      <entry key="D1" value="2875.117602008651" />
+      <entry key="W1" value="4963.874075732925" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -293,6 +288,34 @@
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -355,6 +378,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="fastFormat" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="fastFormat" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="format" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -381,6 +414,30 @@
       <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
         <browser with-js-debugger="true" />
       </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="format" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="lint" type="js.build_tools.npm">
@@ -431,6 +488,20 @@
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <configuration name="prettier" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
     <configuration name="preview" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -450,6 +521,34 @@
       <command value="run" />
       <scripts>
         <script value="preview" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="preview" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="preview" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="bun" />
+      <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="verifyTranslations" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="verifyTranslations" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="bun" />
@@ -1507,7 +1606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove all asboy2035, replace reddit with byg, remove craft pages" />
     <MESSAGE value="add new navbar starter, update for v7" />
     <MESSAGE value="update new navbar expanded view, update navlinks" />
     <MESSAGE value="remove more legacy stuff, change about back to links" />
@@ -1532,7 +1630,8 @@
     <MESSAGE value="add kazakh, polish, refresh hero design, stick page controls, make modal easier to see, update readme, fix deps" />
     <MESSAGE value="add codeblock, cuties card, badge" />
     <MESSAGE value="update projects, apps, fix readme, update some designs" />
-    <option name="LAST_COMMIT_MESSAGE" value="update projects, apps, fix readme, update some designs" />
+    <MESSAGE value="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

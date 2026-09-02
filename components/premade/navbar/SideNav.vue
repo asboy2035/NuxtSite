@@ -92,15 +92,17 @@
       border-radius: 3rem
       transition: 0.2s ease
 
+      border: 0.1rem solid transparent
       opacity: 0.4
       transform: translateX(-1rem)
       animation: sidebarItemIn 0.3s ease forwards
       animation-delay: calc(var(--index) * 0.1s)
 
       &:hover, &.selected
-        background: var(--foregroundDark)
-        backdrop-filter: blur(1rem)
-        box-shadow: inset 0 0.2rem 0.2rem 0 var(--foregroundDark)
+        background: var(--foregroundColor)
+        backdrop-filter: blur(0.5rem)
+        box-shadow: inset 0 0.15rem 0.12rem 0 var(--foregroundDark)
+        border-color: var(--foregroundColor)
 
       &:active
         scale: 0.95

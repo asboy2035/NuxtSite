@@ -93,6 +93,24 @@
   <NuxtRouteAnnouncer />
   <NuxtLayout><NuxtPage /></NuxtLayout>
 
+  <svg width="0" height="0">
+    <filter id="liquidGlass">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.002"
+        numOctaves="2"
+        result="noise"
+      />
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="noise"
+        scale="100"
+        xChannelSelector="R"
+        yChannelSelector="G"
+      />
+    </filter>
+  </svg>
+
   <img
     class="siteBackground"
     :src="`/backgrounds/${currentBackground}.svg`"

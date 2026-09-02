@@ -150,14 +150,13 @@
     transition: 0.3s ease
 
     button
-      backdrop-filter: blur(0.75rem)
+      backdrop-filter: blur(0.5rem) saturate(125%)
       background: var(--foregroundDark)
 
     button, a
       flex-grow: 1
 
     &.isHidden
-      opacity: 0
-      transform: translateY(-0.75rem)
+      transform: translateY(calc(-100% - 2rem))
       pointer-events: none
 </style>

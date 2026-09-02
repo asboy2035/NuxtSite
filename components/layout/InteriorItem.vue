@@ -1,3 +1,4 @@
+<script setup lang="ts"></script>
 <template>
   <div class="interior">
     <slot />
@@ -10,21 +11,21 @@
       width: 100%
 
       &:hover
-        transform: translateY(-0.5rem)
+        transform: translateY(-0.25rem)
 
       &:active
-        transform: translateY(-0.15rem)
+        transform: translateY(-0.1rem)
 
   .interior
     position: relative
     --interiorRadius: 1.75rem
 
-    box-shadow: inset 0 0.2rem 0.2rem 0 var(--foregroundColor)
+    box-shadow: inset 0 0.2rem 0.3rem 0 var(--foregroundColor)
     background: var(--foregroundColor)
     border-radius: var(--interiorRadius)
+    border: 0.1rem solid var(--foregroundColor)
     padding: 0.75rem
     transition: 0.2s ease
-    backdrop-filter: saturate(125%)
 
     &::before // Shadow
       content: ""
@@ -41,7 +42,7 @@
       transition: 0.2s ease
 
     &:hover
-      box-shadow: inset 0 0.2rem 0.2rem 0 var(--foregroundDark)
+      box-shadow: inset 0 0.2rem 0.3rem 0 var(--foregroundDark)
 
       &::before
         box-shadow: 0 1rem 0.75rem var(--shadowColor)
