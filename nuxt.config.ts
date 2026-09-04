@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteVersion: meta.version,
-      siteRelease: 'Style Tweaks',
+      siteRelease: 'Introducing Uwu mode!',
       posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
       posthogHost: 'https://s.a35.dev',
       posthogDefaults: '2025-05-24',
@@ -216,14 +216,7 @@ export default defineNuxtConfig({
     langDir: 'locales/',
   },
 
-  devtools: { enabled: true },
   css: [ '@/styles/global.sass' ],
-
-  vite: {
-    build: {
-      sourcemap: 'inline',
-    },
-  },
 
   nitro: {
     compressPublicAssets: {

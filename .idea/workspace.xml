@@ -7,18 +7,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode">
-      <change afterPath="$PROJECT_DIR$/public/lgTest.png" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add uwu mode">
+      <change afterPath="$PROJECT_DIR$/plugins/uwu.client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/Uwu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/MikuUwu.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/useUwu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/uwuify.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/IntroHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/IntroHero.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/test.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lgTest.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,10 +70,10 @@
       <list>
         <option value="JavaScript File" />
         <option value="Sass File" />
-        <option value="HTML File" />
-        <option value="TypeScript File" />
         <option value="JSON File" />
         <option value="Vue Composition API Component" />
+        <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -104,61 +106,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.008492721628501" />
-      <entry key="MS500" value="1.461700571534958" />
-      <entry key="S2" value="2.3136226465415604" />
-      <entry key="S5" value="2.684814942357848" />
-      <entry key="S10" value="2.9153422421288218" />
-      <entry key="S30" value="4.557392400415717" />
-      <entry key="S60" value="7.170161631469708" />
-      <entry key="M2" value="10.006229497631281" />
-      <entry key="M5" value="12.961569170511153" />
-      <entry key="M10" value="16.849814596793188" />
-      <entry key="M15" value="22.09628075865517" />
-      <entry key="M30" value="47.06738915271854" />
-      <entry key="H1" value="119.5123494085708" />
-      <entry key="H2" value="276.1884741019866" />
-      <entry key="H4" value="554.1447998491728" />
-      <entry key="D1" value="2251.1891365767574" />
-      <entry key="W1" value="3839.8810621998573" />
+      <entry key="MS100" value="1.0032625789406555" />
+      <entry key="MS500" value="1.4442860169593015" />
+      <entry key="S2" value="3.613576804357055" />
+      <entry key="S5" value="5.258475351642351" />
+      <entry key="S10" value="6.278319393971477" />
+      <entry key="S30" value="8.657162814415322" />
+      <entry key="S60" value="11.57712092773742" />
+      <entry key="M2" value="15.058028797294092" />
+      <entry key="M5" value="18.90260664325311" />
+      <entry key="M10" value="23.153129018609498" />
+      <entry key="M15" value="28.48684142387206" />
+      <entry key="M30" value="53.420655890734984" />
+      <entry key="H1" value="125.69305275407812" />
+      <entry key="H2" value="282.2421256284733" />
+      <entry key="H4" value="560.1953589410875" />
+      <entry key="D1" value="2257.5462137649865" />
+      <entry key="W1" value="3846.7243924738077" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="7.404664387186119E-262" />
-      <entry key="S5" value="4.839070865629072E-105" />
-      <entry key="S10" value="9.640079299409199E-53" />
-      <entry key="S30" value="7.398053242747363E-18" />
-      <entry key="S60" value="4.446969161201896E-9" />
-      <entry key="M2" value="1.3210156002772905E-4" />
-      <entry key="M5" value="0.07564917537786808" />
-      <entry key="M10" value="0.6999651062196267" />
-      <entry key="M15" value="1.7563145390910382" />
-      <entry key="M30" value="7.393747417340067" />
-      <entry key="H1" value="24.656793256971543" />
-      <entry key="H2" value="63.49438704201936" />
-      <entry key="H4" value="134.89029103413557" />
-      <entry key="D1" value="623.9428821094933" />
-      <entry key="W1" value="1123.9965579511882" />
+      <entry key="S2" value="3.2480522078218887E-267" />
+      <entry key="S5" value="3.480238692030745E-107" />
+      <entry key="S10" value="8.175308139868418E-54" />
+      <entry key="S30" value="3.2503138169736123E-18" />
+      <entry key="S60" value="2.9475965426986246E-9" />
+      <entry key="M2" value="1.075498741992197E-4" />
+      <entry key="M5" value="0.06967628428662108" />
+      <entry key="M10" value="0.6717640874642163" />
+      <entry key="M15" value="1.7088183193905382" />
+      <entry key="M30" value="7.293087223198418" />
+      <entry key="H1" value="24.488376421816213" />
+      <entry key="H2" value="63.27716806685797" />
+      <entry key="H4" value="134.65935854473506" />
+      <entry key="D1" value="623.7647230379398" />
+      <entry key="W1" value="1123.9507033205516" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.2598297796981999" />
-      <entry key="MS500" value="1.1282247950573236" />
-      <entry key="S2" value="2.1693927505452097" />
-      <entry key="S5" value="2.6157892776108977" />
-      <entry key="S10" value="2.869141817363468" />
-      <entry key="S30" value="4.497031865778112" />
-      <entry key="S60" value="7.107232902964916" />
-      <entry key="M2" value="9.957620874683643" />
-      <entry key="M5" value="13.010421521650832" />
-      <entry key="M10" value="17.53102147707378" />
-      <entry key="M15" value="23.835715892049766" />
-      <entry key="M30" value="54.444217872636564" />
-      <entry key="H1" value="144.14898217090865" />
-      <entry key="H2" value="339.6598808448604" />
-      <entry key="H4" value="689.0125851244745" />
-      <entry key="D1" value="2875.117602008651" />
-      <entry key="W1" value="4963.874075732925" />
+      <entry key="MS100" value="0.9758502017718" />
+      <entry key="MS500" value="1.4229697546024422" />
+      <entry key="S2" value="3.5692196991893907" />
+      <entry key="S5" value="5.229271516331508" />
+      <entry key="S10" value="6.257512105986833" />
+      <entry key="S30" value="8.624365341837231" />
+      <entry key="S60" value="11.532183622606778" />
+      <entry key="M2" value="15.01681906021237" />
+      <entry key="M5" value="18.94694235888853" />
+      <entry key="M10" value="23.80655998437876" />
+      <entry key="M15" value="30.179016175296436" />
+      <entry key="M30" value="60.69694433389709" />
+      <entry key="H1" value="150.16135115234854" />
+      <entry key="H2" value="345.49636439016587" />
+      <entry key="H4" value="694.8322364436668" />
+      <entry key="D1" value="2881.296521939403" />
+      <entry key="W1" value="4970.671551191914" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -600,8 +602,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>
@@ -1606,8 +1608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new navbar starter, update for v7" />
-    <MESSAGE value="update new navbar expanded view, update navlinks" />
     <MESSAGE value="remove more legacy stuff, change about back to links" />
     <MESSAGE value="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets" />
     <MESSAGE value="optimize CSS vars, update nuxt config" />
@@ -1631,7 +1631,9 @@
     <MESSAGE value="add codeblock, cuties card, badge" />
     <MESSAGE value="update projects, apps, fix readme, update some designs" />
     <MESSAGE value="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode" />
+    <MESSAGE value="refine colors and effects" />
+    <MESSAGE value="add uwu mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="add uwu mode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

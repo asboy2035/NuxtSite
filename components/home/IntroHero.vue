@@ -5,22 +5,54 @@
   import HStack from '+/layout/HStack.vue'
   import SafeLink from '+/utils/SafeLink.vue'
 
+  interface HeroArt {
+    origUrl: string
+    artist: string
+    path: string
+  }
+
+  const DefaultArt: HeroArt = {
+    origUrl:
+      'https://vgen.co/r_ikaillust/portfolio/showcase/a35hie-s-headshot-bust-up/516bb94b-750a-4a74-9873-3ab27b7a6125',
+    artist: 'r_ikaillust',
+    path: '/images/MikuTransparent.webp',
+  }
+
+  const UwuArt: HeroArt = {
+    origUrl:
+      'https://vgen.co/Miraiis_4rt/portfolio/showcase/-s-art-chibi/bd7857ec-c025-4c48-a20c-3590b13fc1c5',
+    artist: 'Miraiis_4rt',
+    path: '/images/MikuUwu.webp',
+  }
+
   const { t } = useI18n()
+  const { uwu } = useUwu()
+
+  const currentArt: Ref<HeroArt | undefined> = ref()
+
+  if (uwu.value) {
+    currentArt.value = UwuArt
+  } else {
+    currentArt.value = DefaultArt
+  }
 </script>
 
 <template>
   <div class="hero">
     <div class="heroMedia">
-      <SafeLink
-        to="https://vgen.co/r_ikaillust/portfolio/showcase/a35hie-s-headshot-bust-up/516bb94b-750a-4a74-9873-3ab27b7a6125"
-      >
+      <SafeLink v-if="currentArt" :to="currentArt.origUrl">
         <button class="heroMediaAttribution">
           <Icon icon="solar:pallete-2-line-duotone" />
-          {{ t('intro.artBy', { artist: 'r_ikaillust' }) }}
+          {{ t('intro.artBy', { artist: currentArt.artist }) }}
         </button>
       </SafeLink>
 
-      <img class="heroImage" src="/images/MikuTransparent.webp" alt="Miku" />
+      <img
+        class="heroImage"
+        v-if="currentArt"
+        :src="currentArt.path"
+        alt="Miku"
+      />
 
       <div class="heroBlurContainer">
         <ProgressiveBlur class="heroBlur" :blur="24" :border-radius="0" />

@@ -12,6 +12,8 @@
   import Modal from '+/utils/Modal.vue'
 
   const i18nHead = useLocaleHead()
+  const { uwu } = useUwu()
+
   // @ts-ignore
   useHead(() => ({ ...i18nHead.value }))
 
@@ -20,14 +22,14 @@
   const router = useRouter()
   const params: LocationQuery = router.currentRoute.value.query
   const backgrounds = [
-    'Purple-Close',
-    'Blue-Close',
-    'Moon-Close',
-    'Green-Close',
-    'All-Planets',
-    'Moon-Purple',
-    'Moon-Purple-Green',
-    'Blue-Purple',
+    'Purple-Close.svg',
+    'Blue-Close.svg',
+    'Moon-Close.svg',
+    'Green-Close.svg',
+    'All-Planets.svg',
+    'Moon-Purple.svg',
+    'Moon-Purple-Green.svg',
+    'Blue-Purple.svg',
   ]
   const currentBackground = ref(backgrounds[0]!)
   const fadingOut = ref(false)
@@ -49,8 +51,8 @@
   }
 
   async function cycleBackgrounds(): Promise<void> {
-    if (window.location.href.includes('uwu')) {
-      currentBackground.value = 'catgirl'
+    if (uwu.value) {
+      currentBackground.value = 'Uwu.jpeg'
       return
     }
 
@@ -67,6 +69,8 @@
     }
   }
 
+  cycleBackgrounds()
+
   onMounted(() => {
     if (params.noLangPicker === 'true') {
       setFlag('showLangPicker', false)
@@ -77,12 +81,24 @@
       showLangPicker.value = getFlag('showLangPicker', true)
     }
 
-    router.beforeEach((_to, _from, next) => {
+    router.beforeEach((to, from) => {
+      if ('uwu' in from.query && !('uwu' in to.query)) {
+        return {
+          path: to.path,
+          query: {
+            ...to.query,
+            uwu: from.query.uwu ?? '',
+          },
+          hash: to.hash,
+        }
+      }
+
       cover.value?.show()
-      next()
     })
-    router.afterEach(() => setTimeout(() => cover.value?.hide(), 300))
-    cycleBackgrounds()
+
+    router.afterEach(() => {
+      setTimeout(() => cover.value?.hide(), 300)
+    })
   })
 </script>
 
@@ -93,27 +109,9 @@
   <NuxtRouteAnnouncer />
   <NuxtLayout><NuxtPage /></NuxtLayout>
 
-  <svg width="0" height="0">
-    <filter id="liquidGlass">
-      <feTurbulence
-        type="fractalNoise"
-        baseFrequency="0.002"
-        numOctaves="2"
-        result="noise"
-      />
-      <feDisplacementMap
-        in="SourceGraphic"
-        in2="noise"
-        scale="100"
-        xChannelSelector="R"
-        yChannelSelector="G"
-      />
-    </filter>
-  </svg>
-
   <img
     class="siteBackground"
-    :src="`/backgrounds/${currentBackground}.svg`"
+    :src="`/backgrounds/${currentBackground}`"
     alt=""
     aria-hidden="true"
     loading="lazy"
