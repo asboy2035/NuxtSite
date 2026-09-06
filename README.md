@@ -1,4 +1,4 @@
-# NuxtSite v7
+# NuxtSite v7.4
 
 [My personal site](https://a35.dev).
 
@@ -19,7 +19,13 @@
 ## Thanks
 Many thanks to all the people, projects, tools, and providers that make this site possible.
 
-#### Fonts
+### Artists
+- [r_ikaillust](https://vgen.co/r_ikaillust/portfolio/showcase/a35hie-s-headshot-bust-up/516bb94b-750a-4a74-9873-3ab27b7a6125):
+  Profile Picture, Hero Image
+- [Miraiis_4rt](https://vgen.co/Miraiis_4rt/portfolio/showcase/-s-art-chibi/bd7857ec-c025-4c48-a20c-3590b13fc1c5):
+  Hero Image (uwu mode), Graphics
+
+### Fonts
 All fonts can be found on Google Fonts.
 
 - Nata Sans

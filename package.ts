@@ -7,13 +7,13 @@ function fixPathScript(search: string, replace: string): string {
 export default definePackage({
   pm: BunPm,
   name: '@a35hie/nuxt-site',
-  description: 'My personal website.',
+  description: 'My personal website, built with Nuxt.',
   author: {
     name: 'ash',
     email: 'ash@a35.dev',
     url: 'https://a35.dev/',
   },
-  version: '7.4.0',
+  version: '7.4.1',
   license: 'Apache-2.0',
   private: false,
   type: 'module',
