@@ -7,10 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="redesign nav menu, redesign qr code">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="meta updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/LargeIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/LargeIcon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SideNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/NavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/NavLinks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/extras.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/extras.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/work/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/navLink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/navLink.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/uwuify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/uwuify.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1597,7 +1609,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets" />
     <MESSAGE value="optimize CSS vars, update nuxt config" />
     <MESSAGE value="fix cobe version back to 0.6.5" />
     <MESSAGE value="add translations, remove old unused content, animate sidebar, add home to sidebar" />
@@ -1622,7 +1633,8 @@
     <MESSAGE value="refine colors and effects" />
     <MESSAGE value="add uwu mode" />
     <MESSAGE value="redesign nav menu, redesign qr code" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesign nav menu, redesign qr code" />
+    <MESSAGE value="meta updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="meta updates" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

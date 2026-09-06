@@ -7,6 +7,7 @@
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { apps } from '$/apps'
+  import { WorkNavLink } from '$/NavLinks'
 
   const { t } = useI18n()
 
@@ -18,8 +19,7 @@
 
 <template>
   <div class="contentView">
-    <Hero icon="solar:folder-open-bold-duotone" tint="#378be7">
-      <h1>{{ t('pages.work') }}</h1>
+    <Hero :link="WorkNavLink">
       <h2>{{ t('meta.subtitles.work') }}</h2>
 
       <Spacer />

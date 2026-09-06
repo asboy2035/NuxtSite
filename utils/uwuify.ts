@@ -128,32 +128,6 @@ function preserveCase(original: string, replacement: string) {
   return replacement
 }
 
-const suffixes = {
-  en: [ ' :3', ' nya~', ' uwu' ],
-  fr: [ ' :3', ' nya~', ' uwu' ],
-  es: [ ' :3', ' nya~', ' uwu' ],
-  ja: [ ' にゃ〜', ' :3', ' uwu' ],
-  zh: [ ' 喵~', ' :3', ' uwu' ],
-  de: [ ' :3', ' nya~', ' uwu' ],
-  ru: [ ' :3', ' ня~', ' uwu' ],
-  uk: [ ' :3', ' ня~', ' uwu' ],
-  pt: [ ' :3', ' nya~', ' uwu' ],
-  kk: [ ' :3', ' ня~', ' uwu' ],
-  fi: [ ' :3', ' nya~', ' uwu' ],
-  pl: [ ' :3', ' nya~', ' uwu' ],
-} satisfies Record<Locale, string[]>
-
-function hashString(value: string) {
-  let hash = 0
-
-  for (let i = 0; i < value.length; i++) {
-    hash = (hash << 5) - hash + value.charCodeAt(i)
-    hash |= 0
-  }
-
-  return Math.abs(hash)
-}
-
 export function uwuify(input: string, locale: Locale): string {
   if (!input) return input
 
@@ -175,8 +149,5 @@ export function uwuify(input: string, locale: Locale): string {
     }
   }
 
-  const available = suffixes[locale]
-  const suffix = available[hashString(input) % available.length]
-
-  return `${result}${suffix}`
+  return `${result}`
 }

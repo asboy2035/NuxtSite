@@ -1,14 +1,16 @@
 <script setup lang="ts">
+  import type { NavLink } from ':/navLink'
   import Card from '+/layout/Card.vue'
   import VStack from '+/layout/VStack.vue'
   import LargeIcon from '+/premade/LargeIcon.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
 
+  const { t } = useI18n()
+
   defineProps<{
+    link?: NavLink
     image?: string
     imageAlt?: string
-    icon?: string
-    tint?: string
   }>()
 </script>
 
@@ -21,11 +23,16 @@
       :alt="imageAlt ?? 'Image'"
     />
 
-    <LargeIcon class="heroIcon" v-if="icon && tint" :icon="icon" :tint="tint" />
-
+    <LargeIcon
+      class="heroIcon"
+      v-if="link"
+      :icon="link.icon"
+      :tint="link.tint"
+    />
     <p v-else>invalid props</p>
 
     <VStack class="heroContent">
+      <h1 v-if="link && link.text !== ''">{{ t(link.text) }}</h1>
       <slot />
     </VStack>
   </Card>

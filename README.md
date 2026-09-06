@@ -1,4 +1,4 @@
-# NuxtSite v7.4
+# NuxtSite v7.5
 
 [My personal site](https://a35.dev).
 

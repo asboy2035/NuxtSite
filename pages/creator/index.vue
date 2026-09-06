@@ -4,6 +4,7 @@
   import LauncherCard from '+/premade/navbar/LauncherCard.vue'
   import Hero from '+/utils/Hero.vue'
   import { LauncherCreators } from '$/launchers/LauncherCreators'
+  import { CreatorsNavLink } from '$/NavLinks'
   const { t } = useI18n()
 
   setHeadMeta({
@@ -14,8 +15,7 @@
 
 <template>
   <div class="contentView">
-    <Hero icon="solar:pen-new-square-bold-duotone" tint="#d877af">
-      <h1>{{ t('navbar.launchers.creators') }}</h1>
+    <Hero :link="CreatorsNavLink">
       <h2>{{ t('creators.choose') }}</h2>
     </Hero>
 

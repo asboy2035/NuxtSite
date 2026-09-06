@@ -12,6 +12,7 @@
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
   import { cursors } from '$/cursors'
+  import { ExtrasNavLink } from '$/NavLinks'
 
   const { t } = useI18n()
 
@@ -32,8 +33,7 @@
 
 <template>
   <div class="contentView">
-    <Hero icon="solar:layers-minimalistic-bold-duotone" tint="#dfac3b">
-      <h1>{{ t('pages.extras') }}</h1>
+    <Hero :link="ExtrasNavLink">
       <h2>{{ t('meta.subtitles.extras') }}</h2>
 
       <Spacer />

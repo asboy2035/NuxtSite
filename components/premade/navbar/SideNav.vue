@@ -45,14 +45,19 @@
         :class="{ selected: isActive(link) }"
         :style="{ '--index': i }"
       >
-        <Icon
-          v-if="link.icon"
-          :icon="
-            isActive(link)
-              ? link.icon.replace('line-duotone', 'bold-duotone')
-              : link.icon
-          "
-        />
+        <div class="sideNavImageContainer" :style="{ '--tint': link.tint }">
+          <Icon
+            v-if="link.icon"
+            :icon="
+              isActive(link)
+                ? link.icon.replace('line-duotone', 'bold-duotone')
+                : link.icon
+            "
+          />
+
+          <div class="sideNavImageBackground" />
+        </div>
+
         <h3>{{ t(link.text) }}</h3>
       </HStack>
     </SafeLink>
@@ -86,7 +91,9 @@
         justify-content: space-between
 
     .sideNavItem
-      padding: 0.75rem
+      padding: 0.45rem
+      padding-inline-end: 0.75rem
+      gap: 0.45rem
       width: 100%
       justify-content: flex-start
       border-radius: 3rem
@@ -104,12 +111,33 @@
         box-shadow: inset 0 0.15rem 0.12rem 0 var(--foregroundDark)
         border-color: var(--foregroundColor)
 
+        .sideNavImageBackground
+          background: linear-gradient(-45deg, var(--tint), hsl(from var(--tint) calc(h + 40) s l))
+
       &:active
         scale: 0.95
 
-      svg
+      .avatar
         width: 2rem
         height: 2rem
+        margin: 0.35rem
+
+      .sideNavImageContainer
+        position: relative
+        padding: 0.5rem
+        border-radius: 50%
+        background: var(--foregroundColor)
+        overflow: hidden
+
+        .sideNavImageBackground
+          position: absolute
+          inset: 0
+          opacity: 0.8
+
+        svg
+          width: 1.75rem
+          height: 1.75rem
+          z-index: 2
 
       *
         margin: 0

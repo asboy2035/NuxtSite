@@ -18,6 +18,7 @@
   const { t } = useI18n()
   const localePath = useLocalePath()
   const route = useRoute()
+  const { uwu } = useUwu()
 
   defineProps<{
     startButtonOnly?: boolean
@@ -40,6 +41,20 @@
 
   function isActive(link: NavLink): boolean {
     return route.path === localePath(link.link)
+  }
+
+  function getUwuPath(): string {
+    const query = new URLSearchParams(route.query as Record<string, string>)
+
+    if (uwu.value) {
+      query.delete('uwu')
+    } else {
+      query.set('uwu', 'true')
+    }
+
+    const params = query.toString()
+
+    return params ? `${route.path}?${params}` : route.path
   }
 </script>
 
@@ -106,6 +121,13 @@
                 />
               </Card>
             </Grid>
+
+            <a :href="getUwuPath()">
+              <button class="uwuButton" :class="{ prominent: uwu }">
+                <Icon :icon="uwu ? 'la:toggle-on' : 'la:toggle-off'" />
+                UwU
+              </button>
+            </a>
           </VStack>
 
           <!-- Small View-->

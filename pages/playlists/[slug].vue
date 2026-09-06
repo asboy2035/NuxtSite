@@ -16,6 +16,7 @@
   import CardTitle from '+/utils/CardTitle.vue'
   import Hero from '+/utils/Hero.vue'
   import Spacer from '+/utils/Spacer.vue'
+  import { PlaylistsNavLink } from '$/NavLinks'
   import { playlists } from '$/playlists'
 
   const { t } = useI18n()
@@ -54,7 +55,7 @@
 
 <template>
   <div v-if="playlist" class="contentView">
-    <Hero icon="solar:music-notes-bold-duotone" tint="#c95d68">
+    <Hero :link="PlaylistsNavLink">
       <h1>{{ playlist.title }}</h1>
     </Hero>
 

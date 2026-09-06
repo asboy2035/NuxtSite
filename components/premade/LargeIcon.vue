@@ -10,7 +10,7 @@
 <template>
   <div class="largeIconContainer" :style="{ '--tint': tint, '--scale': 1 }">
     <div class="largeIcon">
-      <Icon :icon="icon" />
+      <Icon :icon="icon.replace('line-duotone', 'bold-duotone')" />
       <div class="largeIconBackground" />
     </div>
   </div>

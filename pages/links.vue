@@ -7,6 +7,7 @@
   import SocialLinks from '+/links/SocialLinks.vue'
   import BottomFooter from '+/premade/BottomFooter.vue'
   import Hero from '+/utils/Hero.vue'
+  import { LinksNavLink } from '$/NavLinks'
 
   const { t } = useI18n()
 
@@ -18,8 +19,7 @@
 
 <template>
   <div class="contentView">
-    <Hero icon="solar:link-minimalistic-2-line-duotone" tint="#af58eb">
-      <h1>{{ t('pages.links') }}</h1>
+    <Hero :link="LinksNavLink">
       <h2>{{ t('meta.subtitles.links') }}</h2>
     </Hero>
 
