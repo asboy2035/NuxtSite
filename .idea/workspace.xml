@@ -7,21 +7,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add uwu mode">
-      <change afterPath="$PROJECT_DIR$/plugins/uwu.client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backgrounds/Uwu.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/MikuUwu.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/useUwu.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/uwuify.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="redesign nav menu, redesign qr code">
+      <change afterPath="$PROJECT_DIR$/components/premade/navbar/ShareQr.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/graphics/MikuLangs.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/IntroHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/IntroHero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Grid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Grid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-kk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-pt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-uk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n/locales/global/global-zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/locales/global/global-zh.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/test.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lgTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/QR-Dark.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/QR-Light.webp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,9 +80,9 @@
         <option value="JavaScript File" />
         <option value="Sass File" />
         <option value="JSON File" />
-        <option value="Vue Composition API Component" />
         <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -174,69 +183,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;KEY_CHAT_IN_TOOLWINDOW&quot;: &quot;false&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public/badges&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;bun&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.fastFormat.executor&quot;: &quot;Run&quot;,
-    &quot;npm.format.executor&quot;: &quot;Run&quot;,
-    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
-    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
-    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
-    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
-    &quot;npm.verifyTranslations.executor&quot;: &quot;Run&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "CidrDebugProfileConversion": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "KEY_CHAT_IN_TOOLWINDOW": "false",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
+    "list.type.of.created.stylesheet": "Sass",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "bun",
+    "npm.build.executor": "Run",
+    "npm.cleanup.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.fastFormat.executor": "Run",
+    "npm.format.executor": "Run",
+    "npm.lint.executor": "Run",
+    "npm.prettier.executor": "Run",
+    "npm.preview.executor": "Run",
+    "npm.reInit.executor": "Run",
+    "npm.verifyTranslations.executor": "Run",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "/Users/ash/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/badges" />
       <recent name="$PROJECT_DIR$/.output/public/_og-static-fonts" />
       <recent name="$PROJECT_DIR$/fonts" />
-      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/cursors/site" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -1608,7 +1617,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove more legacy stuff, change about back to links" />
     <MESSAGE value="put intro into homepage, move info to links, add sidebar on desktop, add new branding assets" />
     <MESSAGE value="optimize CSS vars, update nuxt config" />
     <MESSAGE value="fix cobe version back to 0.6.5" />
@@ -1633,7 +1641,8 @@
     <MESSAGE value="update kazakh/polish locales, switch to new shadow-based material for better performance and a new look, fine-tune color sheets for a refined light mode experience and improved dark mode" />
     <MESSAGE value="refine colors and effects" />
     <MESSAGE value="add uwu mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add uwu mode" />
+    <MESSAGE value="redesign nav menu, redesign qr code" />
+    <option name="LAST_COMMIT_MESSAGE" value="redesign nav menu, redesign qr code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

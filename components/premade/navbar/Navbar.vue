@@ -8,14 +8,11 @@
   import HStack from '+/layout/HStack.vue'
   import InteriorItem from '+/layout/InteriorItem.vue'
   import VStack from '+/layout/VStack.vue'
-  import LauncherCard from '+/premade/navbar/LauncherCard.vue'
   import SitePicker from '+/premade/navbar/SitePicker.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import DynamicImage from '+/utils/DynamicImage.vue'
   import SafeLink from '+/utils/SafeLink.vue'
   import Spacer from '+/utils/Spacer.vue'
-  import { LauncherApps } from '$/launchers/LauncherApps'
-  import { LauncherCreators } from '$/launchers/LauncherCreators'
   import { NavLinks } from '$/NavLinks'
 
   const { t } = useI18n()
@@ -75,50 +72,38 @@
               </button>
             </CardTitle>
 
-            <Grid class="spaced">
-              <VStack>
-                <LauncherCard
-                  title="navbar.launchers.apps"
-                  icon="solar:widget-2-line-duotone"
-                  base-url="/apps"
-                  :launcher-items="LauncherApps"
-                  :index="1"
-                />
-
-                <LauncherCard
-                  title="navbar.launchers.creators"
-                  icon="solar:pen-new-square-line-duotone"
-                  base-url="/creator"
-                  :launcher-items="LauncherCreators"
-                  :index="2"
-                />
-              </VStack>
-
-              <SitePicker :index="3" />
-            </Grid>
-
+            <SitePicker :index="3" />
             <Spacer />
 
             <h1>{{ t('pages.languages') }}</h1>
 
-            <Grid class="spaced" style="margin-bottom: 0.75rem">
+            <Grid class="spaced langsGrid" style="margin-bottom: 0.75rem">
               <LangPickerCard @set="open = false" :index="5" />
 
-              <Card :index="6">
-                <CardTitle
-                  title="languages.betaNotice"
-                  icon="solar:danger-triangle-line-duotone"
-                />
+              <Card :index="6" class="langNotice autoSpace">
+                <VStack class="text noSpace">
+                  <CardTitle
+                    title="languages.betaNotice"
+                    icon="solar:danger-triangle-line-duotone"
+                  />
 
-                <p>{{ t('languages.errorNotice') }}</p>
-                <p>
-                  {{ t('languages.foundError') }}
-                  <a
-                    class="prominentLink"
-                    href="https://github.com/main35/NuxtSite/issues"
-                    >{{ t('languages.reportError') }}</a
-                  >
-                </p>
+                  <p>{{ t('languages.errorNotice') }}</p>
+                  <p>
+                    {{ t('languages.foundError') }}
+                    <a
+                      class="prominentLink"
+                      href="https://github.com/main35/NuxtSite/issues"
+                      >{{ t('languages.reportError') }}</a
+                    >
+                  </p>
+                </VStack>
+
+                <img
+                  aria-hidden="true"
+                  alt=""
+                  class="langsGraphic"
+                  src="/graphics/MikuLangs.webp"
+                />
               </Card>
             </Grid>
           </VStack>
@@ -204,7 +189,7 @@
           >
             <HStack class="opener startButton" @click="open = !open">
               <Icon icon="solar:widget-5-line-duotone" />
-              <h3>{{ t('app.more') }}</h3>
+              <h3>{{ t('app.menu') }}</h3>
             </HStack>
           </Card>
         </VStack>
@@ -298,6 +283,11 @@
 
           .opened
             align-items: center
+
+          .langsGrid
+            .langsGraphic
+              margin-top: -3rem
+              opacity: 0.9
 
           .smallNav
             width: 100%

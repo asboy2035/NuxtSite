@@ -11,9 +11,6 @@
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
     align-items: stretch
 
-  .grid > *
-    display: inline-flex
-
   .grid.tight
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr))
 

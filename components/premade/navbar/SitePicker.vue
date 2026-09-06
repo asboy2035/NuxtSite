@@ -1,12 +1,16 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
+  import { Motion } from 'motion-v'
   import { onMounted, ref } from 'vue'
 
   import Card from '+/layout/Card.vue'
+  import Grid from '+/layout/Grid.vue'
   import VStack from '+/layout/VStack.vue'
+  import ShareQr from '+/premade/navbar/ShareQr.vue'
   import SitePick from '+/premade/navbar/SitePick.vue'
   import CardTitle from '+/utils/CardTitle.vue'
   import Spacer from '+/utils/Spacer.vue'
+
   const { t } = useI18n()
 
   defineProps<{
@@ -27,11 +31,64 @@
 </script>
 
 <template>
-  <VStack class="sitePicker">
-    <Card :index="index" v-if="!showingShareModal">
+  <Grid class="sitePicker spaced">
+    <VStack class="fullWidth heartContainer">
+      <Motion
+        as="div"
+        class="fullWidth"
+        :transition="{ duration: 0.2, ease: 'easeInOut' }"
+      >
+        <Card :index="index" class="sharingCard">
+          <CardTitle
+            title="sharing.title"
+            icon="solar:square-share-line-line-duotone"
+          />
+
+          <h3 class="light">a35.dev</h3>
+
+          <button
+            class="fullWidth"
+            id="showShareCode"
+            @click="showingShareModal = !showingShareModal"
+          >
+            <Icon icon="solar:qr-code-line-duotone" />
+            {{ t(showingShareModal ? 'sharing.hideQr' : 'sharing.showQr') }}
+          </button>
+
+          <Motion
+            as="div"
+            :initial="false"
+            :animate="{
+              height: showingShareModal ? 'auto' : 0,
+              opacity: showingShareModal ? 1 : 0,
+            }"
+            :transition="{
+              height: { duration: 0.2, ease: 'easeInOut' },
+              opacity: { duration: 0.2 },
+            }"
+            class="qrWrapper"
+          >
+            <VStack class="fullWidth">
+              <Spacer />
+
+              <ClientOnly>
+                <ShareQr class="qrCode" />
+              </ClientOnly>
+            </VStack>
+          </Motion>
+        </Card>
+      </Motion>
+
+      <Icon
+        v-if="!showingShareModal"
+        icon="solar:heart-shine-bold-duotone"
+        class="shareHeart"
+      />
+    </VStack>
+
+    <Card :index="index ? index + 1 : undefined">
       <VStack class="fullWidth">
         <CardTitle title="sites.title" icon="solar:three-squares-line-duotone">
-          <!-- Insert close button here -->
           <slot />
         </CardTitle>
 
@@ -42,8 +99,8 @@
         />
 
         <SitePick
-          to="https://guides.a35hie.me/"
           title="sites.guides"
+          to="https://guides.a35hie.me/"
           icon="solar:book-line-duotone"
         />
 
@@ -54,60 +111,41 @@
         />
 
         <SitePick
-          to="https://byg.gg"
           title="sites.big"
+          to="https://byg.gg"
           icon="solar:posts-carousel-vertical-line-duotone"
           updated
         />
 
         <SitePick
-          to="https://fonts.a35hie.me/"
           title="sites.fonts"
+          to="https://fonts.a35hie.me/"
           icon="solar:text-line-duotone"
         />
       </VStack>
     </Card>
-
-    <Card :index="index ? index + 1 : undefined">
-      <CardTitle
-        title="sharing.title"
-        icon="solar:square-share-line-line-duotone"
-      />
-      <h3 class="light">a35.dev</h3>
-
-      <button
-        class="fullWidth"
-        id="showShareCode"
-        @click="showingShareModal = !showingShareModal"
-      >
-        <Icon icon="solar:qr-code-line-duotone" />
-        {{ t(showingShareModal ? 'sharing.hideQr' : 'sharing.showQr') }}
-      </button>
-
-      <VStack v-if="showingShareModal">
-        <Spacer />
-        <img
-          class="qrCode hiddenDark"
-          src="/images/QR-Light.webp"
-          alt="QR Code"
-        />
-        <img
-          class="qrCode hiddenLight"
-          src="/images/QR-Dark.webp"
-          alt="QR Code"
-        />
-      </VStack>
-    </Card>
-  </VStack>
+  </Grid>
 </template>
 
-<style lang="sass">
+<style scoped lang="sass">
   .sitePicker
-    max-width: 100%
+    .heartContainer
+      height: 100%
+      justify-content: space-between
+      align-items: center
 
-  .qrCode
-    width: 100%
-    max-width: 20rem !important
-    opacity: 0.9
-    cursor: none
+      .shareHeart
+        width: 5rem
+        height: 5rem
+
+    .sharingCard
+      height: fit-content
+
+      .qrWrapper
+        width: 100%
+        overflow: hidden
+
+      .qrCode
+        width: 100%
+        cursor: none
 </style>
